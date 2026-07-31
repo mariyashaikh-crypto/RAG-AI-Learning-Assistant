@@ -193,19 +193,22 @@ AI-Learning-Assistant/
 
 ## Landing Page
 
-> *(Add Screenshot Here)*
+> <img width="1900" height="916" alt="image" src="https://github.com/user-attachments/assets/75b5aa8d-25a5-4e12-95d4-734d2660f81e" />
 
 ---
 
 ## Chat Interface
 
-> *(Add Screenshot Here)*
+> <img width="1897" height="910" alt="image" src="https://github.com/user-attachments/assets/fb32f2f5-d035-4e29-a8a9-92baa12c7d80" />
+
 
 ---
 
-## Mobile View
+## About Page
 
-> *(Add Screenshot Here)*
+> <img width="1897" height="907" alt="image" src="https://github.com/user-attachments/assets/99d506ae-dc97-47fb-ab2c-56992bf7735b" />
+
+
 
 ---
 
