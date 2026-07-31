@@ -1,0 +1,26 @@
+Project Name:
+AI Learning Assistant
+
+Description:
+
+An AI-powered educational assistant that answers
+questions related to
+
+Artificial Intelligence
+Machine Learning
+Deep Learning
+LLMs
+RAG
+Prompt Engineering
+Vector Databases
+Semantic Search
+Transformers
+AI Agents
+
+The assistant uses Retrieval-Augmented Generation
+(RAG) with semantic search over embeddings generated
+from educational video transcripts.
+
+The backend is fully completed.
+
+Only the frontend must be created.

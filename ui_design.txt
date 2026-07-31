@@ -1,0 +1,13 @@
+This is where you describe every screen.
+
+Landing page.
+
+Chat page.
+
+Sidebar.
+
+About page.
+
+Footer.
+
+Everything.

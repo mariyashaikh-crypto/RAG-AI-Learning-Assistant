@@ -1,0 +1,110 @@
+{
+    "chunks": [
+        {
+            "number": "5",
+            "title": "How word vectors encode",
+            "start": 0.0,
+            "end": 3.2800000000000002,
+            "text": " What is Hitler plus Italy minus Germany?"
+        },
+        {
+            "number": "5",
+            "title": "How word vectors encode",
+            "start": 3.2800000000000002,
+            "end": 7.68,
+            "text": " This came up in a full video that I did dissecting what happens inside large language models."
+        },
+        {
+            "number": "5",
+            "title": "How word vectors encode",
+            "start": 7.68,
+            "end": 12.16,
+            "text": " You see, when tools like ChachiPT process text, the first thing they do is subdivide it in two"
+        },
+        {
+            "number": "5",
+            "title": "How word vectors encode",
+            "start": 12.16,
+            "end": 16.72,
+            "text": " little pieces, and they associate each piece with a large vector, some long list of numbers."
+        },
+        {
+            "number": "5",
+            "title": "How word vectors encode",
+            "start": 16.72,
+            "end": 20.56,
+            "text": " This is called an embedding of that piece of text, and it's helpful to imagine these"
+        },
+        {
+            "number": "5",
+            "title": "How word vectors encode",
+            "start": 20.56,
+            "end": 25.12,
+            "text": " embedding vectors as directions in some very high-dimensional space, even if we struggle"
+        },
+        {
+            "number": "5",
+            "title": "How word vectors encode",
+            "start": 25.12,
+            "end": 28.720000000000002,
+            "text": " to concretely visualize anything more than three dimensions."
+        },
+        {
+            "number": "5",
+            "title": "How word vectors encode",
+            "start": 28.720000000000002,
+            "end": 33.52,
+            "text": " Models that learn to embed words as vectors like this often encode meaning into the directions"
+        },
+        {
+            "number": "5",
+            "title": "How word vectors encode",
+            "start": 33.52,
+            "end": 35.32,
+            "text": " of this high-dimensional space."
+        },
+        {
+            "number": "5",
+            "title": "How word vectors encode",
+            "start": 35.32,
+            "end": 39.2,
+            "text": " If you take the difference between the embeddings of man and woman, and you add that to the"
+        },
+        {
+            "number": "5",
+            "title": "How word vectors encode",
+            "start": 39.2,
+            "end": 43.480000000000004,
+            "text": " embedding of uncle, you get a vector very close to the embedding of aunt."
+        },
+        {
+            "number": "5",
+            "title": "How word vectors encode",
+            "start": 43.480000000000004,
+            "end": 48.44,
+            "text": " If you take the embedding of Italy minus Germany, and you add it to the embedding of Hitler,"
+        },
+        {
+            "number": "5",
+            "title": "How word vectors encode",
+            "start": 48.44,
+            "end": 51.44,
+            "text": " you get something very close to the embedding of Mussolini."
+        },
+        {
+            "number": "5",
+            "title": "How word vectors encode",
+            "start": 51.44,
+            "end": 55.8,
+            "text": " It's as if the model learned to associate some directions in this high-dimensional space"
+        },
+        {
+            "number": "5",
+            "title": "How word vectors encode",
+            "start": 55.8,
+            "end": 59.839999999999996,
+            "text": " with Italian-ness, and others with WWII axis leaders."
+        }
+    ],
+    "text": " What is Hitler plus Italy minus Germany? This came up in a full video that I did dissecting what happens inside large language models. You see, when tools like ChachiPT process text, the first thing they do is subdivide it in two little pieces, and they associate each piece with a large vector, some long list of numbers. This is called an embedding of that piece of text, and it's helpful to imagine these embedding vectors as directions in some very high-dimensional space, even if we struggle to concretely visualize anything more than three dimensions. Models that learn to embed words as vectors like this often encode meaning into the directions of this high-dimensional space. If you take the difference between the embeddings of man and woman, and you add that to the embedding of uncle, you get a vector very close to the embedding of aunt. If you take the embedding of Italy minus Germany, and you add it to the embedding of Hitler, you get something very close to the embedding of Mussolini. It's as if the model learned to associate some directions in this high-dimensional space with Italian-ness, and others with WWII axis leaders."
+}

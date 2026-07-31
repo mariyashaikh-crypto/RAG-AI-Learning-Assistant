@@ -1,0 +1,29 @@
+Frontend Framework:
+- React (Vite)
+
+Styling:
+- Tailwind CSS
+
+Icons:
+- Lucide React
+
+HTTP Requests:
+- Axios
+
+Animations:
+- Framer Motion (minimal)
+
+Backend:
+- Flask (already completed)
+
+LLM:
+- Ollama
+
+Embedding Model:
+- bge-m3
+
+Language:
+- JavaScript
+
+Build Tool:
+- Vite

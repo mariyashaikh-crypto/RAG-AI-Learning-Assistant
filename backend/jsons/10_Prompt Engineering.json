@@ -1,0 +1,3288 @@
+{
+    "chunks": [
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 0.0,
+            "end": 3.92,
+            "text": " In this video, you'll learn everything you need to know about prompt engineering."
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 3.92,
+            "end": 9.92,
+            "text": " I'll explain what it is, why it's important, how to do it faster, the top techniques and methods,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 9.92,
+            "end": 14.8,
+            "text": " and advanced strategies to get the most out of LLMs. With that said, let's dive in."
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 14.8,
+            "end": 19.28,
+            "text": " So what I've done for this video is I've created a markdown file that contains all of the examples"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 19.28,
+            "end": 22.8,
+            "text": " and key talking points that I'll go over. Now, if you want this file for yourself for your"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 22.8,
+            "end": 27.12,
+            "text": " reference, you can get it for free just by clicking the link in the description and subscribing to my"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 27.12,
+            "end": 32.160000000000004,
+            "text": " newsletter. Anyways, let's start. And I want to just show you a quick example of a bad prompt"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 32.160000000000004,
+            "end": 36.4,
+            "text": " versus a great prompt just to kind of set the tone. And then we'll get into all of the other"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 36.4,
+            "end": 40.32,
+            "text": " theory and keep in mind, all of the different topics in this video are available down below"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 40.32,
+            "end": 44.16,
+            "text": " in the video player or the chapters in the comments in case you want to fast forward."
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 44.16,
+            "end": 48.32,
+            "text": " Okay. So what is a bad prompt? Well, an example of that would be something like write something"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 48.32,
+            "end": 51.84,
+            "text": " about our product. It's going to give you something like generic marketing, fluff,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 51.84,
+            "end": 57.36000000000001,
+            "text": " wrong tone, wrong length, probably no CTA. The model is effectively going to guess what you want"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 57.36000000000001,
+            "end": 62.400000000000006,
+            "text": " here. Whereas a better prompt would be something like this. You are a senior B2B copywriter,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 62.400000000000006,
+            "end": 66.88000000000001,
+            "text": " write a two sentence LinkedIn ad for our project management SaaS, a sauna alternative."
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 66.88000000000001,
+            "end": 71.60000000000001,
+            "text": " The audience is ops managers at midsize companies. The tone is confident, but not salesy"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 71.60000000000001,
+            "end": 75.92,
+            "text": " and end with a clear CTA. Now, if you do this, you're hopefully going to get a result that's"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 75.92,
+            "end": 80.80000000000001,
+            "text": " on-brand, scoped it, actionable, and easy to drop into an ad. The point of me showing you"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 80.8,
+            "end": 85.52,
+            "text": " these examples is that when we're writing these prompts, we're using the same tool or the same"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 85.52,
+            "end": 92.0,
+            "text": " LLM. So what's giving us the difference in result. Isn't the LLM it's the way in which we instruct."
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 92.0,
+            "end": 97.36,
+            "text": " And most people, while this kind of seems obvious are writing prompts closer to the pad prompt than"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 97.36,
+            "end": 102.56,
+            "text": " they are to the good prompt. And just because a prompt is long does not necessarily make it good,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 102.56,
+            "end": 107.36,
+            "text": " which I'm going to go over in this video. So this leads me to what is prompt engineering and why"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 107.36,
+            "end": 111.6,
+            "text": " does it matter? Well, you should really think of prompt engineering, just like programming in"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 111.6,
+            "end": 116.64,
+            "text": " natural language. So rather than using Python or Java or JavaScript, you're just using, you know,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 116.64,
+            "end": 122.32,
+            "text": " text or your voice or whatever language it is that you speak in to try to get some kind of result,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 122.32,
+            "end": 126.88,
+            "text": " complete some action, get some text, whatever effectively what you're doing is you're giving"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 126.88,
+            "end": 131.68,
+            "text": " instructions in plain language instead of something like code. Now it's important to note"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 131.68,
+            "end": 136.72,
+            "text": " that the models that we give these instructions to, they don't have a built-in task list. So you"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 136.72,
+            "end": 141.35999999999999,
+            "text": " have to define the task, the role, the format, and the constraints within the prompt. And you have"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 141.35999999999999,
+            "end": 146.32,
+            "text": " to be very specific with what it is that you actually want. And that's why the same model can"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 146.32,
+            "end": 151.92,
+            "text": " seem brilliant or useless depending on the clarity context and the structure that you provide. Now,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 151.92,
+            "end": 156.96,
+            "text": " when most people prompt AI models, they're trying to get some kind of text in return. And while"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 156.96,
+            "end": 161.76,
+            "text": " that's still a very valid use case of these models, it's important to note that we've now shifted"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 161.76,
+            "end": 166.64,
+            "text": " kind of into an agent era where a lot of these models are capable of interacting with various"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 166.64,
+            "end": 172.48,
+            "text": " tools, searching the web, and actually taking actions. They can change something in your Asana,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 172.48,
+            "end": 176.88,
+            "text": " right? They can write a Google doc. They can create a PowerPoint slide. And because of that,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 176.88,
+            "end": 181.83999999999997,
+            "text": " prompt engineering becomes even more powerful because we're no longer just directing the model"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 181.83999999999997,
+            "end": 186.48,
+            "text": " to try to give us some kind of textual output. We're actually instructing it to take some kind"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 186.48,
+            "end": 191.35999999999999,
+            "text": " of actions, which can give us a real meaningful result. So just keep that in mind. While a lot"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 191.35999999999999,
+            "end": 196.56,
+            "text": " of what I'm showing you here is going to be based on text, this also works for agents, right? Or more"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 196.56,
+            "end": 201.2,
+            "text": " complex models that are capable of calling tools. And just to go through a quick example, you can"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 201.2,
+            "end": 205.76,
+            "text": " see a vague prompt would be something like, help me with my essay. Well, as a specific prompt is"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 205.76,
+            "end": 209.76,
+            "text": " something like you are a tutor, help me improve the thesis and first paragraph of this 500 word"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 209.76,
+            "end": 215.36,
+            "text": " history essay on the causes of world war one, keep my voice to just the edits in line, etc. Okay."
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 215.36,
+            "end": 219.84,
+            "text": " Now, in terms of why this is important, while we're moving more and more towards an AI world."
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 219.84,
+            "end": 224.56,
+            "text": " So for people like developers, marketers, researchers, just anyone who's using AI,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 224.56,
+            "end": 228.96,
+            "text": " the better, the result you can get from it, obviously the better that is for everyone."
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 228.96,
+            "end": 233.12,
+            "text": " And the faster you can get to the result, if you have better prompts. So the takeaway, right? Better"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 233.12,
+            "end": 238.16,
+            "text": " prompts is just better results for everyone. And this is overall a skill that you will learn over"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 238.16,
+            "end": 242.4,
+            "text": " time, but by knowing some of the foundations that I'll teach in this video, it will just speed that"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 242.4,
+            "end": 246.08,
+            "text": " up for you and allow you to think of these a little bit more intentionally while you're writing"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 246.08,
+            "end": 250.32,
+            "text": " the prompts. Now, what you've probably gathered at this point is that the more details we include in"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 250.32,
+            "end": 255.04,
+            "text": " the prompt, the better the result or action is that this model will take. Now that's generally"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 255.04,
+            "end": 259.12,
+            "text": " true. I mean, longer prompts are not always better, but most of the time they will give you a better"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 259.12,
+            "end": 263.92,
+            "text": " result. However, that's only if you actually take the effort to write them. Most people are lazy."
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 263.92,
+            "end": 268.48,
+            "text": " They type very slow and they don't want to spend 10, 20, 30 minutes, you know, typing a prompt"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 268.48,
+            "end": 272.08,
+            "text": " just to have to maybe change it, iterate on it, whatever. So what I'm going to suggest to you"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 272.08,
+            "end": 277.36,
+            "text": " guys is going forward rather than typing your prompts, just speak them. So use your voice,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 277.36,
+            "end": 282.24,
+            "text": " use natural language, and this will allow you to have prompts significantly faster where you can"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 282.24,
+            "end": 287.28000000000003,
+            "text": " include all of the details without lazily having to type them in. Now this applies on phone. It"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 287.28000000000003,
+            "end": 292.16,
+            "text": " applies on computer. And the tool that I use to do this within any application, doesn't just have"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 292.16,
+            "end": 296.64,
+            "text": " to be something like chat GPT here is called whisper flow. I'm just going to quickly show you"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 296.64,
+            "end": 300.56,
+            "text": " how it works. And if you want to try it for free, I have a link in the description. I would highly"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 300.56,
+            "end": 304.48,
+            "text": " recommend it because it is currently the best dictation tool that works a lot better than"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 304.48,
+            "end": 308.8,
+            "text": " anything built into your computer. So for example, let me just do something. Hey, this is just a"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 308.8,
+            "end": 312.88,
+            "text": " quick test where I want to dictate with whisper flow and see what kind of results I'm getting."
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 312.88,
+            "end": 319.04,
+            "text": " Notice I'm talking, um, uh, you know, extremely, extremely fast. I'm making a few repetitions,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 319.04,
+            "end": 323.76,
+            "text": " pauses, et cetera, and let's see the result that we get. Okay. So you can see the kind of little"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 323.76,
+            "end": 328.40000000000003,
+            "text": " bubble popped up there and pretty much instantly we get the result. And you'll see that if we go"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 328.40000000000003,
+            "end": 333.68,
+            "text": " through the result here, it automatically does the punctuation adds the capitalization and corrects"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 333.68,
+            "end": 339.2,
+            "text": " any of the arms, Oz or repetitions that I had. I believe I said extremely twice, it recognized"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 339.2,
+            "end": 344.08,
+            "text": " that wasn't useful and it just removed it. So you get a much faster, better result. And you can also"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 344.08,
+            "end": 350.0,
+            "text": " do something like this. I want to have three bullet points. Bullet point one is apples. Bullet"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 350.0,
+            "end": 356.72,
+            "text": " point two is bananas. Bullet point three is pairs. And you'll see that it will automatically format"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 356.72,
+            "end": 360.48,
+            "text": " it for me like that. Okay. So when you're doing the prompts, the formatting is very important as"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 360.48,
+            "end": 364.8,
+            "text": " well. And this tool will handle it for you compared to a built-in dictation. I do have a"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 364.8,
+            "end": 368.88,
+            "text": " long-term partnership with them full disclosure, but I was using them much before we did the"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 368.88,
+            "end": 375.52000000000004,
+            "text": " partnership because the tool is very, very good. You can see here, I've spoken 35,000 words. My WPM"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 375.52000000000004,
+            "end": 380.56,
+            "text": " is 162, which is much faster than I would be able to type. It has a lot of other features like"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 380.56,
+            "end": 385.44,
+            "text": " dictionaries, snippets. You can change the style based on the apps that you're working inside of"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 385.44,
+            "end": 389.36,
+            "text": " notes, all of this kind of stuff. And a bunch of settings where I was just hitting a keyboard"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 389.36,
+            "end": 394.48,
+            "text": " shortcut on my computer. And that allows me to actually trigger flow to start activating on my"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 394.48,
+            "end": 398.56,
+            "text": " computer. So I use this in every kind of application. Sometimes I use it to write emails."
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 398.56,
+            "end": 403.76,
+            "text": " Sometimes I use it for prompting, right? Sometimes I used in cursor to prompt a model or reference"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 403.76,
+            "end": 408.16,
+            "text": " files, and I'll show you more of it in the video. But the point is speak your prompts. You're just"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 408.16,
+            "end": 412.64,
+            "text": " going to have better prompts. And this tool also is available on phone. They actually recently"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 412.64,
+            "end": 417.68,
+            "text": " released it on Android. So you can use it directly from the keyboard, like on your iPhone or Android."
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 417.68,
+            "end": 422.64,
+            "text": " So even if you're on mobile, you have no excuse not to give a detailed comprehensive prompt that"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 422.64,
+            "end": 427.12,
+            "text": " actually includes the information that you want. So this now leads us to the next section, which is"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 427.12,
+            "end": 434.0,
+            "text": " how LLMs think. Now an LLM is a large language model and effectively what these are capable of"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 434.0,
+            "end": 440.16,
+            "text": " doing is replying to text. Okay. So you give some text in, they give some text out. Now you can"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 440.16,
+            "end": 446.88,
+            "text": " configure them in very fancy ways to call tools or call other LLMs or create something or take some"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 446.88,
+            "end": 453.12,
+            "text": " action. But effectively at the very root of an LLM, it is a text prediction model. It's important"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 453.12,
+            "end": 457.68,
+            "text": " to understand this because when you give a prompt to a model, you need to imagine that what it's"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 457.68,
+            "end": 464.32,
+            "text": " attempting to do is predict the next text that you would expect to see in this sequence. So while"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 464.32,
+            "end": 469.52,
+            "text": " you might see reasoning models, you think that, you know, the AI is thinking or developing something,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 469.52,
+            "end": 475.36,
+            "text": " really it's just been trained on a massive amount of data and given some prompt it's able to predict"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 475.36,
+            "end": 480.24,
+            "text": " with a relative degree of accuracy, what it is it thinks you want in terms of the output."
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 480.24,
+            "end": 485.44,
+            "text": " So the prediction is usually going to be in text or in tokens that they may call it, right? You give"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 485.44,
+            "end": 491.2,
+            "text": " some tokens in, it spits some tokens out. That's effectively what an LLM is. We don't need to worry"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 491.2,
+            "end": 495.28000000000003,
+            "text": " about the architecture or anything complicated there. Just remember you have some input,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 495.28000000000003,
+            "end": 499.44,
+            "text": " you get some output, and it's just predicting what it thinks that output is going to be."
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 499.44,
+            "end": 505.36,
+            "text": " Now with that in mind, an LLM by default, so something like GPT 5.2, right? It doesn't have"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 505.36,
+            "end": 512.08,
+            "text": " any memory. Now what would give it memory is the providers of these models injecting previous parts"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 512.08,
+            "end": 517.36,
+            "text": " of your conversation into the prompt or into the model automatically. So what you need to understand"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 517.36,
+            "end": 522.4,
+            "text": " is that a lot of times when you use, you know, LLMs, right? Or use chat GPT or use cloud or use"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 522.4,
+            "end": 527.84,
+            "text": " cursor, behind the scenes, the people who develop those tools or these interfaces to work with the"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 527.84,
+            "end": 533.6800000000001,
+            "text": " LLMs, they're injecting a lot of data into the prompt that you provide to give you a better"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 533.6800000000001,
+            "end": 539.2,
+            "text": " response. So while you may prompt and say, Hey, you know, review my essay and tell me what's wrong"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 539.2,
+            "end": 544.24,
+            "text": " behind the scenes, the prompt is significantly larger than that, where it includes a lot more"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 544.24,
+            "end": 548.5600000000001,
+            "text": " details that the LLM is looking at. So it's just important for you to understand that because by"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 548.5600000000001,
+            "end": 553.36,
+            "text": " default, it doesn't have memory. It doesn't have like all of these fancy features that you see"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 553.36,
+            "end": 558.8000000000001,
+            "text": " in like the chat GPT user interface. The reason why that exists is because open AI, who made"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 558.8000000000001,
+            "end": 565.2,
+            "text": " chat GPT created this nice interface on top of the LLM, which is like the brain at the heart of all"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 565.2,
+            "end": 570.88,
+            "text": " of this, that injects this other information into the prompt that then goes to the model that then"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 570.88,
+            "end": 577.04,
+            "text": " gives you the response. So 99% of the time, your prompt is not the only thing the LLM is seeing."
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 577.04,
+            "end": 581.04,
+            "text": " It's going to be seeing, you know, previous conversation history, maybe not access to some"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 581.04,
+            "end": 585.5999999999999,
+            "text": " tools, right? Whatever. There's all kinds of things that are usually being thrown in that you"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 585.5999999999999,
+            "end": 589.36,
+            "text": " don't actually get to see. And it's really important that you kind of internalize that"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 589.36,
+            "end": 594.8,
+            "text": " and understand it. And you don't think like GPT 5.2 or something has this memory and just knows"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 594.8,
+            "end": 598.7199999999999,
+            "text": " everything about you. The only reason that it knows something is because it's just taking"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 598.7199999999999,
+            "end": 603.8399999999999,
+            "text": " information that you've given to it previously, and just injecting that into the prompt that it's"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 603.8399999999999,
+            "end": 608.8,
+            "text": " using to give you the response. Now that additional information that I just talked about is typically"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 608.8,
+            "end": 615.3599999999999,
+            "text": " referred to as context. It's the other stuff that the LLM can see and look at. That's not just the"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 615.3599999999999,
+            "end": 620.4,
+            "text": " prompt that you gave it. So just understand that the context, specificity, and structure that you"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 620.4,
+            "end": 625.04,
+            "text": " provide is what shapes what it's going to say next. And a lot of these tools, just like, you know,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 625.04,
+            "end": 629.8399999999999,
+            "text": " cursor, right? The tool that I'm using in right now, if I create an agent by default, it's jamming"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 629.8399999999999,
+            "end": 635.04,
+            "text": " a bunch of context into the prompt. And if I tag something like this Markdown file, right? And I"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 635.04,
+            "end": 640.4,
+            "text": " say, you know, hello world. The prompt is hello world. Plus all of this additional context. Now"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 640.4,
+            "end": 645.04,
+            "text": " with that in mind, let's quickly talk about steering versus commanding the model. So the"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 645.04,
+            "end": 650.48,
+            "text": " common mistake that most people make when prompting is they command the model to do something rather"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 650.48,
+            "end": 654.48,
+            "text": " than steering it in the correct direction. Now, commanding the model is something like"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 654.48,
+            "end": 659.1999999999999,
+            "text": " summarize this, okay, do this, you know, write this down, take this thing, look at this thing,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 659.1999999999999,
+            "end": 663.52,
+            "text": " whatever, right? So if that's the case, the model chooses the length, the style, and the focus that"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 663.52,
+            "end": 668.72,
+            "text": " it's going to take when it's summarizing the thing in this instance, whereas steering the model,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 668.72,
+            "end": 672.8,
+            "text": " you give it more direction on exactly what you want. So you are an executive assistant,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 672.8,
+            "end": 676.96,
+            "text": " summarize the meeting transcript in four bullet points, focus on decisions and action items,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 676.96,
+            "end": 681.52,
+            "text": " no filler notice that we're not only telling it what to do, we're telling it what not to do."
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 681.52,
+            "end": 685.76,
+            "text": " And we're giving it a much more clear objective where when it's trying to predict what we want"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 685.76,
+            "end": 691.04,
+            "text": " next, it can give us a much more accurate, better result because of the detail we've included in the"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 691.04,
+            "end": 694.88,
+            "text": " prompt. So when you steer the model, you're typically indicating the length, the focus,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 694.88,
+            "end": 698.9599999999999,
+            "text": " and the format that you want. Whereas when you're commanding the model, you're just telling it to"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 698.9599999999999,
+            "end": 702.24,
+            "text": " do something and it's picking how it's going to do that, the result you're going to get,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 702.24,
+            "end": 705.8399999999999,
+            "text": " et cetera. So I'm not going to focus on that too much more, but just understand commanding"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 705.8399999999999,
+            "end": 710.64,
+            "text": " and steering. Now, what I want to do is get into the core techniques of prompt engineering and"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 710.64,
+            "end": 715.12,
+            "text": " really focus on a lot of examples. So one of the most basic and important techniques that you can"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 715.12,
+            "end": 721.04,
+            "text": " employ is to be specific and to set the scene or specify the particular role that you want the"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 721.04,
+            "end": 726.4,
+            "text": " model or agent to take. Now, these are the four things that if you include will always give you"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 726.4,
+            "end": 731.12,
+            "text": " a much better result than simply commanding the model to do something. If you include a role,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 731.68,
+            "end": 736.48,
+            "text": " an audience, a tone, and some kind of format or output, you're almost always going to get a"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 736.48,
+            "end": 740.5600000000001,
+            "text": " significantly better reply. So here it says, you know, reply to this customer complaint. Okay,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 740.5600000000001,
+            "end": 744.4,
+            "text": " fine. It can reply to it. But if you said something like this, you're giving it all of"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 744.4,
+            "end": 748.3199999999999,
+            "text": " these details, the role, the audience, the tone, and the format. So you're going to get a better"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 748.3199999999999,
+            "end": 752.72,
+            "text": " response. So what I want to do now is show you a few practical examples of this by actually writing"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 752.72,
+            "end": 757.76,
+            "text": " or voicing the prompt here in chat, GPT. So let's just do a quick example of the bad prompt, right?"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 757.76,
+            "end": 761.92,
+            "text": " Reply to this customer complaints. And then I'm just going to paste in a random one that I"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 761.92,
+            "end": 765.68,
+            "text": " generate here. And let's see the result that we get here from chat, GPT. So you can see here,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 765.68,
+            "end": 769.68,
+            "text": " it gave us something decent, but it just assumed it was an email, even though, you know, we didn't"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 769.68,
+            "end": 773.36,
+            "text": " specify who wanted to be an email, gave us something relatively long. It didn't say it was"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 773.36,
+            "end": 777.92,
+            "text": " from the support team, whatever. So what I'm going to do now is just make a new chat and let's now do"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 777.92,
+            "end": 782.88,
+            "text": " a much more detailed prompt with the same customer complaint. So we can say you are a customer"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 782.88,
+            "end": 787.92,
+            "text": " support lead reply to this complaint from a paying user whose export failed twice, acknowledge the"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 787.92,
+            "end": 793.04,
+            "text": " frustration, apologize briefly, confirm we're investigating and offer a concrete next step."
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 793.04,
+            "end": 798.88,
+            "text": " For example, we'll email within 24 hours, keep it under 150 words and sign off as the support team."
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 799.6,
+            "end": 804.88,
+            "text": " Cool. So that is our prompt. Okay. Notice again, that whisper here automatically formatted it for"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 804.88,
+            "end": 810.0,
+            "text": " us. So another important part when you are writing the prompts is that if you structure it well, so"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 810.0,
+            "end": 814.88,
+            "text": " you have like bullet points, for example, different sections, you separate things out into clear"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 814.88,
+            "end": 819.36,
+            "text": " sentences. It's going to be a lot easier for the model to understand what you want and predict the"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 819.36,
+            "end": 824.0,
+            "text": " next text. For example, if we even just do a quick delimiter, like adding these three lines"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 824.0,
+            "end": 830.32,
+            "text": " and saying, you know, here is the complaint and then putting a colon it separates. So like,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 830.32,
+            "end": 834.32,
+            "text": " this is the thing it should be listening to. And then this is the additional context."
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 834.32,
+            "end": 839.6,
+            "text": " And also notice that I created a new session here in chat GPT by making a new chat so that it's not"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 839.6,
+            "end": 845.04,
+            "text": " automatically going to include the previous texts that I had in the conversation in the prompt. So"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 845.04,
+            "end": 848.72,
+            "text": " I'm just going to go ahead and hit enter here. But what I mean is that if I had just run this"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 848.72,
+            "end": 853.12,
+            "text": " underneath the other example that I gave, you know, we can still get a decent result,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 853.12,
+            "end": 858.0,
+            "text": " but it's going to be a little bit confused or mixed up with the other conversation history,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 858.0,
+            "end": 862.5600000000001,
+            "text": " because that's going to be included in the prompt as well, because chat GPT will include that as"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 862.5600000000001,
+            "end": 866.5600000000001,
+            "text": " context. So if we look here, you can see now we get something a little bit more concise."
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 866.5600000000001,
+            "end": 870.8,
+            "text": " You know, it says best regards support team, and it's followed generally what it is that we asked"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 870.8,
+            "end": 876.0,
+            "text": " it to do. Now, the next technique you can use is referred to as few shot prompting. Now, effectively,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 876.0,
+            "end": 881.28,
+            "text": " what this means is that you are going to give a few different examples of input and output pairs"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 881.28,
+            "end": 885.8399999999999,
+            "text": " that you're looking for, so that when you give the prompt, the model can give you a better reply."
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 885.8399999999999,
+            "end": 890.64,
+            "text": " So when you do this, the model can infer and figure out the pattern, which is very good at doing and"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 890.64,
+            "end": 894.88,
+            "text": " then replicate the pattern to give you the exact result that you're looking for. So this is"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 894.88,
+            "end": 899.6,
+            "text": " especially helpful when you want something in a specific format style, you have various edge cases,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 899.6,
+            "end": 904.72,
+            "text": " and you want to do something like a classification task using an LLM, because LLMs are actually very"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 904.72,
+            "end": 909.28,
+            "text": " good at classifying things, for example, like is this email positive or negative? Is it red or"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 909.28,
+            "end": 915.04,
+            "text": " black, whatever, right? All of those things, but only if they know and have examples to be able to"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 915.04,
+            "end": 920.0,
+            "text": " classify that. And in fact, when you talk about fine tuning LLMs, what you're effectively doing"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 920.0,
+            "end": 925.52,
+            "text": " is you're passing them a bunch of different examples of inputs and output pairs, so they can"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 925.52,
+            "end": 931.04,
+            "text": " infer that pattern on top of their base training to give you a more specific, better result. So"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 931.04,
+            "end": 934.9599999999999,
+            "text": " let's have a look at a few examples here. I'm not going to throw them on screen. Let's just go into"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 934.96,
+            "end": 940.1600000000001,
+            "text": " chat GPT and we can do a few prompts and see the result that we get. So let's do something like"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 940.1600000000001,
+            "end": 945.52,
+            "text": " turn this user feedback into a short support ticket title. The feedback is the app crashed"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 945.52,
+            "end": 952.4000000000001,
+            "text": " when I uploaded a PDF over 10 megabits on iPhone. Okay. And let's see what we get here. Perfect."
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 953.12,
+            "end": 956.64,
+            "text": " Let's see what it gives us. Okay. So you can see, we didn't really get any clear formatting. In this"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 956.64,
+            "end": 960.48,
+            "text": " case, it didn't actually give me one title. It gave me five because again, it's just guessing"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 960.48,
+            "end": 965.52,
+            "text": " what to do, but let's change it and do something like this. Turn user feedback into a short ticket"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 965.52,
+            "end": 971.6,
+            "text": " title. We want this to be under 60 characters, use the format area, and then brief description."
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 971.6,
+            "end": 975.04,
+            "text": " Okay. And then I'm just going to paste this. And then here, I'm just going to say, here are a few"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 975.04,
+            "end": 980.24,
+            "text": " examples of the format that I'm looking for. Just give me back one line of text that starts with a"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 980.24,
+            "end": 986.72,
+            "text": " title and then includes the area and then a brief description of the issue. Okay. And then we should"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 986.72,
+            "end": 991.6800000000001,
+            "text": " just say something like this, and then I can even do, do not return anything other than the title."
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 993.28,
+            "end": 998.5600000000001,
+            "text": " Okay, cool. So let's now run this and you can see that I gave a few examples. So let's actually"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 998.5600000000001,
+            "end": 1002.96,
+            "text": " separate the examples a little bit. So it's, it's a bit easier to see, and you can see that we have,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1002.96,
+            "end": 1008.24,
+            "text": " you know, feedback, login is broken with Google on Safari. The title is off. Okay. And then Google"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1008.24,
+            "end": 1013.2,
+            "text": " login fails on Safari. And then let's go here. Feedback is export to CSV only exports first,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1013.2,
+            "end": 1018.48,
+            "text": " a hundred rows, the title export, right? CSV feedback, the app crashed. When I uploaded a PDF"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1018.48,
+            "end": 1023.12,
+            "text": " over 10 megabits on iPhone, this is actually the example that I'm going to pass paste to it in a"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1023.12,
+            "end": 1031.8400000000001,
+            "text": " second. Sorry. And I'm going to say like this, this is the feedback to generate the title for"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1033.1200000000001,
+            "end": 1036.8,
+            "text": " cool. Okay. And then it should give us the title and let's see if that works now, again,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1036.8,
+            "end": 1040.72,
+            "text": " I'm being super specific, but I'm just trying to show you that if I give it a few examples,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1040.72,
+            "end": 1044.8,
+            "text": " we hopefully will get a better response. And there you go. You can see it says upload and"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1044.8,
+            "end": 1049.92,
+            "text": " then iPhone app crashes on PDFs over 10 megabits. So in this case, I was super verbose, but look at"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1049.92,
+            "end": 1054.4,
+            "text": " the difference. We went from this kind of crap here, right from the LLM to this, which now I"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1054.4,
+            "end": 1059.6000000000001,
+            "text": " could directly plug into like some API, or I could use in my app. And I know that the format I'm"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1059.6000000000001,
+            "end": 1063.1200000000001,
+            "text": " going to get from the model is going to be consistent. And then I could just do something"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1063.1200000000001,
+            "end": 1067.04,
+            "text": " else now, because I mean the same chain. So let's go like feedback. I don't know here."
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1067.68,
+            "end": 1072.6399999999999,
+            "text": " Let's go feedback and let's change this to say something. I don't know. What's a good example of"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1072.6399999999999,
+            "end": 1077.92,
+            "text": " feedback. The keyboard does not disappear when clicking outside of the frame on the login screen."
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1078.96,
+            "end": 1083.2,
+            "text": " Okay. And let's see if we give it, if it gives us the title back now, and there you go, you can see"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1083.2,
+            "end": 1087.28,
+            "text": " it just gives us the title and we can now keep doing this in this chain because it has the"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1087.28,
+            "end": 1091.52,
+            "text": " previous context on how it should behave. Now, the next technique to go over is called chain"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1091.52,
+            "end": 1097.36,
+            "text": " of thought prompting. Now this is asking the model to reason step-by-step before it gives the"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1097.36,
+            "end": 1102.24,
+            "text": " final answer. Now this will reduce errors on logic, math, you know, the planning, whatever,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1102.24,
+            "end": 1106.6399999999999,
+            "text": " in different comparisons. And a lot of models do this by default now, especially if you're using"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1106.6399999999999,
+            "end": 1112.08,
+            "text": " like a planning model or a reasoning model where their instructions internally, right again, like"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1112.08,
+            "end": 1117.92,
+            "text": " in the prompt that's being created for you in the backend is to actually do this. So the reasoning"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1117.92,
+            "end": 1122.4,
+            "text": " models, like they're still using a core LLM, but they just have some fancy kind of tools and"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1122.4,
+            "end": 1127.28,
+            "text": " orchestration on top of them to make them do this. But if you're not using a fancy model like that,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1127.28,
+            "end": 1131.68,
+            "text": " then you want to tell it to reason with chain of thought. So without it, you have something like,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1131.68,
+            "end": 1136.72,
+            "text": " you know, store sells pens for $2 and notebooks for $5. Sarah buys three pens and two notebooks."
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1136.72,
+            "end": 1141.52,
+            "text": " She has a 10% off coupon, coupon story. How much does she pay? Now, if you don't tell it to reason,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1141.52,
+            "end": 1146.0800000000002,
+            "text": " it's just going to look at this text and try to predict the result. Now, in a lot of cases,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1146.08,
+            "end": 1150.6399999999999,
+            "text": " it will get this wrong. Just like the famous example of asking an LLM to count, you know,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1150.6399999999999,
+            "end": 1155.4399999999998,
+            "text": " how many teas are in strawberry or something, and it just can't do it unless you change the"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1155.4399999999998,
+            "end": 1160.72,
+            "text": " prompt to tell it how to reason through it so that it actually thinks before it gives you the"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1160.72,
+            "end": 1165.1999999999998,
+            "text": " response. Okay. So I'm actually not going to show this in chat GPT, because it is probably not"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1165.1999999999998,
+            "end": 1169.4399999999998,
+            "text": " going to work or prove the example where I think both prompts will give us a very similar result,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1169.4399999999998,
+            "end": 1174.3999999999999,
+            "text": " just because the default reasoning for like GPT models is already really good."
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1174.4,
+            "end": 1178.0,
+            "text": " But with some other models where they don't do the reasoning by default, or if you're not using"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1178.0,
+            "end": 1182.88,
+            "text": " them in the interface, like chat GPT, and you're just using it in like an API or something, then"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1182.88,
+            "end": 1187.1200000000001,
+            "text": " you definitely would want to include these kinds of keywords, right? So just anyways, keep that in"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1187.1200000000001,
+            "end": 1191.2800000000002,
+            "text": " mind for chain of thought. A lot of times now the models that are super modern and, you know,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1191.2800000000002,
+            "end": 1196.0800000000002,
+            "text": " state of the art will do this by default and actually auto detect what reasoning model they"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1196.0800000000002,
+            "end": 1200.3200000000002,
+            "text": " should use based on what you ask them. But it is kind of worth knowing, especially, you know,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1200.3200000000002,
+            "end": 1204.0,
+            "text": " six months ago, 12 months ago, this was a lot more important than it probably is right now."
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1204.4,
+            "end": 1209.76,
+            "text": " The next method that is super underrated is structured output. Now this is asking the model"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1209.76,
+            "end": 1215.52,
+            "text": " to provide the output in some kind of format like JSON, tables, XML, Markdown, whatever,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1215.52,
+            "end": 1220.4,
+            "text": " and then giving an exact example of what you're looking for, such that you're able to parse this"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1220.4,
+            "end": 1225.2800000000002,
+            "text": " and use it in some other format, or in some other application. Now, my case, you know, I do a lot of"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1225.2800000000002,
+            "end": 1230.48,
+            "text": " development work, right? And when I have the model generating something, maybe I want to read it into"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1230.48,
+            "end": 1234.72,
+            "text": " a database, maybe I want to display it on the front end of my website, whatever, in order to do"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1234.72,
+            "end": 1239.68,
+            "text": " that, I typically need it in some type of structure. So what I will do is something like what you see"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1239.68,
+            "end": 1244.64,
+            "text": " right here, where I actually provide a JSON object schema. This is what is referred to, which is"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1244.64,
+            "end": 1249.52,
+            "text": " really just an example of what it should look like to the model. So it knows how to give me the"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1249.52,
+            "end": 1253.1200000000001,
+            "text": " output. So obviously compared to the first example, where we just said something like this, the main"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1253.1200000000001,
+            "end": 1257.1200000000001,
+            "text": " difference is that we're providing the structure and we're telling it that we want it to respond"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1257.12,
+            "end": 1262.1599999999999,
+            "text": " with just that no other text and a particular shape. So we're kind of almost doing this"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1262.1599999999999,
+            "end": 1267.84,
+            "text": " multi-shot prompting, right? Or few shot prompting, but combining it with some kind of output as well."
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1267.84,
+            "end": 1272.0,
+            "text": " So anyways, let me go to chat, GPT, and just show you a quick example. So what's something that we"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1272.0,
+            "end": 1277.9199999999998,
+            "text": " can do. So we can say maybe compare Trello, monday.com and ClickUp for a small team of five"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1277.9199999999998,
+            "end": 1283.1999999999998,
+            "text": " to 10 people. I want to understand the main features, the limitations and the pricing. And"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1283.2,
+            "end": 1288.88,
+            "text": " what I'd like you to do is output this with valid JSON only don't give me any other texts and make"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1288.88,
+            "end": 1293.92,
+            "text": " sure that it's in this shape. Okay. So that is what we're going to do here. Just put that in"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1293.92,
+            "end": 1297.8400000000001,
+            "text": " with whisper. And then I'm just going to paste in the format. So we'll just put it like that. And"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1297.8400000000001,
+            "end": 1304.96,
+            "text": " we'll say example format like, so, okay, so let's run this now and let's see what we get. Okay. So"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1304.96,
+            "end": 1308.88,
+            "text": " just giving me the output right now, but you can see that it's following this format. It's in a"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1308.88,
+            "end": 1313.1200000000001,
+            "text": " valid JSON object. And now I would be able to load this into my code. I could store it in a"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1313.1200000000001,
+            "end": 1317.8400000000001,
+            "text": " database, right? I can return it from an API. It doesn't matter, but it is very useful. And it's"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1317.8400000000001,
+            "end": 1322.16,
+            "text": " going to be a lot better than if it just gave me this random kind of Mark Downey text, the chat,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1322.16,
+            "end": 1327.92,
+            "text": " GPT usually replies with. So moving on, let's talk about constraints and negative instructions."
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1327.92,
+            "end": 1333.2800000000002,
+            "text": " So sometimes the best prompts are not talking too much about what to do, but they're talking about"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1333.2800000000002,
+            "end": 1338.5600000000002,
+            "text": " what not to do. Now, the more constraints, which is saying, you know, do this, don't do this, be"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1338.56,
+            "end": 1342.1599999999999,
+            "text": " within this bounds, whatever, the better the result is you're going to get because you're"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1342.1599999999999,
+            "end": 1346.8799999999999,
+            "text": " steering the model more accurately. So some examples of constraints is for example, the"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1346.8799999999999,
+            "end": 1350.48,
+            "text": " link. Now you could say, summarize an exactly three bullet points. That's fine. That's a"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1350.48,
+            "end": 1355.28,
+            "text": " constraint. You also could say, keep the reply under 300 words or under five bullet points,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1355.28,
+            "end": 1360.48,
+            "text": " right? You can have a tone like no slang or humor. Do not apologize, right? Do not use bullet"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1360.48,
+            "end": 1365.36,
+            "text": " points. Use one short paragraph. Do not suggest paid tools. Do not include code, describe the"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1365.36,
+            "end": 1369.9199999999998,
+            "text": " approach only. So when you do that, it actually ends up listening a lot better sometimes than"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1369.9199999999998,
+            "end": 1374.08,
+            "text": " telling it what you want. And this has been shown a lot, especially with a lot of the researchers"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1374.08,
+            "end": 1378.8799999999999,
+            "text": " working with these models. Oftentimes they're including a large list of things not to do"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1378.8799999999999,
+            "end": 1382.7199999999998,
+            "text": " because it just works extremely well for prompting. So you don't want to write something like"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1382.7199999999998,
+            "end": 1386.56,
+            "text": " write a short intro for our onboarding doc. Instead, you would say, write a short intro for"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1386.56,
+            "end": 1392.32,
+            "text": " onboarding doc, start directly with what the user will do in this section. Do not start with welcome"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1392.32,
+            "end": 1395.36,
+            "text": " or generic greetings. And then in that case, you're going to get something that is straight"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1395.36,
+            "end": 1399.4399999999998,
+            "text": " to the point. So anyways, let's have a quick look at an example here. If we go inside of something"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1399.4399999999998,
+            "end": 1404.3999999999999,
+            "text": " like chat, GPT, again, let's make a new chat. So let's just do something like write a short out"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1404.3999999999999,
+            "end": 1410.48,
+            "text": " of office email reply from me tip. Okay. So this would be without any constraints and let's see"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1410.48,
+            "end": 1414.0,
+            "text": " the kind of response that we get. Okay. So chat, GPT actually gave me something interesting here,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1414.0,
+            "end": 1418.1599999999999,
+            "text": " but it's not really that useful for an out of office email, because I need to know, for example,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1418.16,
+            "end": 1422.96,
+            "text": " the dates, the time, all of that kind of stuff. So let's do something better. We say, write a"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1422.96,
+            "end": 1428.8000000000002,
+            "text": " short out of office reply, start with the exact dates I'm away and one sentence on who to contact"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1428.8000000000002,
+            "end": 1434.4,
+            "text": " for urgent issues. Do not use the phrase limited access reply when I can, or thank you for your"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1434.4,
+            "end": 1439.3600000000001,
+            "text": " patience. Be short to the point, but detail enough that people understand when I'm coming back,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1439.3600000000001,
+            "end": 1444.24,
+            "text": " I'm going to be away from March 1st to March 25th. Okay. So in this case, again, we've included a"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1444.24,
+            "end": 1448.96,
+            "text": " few constraints. So hopefully we're going to get a better response here from chat, GPT, and let's"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1448.96,
+            "end": 1452.72,
+            "text": " see. Perfect. And you can see that we get a much better email that doesn't include any of the other"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1452.72,
+            "end": 1457.04,
+            "text": " fluff, like, you know, message me if you need to limited access, right? Which funny enough, we got"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1457.04,
+            "end": 1461.76,
+            "text": " in this one, but we didn't get here. Now, the next method to go over is pretty straightforward and"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1461.76,
+            "end": 1467.28,
+            "text": " you probably already do this, but it's just to do iterative refinement on your prompts. So very"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1467.28,
+            "end": 1472.32,
+            "text": " rarely is the first prompt you send going to give you the desired result. So rather than restarting,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1472.32,
+            "end": 1476.8799999999999,
+            "text": " simply improve the prompt over and over again, until you get what you're looking for. So as it"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1476.8799999999999,
+            "end": 1481.6799999999998,
+            "text": " says here, you know, treat prompting as a conversation, not just a one-shot attempt."
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1481.6799999999998,
+            "end": 1484.8799999999999,
+            "text": " The first reply maybe isn't right. So you're going to refine it by saying shorter. I'd like"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1484.8799999999999,
+            "end": 1489.52,
+            "text": " it more formal, add another example, focus only on X, whatever. Of course, the better first prompt"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1489.52,
+            "end": 1493.84,
+            "text": " you give, you know, the better, but sometimes you just don't know what the result is going to be."
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1493.84,
+            "end": 1498.56,
+            "text": " In that case, don't restart. Just keep going based off the result that you have. If you're"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1498.6399999999999,
+            "end": 1502.72,
+            "text": " in like a decent enough place. Now, an example flow here, you can see, you know, you draft a"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1502.72,
+            "end": 1506.72,
+            "text": " two sentence blurb, whatever it returns four sentences, a bit salesy. Hey, cut it to two"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1506.72,
+            "end": 1510.56,
+            "text": " sentences, you know, make it more factual, whatever a model tightens it up, add it to work"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1510.56,
+            "end": 1514.24,
+            "text": " with Google calendar, whatever you get the idea. I'm not going to show this to you in chat GBT,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1514.24,
+            "end": 1518.48,
+            "text": " because I think it's pretty intuitive, but the point is be iterative with your prompt."
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1518.48,
+            "end": 1522.24,
+            "text": " And then the last method that I'm quickly going to show you, and we'll go into some more stuff after"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1522.24,
+            "end": 1527.2,
+            "text": " is the interview style prompting, which is super powerful and extremely underrated. So I'm just"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1527.2,
+            "end": 1530.72,
+            "text": " going to read through some of this because it's pretty descriptive, but instead of guessing what"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1530.72,
+            "end": 1536.32,
+            "text": " context to provide, give the model the task and ask it to interview you for whatever it is that"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1536.32,
+            "end": 1540.72,
+            "text": " it needs. So a lot of times, you know, you're not going to be able to provide the best context"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1540.72,
+            "end": 1545.1200000000001,
+            "text": " because you don't actually know what information the model needs to give you the correct result."
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1545.1200000000001,
+            "end": 1548.88,
+            "text": " You can go off the top of your head, you can guess whatever, but it's actually better. If"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1548.88,
+            "end": 1553.8400000000001,
+            "text": " the model prompts you on what it is that it needs, and you go back and forth where like,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1553.84,
+            "end": 1558.1599999999999,
+            "text": " it's prompting you and then you're prompting it and you get a much better response."
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1558.1599999999999,
+            "end": 1563.1999999999998,
+            "text": " So you state the goal and the model will ask you clarifying questions and you can answer them one"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1563.1999999999998,
+            "end": 1567.9199999999998,
+            "text": " by one, and then it can perform the operation with the full context. Now it works because we often"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1567.9199999999998,
+            "end": 1572.72,
+            "text": " leave out details, right? Audience constraints, format examples, because we don't know the model"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1572.72,
+            "end": 1577.1999999999998,
+            "text": " needs them. So if we let them surface that information first, or let the model ask that,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1577.1999999999998,
+            "end": 1582.48,
+            "text": " it gives us kind of the prompt to then give it all of the details. And a lot of times we're lazy,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1582.48,
+            "end": 1586.16,
+            "text": " or we have assumptions. So again, we just don't include something because we assume the model"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1586.16,
+            "end": 1591.04,
+            "text": " will know, but it may not actually know that or have the same assumptions as us. Okay. So I mean,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1591.04,
+            "end": 1594.32,
+            "text": " if you have this doc, you can read through here, but what I'm going to do is just go over into"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1594.32,
+            "end": 1599.28,
+            "text": " chat, GPC and give you an example here of what this kind of interview style would look like in"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1599.28,
+            "end": 1603.28,
+            "text": " order to get a decent response. Okay. So let's just read something out here. I need a short"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1603.28,
+            "end": 1608.64,
+            "text": " LinkedIn post, about 250 words of the lessons we learned switching to a four day work week."
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1608.64,
+            "end": 1612.96,
+            "text": " Before you write it, interview me and ask me questions about anything that you need. So for"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1612.96,
+            "end": 1617.8400000000001,
+            "text": " example, the audience, company size, tone, metrics, do's and don'ts. I want you to ask"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1617.8400000000001,
+            "end": 1622.48,
+            "text": " one question at a time. And then when you have enough information, say I have enough and give"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1622.48,
+            "end": 1628.0,
+            "text": " me the post. Then I want you to write the post and again, ask me any questions afterwards for"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1628.0,
+            "end": 1634.96,
+            "text": " clarifications. Okay. So we have the prompt here. You can see that it's generated and now let's see"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1634.96,
+            "end": 1638.24,
+            "text": " if it can do this. So great. So it's first question, who is the primary audience for this"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1638.24,
+            "end": 1646.4,
+            "text": " LinkedIn post? Okay. And let's say it is founders and CEOs. Okay. Let's see what question we get"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1646.4,
+            "end": 1650.64,
+            "text": " next. Got it. Second question. Tell me about your company context. So the advice doesn't feel too"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1650.64,
+            "end": 1657.3600000000001,
+            "text": " generic. I run a developer mentorship program where I help developers, um, you know, land"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1657.3600000000001,
+            "end": 1663.2,
+            "text": " software engineering jobs and a tough market. And I employ a team of about 10 people. They're"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1663.2,
+            "end": 1669.1200000000001,
+            "text": " mostly remote where they're doing like coaching as well as admin work and some dev work, um,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1669.1200000000001,
+            "end": 1673.6000000000001,
+            "text": " for the company. I'm just making up random stuff right now, but anyways, you get the idea. Okay."
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1674.16,
+            "end": 1678.16,
+            "text": " Let's see what else. Good context. Next question. Why did you switch to a four day work week in the"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1678.16,
+            "end": 1683.6000000000001,
+            "text": " first place? We switched because we wanted to give more flexibility to the employees and to make"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1683.6000000000001,
+            "end": 1688.56,
+            "text": " them more focused on the four days that they were at work rather than finding something to do when"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1688.56,
+            "end": 1693.6,
+            "text": " they, you know, didn't need to be doing that. Just spinning random stuff. Okay. Let's see here."
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1694.32,
+            "end": 1699.28,
+            "text": " It actually picked up just spinning random stuff. So let's remove that. Uh, and let's see what we"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1699.28,
+            "end": 1704.0,
+            "text": " get next question. What actually happened after you switch overall? It was very positive experience."
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1704.0,
+            "end": 1708.8,
+            "text": " The productivity went up, the revenue state about the same, but the satisfaction of the employees"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1708.8,
+            "end": 1713.52,
+            "text": " was just higher. Uh, and there was no unexpected problems. Okay. Let's see if it's going to ask me"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1713.52,
+            "end": 1716.56,
+            "text": " any questions. Okay. So after this, I'm just going to tell it to stop because I don't want to answer"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1716.56,
+            "end": 1721.2,
+            "text": " more questions. Uh, use the current information and give me the post. Don't ask any more questions."
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1721.2,
+            "end": 1726.56,
+            "text": " So you can see when I do this, I actually get a very detailed, well-written post that is accurate"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1726.56,
+            "end": 1730.72,
+            "text": " based on what I told it rather than a bunch of random AI crap that you guys probably see all the"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1730.72,
+            "end": 1736.72,
+            "text": " time over social media. It actually matches, you know, context that we gave it. So what happened?"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1736.72,
+            "end": 1741.36,
+            "text": " Productivity went up, revenue stayed the same team satisfaction increased. You get the idea. So this"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1741.36,
+            "end": 1747.36,
+            "text": " interview style is really effective and you can get fantastic results by just chatting and giving"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1747.36,
+            "end": 1751.76,
+            "text": " all of this additional context that you probably never would include by default, especially just"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1751.76,
+            "end": 1756.08,
+            "text": " in the first prompt. Okay. So now I'm going to go through a few advanced strategies when it comes to"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1756.08,
+            "end": 1761.28,
+            "text": " prompting. So first one to talk about is system versus user prompts. Now, this is more relevant"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1761.28,
+            "end": 1765.36,
+            "text": " for those of you that are developers. Uh, however, in some different applications, you will see this"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1765.36,
+            "end": 1770.0,
+            "text": " notion of like a system prompt and a user prompt. Now a system prompt typically sets the identity"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1770.0,
+            "end": 1775.92,
+            "text": " of the model, various rules and style, and it's often not shown to end users. So this is for"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1775.92,
+            "end": 1782.72,
+            "text": " always on behavior where any time you talk with the model, it's going to read this system prompt"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1782.72,
+            "end": 1788.56,
+            "text": " first and understand that this system prompt is designed for the system to look at before answering"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1788.56,
+            "end": 1793.12,
+            "text": " the user prompt. So for example, if I want a model that always talks like Mario, you know, I give it"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1793.12,
+            "end": 1798.24,
+            "text": " a system prompt that says always talk like Mario. I don't need to say that every time it just always"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1798.24,
+            "end": 1802.88,
+            "text": " reads that. So in cursor, the app that I'm in right now in chat, GBT, and all of these different"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1802.88,
+            "end": 1808.24,
+            "text": " platforms, they have their own system prompts that they provide to the models to give you the output"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1808.24,
+            "end": 1813.1200000000001,
+            "text": " that you're looking for. And then when you type the prompt, it gets added to this kind of chain"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1813.1200000000001,
+            "end": 1817.76,
+            "text": " of prompts. That's already inside of there. That's building the context of the models or reasoning"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1817.76,
+            "end": 1820.88,
+            "text": " based off. So if you have a look here, you know, an example of a system prompt would be like,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1820.88,
+            "end": 1824.56,
+            "text": " you're a helpful coding assistant, blah, blah, blah, whatever. Whereas the user is, how do I"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1824.56,
+            "end": 1830.0,
+            "text": " read the first line of a file in Python? Now, if I go to chat, GBT, I'll just quickly show you an"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1830.0,
+            "end": 1835.44,
+            "text": " example. So actually, if you go to chat, GBT settings and personalization, you can see that"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1835.44,
+            "end": 1839.9199999999998,
+            "text": " you can add custom instructions, which is somewhat similar to something like a system prompt. And you"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1839.9199999999998,
+            "end": 1843.6799999999998,
+            "text": " can see that I say, adopt a skeptical questioning approach, take a forward thinking view, be"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1843.6799999999998,
+            "end": 1848.32,
+            "text": " talkative and conversational. Now I'm going to change this and say, be direct into the points"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1848.32,
+            "end": 1852.3999999999999,
+            "text": " and always talk like Mario. When replying to me, I don't know if that's going to work super well"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1852.4,
+            "end": 1858.0,
+            "text": " in chat, GBT, but let's see now if we do a new conversation. Hey, how's your day going? Let's"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1858.0,
+            "end": 1861.8400000000001,
+            "text": " see if it's actually going to give me something like Mario. You can see, Hey, Tim, it's good."
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1861.8400000000001,
+            "end": 1866.72,
+            "text": " Do you see? So it's actually following like the system prompt here, right. And giving me a much"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1866.72,
+            "end": 1869.76,
+            "text": " different response than I would normally get. Now I need to turn that off. Otherwise that's"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1869.76,
+            "end": 1874.0,
+            "text": " going to drive me crazy. So let's just remove the custom instructions for right now. But you get the"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1874.0,
+            "end": 1878.64,
+            "text": " idea. Okay. And even these other things like the style, warm, whatever, these would be built in"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1878.64,
+            "end": 1882.4,
+            "text": " to the system prompt that it's going to use when we're applying to you."
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1882.4,
+            "end": 1886.72,
+            "text": " Okay. Now the next advanced feature to go over is prompt chaining. Now, generally speaking,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1886.72,
+            "end": 1892.64,
+            "text": " it's better to break complex tasks into multiple steps and to use the output of the previous step"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1892.64,
+            "end": 1897.0400000000002,
+            "text": " in the next step. So rather than just writing a super complex prompt that says like, Hey,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1897.0400000000002,
+            "end": 1901.44,
+            "text": " here are the three different steps that you need to do. Just do them one by one so that you can"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1901.44,
+            "end": 1905.92,
+            "text": " verify the result of step one is good before moving on to step two. So I'm not going to"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1905.92,
+            "end": 1909.92,
+            "text": " demonstrate this in chat, GBT, but the example would be like, you know, given topic, whatever,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1909.92,
+            "end": 1915.28,
+            "text": " I'll put a five heading outline with this Jason format. Okay. It then does that. Then you say,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1915.28,
+            "end": 1920.0800000000002,
+            "text": " okay, based on that result, expand this outline into a 400 word section. And then, you know,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1920.0800000000002,
+            "end": 1924.3200000000002,
+            "text": " here's the outline that you want. Okay. Then you wait for that. You say, turn this draft into,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1924.3200000000002,
+            "end": 1931.04,
+            "text": " you know, meta title description for SEO. You get the idea. So go step by step and break it down"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1931.04,
+            "end": 1934.96,
+            "text": " rather than having the model do everything at once. That's almost always going to give you a"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1934.96,
+            "end": 1940.4,
+            "text": " better, more consistent result. Now, another more advanced technique you can follow is self-evaluation."
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1940.4,
+            "end": 1945.44,
+            "text": " So let's say the model output something to you. You can then ask the model to critique or score"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1945.44,
+            "end": 1949.6000000000001,
+            "text": " its own output. Now, sometimes you want to fool the model a bit where you want to maybe start a"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1949.6000000000001,
+            "end": 1954.24,
+            "text": " new session. You don't want to have it in the same one and say, Hey, review this email, you know,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1954.24,
+            "end": 1958.4,
+            "text": " that I wrote rather than saying, Hey, an AI model wrote this, say, Hey, I wrote this. And then it's"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1958.4,
+            "end": 1962.64,
+            "text": " going to give you a more accurate response that if it thinks that it wrote it itself. So if you"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1962.64,
+            "end": 1967.2,
+            "text": " have drafts, code summaries, whatever, you can say something like, here's a short summary I"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1967.2,
+            "end": 1971.44,
+            "text": " generated, you know, whatever, put the text rate it one to five for clarity and completeness in"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1971.44,
+            "end": 1975.2800000000002,
+            "text": " one sentence, adjust the single most important improvement. And then you can take that"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1975.2800000000002,
+            "end": 1980.48,
+            "text": " improvement and ask it to refine it based on that. Okay. So super cool. The evaluation is really good,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1980.48,
+            "end": 1984.96,
+            "text": " but make sure you're kind of fooling the model a bit. And you're not just, you know, in the same"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1984.96,
+            "end": 1989.6000000000001,
+            "text": " conversation chain after it gives you the output saying, rank your own reply, because it's not"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1989.6,
+            "end": 1995.28,
+            "text": " going to give you as non-bias of response as if you ask it in a fresh chain where it doesn't have"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1995.28,
+            "end": 1999.52,
+            "text": " that in its context already. Okay. And then just a few other things to look at here. So temperature"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 1999.52,
+            "end": 2004.32,
+            "text": " and other parameters. Now, if you're going to work with models in typically an API setting,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 2004.32,
+            "end": 2008.8,
+            "text": " you're going to have the ability to adjust the temperature of the model. Now the temperature of"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 2008.8,
+            "end": 2015.12,
+            "text": " the model effectively is the determinism of the model. Now the determinism means how repeatable"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 2015.12,
+            "end": 2020.3999999999999,
+            "text": " effectively is it now something that's deterministic is like, okay, if I, I don't know,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 2020.3999999999999,
+            "end": 2025.1999999999998,
+            "text": " open the lid on this pen, it always opens. Like it's a deterministic action. Like if I open this,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 2025.1999999999998,
+            "end": 2030.1599999999999,
+            "text": " it's always going to open. Right. Whereas if I generate a random number, that's non-deterministic"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 2030.1599999999999,
+            "end": 2036.2399999999998,
+            "text": " because I don't know what number I'm going to get and I can get a random number. Now LLMs by default"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 2036.2399999999998,
+            "end": 2041.9199999999998,
+            "text": " are non-deterministic, which means there's a sense of randomness and you don't know the output that"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 2041.92,
+            "end": 2048.56,
+            "text": " you're actually going to get. Now you can adjust how deterministic it is by affecting the temperature"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 2048.56,
+            "end": 2054.0,
+            "text": " of the model. So the lower the temperature is the more repeatable and deterministic it's going to"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 2054.0,
+            "end": 2059.84,
+            "text": " be. Whereas the higher the temperature, the more creative varied and random it's going to be. So"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 2059.84,
+            "end": 2063.84,
+            "text": " you would use a low temperature for consistent output, especially if you want something in like"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 2063.84,
+            "end": 2069.44,
+            "text": " a particular format, a structured output, right? Code facts, things where there's really just like"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 2069.44,
+            "end": 2075.68,
+            "text": " one clear answer is the sentiment of this, you know, text positive. That would be a low, you know,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 2075.68,
+            "end": 2080.32,
+            "text": " temperature, you know, parameter you would want to use there. Whereas for higher temperature,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 2080.32,
+            "end": 2085.76,
+            "text": " you use this for brainstorming, varied phrasing, multiple ideas, maybe some advanced planning. If"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 2085.76,
+            "end": 2090.08,
+            "text": " it's not really sure, you know, how you would get to the result. And if the outputs are too random,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 2090.08,
+            "end": 2094.32,
+            "text": " then you can lower the temperature. But if it's too repetitive, then you can raise it slightly."
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 2094.32,
+            "end": 2098.08,
+            "text": " So, you know, play with the temperature by default, it's usually on the lower side than the"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 2098.08,
+            "end": 2102.48,
+            "text": " higher side, but just know what that parameter means, because it does come up a lot when you're"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 2102.48,
+            "end": 2107.2,
+            "text": " working with these models. So now let's talk about a few common mistakes and how you can fix them."
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 2107.2,
+            "end": 2112.3199999999997,
+            "text": " Now, one mistake being too vague, right? What's going to go wrong, generic or irrelevant output."
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 2112.3199999999997,
+            "end": 2117.7599999999998,
+            "text": " How can you fix that? Add a rule, audience, tone, format, potentially length. Okay. Next,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 2117.7599999999998,
+            "end": 2122.08,
+            "text": " too many tasks in one prompt. So a lot of times you're putting, you know, a hundred things that"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 2122.08,
+            "end": 2126.3199999999997,
+            "text": " you want it to do. In that case, the model may miss something. It may not actually complete"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 2126.32,
+            "end": 2131.52,
+            "text": " the task. It might mix them up, whatever in that case, split it into steps or separate prompts,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 2131.52,
+            "end": 2135.92,
+            "text": " right? So chaining, like I talked about before, now, not enough context or examples. So you're"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 2135.92,
+            "end": 2140.0800000000004,
+            "text": " going to get like wrong format or style. So add one to three, few shot examples, include the"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 2140.0800000000004,
+            "end": 2144.48,
+            "text": " relevant background, or use that interview technique to ensure that you're getting enough"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 2144.48,
+            "end": 2148.88,
+            "text": " context before proceeding. Another common mistake is that the model ignores the format that you want,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 2148.88,
+            "end": 2153.92,
+            "text": " which means it can be hard to parse or reuse. So like I showed you before, you can explicitly"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 2153.92,
+            "end": 2159.6800000000003,
+            "text": " request a specific structure and tell it to only output that. So Jason with keys, X, Y, Z,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 2159.6800000000003,
+            "end": 2163.84,
+            "text": " whatever, right? Only give me Jason. Do not give me any texts. Don't give me anything else, right?"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 2163.84,
+            "end": 2168.32,
+            "text": " We're adding the constraints as well as being really specific in what we want. And then assuming"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 2168.32,
+            "end": 2173.12,
+            "text": " memory, like I said, the model is going to forget things that aren't relevant or that aren't in the"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 2173.12,
+            "end": 2178.7200000000003,
+            "text": " same thread conversation or context window that you're currently in. So make sure that you repeat"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 2178.72,
+            "end": 2184.24,
+            "text": " or summarize key facts if the thread is long, or if you're working in a new session, don't assume"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 2184.24,
+            "end": 2188.08,
+            "text": " the model remembers something. Again, you kind of have to infer like, what is the tool that you're"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 2188.08,
+            "end": 2193.2,
+            "text": " using actually doing in the background to load up the model with this context? Okay. Now there's a"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 2193.2,
+            "end": 2196.24,
+            "text": " lot of other mistakes and things that I can go through, but I'm going to leave kind of the rest"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 2196.24,
+            "end": 2201.2799999999997,
+            "text": " of the stuff in this document for you guys to refer to if you would like. Last thing I will say"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 2201.2799999999997,
+            "end": 2206.7999999999997,
+            "text": " is that it does just make a massive difference to practice this and to prompt a lot. The more you"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 2206.8,
+            "end": 2211.28,
+            "text": " prompt, the more you're going to see what the LLMs respond to, how you get the best response,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 2211.28,
+            "end": 2216.96,
+            "text": " and you can prompt more and faster. If you use a tool like flow, like I've been using in this video,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 2216.96,
+            "end": 2221.6800000000003,
+            "text": " that allows you just to dictate it with your natural voice, as opposed to having to type it in."
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 2221.6800000000003,
+            "end": 2225.44,
+            "text": " You guys have seen in this video, how quickly I could actually prompt and how much better the"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 2225.44,
+            "end": 2230.0,
+            "text": " response is because I'm using my voice. So I know yes, they're a partner of mine, but I've been using"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 2230.0,
+            "end": 2234.2400000000002,
+            "text": " them for a very long time. I really cannot recommend it enough. And whether you use them or someone"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 2234.24,
+            "end": 2238.64,
+            "text": " else doesn't matter to me, but point is use some kind of dictation tool used on your phone,"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 2238.64,
+            "end": 2243.2799999999997,
+            "text": " used on your computer, your productivity will skyrocket, especially if you're someone like"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 2243.2799999999997,
+            "end": 2247.04,
+            "text": " a developer where you need really long detailed prompts and you're working with like multiple"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 2247.04,
+            "end": 2251.52,
+            "text": " agents at once, like I am. So anyways, guys, that's going to wrap up this video. If you"
+        },
+        {
+            "number": "10",
+            "title": "Prompt Engineering",
+            "start": 2251.52,
+            "end": 2263.4399999999996,
+            "text": " enjoyed, make sure you leave a like, subscribe, and I will see you in the next one."
+        }
+    ],
+    "text": " In this video, you'll learn everything you need to know about prompt engineering. I'll explain what it is, why it's important, how to do it faster, the top techniques and methods, and advanced strategies to get the most out of LLMs. With that said, let's dive in. So what I've done for this video is I've created a markdown file that contains all of the examples and key talking points that I'll go over. Now, if you want this file for yourself for your reference, you can get it for free just by clicking the link in the description and subscribing to my newsletter. Anyways, let's start. And I want to just show you a quick example of a bad prompt versus a great prompt just to kind of set the tone. And then we'll get into all of the other theory and keep in mind, all of the different topics in this video are available down below in the video player or the chapters in the comments in case you want to fast forward. Okay. So what is a bad prompt? Well, an example of that would be something like write something about our product. It's going to give you something like generic marketing, fluff, wrong tone, wrong length, probably no CTA. The model is effectively going to guess what you want here. Whereas a better prompt would be something like this. You are a senior B2B copywriter, write a two sentence LinkedIn ad for our project management SaaS, a sauna alternative. The audience is ops managers at midsize companies. The tone is confident, but not salesy and end with a clear CTA. Now, if you do this, you're hopefully going to get a result that's on-brand, scoped it, actionable, and easy to drop into an ad. The point of me showing you these examples is that when we're writing these prompts, we're using the same tool or the same LLM. So what's giving us the difference in result. Isn't the LLM it's the way in which we instruct. And most people, while this kind of seems obvious are writing prompts closer to the pad prompt than they are to the good prompt. And just because a prompt is long does not necessarily make it good, which I'm going to go over in this video. So this leads me to what is prompt engineering and why does it matter? Well, you should really think of prompt engineering, just like programming in natural language. So rather than using Python or Java or JavaScript, you're just using, you know, text or your voice or whatever language it is that you speak in to try to get some kind of result, complete some action, get some text, whatever effectively what you're doing is you're giving instructions in plain language instead of something like code. Now it's important to note that the models that we give these instructions to, they don't have a built-in task list. So you have to define the task, the role, the format, and the constraints within the prompt. And you have to be very specific with what it is that you actually want. And that's why the same model can seem brilliant or useless depending on the clarity context and the structure that you provide. Now, when most people prompt AI models, they're trying to get some kind of text in return. And while that's still a very valid use case of these models, it's important to note that we've now shifted kind of into an agent era where a lot of these models are capable of interacting with various tools, searching the web, and actually taking actions. They can change something in your Asana, right? They can write a Google doc. They can create a PowerPoint slide. And because of that, prompt engineering becomes even more powerful because we're no longer just directing the model to try to give us some kind of textual output. We're actually instructing it to take some kind of actions, which can give us a real meaningful result. So just keep that in mind. While a lot of what I'm showing you here is going to be based on text, this also works for agents, right? Or more complex models that are capable of calling tools. And just to go through a quick example, you can see a vague prompt would be something like, help me with my essay. Well, as a specific prompt is something like you are a tutor, help me improve the thesis and first paragraph of this 500 word history essay on the causes of world war one, keep my voice to just the edits in line, etc. Okay. Now, in terms of why this is important, while we're moving more and more towards an AI world. So for people like developers, marketers, researchers, just anyone who's using AI, the better, the result you can get from it, obviously the better that is for everyone. And the faster you can get to the result, if you have better prompts. So the takeaway, right? Better prompts is just better results for everyone. And this is overall a skill that you will learn over time, but by knowing some of the foundations that I'll teach in this video, it will just speed that up for you and allow you to think of these a little bit more intentionally while you're writing the prompts. Now, what you've probably gathered at this point is that the more details we include in the prompt, the better the result or action is that this model will take. Now that's generally true. I mean, longer prompts are not always better, but most of the time they will give you a better result. However, that's only if you actually take the effort to write them. Most people are lazy. They type very slow and they don't want to spend 10, 20, 30 minutes, you know, typing a prompt just to have to maybe change it, iterate on it, whatever. So what I'm going to suggest to you guys is going forward rather than typing your prompts, just speak them. So use your voice, use natural language, and this will allow you to have prompts significantly faster where you can include all of the details without lazily having to type them in. Now this applies on phone. It applies on computer. And the tool that I use to do this within any application, doesn't just have to be something like chat GPT here is called whisper flow. I'm just going to quickly show you how it works. And if you want to try it for free, I have a link in the description. I would highly recommend it because it is currently the best dictation tool that works a lot better than anything built into your computer. So for example, let me just do something. Hey, this is just a quick test where I want to dictate with whisper flow and see what kind of results I'm getting. Notice I'm talking, um, uh, you know, extremely, extremely fast. I'm making a few repetitions, pauses, et cetera, and let's see the result that we get. Okay. So you can see the kind of little bubble popped up there and pretty much instantly we get the result. And you'll see that if we go through the result here, it automatically does the punctuation adds the capitalization and corrects any of the arms, Oz or repetitions that I had. I believe I said extremely twice, it recognized that wasn't useful and it just removed it. So you get a much faster, better result. And you can also do something like this. I want to have three bullet points. Bullet point one is apples. Bullet point two is bananas. Bullet point three is pairs. And you'll see that it will automatically format it for me like that. Okay. So when you're doing the prompts, the formatting is very important as well. And this tool will handle it for you compared to a built-in dictation. I do have a long-term partnership with them full disclosure, but I was using them much before we did the partnership because the tool is very, very good. You can see here, I've spoken 35,000 words. My WPM is 162, which is much faster than I would be able to type. It has a lot of other features like dictionaries, snippets. You can change the style based on the apps that you're working inside of notes, all of this kind of stuff. And a bunch of settings where I was just hitting a keyboard shortcut on my computer. And that allows me to actually trigger flow to start activating on my computer. So I use this in every kind of application. Sometimes I use it to write emails. Sometimes I use it for prompting, right? Sometimes I used in cursor to prompt a model or reference files, and I'll show you more of it in the video. But the point is speak your prompts. You're just going to have better prompts. And this tool also is available on phone. They actually recently released it on Android. So you can use it directly from the keyboard, like on your iPhone or Android. So even if you're on mobile, you have no excuse not to give a detailed comprehensive prompt that actually includes the information that you want. So this now leads us to the next section, which is how LLMs think. Now an LLM is a large language model and effectively what these are capable of doing is replying to text. Okay. So you give some text in, they give some text out. Now you can configure them in very fancy ways to call tools or call other LLMs or create something or take some action. But effectively at the very root of an LLM, it is a text prediction model. It's important to understand this because when you give a prompt to a model, you need to imagine that what it's attempting to do is predict the next text that you would expect to see in this sequence. So while you might see reasoning models, you think that, you know, the AI is thinking or developing something, really it's just been trained on a massive amount of data and given some prompt it's able to predict with a relative degree of accuracy, what it is it thinks you want in terms of the output. So the prediction is usually going to be in text or in tokens that they may call it, right? You give some tokens in, it spits some tokens out. That's effectively what an LLM is. We don't need to worry about the architecture or anything complicated there. Just remember you have some input, you get some output, and it's just predicting what it thinks that output is going to be. Now with that in mind, an LLM by default, so something like GPT 5.2, right? It doesn't have any memory. Now what would give it memory is the providers of these models injecting previous parts of your conversation into the prompt or into the model automatically. So what you need to understand is that a lot of times when you use, you know, LLMs, right? Or use chat GPT or use cloud or use cursor, behind the scenes, the people who develop those tools or these interfaces to work with the LLMs, they're injecting a lot of data into the prompt that you provide to give you a better response. So while you may prompt and say, Hey, you know, review my essay and tell me what's wrong behind the scenes, the prompt is significantly larger than that, where it includes a lot more details that the LLM is looking at. So it's just important for you to understand that because by default, it doesn't have memory. It doesn't have like all of these fancy features that you see in like the chat GPT user interface. The reason why that exists is because open AI, who made chat GPT created this nice interface on top of the LLM, which is like the brain at the heart of all of this, that injects this other information into the prompt that then goes to the model that then gives you the response. So 99% of the time, your prompt is not the only thing the LLM is seeing. It's going to be seeing, you know, previous conversation history, maybe not access to some tools, right? Whatever. There's all kinds of things that are usually being thrown in that you don't actually get to see. And it's really important that you kind of internalize that and understand it. And you don't think like GPT 5.2 or something has this memory and just knows everything about you. The only reason that it knows something is because it's just taking information that you've given to it previously, and just injecting that into the prompt that it's using to give you the response. Now that additional information that I just talked about is typically referred to as context. It's the other stuff that the LLM can see and look at. That's not just the prompt that you gave it. So just understand that the context, specificity, and structure that you provide is what shapes what it's going to say next. And a lot of these tools, just like, you know, cursor, right? The tool that I'm using in right now, if I create an agent by default, it's jamming a bunch of context into the prompt. And if I tag something like this Markdown file, right? And I say, you know, hello world. The prompt is hello world. Plus all of this additional context. Now with that in mind, let's quickly talk about steering versus commanding the model. So the common mistake that most people make when prompting is they command the model to do something rather than steering it in the correct direction. Now, commanding the model is something like summarize this, okay, do this, you know, write this down, take this thing, look at this thing, whatever, right? So if that's the case, the model chooses the length, the style, and the focus that it's going to take when it's summarizing the thing in this instance, whereas steering the model, you give it more direction on exactly what you want. So you are an executive assistant, summarize the meeting transcript in four bullet points, focus on decisions and action items, no filler notice that we're not only telling it what to do, we're telling it what not to do. And we're giving it a much more clear objective where when it's trying to predict what we want next, it can give us a much more accurate, better result because of the detail we've included in the prompt. So when you steer the model, you're typically indicating the length, the focus, and the format that you want. Whereas when you're commanding the model, you're just telling it to do something and it's picking how it's going to do that, the result you're going to get, et cetera. So I'm not going to focus on that too much more, but just understand commanding and steering. Now, what I want to do is get into the core techniques of prompt engineering and really focus on a lot of examples. So one of the most basic and important techniques that you can employ is to be specific and to set the scene or specify the particular role that you want the model or agent to take. Now, these are the four things that if you include will always give you a much better result than simply commanding the model to do something. If you include a role, an audience, a tone, and some kind of format or output, you're almost always going to get a significantly better reply. So here it says, you know, reply to this customer complaint. Okay, fine. It can reply to it. But if you said something like this, you're giving it all of these details, the role, the audience, the tone, and the format. So you're going to get a better response. So what I want to do now is show you a few practical examples of this by actually writing or voicing the prompt here in chat, GPT. So let's just do a quick example of the bad prompt, right? Reply to this customer complaints. And then I'm just going to paste in a random one that I generate here. And let's see the result that we get here from chat, GPT. So you can see here, it gave us something decent, but it just assumed it was an email, even though, you know, we didn't specify who wanted to be an email, gave us something relatively long. It didn't say it was from the support team, whatever. So what I'm going to do now is just make a new chat and let's now do a much more detailed prompt with the same customer complaint. So we can say you are a customer support lead reply to this complaint from a paying user whose export failed twice, acknowledge the frustration, apologize briefly, confirm we're investigating and offer a concrete next step. For example, we'll email within 24 hours, keep it under 150 words and sign off as the support team. Cool. So that is our prompt. Okay. Notice again, that whisper here automatically formatted it for us. So another important part when you are writing the prompts is that if you structure it well, so you have like bullet points, for example, different sections, you separate things out into clear sentences. It's going to be a lot easier for the model to understand what you want and predict the next text. For example, if we even just do a quick delimiter, like adding these three lines and saying, you know, here is the complaint and then putting a colon it separates. So like, this is the thing it should be listening to. And then this is the additional context. And also notice that I created a new session here in chat GPT by making a new chat so that it's not automatically going to include the previous texts that I had in the conversation in the prompt. So I'm just going to go ahead and hit enter here. But what I mean is that if I had just run this underneath the other example that I gave, you know, we can still get a decent result, but it's going to be a little bit confused or mixed up with the other conversation history, because that's going to be included in the prompt as well, because chat GPT will include that as context. So if we look here, you can see now we get something a little bit more concise. You know, it says best regards support team, and it's followed generally what it is that we asked it to do. Now, the next technique you can use is referred to as few shot prompting. Now, effectively, what this means is that you are going to give a few different examples of input and output pairs that you're looking for, so that when you give the prompt, the model can give you a better reply. So when you do this, the model can infer and figure out the pattern, which is very good at doing and then replicate the pattern to give you the exact result that you're looking for. So this is especially helpful when you want something in a specific format style, you have various edge cases, and you want to do something like a classification task using an LLM, because LLMs are actually very good at classifying things, for example, like is this email positive or negative? Is it red or black, whatever, right? All of those things, but only if they know and have examples to be able to classify that. And in fact, when you talk about fine tuning LLMs, what you're effectively doing is you're passing them a bunch of different examples of inputs and output pairs, so they can infer that pattern on top of their base training to give you a more specific, better result. So let's have a look at a few examples here. I'm not going to throw them on screen. Let's just go into chat GPT and we can do a few prompts and see the result that we get. So let's do something like turn this user feedback into a short support ticket title. The feedback is the app crashed when I uploaded a PDF over 10 megabits on iPhone. Okay. And let's see what we get here. Perfect. Let's see what it gives us. Okay. So you can see, we didn't really get any clear formatting. In this case, it didn't actually give me one title. It gave me five because again, it's just guessing what to do, but let's change it and do something like this. Turn user feedback into a short ticket title. We want this to be under 60 characters, use the format area, and then brief description. Okay. And then I'm just going to paste this. And then here, I'm just going to say, here are a few examples of the format that I'm looking for. Just give me back one line of text that starts with a title and then includes the area and then a brief description of the issue. Okay. And then we should just say something like this, and then I can even do, do not return anything other than the title. Okay, cool. So let's now run this and you can see that I gave a few examples. So let's actually separate the examples a little bit. So it's, it's a bit easier to see, and you can see that we have, you know, feedback, login is broken with Google on Safari. The title is off. Okay. And then Google login fails on Safari. And then let's go here. Feedback is export to CSV only exports first, a hundred rows, the title export, right? CSV feedback, the app crashed. When I uploaded a PDF over 10 megabits on iPhone, this is actually the example that I'm going to pass paste to it in a second. Sorry. And I'm going to say like this, this is the feedback to generate the title for cool. Okay. And then it should give us the title and let's see if that works now, again, I'm being super specific, but I'm just trying to show you that if I give it a few examples, we hopefully will get a better response. And there you go. You can see it says upload and then iPhone app crashes on PDFs over 10 megabits. So in this case, I was super verbose, but look at the difference. We went from this kind of crap here, right from the LLM to this, which now I could directly plug into like some API, or I could use in my app. And I know that the format I'm going to get from the model is going to be consistent. And then I could just do something else now, because I mean the same chain. So let's go like feedback. I don't know here. Let's go feedback and let's change this to say something. I don't know. What's a good example of feedback. The keyboard does not disappear when clicking outside of the frame on the login screen. Okay. And let's see if we give it, if it gives us the title back now, and there you go, you can see it just gives us the title and we can now keep doing this in this chain because it has the previous context on how it should behave. Now, the next technique to go over is called chain of thought prompting. Now this is asking the model to reason step-by-step before it gives the final answer. Now this will reduce errors on logic, math, you know, the planning, whatever, in different comparisons. And a lot of models do this by default now, especially if you're using like a planning model or a reasoning model where their instructions internally, right again, like in the prompt that's being created for you in the backend is to actually do this. So the reasoning models, like they're still using a core LLM, but they just have some fancy kind of tools and orchestration on top of them to make them do this. But if you're not using a fancy model like that, then you want to tell it to reason with chain of thought. So without it, you have something like, you know, store sells pens for $2 and notebooks for $5. Sarah buys three pens and two notebooks. She has a 10% off coupon, coupon story. How much does she pay? Now, if you don't tell it to reason, it's just going to look at this text and try to predict the result. Now, in a lot of cases, it will get this wrong. Just like the famous example of asking an LLM to count, you know, how many teas are in strawberry or something, and it just can't do it unless you change the prompt to tell it how to reason through it so that it actually thinks before it gives you the response. Okay. So I'm actually not going to show this in chat GPT, because it is probably not going to work or prove the example where I think both prompts will give us a very similar result, just because the default reasoning for like GPT models is already really good. But with some other models where they don't do the reasoning by default, or if you're not using them in the interface, like chat GPT, and you're just using it in like an API or something, then you definitely would want to include these kinds of keywords, right? So just anyways, keep that in mind for chain of thought. A lot of times now the models that are super modern and, you know, state of the art will do this by default and actually auto detect what reasoning model they should use based on what you ask them. But it is kind of worth knowing, especially, you know, six months ago, 12 months ago, this was a lot more important than it probably is right now. The next method that is super underrated is structured output. Now this is asking the model to provide the output in some kind of format like JSON, tables, XML, Markdown, whatever, and then giving an exact example of what you're looking for, such that you're able to parse this and use it in some other format, or in some other application. Now, my case, you know, I do a lot of development work, right? And when I have the model generating something, maybe I want to read it into a database, maybe I want to display it on the front end of my website, whatever, in order to do that, I typically need it in some type of structure. So what I will do is something like what you see right here, where I actually provide a JSON object schema. This is what is referred to, which is really just an example of what it should look like to the model. So it knows how to give me the output. So obviously compared to the first example, where we just said something like this, the main difference is that we're providing the structure and we're telling it that we want it to respond with just that no other text and a particular shape. So we're kind of almost doing this multi-shot prompting, right? Or few shot prompting, but combining it with some kind of output as well. So anyways, let me go to chat, GPT, and just show you a quick example. So what's something that we can do. So we can say maybe compare Trello, monday.com and ClickUp for a small team of five to 10 people. I want to understand the main features, the limitations and the pricing. And what I'd like you to do is output this with valid JSON only don't give me any other texts and make sure that it's in this shape. Okay. So that is what we're going to do here. Just put that in with whisper. And then I'm just going to paste in the format. So we'll just put it like that. And we'll say example format like, so, okay, so let's run this now and let's see what we get. Okay. So just giving me the output right now, but you can see that it's following this format. It's in a valid JSON object. And now I would be able to load this into my code. I could store it in a database, right? I can return it from an API. It doesn't matter, but it is very useful. And it's going to be a lot better than if it just gave me this random kind of Mark Downey text, the chat, GPT usually replies with. So moving on, let's talk about constraints and negative instructions. So sometimes the best prompts are not talking too much about what to do, but they're talking about what not to do. Now, the more constraints, which is saying, you know, do this, don't do this, be within this bounds, whatever, the better the result is you're going to get because you're steering the model more accurately. So some examples of constraints is for example, the link. Now you could say, summarize an exactly three bullet points. That's fine. That's a constraint. You also could say, keep the reply under 300 words or under five bullet points, right? You can have a tone like no slang or humor. Do not apologize, right? Do not use bullet points. Use one short paragraph. Do not suggest paid tools. Do not include code, describe the approach only. So when you do that, it actually ends up listening a lot better sometimes than telling it what you want. And this has been shown a lot, especially with a lot of the researchers working with these models. Oftentimes they're including a large list of things not to do because it just works extremely well for prompting. So you don't want to write something like write a short intro for our onboarding doc. Instead, you would say, write a short intro for onboarding doc, start directly with what the user will do in this section. Do not start with welcome or generic greetings. And then in that case, you're going to get something that is straight to the point. So anyways, let's have a quick look at an example here. If we go inside of something like chat, GPT, again, let's make a new chat. So let's just do something like write a short out of office email reply from me tip. Okay. So this would be without any constraints and let's see the kind of response that we get. Okay. So chat, GPT actually gave me something interesting here, but it's not really that useful for an out of office email, because I need to know, for example, the dates, the time, all of that kind of stuff. So let's do something better. We say, write a short out of office reply, start with the exact dates I'm away and one sentence on who to contact for urgent issues. Do not use the phrase limited access reply when I can, or thank you for your patience. Be short to the point, but detail enough that people understand when I'm coming back, I'm going to be away from March 1st to March 25th. Okay. So in this case, again, we've included a few constraints. So hopefully we're going to get a better response here from chat, GPT, and let's see. Perfect. And you can see that we get a much better email that doesn't include any of the other fluff, like, you know, message me if you need to limited access, right? Which funny enough, we got in this one, but we didn't get here. Now, the next method to go over is pretty straightforward and you probably already do this, but it's just to do iterative refinement on your prompts. So very rarely is the first prompt you send going to give you the desired result. So rather than restarting, simply improve the prompt over and over again, until you get what you're looking for. So as it says here, you know, treat prompting as a conversation, not just a one-shot attempt. The first reply maybe isn't right. So you're going to refine it by saying shorter. I'd like it more formal, add another example, focus only on X, whatever. Of course, the better first prompt you give, you know, the better, but sometimes you just don't know what the result is going to be. In that case, don't restart. Just keep going based off the result that you have. If you're in like a decent enough place. Now, an example flow here, you can see, you know, you draft a two sentence blurb, whatever it returns four sentences, a bit salesy. Hey, cut it to two sentences, you know, make it more factual, whatever a model tightens it up, add it to work with Google calendar, whatever you get the idea. I'm not going to show this to you in chat GBT, because I think it's pretty intuitive, but the point is be iterative with your prompt. And then the last method that I'm quickly going to show you, and we'll go into some more stuff after is the interview style prompting, which is super powerful and extremely underrated. So I'm just going to read through some of this because it's pretty descriptive, but instead of guessing what context to provide, give the model the task and ask it to interview you for whatever it is that it needs. So a lot of times, you know, you're not going to be able to provide the best context because you don't actually know what information the model needs to give you the correct result. You can go off the top of your head, you can guess whatever, but it's actually better. If the model prompts you on what it is that it needs, and you go back and forth where like, it's prompting you and then you're prompting it and you get a much better response. So you state the goal and the model will ask you clarifying questions and you can answer them one by one, and then it can perform the operation with the full context. Now it works because we often leave out details, right? Audience constraints, format examples, because we don't know the model needs them. So if we let them surface that information first, or let the model ask that, it gives us kind of the prompt to then give it all of the details. And a lot of times we're lazy, or we have assumptions. So again, we just don't include something because we assume the model will know, but it may not actually know that or have the same assumptions as us. Okay. So I mean, if you have this doc, you can read through here, but what I'm going to do is just go over into chat, GPC and give you an example here of what this kind of interview style would look like in order to get a decent response. Okay. So let's just read something out here. I need a short LinkedIn post, about 250 words of the lessons we learned switching to a four day work week. Before you write it, interview me and ask me questions about anything that you need. So for example, the audience, company size, tone, metrics, do's and don'ts. I want you to ask one question at a time. And then when you have enough information, say I have enough and give me the post. Then I want you to write the post and again, ask me any questions afterwards for clarifications. Okay. So we have the prompt here. You can see that it's generated and now let's see if it can do this. So great. So it's first question, who is the primary audience for this LinkedIn post? Okay. And let's say it is founders and CEOs. Okay. Let's see what question we get next. Got it. Second question. Tell me about your company context. So the advice doesn't feel too generic. I run a developer mentorship program where I help developers, um, you know, land software engineering jobs and a tough market. And I employ a team of about 10 people. They're mostly remote where they're doing like coaching as well as admin work and some dev work, um, for the company. I'm just making up random stuff right now, but anyways, you get the idea. Okay. Let's see what else. Good context. Next question. Why did you switch to a four day work week in the first place? We switched because we wanted to give more flexibility to the employees and to make them more focused on the four days that they were at work rather than finding something to do when they, you know, didn't need to be doing that. Just spinning random stuff. Okay. Let's see here. It actually picked up just spinning random stuff. So let's remove that. Uh, and let's see what we get next question. What actually happened after you switch overall? It was very positive experience. The productivity went up, the revenue state about the same, but the satisfaction of the employees was just higher. Uh, and there was no unexpected problems. Okay. Let's see if it's going to ask me any questions. Okay. So after this, I'm just going to tell it to stop because I don't want to answer more questions. Uh, use the current information and give me the post. Don't ask any more questions. So you can see when I do this, I actually get a very detailed, well-written post that is accurate based on what I told it rather than a bunch of random AI crap that you guys probably see all the time over social media. It actually matches, you know, context that we gave it. So what happened? Productivity went up, revenue stayed the same team satisfaction increased. You get the idea. So this interview style is really effective and you can get fantastic results by just chatting and giving all of this additional context that you probably never would include by default, especially just in the first prompt. Okay. So now I'm going to go through a few advanced strategies when it comes to prompting. So first one to talk about is system versus user prompts. Now, this is more relevant for those of you that are developers. Uh, however, in some different applications, you will see this notion of like a system prompt and a user prompt. Now a system prompt typically sets the identity of the model, various rules and style, and it's often not shown to end users. So this is for always on behavior where any time you talk with the model, it's going to read this system prompt first and understand that this system prompt is designed for the system to look at before answering the user prompt. So for example, if I want a model that always talks like Mario, you know, I give it a system prompt that says always talk like Mario. I don't need to say that every time it just always reads that. So in cursor, the app that I'm in right now in chat, GBT, and all of these different platforms, they have their own system prompts that they provide to the models to give you the output that you're looking for. And then when you type the prompt, it gets added to this kind of chain of prompts. That's already inside of there. That's building the context of the models or reasoning based off. So if you have a look here, you know, an example of a system prompt would be like, you're a helpful coding assistant, blah, blah, blah, whatever. Whereas the user is, how do I read the first line of a file in Python? Now, if I go to chat, GBT, I'll just quickly show you an example. So actually, if you go to chat, GBT settings and personalization, you can see that you can add custom instructions, which is somewhat similar to something like a system prompt. And you can see that I say, adopt a skeptical questioning approach, take a forward thinking view, be talkative and conversational. Now I'm going to change this and say, be direct into the points and always talk like Mario. When replying to me, I don't know if that's going to work super well in chat, GBT, but let's see now if we do a new conversation. Hey, how's your day going? Let's see if it's actually going to give me something like Mario. You can see, Hey, Tim, it's good. Do you see? So it's actually following like the system prompt here, right. And giving me a much different response than I would normally get. Now I need to turn that off. Otherwise that's going to drive me crazy. So let's just remove the custom instructions for right now. But you get the idea. Okay. And even these other things like the style, warm, whatever, these would be built in to the system prompt that it's going to use when we're applying to you. Okay. Now the next advanced feature to go over is prompt chaining. Now, generally speaking, it's better to break complex tasks into multiple steps and to use the output of the previous step in the next step. So rather than just writing a super complex prompt that says like, Hey, here are the three different steps that you need to do. Just do them one by one so that you can verify the result of step one is good before moving on to step two. So I'm not going to demonstrate this in chat, GBT, but the example would be like, you know, given topic, whatever, I'll put a five heading outline with this Jason format. Okay. It then does that. Then you say, okay, based on that result, expand this outline into a 400 word section. And then, you know, here's the outline that you want. Okay. Then you wait for that. You say, turn this draft into, you know, meta title description for SEO. You get the idea. So go step by step and break it down rather than having the model do everything at once. That's almost always going to give you a better, more consistent result. Now, another more advanced technique you can follow is self-evaluation. So let's say the model output something to you. You can then ask the model to critique or score its own output. Now, sometimes you want to fool the model a bit where you want to maybe start a new session. You don't want to have it in the same one and say, Hey, review this email, you know, that I wrote rather than saying, Hey, an AI model wrote this, say, Hey, I wrote this. And then it's going to give you a more accurate response that if it thinks that it wrote it itself. So if you have drafts, code summaries, whatever, you can say something like, here's a short summary I generated, you know, whatever, put the text rate it one to five for clarity and completeness in one sentence, adjust the single most important improvement. And then you can take that improvement and ask it to refine it based on that. Okay. So super cool. The evaluation is really good, but make sure you're kind of fooling the model a bit. And you're not just, you know, in the same conversation chain after it gives you the output saying, rank your own reply, because it's not going to give you as non-bias of response as if you ask it in a fresh chain where it doesn't have that in its context already. Okay. And then just a few other things to look at here. So temperature and other parameters. Now, if you're going to work with models in typically an API setting, you're going to have the ability to adjust the temperature of the model. Now the temperature of the model effectively is the determinism of the model. Now the determinism means how repeatable effectively is it now something that's deterministic is like, okay, if I, I don't know, open the lid on this pen, it always opens. Like it's a deterministic action. Like if I open this, it's always going to open. Right. Whereas if I generate a random number, that's non-deterministic because I don't know what number I'm going to get and I can get a random number. Now LLMs by default are non-deterministic, which means there's a sense of randomness and you don't know the output that you're actually going to get. Now you can adjust how deterministic it is by affecting the temperature of the model. So the lower the temperature is the more repeatable and deterministic it's going to be. Whereas the higher the temperature, the more creative varied and random it's going to be. So you would use a low temperature for consistent output, especially if you want something in like a particular format, a structured output, right? Code facts, things where there's really just like one clear answer is the sentiment of this, you know, text positive. That would be a low, you know, temperature, you know, parameter you would want to use there. Whereas for higher temperature, you use this for brainstorming, varied phrasing, multiple ideas, maybe some advanced planning. If it's not really sure, you know, how you would get to the result. And if the outputs are too random, then you can lower the temperature. But if it's too repetitive, then you can raise it slightly. So, you know, play with the temperature by default, it's usually on the lower side than the higher side, but just know what that parameter means, because it does come up a lot when you're working with these models. So now let's talk about a few common mistakes and how you can fix them. Now, one mistake being too vague, right? What's going to go wrong, generic or irrelevant output. How can you fix that? Add a rule, audience, tone, format, potentially length. Okay. Next, too many tasks in one prompt. So a lot of times you're putting, you know, a hundred things that you want it to do. In that case, the model may miss something. It may not actually complete the task. It might mix them up, whatever in that case, split it into steps or separate prompts, right? So chaining, like I talked about before, now, not enough context or examples. So you're going to get like wrong format or style. So add one to three, few shot examples, include the relevant background, or use that interview technique to ensure that you're getting enough context before proceeding. Another common mistake is that the model ignores the format that you want, which means it can be hard to parse or reuse. So like I showed you before, you can explicitly request a specific structure and tell it to only output that. So Jason with keys, X, Y, Z, whatever, right? Only give me Jason. Do not give me any texts. Don't give me anything else, right? We're adding the constraints as well as being really specific in what we want. And then assuming memory, like I said, the model is going to forget things that aren't relevant or that aren't in the same thread conversation or context window that you're currently in. So make sure that you repeat or summarize key facts if the thread is long, or if you're working in a new session, don't assume the model remembers something. Again, you kind of have to infer like, what is the tool that you're using actually doing in the background to load up the model with this context? Okay. Now there's a lot of other mistakes and things that I can go through, but I'm going to leave kind of the rest of the stuff in this document for you guys to refer to if you would like. Last thing I will say is that it does just make a massive difference to practice this and to prompt a lot. The more you prompt, the more you're going to see what the LLMs respond to, how you get the best response, and you can prompt more and faster. If you use a tool like flow, like I've been using in this video, that allows you just to dictate it with your natural voice, as opposed to having to type it in. You guys have seen in this video, how quickly I could actually prompt and how much better the response is because I'm using my voice. So I know yes, they're a partner of mine, but I've been using them for a very long time. I really cannot recommend it enough. And whether you use them or someone else doesn't matter to me, but point is use some kind of dictation tool used on your phone, used on your computer, your productivity will skyrocket, especially if you're someone like a developer where you need really long detailed prompts and you're working with like multiple agents at once, like I am. So anyways, guys, that's going to wrap up this video. If you enjoyed, make sure you leave a like, subscribe, and I will see you in the next one."
+}

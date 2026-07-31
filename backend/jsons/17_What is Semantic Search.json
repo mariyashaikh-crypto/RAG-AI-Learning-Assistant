@@ -1,0 +1,1426 @@
+{
+    "chunks": [
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 0.0,
+            "end": 9.08,
+            "text": " Hello, I'm Luis Serrano from Cohere AI."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 9.08,
+            "end": 11.6,
+            "text": " This video is about semantic search."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 11.6,
+            "end": 16.52,
+            "text": " Semantic search is a really cool and powerful way to search in large databases using the"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 16.52,
+            "end": 18.080000000000002,
+            "text": " context of the query."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 18.080000000000002,
+            "end": 20.96,
+            "text": " Let me show you how it works."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 20.96,
+            "end": 24.28,
+            "text": " This video accompanies this post that you can find in the Cohere blog about semantic"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 24.28,
+            "end": 25.28,
+            "text": " search."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 25.28,
+            "end": 28.6,
+            "text": " There's also a code lab that you can follow along where you create a semantic search model"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 28.6,
+            "end": 30.32,
+            "text": " for a small dataset."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 30.32,
+            "end": 33.24,
+            "text": " Both links are in the description of the video."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 33.24,
+            "end": 37.120000000000005,
+            "text": " So before we get into what is semantic search, let me show you what's not semantic search."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 37.120000000000005,
+            "end": 41.400000000000006,
+            "text": " So basically, what were the previous methods used before semantic search?"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 41.400000000000006,
+            "end": 44.88,
+            "text": " So for semantic search, the search methods resemble lexical search, which is basically"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 44.88,
+            "end": 46.52,
+            "text": " word matching."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 46.52,
+            "end": 50.56,
+            "text": " To show you how lexical search works, imagine that you have a query, say, where was the"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 50.56,
+            "end": 52.44,
+            "text": " last World Cup?"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 52.44,
+            "end": 55.480000000000004,
+            "text": " And to find the response, you have a dataset of sentences."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 55.48,
+            "end": 60.12,
+            "text": " Let's say it's just these four sentences, and the idea is to search in the dataset for"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 60.12,
+            "end": 63.31999999999999,
+            "text": " the answer, or at least the closest things to an answer."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 63.31999999999999,
+            "end": 67.32,
+            "text": " So let's say that the possible answers are, the last World Cup was in Qatar, the sky is"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 67.32,
+            "end": 71.72,
+            "text": " blue, the bear lives in the woods, and an apple is a fruit."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 71.72,
+            "end": 75.86,
+            "text": " So the way lexical search works is by word matching."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 75.86,
+            "end": 81.67999999999999,
+            "text": " So it looks at which words from the query appear in the answer and counts them."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 81.68,
+            "end": 87.52000000000001,
+            "text": " So the first sentence has five words in common with the query, the second one, one, the third"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 87.52000000000001,
+            "end": 90.52000000000001,
+            "text": " one, two, and the fourth one, zero."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 90.52000000000001,
+            "end": 92.12,
+            "text": " So the first one wins."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 92.12,
+            "end": 95.30000000000001,
+            "text": " And this time it did okay, actually found the answer."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 95.30000000000001,
+            "end": 98.28,
+            "text": " But as you can imagine, this creates some problems."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 98.28,
+            "end": 101.0,
+            "text": " Imagine that the dataset of sentences are these ones."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 101.0,
+            "end": 104.76,
+            "text": " The previous World Cup was in Qatar, the cup is where you left it, where in the world is"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 104.76,
+            "end": 107.72,
+            "text": " my last cup of coffee, and an apple is a fruit."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 107.76,
+            "end": 113.48,
+            "text": " So if you do lexical search, you compare the number of words in the sentences and in the"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 113.48,
+            "end": 119.16,
+            "text": " query, you get four, three, five, and zero."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 119.16,
+            "end": 122.76,
+            "text": " So this one wins, where in the world is my last cup of coffee, even though it's not the"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 122.76,
+            "end": 127.52,
+            "text": " answer, it doesn't even have much to do with the query, but it has a lot of words in common."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 127.52,
+            "end": 131.44,
+            "text": " So counting words in common is not the ideal way to search."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 131.44,
+            "end": 133.72,
+            "text": " So we don't want lexical search."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 133.72,
+            "end": 139.32,
+            "text": " Instead, we want something called semantic search, where instead of the words, the actual"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 139.32,
+            "end": 143.28,
+            "text": " meaning of the sentence is taken into account."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 143.28,
+            "end": 147.64,
+            "text": " And for that, we need something very important, which is embeddings."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 147.64,
+            "end": 153.2,
+            "text": " So in the comments, we have a blog post and a video which describe embeddings in a more"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 153.2,
+            "end": 154.38,
+            "text": " detailed way."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 154.38,
+            "end": 158.24,
+            "text": " But let me tell you very briefly what is a text embedding."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 158.24,
+            "end": 160.6,
+            "text": " So here is a text embedding."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 160.6,
+            "end": 163.68,
+            "text": " For example, everything on the left is a word."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 163.68,
+            "end": 167.48,
+            "text": " Here are the words, apple, banana, strawberry, all the way to car."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 167.48,
+            "end": 172.44,
+            "text": " And the idea is that to each one of these, you assign two numbers."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 172.44,
+            "end": 175.56,
+            "text": " And the numbers are the horizontal coordinate and the vertical coordinates."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 175.56,
+            "end": 179.12,
+            "text": " So for example, banana has coordinates six, five."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 179.12,
+            "end": 184.18,
+            "text": " And the idea is that similar words have similar points in the embedding."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 184.18,
+            "end": 189.16,
+            "text": " So the fruits are close by the houses, the sports, and the vehicles are close by and"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 189.16,
+            "end": 191.64,
+            "text": " there are more to an embedding."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 191.64,
+            "end": 194.72,
+            "text": " But you can imagine it as something like this."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 194.72,
+            "end": 198.0,
+            "text": " Of course, there's many more numbers for an embedding, not just two."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 198.0,
+            "end": 202.24,
+            "text": " Sometimes you could have thousands, hundreds of thousands of or thousands of numbers."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 202.24,
+            "end": 203.76,
+            "text": " But that's the idea."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 203.76,
+            "end": 208.96,
+            "text": " And so we can actually look at the embedding in the Cohere playground and put some sentences"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 208.96,
+            "end": 213.07999999999998,
+            "text": " because sentences also enter in embeddings, not just words."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 213.07999999999998,
+            "end": 218.32,
+            "text": " And as you can see, all the sentences that look like they're greeting somebody are over"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 218.48,
+            "end": 219.48,
+            "text": " here."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 219.48,
+            "end": 223.2,
+            "text": " The sentences that look like they're talking about how much you love your dog are here."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 223.2,
+            "end": 228.1,
+            "text": " And the sentences that talk about how much you enjoy watching soccer are over here."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 228.1,
+            "end": 234.56,
+            "text": " So the idea of an embedding is that it brings a bunch of text into a bunch of numbers and"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 234.56,
+            "end": 240.92,
+            "text": " the numbers are similar if the text is similar, even if the text has no words in common with"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 240.92,
+            "end": 241.92,
+            "text": " other pieces of text."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 241.92,
+            "end": 242.92,
+            "text": " Right."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 242.92,
+            "end": 245.48,
+            "text": " Like if you have two sentences that mean something very similar, even though you have no words"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 245.48,
+            "end": 250.2,
+            "text": " in common, the embedding will put them close by."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 250.2,
+            "end": 252.72,
+            "text": " Now the question is how to search using a text embedding."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 252.72,
+            "end": 255.6,
+            "text": " Well, we're going to use something called nearest neighbors."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 255.6,
+            "end": 258.2,
+            "text": " So let's say you have these four sentences again."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 258.2,
+            "end": 259.68,
+            "text": " The last World Cup was in Qatar."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 259.68,
+            "end": 260.8,
+            "text": " The sky is blue."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 260.8,
+            "end": 263.12,
+            "text": " The bear lives in the woods and an apple is a fruit."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 263.12,
+            "end": 265.71999999999997,
+            "text": " And the query is where was the last World Cup?"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 265.71999999999997,
+            "end": 268.68,
+            "text": " So let's locate everything on an embedding."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 268.68,
+            "end": 272.4,
+            "text": " The sentences get located, let's say, around here."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 272.4,
+            "end": 277.79999999999995,
+            "text": " And when we locate the query, it gets located close to the first sentence."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 277.79999999999995,
+            "end": 284.12,
+            "text": " The last World Cup was in Qatar because semantically the embedding knows that these two sentences"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 284.12,
+            "end": 285.23999999999995,
+            "text": " are similar."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 285.23999999999995,
+            "end": 289.35999999999996,
+            "text": " So therefore, the winner is the last World Cup was in Qatar."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 289.35999999999996,
+            "end": 293.28,
+            "text": " And as you can see, this way of searching actually takes into account the meaning of"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 293.28,
+            "end": 296.71999999999997,
+            "text": " the sentence and not just the words on it."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 296.71999999999997,
+            "end": 299.84,
+            "text": " So it's much more effective than lexical search."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 299.84,
+            "end": 301.88,
+            "text": " You can play with this in the Cohere playground."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 302.36,
+            "end": 308.15999999999997,
+            "text": " For example, you can take the actual sentences and locate them here in the embedding."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 308.15999999999997,
+            "end": 309.36,
+            "text": " That's where they are."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 309.36,
+            "end": 312.44,
+            "text": " And when you have the query, where was the last World Cup?"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 312.44,
+            "end": 314.21999999999997,
+            "text": " It actually appears over here."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 314.21999999999997,
+            "end": 318.24,
+            "text": " So as you can see, the answer is the closest sentence."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 318.24,
+            "end": 321.2,
+            "text": " And you can actually put a bunch more questions."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 321.2,
+            "end": 325.12,
+            "text": " And as you can see, each question is the closest to its answer."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 325.12,
+            "end": 327.56,
+            "text": " So in principle, that's how nearest neighbors work."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 327.56,
+            "end": 331.6,
+            "text": " It looks for the nearest neighbor and says, well, I think I think this is the answer."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 332.32000000000005,
+            "end": 333.32000000000005,
+            "text": " And it seems to work pretty well."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 333.32000000000005,
+            "end": 337.12,
+            "text": " However, I talked about distance, but in reality, we're talking about similarity."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 337.12,
+            "end": 341.92,
+            "text": " Similar is a similar notion, except it's big when two things are close and small when two"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 341.92,
+            "end": 342.92,
+            "text": " things are far."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 342.92,
+            "end": 346.04,
+            "text": " So, for example, the sentences, hello, how are you and hi, how's it going?"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 346.04,
+            "end": 348.88,
+            "text": " Are close, so they would have high similarity."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 348.88,
+            "end": 350.32000000000005,
+            "text": " And the sentences, hello, how are you?"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 350.32000000000005,
+            "end": 354.46000000000004,
+            "text": " And yesterday's on elephant are far, so they would have low similarity."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 354.46000000000004,
+            "end": 358.72,
+            "text": " In the comments, there's also a video on a blog post that talk in much more detail about"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 358.84000000000003,
+            "end": 363.24,
+            "text": " different types of similarity that we can use for these models."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 363.24,
+            "end": 369.20000000000005,
+            "text": " Now, there are some problems with nearest neighbors, which is it's good, but it's slow."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 369.20000000000005,
+            "end": 372.08000000000004,
+            "text": " So imagine this."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 372.08000000000004,
+            "end": 377.36,
+            "text": " Let's say that I want to find that the answer to where was the last World Cup is the last"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 377.36,
+            "end": 378.48,
+            "text": " World Cup was in Qatar."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 378.48,
+            "end": 383.12,
+            "text": " So what I have to do, calculate a bunch of distances or a bunch of similarities."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 383.12,
+            "end": 387.68,
+            "text": " The fact is, I have to calculate as many as points in the data set."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 387.68,
+            "end": 391.68,
+            "text": " And if I want to find the answer to all these questions, I pretty much have to calculate"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 391.68,
+            "end": 392.68,
+            "text": " a lot of distances."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 392.68,
+            "end": 393.68,
+            "text": " So how many?"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 393.68,
+            "end": 397.64,
+            "text": " Well, if we have eight sentences, then we have eight square distances."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 397.64,
+            "end": 398.64,
+            "text": " Some of them are zero."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 398.64,
+            "end": 402.96000000000004,
+            "text": " Eight of them are zero, but still around the order of eight square."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 402.96000000000004,
+            "end": 405.92,
+            "text": " And if you had a thousand sentences, then we have one million distances because it's"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 405.92,
+            "end": 406.92,
+            "text": " a thousand square."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 406.92,
+            "end": 410.72,
+            "text": " And if you have n sentences, you have n square distances."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 410.72,
+            "end": 411.96000000000004,
+            "text": " That's a lot to calculate."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 411.96000000000004,
+            "end": 416.8,
+            "text": " So there's actually some shortcuts we can use to actually not have to calculate the"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 416.92,
+            "end": 421.08,
+            "text": " whole thing and find the nearest neighbor or at least something pretty close."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 421.08,
+            "end": 426.6,
+            "text": " And some solutions to this are inverted file index, which actually first clusters the points"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 426.6,
+            "end": 428.68,
+            "text": " and then searches around the close ones."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 428.68,
+            "end": 432.24,
+            "text": " Don't need to search on the ones that are very far in another cluster."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 432.24,
+            "end": 436.08000000000004,
+            "text": " And the hierarchical navigable small world, something very similar."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 436.08000000000004,
+            "end": 439.94,
+            "text": " Starts with a few points, search there, and then starts adding more points and more points."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 439.94,
+            "end": 443.32,
+            "text": " But using the information of what you had before, it's a much more effective way of"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 443.32,
+            "end": 444.32,
+            "text": " searching."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 444.32,
+            "end": 446.40000000000003,
+            "text": " Now, this doesn't need to work in just one language."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 447.0,
+            "end": 448.59999999999997,
+            "text": " It actually works in many, many languages."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 448.59999999999997,
+            "end": 451.79999999999995,
+            "text": " And the cohere multilingual model is very useful for that."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 451.79999999999995,
+            "end": 454.59999999999997,
+            "text": " If you look in the playground, you can actually play with the multilingual model."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 454.59999999999997,
+            "end": 458.67999999999995,
+            "text": " You can put a bunch of different sentences in different languages."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 458.67999999999995,
+            "end": 465.4,
+            "text": " And so, for example, I have the same sentence in French, English and Spanish, and you can"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 465.4,
+            "end": 467.67999999999995,
+            "text": " see that the embedding actually locates them pretty close."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 467.67999999999995,
+            "end": 472.44,
+            "text": " So you can have a data set of responses in one language and ask something in a different"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 472.44,
+            "end": 475.4,
+            "text": " language and you will find the best response."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 475.4,
+            "end": 477.79999999999995,
+            "text": " So this is definitely language agnostic."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 477.79999999999995,
+            "end": 479.0,
+            "text": " Now here's a question."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 479.0,
+            "end": 481.23999999999995,
+            "text": " Are we done with just embedding and similarity?"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 481.23999999999995,
+            "end": 485.59999999999997,
+            "text": " It seemed to work pretty well, better than lexical search, but is it all?"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 485.59999999999997,
+            "end": 488.84,
+            "text": " You can imagine that there may be some potential problems, right?"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 488.84,
+            "end": 490.4,
+            "text": " Here's a potential problem."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 490.4,
+            "end": 495.56,
+            "text": " Let's say that our query is, where was the last World Cup, which is over here."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 495.56,
+            "end": 501.84,
+            "text": " And the answers are, the last World Cup was in Qatar, the previous World Cup was in Russia,"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 501.84,
+            "end": 504.28,
+            "text": " and the World Cup is in the moon."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 504.28,
+            "end": 509.4,
+            "text": " Now, these are all similar sentences because embedding only takes care of sentences that"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 509.4,
+            "end": 510.4,
+            "text": " are similar."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 510.4,
+            "end": 514.68,
+            "text": " It doesn't really check if the actual answer was given."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 514.68,
+            "end": 519.04,
+            "text": " So for example, we would love for this one to be the answer, the last World Cup was in"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 519.04,
+            "end": 524.68,
+            "text": " Qatar, but this sentence is also very close and it gives something pretty close to the"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 524.68,
+            "end": 525.68,
+            "text": " answer."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 525.68,
+            "end": 526.68,
+            "text": " The previous World Cup was in Russia."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 526.68,
+            "end": 530.9599999999999,
+            "text": " That's pretty close to the actual answer, but it's not the answer."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 530.96,
+            "end": 535.72,
+            "text": " So looking for the closest sentence doesn't necessarily give us the answer."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 535.72,
+            "end": 538.6,
+            "text": " It gives us something pretty similar to the question."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 538.6,
+            "end": 540.08,
+            "text": " So how can we fix that?"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 540.08,
+            "end": 542.9200000000001,
+            "text": " How can we make search better?"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 542.9200000000001,
+            "end": 544.96,
+            "text": " And there are several techniques that we use."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 544.96,
+            "end": 547.24,
+            "text": " The first one is re-ranking."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 547.24,
+            "end": 550.9200000000001,
+            "text": " So let's say that the query again is, where was the last World Cup?"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 550.9200000000001,
+            "end": 555.48,
+            "text": " And when we look using an embedding, the most similar sentences are this."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 555.48,
+            "end": 559.24,
+            "text": " Let's just say that these are the similar sentences and some of them are answers and"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 559.36,
+            "end": 560.96,
+            "text": " some of them are non-answers."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 560.96,
+            "end": 563.52,
+            "text": " So we have a different model that ranks them."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 563.52,
+            "end": 571.16,
+            "text": " So a model that is actually trained to see how good is a pair question answer and that"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 571.16,
+            "end": 576.6,
+            "text": " model will select the actual answer, the last World Cup was in Qatar."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 576.6,
+            "end": 577.6,
+            "text": " So how does this work?"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 577.6,
+            "end": 584.08,
+            "text": " Well, we have a data set of questions and answers and we train a model with those questions"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 584.08,
+            "end": 589.48,
+            "text": " and answers and we train it to give high scores to correct pairs of question answer"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 589.48,
+            "end": 593.88,
+            "text": " and to give low scores to pairs that are question and a bad answer."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 593.88,
+            "end": 596.2,
+            "text": " And notice that you can try to make this really close."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 596.2,
+            "end": 602.0,
+            "text": " As you can see, the bad answers here are actually very close to being the right answer, except"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 602.0,
+            "end": 603.24,
+            "text": " they are slightly wrong."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 603.24,
+            "end": 607.64,
+            "text": " For example, the sky is red, the bear lives in New York City, or an apple is a vegetable."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 607.64,
+            "end": 610.12,
+            "text": " They look like the answer, but they're not."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 610.12,
+            "end": 613.9200000000001,
+            "text": " And so a good model that's trained to tell good answers from bad answers will actually"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 614.76,
+            "end": 615.9599999999999,
+            "text": " be very good at re-ranking."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 615.9599999999999,
+            "end": 621.64,
+            "text": " So then we're going to use an embedding plus re-ranking to be able to search better."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 621.64,
+            "end": 626.0799999999999,
+            "text": " So if you say, for example, where was the last World Cup and the responses are these"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 626.0799999999999,
+            "end": 630.9599999999999,
+            "text": " given by the embedding, the closest sentences given by the embedding, then the model will"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 630.9599999999999,
+            "end": 634.66,
+            "text": " actually score all of them and say, well, some of them are not very good."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 634.66,
+            "end": 636.4,
+            "text": " Some of them are pretty good."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 636.4,
+            "end": 638.04,
+            "text": " And based on the scores, you rank them."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 638.04,
+            "end": 640.9599999999999,
+            "text": " And the one with the highest score is the answer."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 640.96,
+            "end": 646.2,
+            "text": " This has given great, great results in terms of searching."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 646.2,
+            "end": 649.5600000000001,
+            "text": " And another technique is to use something called positive and negative pairs."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 649.5600000000001,
+            "end": 653.44,
+            "text": " So just like before, we're going to have a bunch of questions and answers that are correct"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 653.44,
+            "end": 657.84,
+            "text": " in the left as the positive pairs and a bunch of questions and bad answers, which are very"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 657.84,
+            "end": 660.84,
+            "text": " close to the answer, but not the answer."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 660.84,
+            "end": 663.0400000000001,
+            "text": " And we are going to play with the embedding."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 663.0400000000001,
+            "end": 668.32,
+            "text": " So for example, if here you have what color is the sky and the actual answer, the sky"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 668.32,
+            "end": 671.6,
+            "text": " is blue and a bad answer, the sky is above."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 671.6,
+            "end": 676.96,
+            "text": " Well, if this is a negative pair, then we're going to move them away in the embedding."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 676.96,
+            "end": 680.72,
+            "text": " And if this is a positive pair, then we're going to move them closely in the embedding."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 680.72,
+            "end": 686.6400000000001,
+            "text": " So we're going to move the embedding around to actually optimize for answering questions"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 686.6400000000001,
+            "end": 687.6400000000001,
+            "text": " properly."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 687.6400000000001,
+            "end": 693.44,
+            "text": " This has also proven very useful in improving search models vastly."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 693.44,
+            "end": 694.6400000000001,
+            "text": " And that's it for semantic search."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 694.8,
+            "end": 699.24,
+            "text": " As you can imagine, there are many, many great ways to improve these algorithms and we're"
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 699.24,
+            "end": 700.88,
+            "text": " always working on them."
+        },
+        {
+            "number": "17",
+            "title": "What is Semantic Search",
+            "start": 700.88,
+            "end": 702.1999999999999,
+            "text": " Stay tuned for more similar videos."
+        }
+    ],
+    "text": " Hello, I'm Luis Serrano from Cohere AI. This video is about semantic search. Semantic search is a really cool and powerful way to search in large databases using the context of the query. Let me show you how it works. This video accompanies this post that you can find in the Cohere blog about semantic search. There's also a code lab that you can follow along where you create a semantic search model for a small dataset. Both links are in the description of the video. So before we get into what is semantic search, let me show you what's not semantic search. So basically, what were the previous methods used before semantic search? So for semantic search, the search methods resemble lexical search, which is basically word matching. To show you how lexical search works, imagine that you have a query, say, where was the last World Cup? And to find the response, you have a dataset of sentences. Let's say it's just these four sentences, and the idea is to search in the dataset for the answer, or at least the closest things to an answer. So let's say that the possible answers are, the last World Cup was in Qatar, the sky is blue, the bear lives in the woods, and an apple is a fruit. So the way lexical search works is by word matching. So it looks at which words from the query appear in the answer and counts them. So the first sentence has five words in common with the query, the second one, one, the third one, two, and the fourth one, zero. So the first one wins. And this time it did okay, actually found the answer. But as you can imagine, this creates some problems. Imagine that the dataset of sentences are these ones. The previous World Cup was in Qatar, the cup is where you left it, where in the world is my last cup of coffee, and an apple is a fruit. So if you do lexical search, you compare the number of words in the sentences and in the query, you get four, three, five, and zero. So this one wins, where in the world is my last cup of coffee, even though it's not the answer, it doesn't even have much to do with the query, but it has a lot of words in common. So counting words in common is not the ideal way to search. So we don't want lexical search. Instead, we want something called semantic search, where instead of the words, the actual meaning of the sentence is taken into account. And for that, we need something very important, which is embeddings. So in the comments, we have a blog post and a video which describe embeddings in a more detailed way. But let me tell you very briefly what is a text embedding. So here is a text embedding. For example, everything on the left is a word. Here are the words, apple, banana, strawberry, all the way to car. And the idea is that to each one of these, you assign two numbers. And the numbers are the horizontal coordinate and the vertical coordinates. So for example, banana has coordinates six, five. And the idea is that similar words have similar points in the embedding. So the fruits are close by the houses, the sports, and the vehicles are close by and there are more to an embedding. But you can imagine it as something like this. Of course, there's many more numbers for an embedding, not just two. Sometimes you could have thousands, hundreds of thousands of or thousands of numbers. But that's the idea. And so we can actually look at the embedding in the Cohere playground and put some sentences because sentences also enter in embeddings, not just words. And as you can see, all the sentences that look like they're greeting somebody are over here. The sentences that look like they're talking about how much you love your dog are here. And the sentences that talk about how much you enjoy watching soccer are over here. So the idea of an embedding is that it brings a bunch of text into a bunch of numbers and the numbers are similar if the text is similar, even if the text has no words in common with other pieces of text. Right. Like if you have two sentences that mean something very similar, even though you have no words in common, the embedding will put them close by. Now the question is how to search using a text embedding. Well, we're going to use something called nearest neighbors. So let's say you have these four sentences again. The last World Cup was in Qatar. The sky is blue. The bear lives in the woods and an apple is a fruit. And the query is where was the last World Cup? So let's locate everything on an embedding. The sentences get located, let's say, around here. And when we locate the query, it gets located close to the first sentence. The last World Cup was in Qatar because semantically the embedding knows that these two sentences are similar. So therefore, the winner is the last World Cup was in Qatar. And as you can see, this way of searching actually takes into account the meaning of the sentence and not just the words on it. So it's much more effective than lexical search. You can play with this in the Cohere playground. For example, you can take the actual sentences and locate them here in the embedding. That's where they are. And when you have the query, where was the last World Cup? It actually appears over here. So as you can see, the answer is the closest sentence. And you can actually put a bunch more questions. And as you can see, each question is the closest to its answer. So in principle, that's how nearest neighbors work. It looks for the nearest neighbor and says, well, I think I think this is the answer. And it seems to work pretty well. However, I talked about distance, but in reality, we're talking about similarity. Similar is a similar notion, except it's big when two things are close and small when two things are far. So, for example, the sentences, hello, how are you and hi, how's it going? Are close, so they would have high similarity. And the sentences, hello, how are you? And yesterday's on elephant are far, so they would have low similarity. In the comments, there's also a video on a blog post that talk in much more detail about different types of similarity that we can use for these models. Now, there are some problems with nearest neighbors, which is it's good, but it's slow. So imagine this. Let's say that I want to find that the answer to where was the last World Cup is the last World Cup was in Qatar. So what I have to do, calculate a bunch of distances or a bunch of similarities. The fact is, I have to calculate as many as points in the data set. And if I want to find the answer to all these questions, I pretty much have to calculate a lot of distances. So how many? Well, if we have eight sentences, then we have eight square distances. Some of them are zero. Eight of them are zero, but still around the order of eight square. And if you had a thousand sentences, then we have one million distances because it's a thousand square. And if you have n sentences, you have n square distances. That's a lot to calculate. So there's actually some shortcuts we can use to actually not have to calculate the whole thing and find the nearest neighbor or at least something pretty close. And some solutions to this are inverted file index, which actually first clusters the points and then searches around the close ones. Don't need to search on the ones that are very far in another cluster. And the hierarchical navigable small world, something very similar. Starts with a few points, search there, and then starts adding more points and more points. But using the information of what you had before, it's a much more effective way of searching. Now, this doesn't need to work in just one language. It actually works in many, many languages. And the cohere multilingual model is very useful for that. If you look in the playground, you can actually play with the multilingual model. You can put a bunch of different sentences in different languages. And so, for example, I have the same sentence in French, English and Spanish, and you can see that the embedding actually locates them pretty close. So you can have a data set of responses in one language and ask something in a different language and you will find the best response. So this is definitely language agnostic. Now here's a question. Are we done with just embedding and similarity? It seemed to work pretty well, better than lexical search, but is it all? You can imagine that there may be some potential problems, right? Here's a potential problem. Let's say that our query is, where was the last World Cup, which is over here. And the answers are, the last World Cup was in Qatar, the previous World Cup was in Russia, and the World Cup is in the moon. Now, these are all similar sentences because embedding only takes care of sentences that are similar. It doesn't really check if the actual answer was given. So for example, we would love for this one to be the answer, the last World Cup was in Qatar, but this sentence is also very close and it gives something pretty close to the answer. The previous World Cup was in Russia. That's pretty close to the actual answer, but it's not the answer. So looking for the closest sentence doesn't necessarily give us the answer. It gives us something pretty similar to the question. So how can we fix that? How can we make search better? And there are several techniques that we use. The first one is re-ranking. So let's say that the query again is, where was the last World Cup? And when we look using an embedding, the most similar sentences are this. Let's just say that these are the similar sentences and some of them are answers and some of them are non-answers. So we have a different model that ranks them. So a model that is actually trained to see how good is a pair question answer and that model will select the actual answer, the last World Cup was in Qatar. So how does this work? Well, we have a data set of questions and answers and we train a model with those questions and answers and we train it to give high scores to correct pairs of question answer and to give low scores to pairs that are question and a bad answer. And notice that you can try to make this really close. As you can see, the bad answers here are actually very close to being the right answer, except they are slightly wrong. For example, the sky is red, the bear lives in New York City, or an apple is a vegetable. They look like the answer, but they're not. And so a good model that's trained to tell good answers from bad answers will actually be very good at re-ranking. So then we're going to use an embedding plus re-ranking to be able to search better. So if you say, for example, where was the last World Cup and the responses are these given by the embedding, the closest sentences given by the embedding, then the model will actually score all of them and say, well, some of them are not very good. Some of them are pretty good. And based on the scores, you rank them. And the one with the highest score is the answer. This has given great, great results in terms of searching. And another technique is to use something called positive and negative pairs. So just like before, we're going to have a bunch of questions and answers that are correct in the left as the positive pairs and a bunch of questions and bad answers, which are very close to the answer, but not the answer. And we are going to play with the embedding. So for example, if here you have what color is the sky and the actual answer, the sky is blue and a bad answer, the sky is above. Well, if this is a negative pair, then we're going to move them away in the embedding. And if this is a positive pair, then we're going to move them closely in the embedding. So we're going to move the embedding around to actually optimize for answering questions properly. This has also proven very useful in improving search models vastly. And that's it for semantic search. As you can imagine, there are many, many great ways to improve these algorithms and we're always working on them. Stay tuned for more similar videos."
+}

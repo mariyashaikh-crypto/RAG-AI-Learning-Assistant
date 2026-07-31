@@ -1,0 +1,2742 @@
+{
+    "chunks": [
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 0.0,
+            "end": 4.5600000000000005,
+            "text": " In the last chapter, you and I started to step through the internal workings of a transformer."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 4.5600000000000005,
+            "end": 8.42,
+            "text": " This is one of the key pieces of technology inside large language models, and a lot of"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 8.42,
+            "end": 11.0,
+            "text": " other tools in the modern wave of AI."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 11.0,
+            "end": 15.8,
+            "text": " It first hit the scene in a now-famous 2017 paper called Attention is All You Need, and"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 15.8,
+            "end": 20.56,
+            "text": " in this chapter you and I will dig into what this attention mechanism is, visualizing how"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 20.56,
+            "end": 26.44,
+            "text": " it processes data."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 26.44,
+            "end": 30.1,
+            "text": " As a quick recap, here's the important context I want you to have in mind."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 30.1,
+            "end": 34.7,
+            "text": " The goal of the model you and I are studying is to take in a piece of text and predict"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 34.7,
+            "end": 36.78,
+            "text": " what word comes next."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 36.78,
+            "end": 41.54,
+            "text": " The input text is broken up into little pieces that we call tokens, and these are very often"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 41.54,
+            "end": 45.86,
+            "text": " words or pieces of words, but just to make the examples in this video easier for you"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 45.86,
+            "end": 51.42,
+            "text": " and me to think about, let's simplify by pretending that tokens are always just words."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 51.42,
+            "end": 56.5,
+            "text": " The first step in a transformer is to associate each token with a high-dimensional vector,"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 56.5,
+            "end": 58.260000000000005,
+            "text": " what we call its embedding."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 58.260000000000005,
+            "end": 62.64,
+            "text": " The most important idea I want you to have in mind is how directions in this high-dimensional"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 62.64,
+            "end": 67.62,
+            "text": " space of all possible embeddings can correspond with semantic meaning."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 67.62,
+            "end": 71.7,
+            "text": " In the last chapter we saw an example for how direction can correspond to gender, in"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 71.7,
+            "end": 76.0,
+            "text": " the sense that adding a certain step in this space can take you from the embedding of a"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 76.0,
+            "end": 80.18,
+            "text": " masculine noun to the embedding of the corresponding feminine noun."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 80.18,
+            "end": 83.84,
+            "text": " That's just one example you could imagine how many other directions in this high-dimensional"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 83.84,
+            "end": 88.78,
+            "text": " space could correspond to numerous other aspects of a word's meaning."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 88.78,
+            "end": 93.30000000000001,
+            "text": " The aim of a transformer is to progressively adjust these embeddings so that they don't"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 93.30000000000001,
+            "end": 98.98,
+            "text": " merely encode an individual word, but instead they bake in some much, much richer contextual"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 98.98,
+            "end": 99.98,
+            "text": " meaning."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 99.98,
+            "end": 103.92000000000002,
+            "text": " I should say up front that a lot of people find the attention mechanism, this key piece"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 103.92000000000002,
+            "end": 108.22,
+            "text": " in a transformer, very confusing, so don't worry if it takes some time for things to"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 108.22,
+            "end": 109.48,
+            "text": " sink in."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 109.48,
+            "end": 113.56,
+            "text": " I think that before we dive into the computational details and all the matrix multiplications,"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 113.56,
+            "end": 118.24000000000001,
+            "text": " it's worth thinking about a couple examples for the kind of behavior we want attention"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 118.24000000000001,
+            "end": 120.28,
+            "text": " to enable."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 120.28,
+            "end": 125.48,
+            "text": " Consider the phrases American true mole, one mole of carbon dioxide, and take a biopsy"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 125.48,
+            "end": 126.72,
+            "text": " of the mole."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 126.72,
+            "end": 130.44,
+            "text": " You and I know that the word mole has different meanings in each one of these, based on the"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 130.44,
+            "end": 131.44,
+            "text": " context."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 131.44,
+            "end": 135.08,
+            "text": " But after the first step of a transformer, the one that breaks up the text and associates"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 135.08,
+            "end": 140.4,
+            "text": " each token with a vector, the vector associated with mole would be the same in all three of"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 140.4,
+            "end": 145.34,
+            "text": " these cases, because this initial token embedding is effectively a lookup table with no reference"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 145.34,
+            "end": 147.0,
+            "text": " to the context."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 147.0,
+            "end": 151.18,
+            "text": " It's only in the next step of the transformer that the surrounding embeddings have the chance"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 151.18,
+            "end": 153.88000000000002,
+            "text": " to pass information into this one."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 153.88000000000002,
+            "end": 157.32000000000002,
+            "text": " The picture you might have in mind is that there are multiple distinct directions in"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 157.32000000000002,
+            "end": 161.88000000000002,
+            "text": " this embedding space encoding the multiple distinct meanings of the word mole, and that"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 161.88,
+            "end": 166.96,
+            "text": " a well-trained attention block calculates what you need to add to the generic embedding"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 166.96,
+            "end": 173.26,
+            "text": " to move it to one of these more specific directions, as a function of the context."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 173.26,
+            "end": 177.04,
+            "text": " To take another example, consider the embedding of the word tower."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 177.04,
+            "end": 181.72,
+            "text": " This is presumably some very generic non-specific direction in the space, associated with lots"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 181.72,
+            "end": 184.04,
+            "text": " of other large, tall nouns."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 184.04,
+            "end": 189.07999999999998,
+            "text": " If this word was immediately preceded by Eiffel, you could imagine wanting the mechanism to"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 189.08,
+            "end": 193.52,
+            "text": " update this vector so that it points in a direction that more specifically encodes the"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 193.52,
+            "end": 198.3,
+            "text": " Eiffel tower, maybe correlated with vectors associated with Paris and France and things"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 198.3,
+            "end": 199.92000000000002,
+            "text": " made of steel."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 199.92000000000002,
+            "end": 204.72000000000003,
+            "text": " If it was also preceded by the word miniature, then the vector should be updated even further"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 204.72000000000003,
+            "end": 209.64000000000001,
+            "text": " so that it no longer correlates with large, tall things."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 209.64000000000001,
+            "end": 213.5,
+            "text": " More generally than just refining the meaning of a word, the attention block allows the"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 213.5,
+            "end": 218.74,
+            "text": " model to move information encoded in one embedding to that of another, potentially ones that"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 218.74,
+            "end": 222.44,
+            "text": " are quite far away, and potentially with information that's much richer than just"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 222.44,
+            "end": 224.02,
+            "text": " a single word."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 224.02,
+            "end": 228.22,
+            "text": " What we saw in the last chapter was how after all of the vectors flow through the network,"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 228.22,
+            "end": 233.14000000000001,
+            "text": " including many different attention blocks, the computation you perform to produce a prediction"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 233.14000000000001,
+            "end": 239.06,
+            "text": " of the next token is entirely a function of the last vector in the sequence."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 239.06,
+            "end": 243.84,
+            "text": " So imagine for example that the text you input is most of an entire mystery novel, all the"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 243.84,
+            "end": 248.58,
+            "text": " way up to a point near the end, which reads, therefore the murderer was."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 248.58,
+            "end": 253.08,
+            "text": " If the model is going to accurately predict the next word, that final vector in the sequence,"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 253.08,
+            "end": 257.68,
+            "text": " which began its life simply embedding the word was, will have to have been updated by"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 257.68,
+            "end": 263.3,
+            "text": " all of the attention blocks to represent much more than any individual word, somehow encoding"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 263.3,
+            "end": 267.44,
+            "text": " all of the information from the full context window that's relevant to predicting the"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 267.44,
+            "end": 269.52,
+            "text": " next word."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 269.52,
+            "end": 273.24,
+            "text": " To step through the computations though, let's take a much simpler example."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 273.24,
+            "end": 277.64,
+            "text": " Imagine that the input includes the phrase, a fluffy blue creature roamed the verdant"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 277.64,
+            "end": 278.64,
+            "text": " forest."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 278.64,
+            "end": 282.92,
+            "text": " And for the moment, suppose that the only type of update we care about is having the"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 282.92,
+            "end": 286.96000000000004,
+            "text": " adjectives adjust the meanings of their corresponding nouns."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 286.96000000000004,
+            "end": 291.56,
+            "text": " What I'm about to describe is what we would call a single head of attention, and later"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 291.56,
+            "end": 295.8,
+            "text": " we will see how the attention block consists of many different heads run in parallel."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 295.8,
+            "end": 300.14,
+            "text": " Again, the initial embedding for each word is some high dimensional vector that only"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 300.14,
+            "end": 303.65999999999997,
+            "text": " encodes the meaning of that particular word with no context."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 303.65999999999997,
+            "end": 305.5,
+            "text": " Actually, that's not quite true."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 305.5,
+            "end": 308.14,
+            "text": " They also encode the position of the word."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 308.14,
+            "end": 312.26,
+            "text": " There's a lot more to say about the specific way the positions are encoded, but right now"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 312.26,
+            "end": 316.02,
+            "text": " all you need to know is that the entries of this vector are enough to tell you both what"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 316.02,
+            "end": 319.46,
+            "text": " the word is and where it exists in the context."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 319.46,
+            "end": 322.38,
+            "text": " Let's go ahead and denote these embeddings with the letter e."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 322.38,
+            "end": 327.3,
+            "text": " The goal is to have a series of computations produce a new refined set of embeddings where"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 327.38,
+            "end": 332.54,
+            "text": " for example those corresponding to the nouns have ingested the meaning from their corresponding"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 332.54,
+            "end": 333.88,
+            "text": " adjectives."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 333.88,
+            "end": 337.74,
+            "text": " And playing the deep learning game, we want most of the computations involved to look"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 337.74,
+            "end": 342.42,
+            "text": " like matrix vector products, where the matrices are full of tunable weights, things that the"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 342.42,
+            "end": 344.72,
+            "text": " model will learn based on data."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 344.72,
+            "end": 348.92,
+            "text": " To be clear, I'm making up this example of adjectives updating nouns just to illustrate"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 348.92,
+            "end": 352.98,
+            "text": " the type of behavior that you could imagine an attention head doing."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 352.98,
+            "end": 356.84000000000003,
+            "text": " As with so much deep learning, the true behavior is much harder to parse, because it's based"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 356.84,
+            "end": 362.0,
+            "text": " on tweaking and tuning a huge number of parameters to minimize some cost function."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 362.0,
+            "end": 365.52,
+            "text": " It's just that as we step through all the different matrices filled with parameters"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 365.52,
+            "end": 370.17999999999995,
+            "text": " that are involved in this process, I think it's really helpful to have an imagined example"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 370.17999999999995,
+            "end": 374.17999999999995,
+            "text": " of something that it could be doing to help keep it all more concrete."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 374.17999999999995,
+            "end": 378.38,
+            "text": " For the first step of this process, you might imagine each noun, like a creature, asking"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 378.38,
+            "end": 382.28,
+            "text": " the question, hey, are there any adjectives sitting in front of me?"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 382.28,
+            "end": 387.08,
+            "text": " And for the words fluffy and blue to each be able to answer, yeah, I'm an adjective,"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 387.08,
+            "end": 389.44,
+            "text": " and I'm in that position."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 389.44,
+            "end": 394.34,
+            "text": " That question is somehow encoded as yet another vector, another list of numbers, which we"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 394.34,
+            "end": 396.96,
+            "text": " call the query for this word."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 396.96,
+            "end": 403.23999999999995,
+            "text": " This query vector, though, has a much smaller dimension than the embedding vector, say 128."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 403.23999999999995,
+            "end": 408.03999999999996,
+            "text": " Computing this query looks like taking a certain matrix, which I'll label WQ, and multiplying"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 408.03999999999996,
+            "end": 411.4,
+            "text": " it by the embedding."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 411.52,
+            "end": 417.12,
+            "text": " Let's write that query vector as Q, and then any time you see me put a matrix next to an"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 417.12,
+            "end": 421.4,
+            "text": " arrow like this one, it's meant to represent that multiplying this matrix by the vector"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 421.4,
+            "end": 426.23999999999995,
+            "text": " at the arrow's start gives you the vector at the arrow's end."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 426.23999999999995,
+            "end": 430.47999999999996,
+            "text": " In this case, you multiply this matrix by all of the embeddings in the context, producing"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 430.47999999999996,
+            "end": 433.7,
+            "text": " one query vector for each token."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 433.7,
+            "end": 437.76,
+            "text": " The entries of this matrix are parameters of the model, which means the true behavior"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 437.76,
+            "end": 441.71999999999997,
+            "text": " is learned from data, and in practice what this matrix does in a particular attention"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 441.71999999999997,
+            "end": 443.98,
+            "text": " head is challenging to parse."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 443.98,
+            "end": 447.92,
+            "text": " But for our sake, imagining an example that we might hope it would learn, we'll suppose"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 447.92,
+            "end": 452.64,
+            "text": " that this query matrix maps the embeddings of nouns to certain directions in this smaller"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 452.64,
+            "end": 458.94,
+            "text": " query space that somehow encodes the notion of looking for adjectives in preceding positions."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 458.94,
+            "end": 463.36,
+            "text": " As to what it does to other embeddings, who knows, maybe it simultaneously tries to accomplish"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 463.36,
+            "end": 467.32,
+            "text": " some other goal with those, right now we're laser focused on the nouns."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 467.32,
+            "end": 472.32,
+            "text": " At the same time, associated with this is a second matrix, called the key matrix, which"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 472.32,
+            "end": 475.32,
+            "text": " you also multiply by every one of the embeddings."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 475.32,
+            "end": 479.28,
+            "text": " This produces a second sequence of vectors that we call the keys."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 479.28,
+            "end": 483.96,
+            "text": " Conceptually, you want to think of the keys as potentially answering the queries."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 483.96,
+            "end": 488.4,
+            "text": " This key matrix is also full of tunable parameters, and just like the query matrix, it maps the"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 488.4,
+            "end": 492.24,
+            "text": " embedding vectors to that same smaller dimensional space."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 492.24,
+            "end": 497.56,
+            "text": " You think of the keys as matching the queries whenever they closely align with each other."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 497.56,
+            "end": 501.52,
+            "text": " In our example, you would imagine that the key matrix maps the adjectives, like fluffy"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 501.52,
+            "end": 507.64,
+            "text": " and blue, to vectors that are closely aligned with the query produced by the word creature."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 507.64,
+            "end": 512.46,
+            "text": " To measure how well each key matches each query, you compute a dot product between each"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 512.46,
+            "end": 514.88,
+            "text": " possible key query pair."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 514.88,
+            "end": 519.14,
+            "text": " I like to visualize a grid full of a bunch of dots, where the bigger dots correspond"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 519.14,
+            "end": 523.46,
+            "text": " to the larger dot products, the places where the keys and queries align."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 523.46,
+            "end": 528.14,
+            "text": " For our adjective noun example, that would look a little more like this, where if the"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 528.14,
+            "end": 534.06,
+            "text": " keys produced by fluffy and blue really do align closely with the query produced by creature,"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 534.06,
+            "end": 539.22,
+            "text": " then the dot products in these two spots would be some large positive numbers."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 539.22,
+            "end": 542.58,
+            "text": " In the lingo, machine learning people would say that this means the embeddings of fluffy"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 542.58,
+            "end": 546.02,
+            "text": " and blue attend to the embedding of creature."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 546.02,
+            "end": 550.54,
+            "text": " The contrast to the dot product between the key for some other word, like the, and the"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 550.54,
+            "end": 555.24,
+            "text": " query for creature, would be some small or negative value that reflects that these are"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 555.24,
+            "end": 557.86,
+            "text": " unrelated to each other."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 557.86,
+            "end": 562.38,
+            "text": " So we have this grid of values that can be any real number from negative infinity to"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 562.38,
+            "end": 567.8199999999999,
+            "text": " infinity, giving us a score for how relevant each word is to updating the meaning of every"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 567.8199999999999,
+            "end": 569.18,
+            "text": " other word."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 569.18,
+            "end": 573.42,
+            "text": " The way we're about to use these scores is to take a certain weighted sum along each"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 573.42,
+            "end": 576.5,
+            "text": " column weighted by the relevance."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 576.5,
+            "end": 581.02,
+            "text": " So instead of having values range from negative infinity to infinity, what we want is for"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 581.02,
+            "end": 585.9399999999999,
+            "text": " the numbers in these columns to be between 0 and 1, and for each column to add up to"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 585.9399999999999,
+            "end": 589.28,
+            "text": " 1, as if they were a probability distribution."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 589.28,
+            "end": 592.62,
+            "text": " If you're coming in from the last chapter, you know what we need to do then."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 592.62,
+            "end": 600.36,
+            "text": " We compute a softmax along each one of these columns to normalize the values."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 600.36,
+            "end": 604.34,
+            "text": " In our picture, after you apply softmax to all of the columns, we'll fill in the grid"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 604.34,
+            "end": 606.96,
+            "text": " with these normalized values."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 606.96,
+            "end": 610.36,
+            "text": " At this point you're safe to think about each column as giving weights according to how"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 610.36,
+            "end": 615.04,
+            "text": " relevant the word on the left is to the corresponding value at the top."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 615.04,
+            "end": 618.0,
+            "text": " We call this grid an attention pattern."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 618.0,
+            "end": 621.76,
+            "text": " Now if you look at the original transformer paper, there's a really compact way that they"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 621.76,
+            "end": 623.92,
+            "text": " write this all down."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 623.92,
+            "end": 630.8,
+            "text": " Here the variables q and k represent the full arrays of query and key vectors respectively,"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 630.8,
+            "end": 635.28,
+            "text": " those little vectors you get by multiplying the embeddings by the query and key matrices."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 635.28,
+            "end": 640.1999999999999,
+            "text": " This expression up in the numerator is a really compact way to represent the grid of all possible"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 640.1999999999999,
+            "end": 643.8399999999999,
+            "text": " dot products between pairs of keys and queries."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 643.8399999999999,
+            "end": 648.28,
+            "text": " A small technical detail that I didn't mention is that for numerical stability, it happens"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 648.28,
+            "end": 652.88,
+            "text": " to be helpful to divide all of these values by the square root of the dimension in that"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 652.88,
+            "end": 654.88,
+            "text": " key query space."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 654.88,
+            "end": 659.12,
+            "text": " Then this softmax that's wrapped around the full expression is meant to be understood"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 659.12,
+            "end": 661.8,
+            "text": " to apply column by column."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 661.8,
+            "end": 665.2,
+            "text": " As to that v term, we'll talk about it in just a second."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 665.2,
+            "end": 669.04,
+            "text": " Before that, there's one other technical detail that so far I've skipped."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 669.04,
+            "end": 673.12,
+            "text": " During the training process, when you run this model on a given text example, and all"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 673.12,
+            "end": 677.46,
+            "text": " of the weights are slightly adjusted and tuned to either reward or punish it based on how"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 677.46,
+            "end": 681.44,
+            "text": " high a probability it assigns to the true next word in the passage, it turns out to"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 681.44,
+            "end": 685.8000000000001,
+            "text": " make the whole training process a lot more efficient if you simultaneously have it predict"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 685.8000000000001,
+            "end": 691.96,
+            "text": " every possible next token following each initial subsequence of tokens in this passage."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 691.96,
+            "end": 695.8800000000001,
+            "text": " For example, with the phrase we've been focusing on, it might also be predicting what"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 695.8800000000001,
+            "end": 700.2800000000001,
+            "text": " words follow creature, and what words follow the."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 700.2800000000001,
+            "end": 703.9200000000001,
+            "text": " This is really nice, because it means what would otherwise be a single training example"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 703.9200000000001,
+            "end": 706.12,
+            "text": " effectively acts as many."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 706.12,
+            "end": 710.1600000000001,
+            "text": " For the purposes of our attention pattern, it means that you never want to allow later"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 710.16,
+            "end": 715.04,
+            "text": " words to influence earlier words, since otherwise they could kind of give away the answer for"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 715.04,
+            "end": 716.54,
+            "text": " what comes next."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 716.54,
+            "end": 720.8,
+            "text": " What this means is that we want all of these spots here, the ones representing later tokens"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 720.8,
+            "end": 725.88,
+            "text": " influencing earlier ones, to somehow be forced to be 0."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 725.88,
+            "end": 729.56,
+            "text": " The simplest thing you might think to do is to set them equal to 0, but if you did that,"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 729.56,
+            "end": 733.04,
+            "text": " the columns wouldn't add up to 1 anymore, they wouldn't be normalized."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 733.04,
+            "end": 737.36,
+            "text": " So instead, a common way to do this is that before applying softmax, you set all of those"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 737.36,
+            "end": 739.68,
+            "text": " entries to be negative infinity."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 739.68,
+            "end": 744.28,
+            "text": " If you do that, then after applying softmax, all of those get turned into 0, but the columns"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 744.28,
+            "end": 746.0799999999999,
+            "text": " stay normalized."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 746.0799999999999,
+            "end": 747.8399999999999,
+            "text": " This process is called masking."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 747.8399999999999,
+            "end": 751.92,
+            "text": " There are versions of attention where you don't apply it, but in our GPT example, even"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 751.92,
+            "end": 755.52,
+            "text": " though this is more relevant during the training phase than it would be, say, running it as"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 755.52,
+            "end": 759.76,
+            "text": " a chatbot or something like that, you do always apply this masking to prevent later tokens"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 759.76,
+            "end": 762.5799999999999,
+            "text": " from influencing earlier ones."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 762.5799999999999,
+            "end": 766.92,
+            "text": " Another fact that's worth reflecting on about this attention pattern is how its size"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 766.92,
+            "end": 769.8399999999999,
+            "text": " is equal to the square of the context size."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 769.8399999999999,
+            "end": 774.04,
+            "text": " So this is why context size can be a really huge bottleneck for large language models,"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 774.04,
+            "end": 776.4,
+            "text": " and scaling it up is non-trivial."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 776.4,
+            "end": 780.7199999999999,
+            "text": " As you might imagine, motivated by a desire for bigger and bigger context windows, recent"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 780.7199999999999,
+            "end": 785.88,
+            "text": " years have seen some variations to the attention mechanism aimed at making context more scalable,"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 785.88,
+            "end": 789.1999999999999,
+            "text": " but right here, you and I are staying focused on the basics."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 789.1999999999999,
+            "end": 794.8399999999999,
+            "text": " OK, great, computing this pattern lets the model deduce which words are relevant to which"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 794.8399999999999,
+            "end": 796.04,
+            "text": " other words."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 796.16,
+            "end": 801.0,
+            "text": " Now you need to actually update the embeddings, allowing words to pass information to whichever"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 801.0,
+            "end": 803.04,
+            "text": " other words they're relevant to."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 803.04,
+            "end": 808.12,
+            "text": " For example, you want the embedding of fluffy to somehow cause a change to creature that"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 808.12,
+            "end": 813.0799999999999,
+            "text": " moves it to a different part of this 12,000 dimensional embedding space that more specifically"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 813.0799999999999,
+            "end": 815.4,
+            "text": " encodes a fluffy creature."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 815.4,
+            "end": 818.68,
+            "text": " What I'm going to do here is first show you the most straightforward way that you could"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 818.68,
+            "end": 822.8399999999999,
+            "text": " do this, though there's a slight way that this gets modified in the context of multi-headed"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 822.8399999999999,
+            "end": 824.12,
+            "text": " attention."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 824.12,
+            "end": 827.96,
+            "text": " This most straightforward way would be to use a third matrix, what we call the value"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 827.96,
+            "end": 833.36,
+            "text": " matrix, which you multiply by the embedding of that first word, for example fluffy."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 833.36,
+            "end": 837.2,
+            "text": " The result of this is what you would call a value vector, and this is something that"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 837.2,
+            "end": 841.32,
+            "text": " you add to the embedding of the second word, in this case something you add to the embedding"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 841.32,
+            "end": 842.52,
+            "text": " of creature."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 842.52,
+            "end": 847.44,
+            "text": " So this value vector lives in the same very high dimensional space as the embeddings."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 847.44,
+            "end": 851.08,
+            "text": " When you multiply this value matrix by the embedding of a word, you might think of it"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 851.08,
+            "end": 856.5600000000001,
+            "text": " as saying, if this word is relevant to adjusting the meaning of something else, what exactly"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 856.5600000000001,
+            "end": 862.1600000000001,
+            "text": " should be added to the embedding of that something else in order to reflect this?"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 862.1600000000001,
+            "end": 866.94,
+            "text": " Looking back in our diagram, let's set aside all of the keys and the queries, since after"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 866.94,
+            "end": 870.1600000000001,
+            "text": " you compute the attention pattern you're done with those, then you're going to take"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 870.1600000000001,
+            "end": 874.9200000000001,
+            "text": " this value matrix and multiply it by every one of those embeddings to produce a sequence"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 874.9200000000001,
+            "end": 877.08,
+            "text": " of value vectors."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 877.08,
+            "end": 880.48,
+            "text": " You might think of these value vectors as being kind of associated with the corresponding"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 880.88,
+            "end": 882.36,
+            "text": " keys."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 882.36,
+            "end": 887.76,
+            "text": " For each column in this diagram, you multiply each of the value vectors by the corresponding"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 887.76,
+            "end": 890.04,
+            "text": " weight in that column."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 890.04,
+            "end": 894.4,
+            "text": " For example here, under the embedding of creature, you would be adding large proportions of the"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 894.4,
+            "end": 900.08,
+            "text": " value vectors for fluffy and blue, while all of the other value vectors get zeroed out,"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 900.08,
+            "end": 902.12,
+            "text": " or at least nearly zeroed out."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 902.12,
+            "end": 906.4,
+            "text": " And then finally, the way to actually update the embedding associated with this column,"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 906.4,
+            "end": 910.6,
+            "text": " previously encoding some context-free meaning of creature, you add together all of these"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 910.6,
+            "end": 915.68,
+            "text": " rescaled values in the column, producing a change that you want to add, that I'll label"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 915.68,
+            "end": 919.6,
+            "text": " delta e, and then you add that to the original embedding."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 919.6,
+            "end": 925.0,
+            "text": " Hopefully what results is a more refined vector encoding the more contextually rich meaning,"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 925.0,
+            "end": 927.4,
+            "text": " like that of a fluffy blue creature."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 927.4,
+            "end": 931.48,
+            "text": " And of course you don't just do this to one embedding, you apply the same weighted sum"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 931.48,
+            "end": 936.4,
+            "text": " across all of the columns in this picture, producing a sequence of changes."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 936.4,
+            "end": 940.96,
+            "text": " Adding all of those changes to the corresponding embeddings produces a full sequence of more"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 940.96,
+            "end": 944.6,
+            "text": " refined embeddings popping out of the attention block."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 944.6,
+            "end": 949.64,
+            "text": " Zooming out, this whole process is what you would describe as a single head of attention."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 949.64,
+            "end": 954.8000000000001,
+            "text": " As I've described things so far, this process is parametrized by three distinct matrices,"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 954.8000000000001,
+            "end": 959.44,
+            "text": " all filled with tunable parameters, the key, the query, and the value."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 959.44,
+            "end": 963.32,
+            "text": " I want to take a moment to continue what we started in the last chapter with a scorekeeping"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 963.32,
+            "end": 969.2800000000001,
+            "text": " where we count up the total number of model parameters using the numbers from GPT-3."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 969.2800000000001,
+            "end": 975.36,
+            "text": " These key and query matrices each have 12,288 columns, matching the embedding dimension,"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 975.36,
+            "end": 980.2,
+            "text": " and 128 rows, matching the dimension of that smaller key query space."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 980.2,
+            "end": 984.8000000000001,
+            "text": " This gives us an additional 1.5 million or so parameters for each one."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 984.8000000000001,
+            "end": 989.24,
+            "text": " If you look at that value matrix by contrast, the way I've described things so far would"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 989.24,
+            "end": 996.64,
+            "text": " suggest that it's a square matrix that has 12,288 columns and 12,288 rows, since both"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 996.64,
+            "end": 1001.48,
+            "text": " its inputs and its outputs live in this very large embedding space."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1001.48,
+            "end": 1005.6,
+            "text": " If true, that would mean about 150 million added parameters."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1005.6,
+            "end": 1007.38,
+            "text": " And to be clear, you could do that."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1007.38,
+            "end": 1011.0600000000001,
+            "text": " You could devote orders of magnitude more parameters to the value map than to the key"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1011.0600000000001,
+            "end": 1012.08,
+            "text": " and query."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1012.08,
+            "end": 1015.82,
+            "text": " But in practice, it is much more efficient if instead you make it so that the number"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1015.82,
+            "end": 1020.0,
+            "text": " of parameters devoted to this value map is the same as the number devoted to the key"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1020.0,
+            "end": 1021.36,
+            "text": " and the query."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1021.36,
+            "end": 1026.1200000000001,
+            "text": " This is especially relevant in the setting of running multiple attention heads in parallel."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1026.1200000000001,
+            "end": 1030.52,
+            "text": " The way this looks is that the value map is factored as a product of two smaller matrices."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1030.52,
+            "end": 1034.76,
+            "text": " Conceptually, I would still encourage you to think about the overall linear map, one"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1034.76,
+            "end": 1039.5800000000002,
+            "text": " with inputs and outputs both in this larger embedding space, for example taking the embedding"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1039.5800000000002,
+            "end": 1043.92,
+            "text": " of blue to this blueness direction that you would add to nouns."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1044.02,
+            "end": 1047.1200000000001,
+            "text": " It's just that it's broken up into two separate steps."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1047.1200000000001,
+            "end": 1051.7,
+            "text": " The first matrix on the right here has a smaller number of rows, typically the same size as"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1051.7,
+            "end": 1053.0600000000002,
+            "text": " the key query space."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1053.0600000000002,
+            "end": 1057.1000000000001,
+            "text": " What this means is you can think of it as mapping the large embedding vectors down to"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1057.1000000000001,
+            "end": 1059.24,
+            "text": " a much smaller space."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1059.24,
+            "end": 1063.42,
+            "text": " This is not the conventional naming, but I'm going to call this the value-down matrix."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1063.42,
+            "end": 1068.22,
+            "text": " The second matrix maps from this smaller space back up to the embedding space, producing"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1068.22,
+            "end": 1070.8600000000001,
+            "text": " the vectors that you use to make the actual updates."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1070.86,
+            "end": 1075.1599999999999,
+            "text": " I'm going to call this one the value-up matrix, which again is not conventional."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1075.1599999999999,
+            "end": 1078.36,
+            "text": " The way that you would see this written in most papers looks a little different."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1078.36,
+            "end": 1079.56,
+            "text": " I'll talk about it in a minute."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1079.56,
+            "end": 1083.1999999999998,
+            "text": " In my opinion, it tends to make things a little more conceptually confusing."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1083.1999999999998,
+            "end": 1087.12,
+            "text": " To throw in linear algebra jargon here, what we're basically doing is constraining the"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1087.12,
+            "end": 1091.3999999999999,
+            "text": " overall value map to be a low-rank transformation."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1091.3999999999999,
+            "end": 1095.84,
+            "text": " Turning back to the parameter count, all four of these matrices have the same size, and"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1095.86,
+            "end": 1102.06,
+            "text": " adding them all up, we get about 6.3 million parameters for one attention head."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1102.06,
+            "end": 1105.3799999999999,
+            "text": " As a quick side note, to be a little more accurate, everything described so far is what"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1105.3799999999999,
+            "end": 1109.32,
+            "text": " people would call a self-attention head, to distinguish it from a variation that comes"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1109.32,
+            "end": 1112.3999999999999,
+            "text": " up in other models that's called cross-attention."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1112.3999999999999,
+            "end": 1116.6999999999998,
+            "text": " This isn't relevant to our GPT example, but if you're curious, cross-attention involves"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1116.6999999999998,
+            "end": 1121.8799999999999,
+            "text": " models that process two distinct types of data, like text in one language and text in"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1121.88,
+            "end": 1126.38,
+            "text": " another language that's part of an ongoing generation of a translation, or maybe audio"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1126.38,
+            "end": 1130.2800000000002,
+            "text": " input of speech and an ongoing transcription."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1130.2800000000002,
+            "end": 1134.9,
+            "text": " A cross-attention head looks almost identical, the only difference is that the key and query"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1134.9,
+            "end": 1137.8000000000002,
+            "text": " maps act on different datasets."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1137.8000000000002,
+            "end": 1142.2,
+            "text": " In a model doing translation, for example, the keys might come from one language, while"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1142.2,
+            "end": 1146.7600000000002,
+            "text": " the queries come from another, and the attention pattern could describe which words from one"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1146.7600000000002,
+            "end": 1150.38,
+            "text": " language correspond to which words in another."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1150.38,
+            "end": 1153.5600000000002,
+            "text": " And in this setting, there would typically be no masking, since there's not really any"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1153.5600000000002,
+            "end": 1157.22,
+            "text": " notion of later tokens affecting earlier ones."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1157.22,
+            "end": 1161.1000000000001,
+            "text": " Staying focused on self-attention, though, if you understood everything so far, and if"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1161.1000000000001,
+            "end": 1164.74,
+            "text": " you were to stop here, you would come away with the essence of what attention really"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1164.74,
+            "end": 1165.8200000000002,
+            "text": " is."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1165.8200000000002,
+            "end": 1170.38,
+            "text": " All that's really left to us is to lay out the sense in which you do this many, many"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1170.38,
+            "end": 1172.18,
+            "text": " different times."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1172.18,
+            "end": 1176.5800000000002,
+            "text": " In our central example, we focused on adjectives updating nouns, but of course there are lots"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1176.58,
+            "end": 1180.3799999999999,
+            "text": " of different ways that context can influence the meaning of a word."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1180.3799999999999,
+            "end": 1185.1399999999999,
+            "text": " If the words they crashed the preceded the word car, it has implications for the shape"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1185.1399999999999,
+            "end": 1187.1799999999998,
+            "text": " and structure of that car."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1187.1799999999998,
+            "end": 1189.8,
+            "text": " A lot of associations might be less grammatical."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1189.8,
+            "end": 1194.48,
+            "text": " If the word wizard is anywhere in the same passage as Harry, it suggests that this might"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1194.48,
+            "end": 1196.46,
+            "text": " be referring to Harry Potter."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1196.46,
+            "end": 1200.8999999999999,
+            "text": " Whereas if instead the words Queen, Sussex, and William were in that passage, then perhaps"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1200.8999999999999,
+            "end": 1205.06,
+            "text": " the embedding of Harry should instead be updated to refer to the Prince."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1205.06,
+            "end": 1209.62,
+            "text": " For every different type of contextual updating you might imagine, the parameters of these"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1209.62,
+            "end": 1213.96,
+            "text": " key and query matrices would be different to capture the different attention patterns,"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1213.96,
+            "end": 1218.22,
+            "text": " and the parameters of our value map would be different based on what should be added"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1218.22,
+            "end": 1219.22,
+            "text": " to the embeddings."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1219.22,
+            "end": 1224.58,
+            "text": " And again, in practice, the true behavior of these maps is much more difficult to interpret,"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1224.58,
+            "end": 1228.1,
+            "text": " where the weights are set to do whatever the model needs them to do to best accomplish"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1228.1,
+            "end": 1231.4199999999998,
+            "text": " its goal of predicting the next token."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1231.42,
+            "end": 1235.5,
+            "text": " As I said before, everything we've described is a single head of attention, and a full"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1235.5,
+            "end": 1240.38,
+            "text": " attention block inside a transformer consists of what's called multi-headed attention,"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1240.38,
+            "end": 1244.74,
+            "text": " where you run a lot of these operations in parallel, each with its own distinct key,"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1244.74,
+            "end": 1246.74,
+            "text": " query, and value maps."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1246.74,
+            "end": 1252.3400000000001,
+            "text": " GPT-3, for example, uses 96 attention heads inside each block."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1252.3400000000001,
+            "end": 1255.78,
+            "text": " Considering that each one is already a bit confusing, it's certainly a lot to hold"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1255.78,
+            "end": 1256.9,
+            "text": " in your head."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1256.9,
+            "end": 1261.5400000000002,
+            "text": " Just to spell it all out very explicitly, this means you have 96 distinct key and query"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1261.5400000000002,
+            "end": 1265.48,
+            "text": " matrices producing 96 distinct attention patterns."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1265.48,
+            "end": 1271.5400000000002,
+            "text": " Then each head has its own distinct value matrices used to produce 96 sequences of value"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1271.5400000000002,
+            "end": 1272.74,
+            "text": " vectors."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1272.74,
+            "end": 1277.46,
+            "text": " These are all added together, using the corresponding attention patterns as weights."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1277.46,
+            "end": 1282.38,
+            "text": " What this means is that for each position in the context, each token, every one of these"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1282.38,
+            "end": 1287.5800000000002,
+            "text": " heads produces a proposed change to be added to the embedding in that position."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1287.5800000000002,
+            "end": 1292.46,
+            "text": " So what you do is you sum together all of those proposed changes, one for each head,"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1292.46,
+            "end": 1296.7,
+            "text": " and add the result to the original embedding of that position."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1296.7,
+            "end": 1302.18,
+            "text": " This entire sum here would be one slice of what's outputted from this multi-headed"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1302.18,
+            "end": 1307.0600000000002,
+            "text": " attention block, a single one of those refined embeddings that pops out the other end of"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1307.0600000000002,
+            "end": 1308.0600000000002,
+            "text": " it."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1308.0600000000002,
+            "end": 1311.9,
+            "text": " Again, this is a lot to think about, so don't worry at all if it takes some time to sink"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1312.42,
+            "end": 1317.0600000000002,
+            "text": " The overall idea is that by running many distinct heads in parallel, you're giving the model"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1317.0600000000002,
+            "end": 1323.66,
+            "text": " the capacity to learn many distinct ways that context changes meaning."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1323.66,
+            "end": 1328.02,
+            "text": " Pulling up our running tally for parameter count, with 96 heads, each including its own"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1328.02,
+            "end": 1333.3000000000002,
+            "text": " variation of these four matrices, each block of multi-headed attention ends up with around"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1333.3000000000002,
+            "end": 1336.46,
+            "text": " 600 million parameters."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1336.46,
+            "end": 1339.7,
+            "text": " There's one added, slightly annoying thing that I should really mention for any of you"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1339.7,
+            "end": 1342.18,
+            "text": " who go on to read more about transformers."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1342.18,
+            "end": 1346.54,
+            "text": " You remember how I said that the value map is factored out into these two distinct matrices,"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1346.54,
+            "end": 1349.9,
+            "text": " which I labeled as the value down and the value up matrices."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1349.9,
+            "end": 1354.6200000000001,
+            "text": " The way that I framed things would suggest that you see this pair of matrices inside"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1354.6200000000001,
+            "end": 1359.46,
+            "text": " each attention head, and you could absolutely implement it this way, that would be a valid"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1359.46,
+            "end": 1360.46,
+            "text": " design."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1360.46,
+            "end": 1364.1000000000001,
+            "text": " But the way that you see this written in papers, and the way that it's implemented in practice,"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1364.1000000000001,
+            "end": 1365.38,
+            "text": " looks a little different."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1365.38,
+            "end": 1371.46,
+            "text": " All of these value up matrices for each head appear stapled together in one giant matrix"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1371.46,
+            "end": 1376.7800000000002,
+            "text": " that we call the output matrix, associated with the entire multi-headed attention block."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1376.7800000000002,
+            "end": 1380.42,
+            "text": " And when you see people refer to the value matrix for a given attention head, they're"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1380.42,
+            "end": 1385.38,
+            "text": " typically only referring to this first step, the one that I was labeling as the value down"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1385.38,
+            "end": 1388.2600000000002,
+            "text": " projection into the smaller space."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1388.2600000000002,
+            "end": 1391.3000000000002,
+            "text": " For the curious among you, I've left an on-screen note about it."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1391.3000000000002,
+            "end": 1395.3400000000001,
+            "text": " It's one of those details that runs the risk of distracting from the main conceptual points,"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1395.3799999999999,
+            "end": 1399.5,
+            "text": " but I do want to call it out just so you know if you read about this in other sources."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1399.5,
+            "end": 1403.4599999999998,
+            "text": " Setting aside all the technical nuances, in the preview from the last chapter we saw how"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1403.4599999999998,
+            "end": 1408.5,
+            "text": " data flowing through a transformer doesn't just flow through a single attention block."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1408.5,
+            "end": 1412.62,
+            "text": " For one thing, it also goes through these other operations called multilayer perceptrons,"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1412.62,
+            "end": 1417.1399999999999,
+            "text": " we'll talk more about those in the next chapter, and then it repeatedly goes through many many"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1417.1399999999999,
+            "end": 1419.8999999999999,
+            "text": " copies of both of these operations."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1419.8999999999999,
+            "end": 1424.74,
+            "text": " What this means is that after a given word imbibes some of its context, there are many"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1424.74,
+            "end": 1430.86,
+            "text": " more chances for this more nuanced embedding to be influenced by its more nuanced surroundings."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1430.86,
+            "end": 1435.06,
+            "text": " The further down the network you go, with each embedding taking in more and more meaning"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1435.06,
+            "end": 1439.46,
+            "text": " from all the other embeddings, which themselves are getting more and more nuanced, the hope"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1439.46,
+            "end": 1443.98,
+            "text": " is that there's the capacity to encode higher level and more abstract ideas about a given"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1443.98,
+            "end": 1447.86,
+            "text": " input beyond just descriptors and grammatical structure."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1447.86,
+            "end": 1452.64,
+            "text": " Things like sentiment and tone, and whether it's a poem, and what underlying scientific"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1452.64,
+            "end": 1456.64,
+            "text": " truths are relevant to the piece, and things like that."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1456.64,
+            "end": 1462.8400000000001,
+            "text": " Turning back one more time to our scorekeeping, GPT-3 includes 96 distinct layers, so the"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1462.8400000000001,
+            "end": 1468.4,
+            "text": " total number of key, query, and value parameters is multiplied by another 96, which brings"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1468.4,
+            "end": 1474.0,
+            "text": " the total sum to just under 58 billion distinct parameters devoted to all of the attention"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1474.0,
+            "end": 1475.0400000000002,
+            "text": " heads."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1475.0400000000002,
+            "end": 1479.76,
+            "text": " That is a lot, to be sure, but it's only about a third of the 175 billion that are"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1479.84,
+            "end": 1481.52,
+            "text": " in the network in total."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1481.52,
+            "end": 1486.48,
+            "text": " So even though attention gets all of the attention, the majority of parameters come from the blocks"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1486.48,
+            "end": 1488.48,
+            "text": " sitting in between these steps."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1488.48,
+            "end": 1492.2,
+            "text": " In the next chapter, you and I will talk more about those other blocks, and also a lot more"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1492.2,
+            "end": 1494.04,
+            "text": " about the training process."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1494.04,
+            "end": 1498.36,
+            "text": " A big part of the story for the success of the attention mechanism is not so much any"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1498.36,
+            "end": 1504.2,
+            "text": " specific kind of behavior that it enables, but the fact that it's extremely parallelizable,"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1504.2,
+            "end": 1509.52,
+            "text": " meaning that you can run a huge number of computations in a short time using GPUs."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1510.28,
+            "end": 1512.08,
+            "text": " I've learned that one of the big lessons about deep learning in the last decade or"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1512.08,
+            "end": 1517.52,
+            "text": " two has been that scale alone seems to give huge qualitative improvements in model performance."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1517.52,
+            "end": 1522.16,
+            "text": " There's a huge advantage to parallelizable architectures that let you do this."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1522.16,
+            "end": 1525.8799999999999,
+            "text": " If you want to learn more about this stuff, I've left lots of links in the description."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1525.8799999999999,
+            "end": 1530.6,
+            "text": " In particular, anything produced by Andrej Karpathy or Chris Ola tend to be pure gold."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1530.6,
+            "end": 1534.28,
+            "text": " In this video, I wanted to just jump into attention in its current form, but if you're"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1534.28,
+            "end": 1537.6399999999999,
+            "text": " curious about more of the history for how we got here and how you might reinvent this"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1537.64,
+            "end": 1541.92,
+            "text": " idea for yourself, my friend Vivek just put up a couple videos giving a lot more of that"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1541.92,
+            "end": 1542.92,
+            "text": " motivation."
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1542.92,
+            "end": 1546.72,
+            "text": " Also, Britt Cruz from the channel The Art of the Problem has a really nice video about"
+        },
+        {
+            "number": "1",
+            "title": "Attention in transformers",
+            "start": 1546.72,
+            "end": 1548.4,
+            "text": " the history of large language models."
+        }
+    ],
+    "text": " In the last chapter, you and I started to step through the internal workings of a transformer. This is one of the key pieces of technology inside large language models, and a lot of other tools in the modern wave of AI. It first hit the scene in a now-famous 2017 paper called Attention is All You Need, and in this chapter you and I will dig into what this attention mechanism is, visualizing how it processes data. As a quick recap, here's the important context I want you to have in mind. The goal of the model you and I are studying is to take in a piece of text and predict what word comes next. The input text is broken up into little pieces that we call tokens, and these are very often words or pieces of words, but just to make the examples in this video easier for you and me to think about, let's simplify by pretending that tokens are always just words. The first step in a transformer is to associate each token with a high-dimensional vector, what we call its embedding. The most important idea I want you to have in mind is how directions in this high-dimensional space of all possible embeddings can correspond with semantic meaning. In the last chapter we saw an example for how direction can correspond to gender, in the sense that adding a certain step in this space can take you from the embedding of a masculine noun to the embedding of the corresponding feminine noun. That's just one example you could imagine how many other directions in this high-dimensional space could correspond to numerous other aspects of a word's meaning. The aim of a transformer is to progressively adjust these embeddings so that they don't merely encode an individual word, but instead they bake in some much, much richer contextual meaning. I should say up front that a lot of people find the attention mechanism, this key piece in a transformer, very confusing, so don't worry if it takes some time for things to sink in. I think that before we dive into the computational details and all the matrix multiplications, it's worth thinking about a couple examples for the kind of behavior we want attention to enable. Consider the phrases American true mole, one mole of carbon dioxide, and take a biopsy of the mole. You and I know that the word mole has different meanings in each one of these, based on the context. But after the first step of a transformer, the one that breaks up the text and associates each token with a vector, the vector associated with mole would be the same in all three of these cases, because this initial token embedding is effectively a lookup table with no reference to the context. It's only in the next step of the transformer that the surrounding embeddings have the chance to pass information into this one. The picture you might have in mind is that there are multiple distinct directions in this embedding space encoding the multiple distinct meanings of the word mole, and that a well-trained attention block calculates what you need to add to the generic embedding to move it to one of these more specific directions, as a function of the context. To take another example, consider the embedding of the word tower. This is presumably some very generic non-specific direction in the space, associated with lots of other large, tall nouns. If this word was immediately preceded by Eiffel, you could imagine wanting the mechanism to update this vector so that it points in a direction that more specifically encodes the Eiffel tower, maybe correlated with vectors associated with Paris and France and things made of steel. If it was also preceded by the word miniature, then the vector should be updated even further so that it no longer correlates with large, tall things. More generally than just refining the meaning of a word, the attention block allows the model to move information encoded in one embedding to that of another, potentially ones that are quite far away, and potentially with information that's much richer than just a single word. What we saw in the last chapter was how after all of the vectors flow through the network, including many different attention blocks, the computation you perform to produce a prediction of the next token is entirely a function of the last vector in the sequence. So imagine for example that the text you input is most of an entire mystery novel, all the way up to a point near the end, which reads, therefore the murderer was. If the model is going to accurately predict the next word, that final vector in the sequence, which began its life simply embedding the word was, will have to have been updated by all of the attention blocks to represent much more than any individual word, somehow encoding all of the information from the full context window that's relevant to predicting the next word. To step through the computations though, let's take a much simpler example. Imagine that the input includes the phrase, a fluffy blue creature roamed the verdant forest. And for the moment, suppose that the only type of update we care about is having the adjectives adjust the meanings of their corresponding nouns. What I'm about to describe is what we would call a single head of attention, and later we will see how the attention block consists of many different heads run in parallel. Again, the initial embedding for each word is some high dimensional vector that only encodes the meaning of that particular word with no context. Actually, that's not quite true. They also encode the position of the word. There's a lot more to say about the specific way the positions are encoded, but right now all you need to know is that the entries of this vector are enough to tell you both what the word is and where it exists in the context. Let's go ahead and denote these embeddings with the letter e. The goal is to have a series of computations produce a new refined set of embeddings where for example those corresponding to the nouns have ingested the meaning from their corresponding adjectives. And playing the deep learning game, we want most of the computations involved to look like matrix vector products, where the matrices are full of tunable weights, things that the model will learn based on data. To be clear, I'm making up this example of adjectives updating nouns just to illustrate the type of behavior that you could imagine an attention head doing. As with so much deep learning, the true behavior is much harder to parse, because it's based on tweaking and tuning a huge number of parameters to minimize some cost function. It's just that as we step through all the different matrices filled with parameters that are involved in this process, I think it's really helpful to have an imagined example of something that it could be doing to help keep it all more concrete. For the first step of this process, you might imagine each noun, like a creature, asking the question, hey, are there any adjectives sitting in front of me? And for the words fluffy and blue to each be able to answer, yeah, I'm an adjective, and I'm in that position. That question is somehow encoded as yet another vector, another list of numbers, which we call the query for this word. This query vector, though, has a much smaller dimension than the embedding vector, say 128. Computing this query looks like taking a certain matrix, which I'll label WQ, and multiplying it by the embedding. Let's write that query vector as Q, and then any time you see me put a matrix next to an arrow like this one, it's meant to represent that multiplying this matrix by the vector at the arrow's start gives you the vector at the arrow's end. In this case, you multiply this matrix by all of the embeddings in the context, producing one query vector for each token. The entries of this matrix are parameters of the model, which means the true behavior is learned from data, and in practice what this matrix does in a particular attention head is challenging to parse. But for our sake, imagining an example that we might hope it would learn, we'll suppose that this query matrix maps the embeddings of nouns to certain directions in this smaller query space that somehow encodes the notion of looking for adjectives in preceding positions. As to what it does to other embeddings, who knows, maybe it simultaneously tries to accomplish some other goal with those, right now we're laser focused on the nouns. At the same time, associated with this is a second matrix, called the key matrix, which you also multiply by every one of the embeddings. This produces a second sequence of vectors that we call the keys. Conceptually, you want to think of the keys as potentially answering the queries. This key matrix is also full of tunable parameters, and just like the query matrix, it maps the embedding vectors to that same smaller dimensional space. You think of the keys as matching the queries whenever they closely align with each other. In our example, you would imagine that the key matrix maps the adjectives, like fluffy and blue, to vectors that are closely aligned with the query produced by the word creature. To measure how well each key matches each query, you compute a dot product between each possible key query pair. I like to visualize a grid full of a bunch of dots, where the bigger dots correspond to the larger dot products, the places where the keys and queries align. For our adjective noun example, that would look a little more like this, where if the keys produced by fluffy and blue really do align closely with the query produced by creature, then the dot products in these two spots would be some large positive numbers. In the lingo, machine learning people would say that this means the embeddings of fluffy and blue attend to the embedding of creature. The contrast to the dot product between the key for some other word, like the, and the query for creature, would be some small or negative value that reflects that these are unrelated to each other. So we have this grid of values that can be any real number from negative infinity to infinity, giving us a score for how relevant each word is to updating the meaning of every other word. The way we're about to use these scores is to take a certain weighted sum along each column weighted by the relevance. So instead of having values range from negative infinity to infinity, what we want is for the numbers in these columns to be between 0 and 1, and for each column to add up to 1, as if they were a probability distribution. If you're coming in from the last chapter, you know what we need to do then. We compute a softmax along each one of these columns to normalize the values. In our picture, after you apply softmax to all of the columns, we'll fill in the grid with these normalized values. At this point you're safe to think about each column as giving weights according to how relevant the word on the left is to the corresponding value at the top. We call this grid an attention pattern. Now if you look at the original transformer paper, there's a really compact way that they write this all down. Here the variables q and k represent the full arrays of query and key vectors respectively, those little vectors you get by multiplying the embeddings by the query and key matrices. This expression up in the numerator is a really compact way to represent the grid of all possible dot products between pairs of keys and queries. A small technical detail that I didn't mention is that for numerical stability, it happens to be helpful to divide all of these values by the square root of the dimension in that key query space. Then this softmax that's wrapped around the full expression is meant to be understood to apply column by column. As to that v term, we'll talk about it in just a second. Before that, there's one other technical detail that so far I've skipped. During the training process, when you run this model on a given text example, and all of the weights are slightly adjusted and tuned to either reward or punish it based on how high a probability it assigns to the true next word in the passage, it turns out to make the whole training process a lot more efficient if you simultaneously have it predict every possible next token following each initial subsequence of tokens in this passage. For example, with the phrase we've been focusing on, it might also be predicting what words follow creature, and what words follow the. This is really nice, because it means what would otherwise be a single training example effectively acts as many. For the purposes of our attention pattern, it means that you never want to allow later words to influence earlier words, since otherwise they could kind of give away the answer for what comes next. What this means is that we want all of these spots here, the ones representing later tokens influencing earlier ones, to somehow be forced to be 0. The simplest thing you might think to do is to set them equal to 0, but if you did that, the columns wouldn't add up to 1 anymore, they wouldn't be normalized. So instead, a common way to do this is that before applying softmax, you set all of those entries to be negative infinity. If you do that, then after applying softmax, all of those get turned into 0, but the columns stay normalized. This process is called masking. There are versions of attention where you don't apply it, but in our GPT example, even though this is more relevant during the training phase than it would be, say, running it as a chatbot or something like that, you do always apply this masking to prevent later tokens from influencing earlier ones. Another fact that's worth reflecting on about this attention pattern is how its size is equal to the square of the context size. So this is why context size can be a really huge bottleneck for large language models, and scaling it up is non-trivial. As you might imagine, motivated by a desire for bigger and bigger context windows, recent years have seen some variations to the attention mechanism aimed at making context more scalable, but right here, you and I are staying focused on the basics. OK, great, computing this pattern lets the model deduce which words are relevant to which other words. Now you need to actually update the embeddings, allowing words to pass information to whichever other words they're relevant to. For example, you want the embedding of fluffy to somehow cause a change to creature that moves it to a different part of this 12,000 dimensional embedding space that more specifically encodes a fluffy creature. What I'm going to do here is first show you the most straightforward way that you could do this, though there's a slight way that this gets modified in the context of multi-headed attention. This most straightforward way would be to use a third matrix, what we call the value matrix, which you multiply by the embedding of that first word, for example fluffy. The result of this is what you would call a value vector, and this is something that you add to the embedding of the second word, in this case something you add to the embedding of creature. So this value vector lives in the same very high dimensional space as the embeddings. When you multiply this value matrix by the embedding of a word, you might think of it as saying, if this word is relevant to adjusting the meaning of something else, what exactly should be added to the embedding of that something else in order to reflect this? Looking back in our diagram, let's set aside all of the keys and the queries, since after you compute the attention pattern you're done with those, then you're going to take this value matrix and multiply it by every one of those embeddings to produce a sequence of value vectors. You might think of these value vectors as being kind of associated with the corresponding keys. For each column in this diagram, you multiply each of the value vectors by the corresponding weight in that column. For example here, under the embedding of creature, you would be adding large proportions of the value vectors for fluffy and blue, while all of the other value vectors get zeroed out, or at least nearly zeroed out. And then finally, the way to actually update the embedding associated with this column, previously encoding some context-free meaning of creature, you add together all of these rescaled values in the column, producing a change that you want to add, that I'll label delta e, and then you add that to the original embedding. Hopefully what results is a more refined vector encoding the more contextually rich meaning, like that of a fluffy blue creature. And of course you don't just do this to one embedding, you apply the same weighted sum across all of the columns in this picture, producing a sequence of changes. Adding all of those changes to the corresponding embeddings produces a full sequence of more refined embeddings popping out of the attention block. Zooming out, this whole process is what you would describe as a single head of attention. As I've described things so far, this process is parametrized by three distinct matrices, all filled with tunable parameters, the key, the query, and the value. I want to take a moment to continue what we started in the last chapter with a scorekeeping where we count up the total number of model parameters using the numbers from GPT-3. These key and query matrices each have 12,288 columns, matching the embedding dimension, and 128 rows, matching the dimension of that smaller key query space. This gives us an additional 1.5 million or so parameters for each one. If you look at that value matrix by contrast, the way I've described things so far would suggest that it's a square matrix that has 12,288 columns and 12,288 rows, since both its inputs and its outputs live in this very large embedding space. If true, that would mean about 150 million added parameters. And to be clear, you could do that. You could devote orders of magnitude more parameters to the value map than to the key and query. But in practice, it is much more efficient if instead you make it so that the number of parameters devoted to this value map is the same as the number devoted to the key and the query. This is especially relevant in the setting of running multiple attention heads in parallel. The way this looks is that the value map is factored as a product of two smaller matrices. Conceptually, I would still encourage you to think about the overall linear map, one with inputs and outputs both in this larger embedding space, for example taking the embedding of blue to this blueness direction that you would add to nouns. It's just that it's broken up into two separate steps. The first matrix on the right here has a smaller number of rows, typically the same size as the key query space. What this means is you can think of it as mapping the large embedding vectors down to a much smaller space. This is not the conventional naming, but I'm going to call this the value-down matrix. The second matrix maps from this smaller space back up to the embedding space, producing the vectors that you use to make the actual updates. I'm going to call this one the value-up matrix, which again is not conventional. The way that you would see this written in most papers looks a little different. I'll talk about it in a minute. In my opinion, it tends to make things a little more conceptually confusing. To throw in linear algebra jargon here, what we're basically doing is constraining the overall value map to be a low-rank transformation. Turning back to the parameter count, all four of these matrices have the same size, and adding them all up, we get about 6.3 million parameters for one attention head. As a quick side note, to be a little more accurate, everything described so far is what people would call a self-attention head, to distinguish it from a variation that comes up in other models that's called cross-attention. This isn't relevant to our GPT example, but if you're curious, cross-attention involves models that process two distinct types of data, like text in one language and text in another language that's part of an ongoing generation of a translation, or maybe audio input of speech and an ongoing transcription. A cross-attention head looks almost identical, the only difference is that the key and query maps act on different datasets. In a model doing translation, for example, the keys might come from one language, while the queries come from another, and the attention pattern could describe which words from one language correspond to which words in another. And in this setting, there would typically be no masking, since there's not really any notion of later tokens affecting earlier ones. Staying focused on self-attention, though, if you understood everything so far, and if you were to stop here, you would come away with the essence of what attention really is. All that's really left to us is to lay out the sense in which you do this many, many different times. In our central example, we focused on adjectives updating nouns, but of course there are lots of different ways that context can influence the meaning of a word. If the words they crashed the preceded the word car, it has implications for the shape and structure of that car. A lot of associations might be less grammatical. If the word wizard is anywhere in the same passage as Harry, it suggests that this might be referring to Harry Potter. Whereas if instead the words Queen, Sussex, and William were in that passage, then perhaps the embedding of Harry should instead be updated to refer to the Prince. For every different type of contextual updating you might imagine, the parameters of these key and query matrices would be different to capture the different attention patterns, and the parameters of our value map would be different based on what should be added to the embeddings. And again, in practice, the true behavior of these maps is much more difficult to interpret, where the weights are set to do whatever the model needs them to do to best accomplish its goal of predicting the next token. As I said before, everything we've described is a single head of attention, and a full attention block inside a transformer consists of what's called multi-headed attention, where you run a lot of these operations in parallel, each with its own distinct key, query, and value maps. GPT-3, for example, uses 96 attention heads inside each block. Considering that each one is already a bit confusing, it's certainly a lot to hold in your head. Just to spell it all out very explicitly, this means you have 96 distinct key and query matrices producing 96 distinct attention patterns. Then each head has its own distinct value matrices used to produce 96 sequences of value vectors. These are all added together, using the corresponding attention patterns as weights. What this means is that for each position in the context, each token, every one of these heads produces a proposed change to be added to the embedding in that position. So what you do is you sum together all of those proposed changes, one for each head, and add the result to the original embedding of that position. This entire sum here would be one slice of what's outputted from this multi-headed attention block, a single one of those refined embeddings that pops out the other end of it. Again, this is a lot to think about, so don't worry at all if it takes some time to sink The overall idea is that by running many distinct heads in parallel, you're giving the model the capacity to learn many distinct ways that context changes meaning. Pulling up our running tally for parameter count, with 96 heads, each including its own variation of these four matrices, each block of multi-headed attention ends up with around 600 million parameters. There's one added, slightly annoying thing that I should really mention for any of you who go on to read more about transformers. You remember how I said that the value map is factored out into these two distinct matrices, which I labeled as the value down and the value up matrices. The way that I framed things would suggest that you see this pair of matrices inside each attention head, and you could absolutely implement it this way, that would be a valid design. But the way that you see this written in papers, and the way that it's implemented in practice, looks a little different. All of these value up matrices for each head appear stapled together in one giant matrix that we call the output matrix, associated with the entire multi-headed attention block. And when you see people refer to the value matrix for a given attention head, they're typically only referring to this first step, the one that I was labeling as the value down projection into the smaller space. For the curious among you, I've left an on-screen note about it. It's one of those details that runs the risk of distracting from the main conceptual points, but I do want to call it out just so you know if you read about this in other sources. Setting aside all the technical nuances, in the preview from the last chapter we saw how data flowing through a transformer doesn't just flow through a single attention block. For one thing, it also goes through these other operations called multilayer perceptrons, we'll talk more about those in the next chapter, and then it repeatedly goes through many many copies of both of these operations. What this means is that after a given word imbibes some of its context, there are many more chances for this more nuanced embedding to be influenced by its more nuanced surroundings. The further down the network you go, with each embedding taking in more and more meaning from all the other embeddings, which themselves are getting more and more nuanced, the hope is that there's the capacity to encode higher level and more abstract ideas about a given input beyond just descriptors and grammatical structure. Things like sentiment and tone, and whether it's a poem, and what underlying scientific truths are relevant to the piece, and things like that. Turning back one more time to our scorekeeping, GPT-3 includes 96 distinct layers, so the total number of key, query, and value parameters is multiplied by another 96, which brings the total sum to just under 58 billion distinct parameters devoted to all of the attention heads. That is a lot, to be sure, but it's only about a third of the 175 billion that are in the network in total. So even though attention gets all of the attention, the majority of parameters come from the blocks sitting in between these steps. In the next chapter, you and I will talk more about those other blocks, and also a lot more about the training process. A big part of the story for the success of the attention mechanism is not so much any specific kind of behavior that it enables, but the fact that it's extremely parallelizable, meaning that you can run a huge number of computations in a short time using GPUs. I've learned that one of the big lessons about deep learning in the last decade or two has been that scale alone seems to give huge qualitative improvements in model performance. There's a huge advantage to parallelizable architectures that let you do this. If you want to learn more about this stuff, I've left lots of links in the description. In particular, anything produced by Andrej Karpathy or Chris Ola tend to be pure gold. In this video, I wanted to just jump into attention in its current form, but if you're curious about more of the history for how we got here and how you might reinvent this idea for yourself, my friend Vivek just put up a couple videos giving a lot more of that motivation. Also, Britt Cruz from the channel The Art of the Problem has a really nice video about the history of large language models."
+}

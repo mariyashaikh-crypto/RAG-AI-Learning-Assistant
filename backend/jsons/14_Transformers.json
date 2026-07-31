@@ -1,0 +1,3092 @@
+{
+    "chunks": [
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 0.0,
+            "end": 4.8,
+            "text": " The initials GPT stand for Generative Pre-trained Transformer."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 4.8,
+            "end": 9.36,
+            "text": " So that first word is straightforward enough, these are bots that generate new text."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 9.36,
+            "end": 14.8,
+            "text": " Pre-trained refers to how the model went through a process of learning from a massive amount of data,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 14.8,
+            "end": 20.400000000000002,
+            "text": " and the prefix insinuates that there's more room to fine-tune it on specific tasks with additional training."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 20.400000000000002,
+            "end": 23.2,
+            "text": " But the last word, that's the real key piece."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 23.2,
+            "end": 27.68,
+            "text": " A transformer is a specific kind of neural network, a machine learning model,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 27.68,
+            "end": 31.52,
+            "text": " and it's the core invention underlying the current boom in AI."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 31.52,
+            "end": 34.24,
+            "text": " What I want to do with this video and the following chapters"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 34.24,
+            "end": 39.36,
+            "text": " is go through a visually driven explanation for what actually happens inside a transformer."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 39.36,
+            "end": 43.28,
+            "text": " We're going to follow the data that flows through it and go step by step."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 43.28,
+            "end": 47.6,
+            "text": " There are many different kinds of models that you can build using transformers."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 47.6,
+            "end": 51.120000000000005,
+            "text": " Some models take in audio and produce a transcript."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 51.120000000000005,
+            "end": 56.480000000000004,
+            "text": " This sentence comes from a model going the other way around, producing synthetic speech just from text."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 56.48,
+            "end": 60.64,
+            "text": " All those tools that took the world by storm in 2022, like Dolly and Midjourney,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 60.64,
+            "end": 65.67999999999999,
+            "text": " that take in a text description and produce an image, are based on transformers."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 65.67999999999999,
+            "end": 69.44,
+            "text": " And even if I can't quite get it to understand what a pie creature is supposed to be,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 69.44,
+            "end": 73.75999999999999,
+            "text": " I'm still blown away that this kind of thing is even remotely possible."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 73.75999999999999,
+            "end": 77.28,
+            "text": " And the original transformer, introduced in 2017 by Google,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 77.28,
+            "end": 82.47999999999999,
+            "text": " was invented for the specific use case of translating text from one language into another."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 82.48,
+            "end": 87.76,
+            "text": " But the variant that you and I will focus on, which is the type that underlies tools like chatGPT,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 87.76,
+            "end": 91.2,
+            "text": " will be a model that's trained to take in a piece of text,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 91.2,
+            "end": 94.88000000000001,
+            "text": " maybe even with some surrounding images or sound accompanying it,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 94.88000000000001,
+            "end": 98.32000000000001,
+            "text": " and produce a prediction for what comes next in the passage."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 98.32000000000001,
+            "end": 101.36,
+            "text": " That prediction takes the form of a probability distribution"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 101.36,
+            "end": 103.68,
+            "text": " over many different chunks of text that might follow."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 104.80000000000001,
+            "end": 108.48,
+            "text": " At first glance, you might think that predicting the next word feels like a very different goal"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 108.48,
+            "end": 110.16000000000001,
+            "text": " from generating new text."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 110.16000000000001,
+            "end": 112.64,
+            "text": " But once you have a prediction model like this,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 112.64,
+            "end": 116.08,
+            "text": " a simple thing you could try to make it generate a longer piece of text"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 116.08,
+            "end": 118.48,
+            "text": " is to give it an initial snippet to work with,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 118.48,
+            "end": 122.08,
+            "text": " have it take a random sample from the distribution it just generated,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 122.08,
+            "end": 124.0,
+            "text": " append that sample to the text,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 124.0,
+            "end": 126.80000000000001,
+            "text": " and then run the whole process again to make a new prediction,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 126.80000000000001,
+            "end": 129.84,
+            "text": " based on all the new text, including what it just added."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 129.84,
+            "end": 133.2,
+            "text": " I don't know about you, but it really doesn't feel like this should actually work."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 133.2,
+            "end": 137.04000000000002,
+            "text": " In this animation, for example, I'm running GPT-2 on my laptop,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 137.12,
+            "end": 140.07999999999998,
+            "text": " and having it repeatedly predict and sample the next chunk of text"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 140.07999999999998,
+            "end": 142.72,
+            "text": " to generate a story based on the seed text."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 142.72,
+            "end": 146.48,
+            "text": " And the story just doesn't actually really make that much sense."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 146.48,
+            "end": 150.56,
+            "text": " But if I swap it out for API calls to GPT-3 instead,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 150.56,
+            "end": 153.35999999999999,
+            "text": " which is the same basic model, just much bigger,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 153.35999999999999,
+            "end": 156.56,
+            "text": " suddenly, almost magically, we do get a sensible story,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 156.56,
+            "end": 161.35999999999999,
+            "text": " one that even seems to infer that a pie creature would live in a land of math and computation."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 161.35999999999999,
+            "end": 164.07999999999998,
+            "text": " This process here of repeated prediction and sampling"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 164.08,
+            "end": 167.44000000000003,
+            "text": " is essentially what's happening when you interact with chat-gpt,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 167.44000000000003,
+            "end": 169.76000000000002,
+            "text": " or any of these other large language models,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 169.76000000000002,
+            "end": 171.68,
+            "text": " and you see them producing one word at a time."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 172.24,
+            "end": 174.64000000000001,
+            "text": " In fact, one feature that I would very much enjoy"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 174.64000000000001,
+            "end": 179.12,
+            "text": " is the ability to see the underlying distribution for each new word that it chooses."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 183.84,
+            "end": 188.4,
+            "text": " Let's kick things off with a very high-level preview of how data flows through a transformer."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 188.4,
+            "end": 191.20000000000002,
+            "text": " We will spend much more time motivating and interpreting"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 191.20000000000002,
+            "end": 193.28,
+            "text": " and expanding on the details of each step,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 193.28,
+            "end": 197.04,
+            "text": " but in broad strokes, when one of these chatbots generates a given word,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 197.04,
+            "end": 199.04,
+            "text": " here's what's going on under the hood."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 199.04,
+            "end": 202.32,
+            "text": " First, the input is broken up into a bunch of little pieces."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 202.32,
+            "end": 204.16,
+            "text": " These pieces are called tokens,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 204.16,
+            "end": 206.48,
+            "text": " and in the case of text, these tend to be words,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 206.48,
+            "end": 209.84,
+            "text": " or little pieces of words, or other common character combinations."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 210.56,
+            "end": 212.72,
+            "text": " If images or sound are involved,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 212.72,
+            "end": 215.36,
+            "text": " then tokens could be little patches of that image,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 215.36,
+            "end": 217.36,
+            "text": " or little chunks of that sound."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 217.36,
+            "end": 220.72,
+            "text": " Each one of these tokens is then associated with a vector,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 220.72,
+            "end": 222.4,
+            "text": " meaning some list of numbers,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 222.4,
+            "end": 225.76000000000002,
+            "text": " which is meant to somehow encode the meaning of that piece."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 225.76000000000002,
+            "end": 229.92000000000002,
+            "text": " If you think of these vectors as giving coordinates in some very high-dimensional space,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 229.92000000000002,
+            "end": 232.72,
+            "text": " words with similar meanings tend to land on vectors"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 232.72,
+            "end": 234.48000000000002,
+            "text": " that are close to each other in that space."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 235.04000000000002,
+            "end": 239.6,
+            "text": " This sequence of vectors then passes through an operation that's known as an attention block,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 239.6,
+            "end": 241.76,
+            "text": " and this allows the vectors to talk to each other"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 241.76,
+            "end": 244.72,
+            "text": " and pass information back and forth to update their values."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 244.72,
+            "end": 249.12,
+            "text": " For example, the meaning of the word model in the phrase a machine learning model"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 249.12,
+            "end": 252.0,
+            "text": " is different from its meaning in the phrase a fashion model."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 252.0,
+            "end": 254.88,
+            "text": " The attention block is what's responsible for figuring out"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 254.88,
+            "end": 259.12,
+            "text": " which words in the context are relevant to updating the meanings of which other words,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 259.12,
+            "end": 262.16,
+            "text": " and how exactly those meanings should be updated."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 262.16,
+            "end": 264.56,
+            "text": " And again, whenever I use the word meaning,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 264.56,
+            "end": 267.92,
+            "text": " this is somehow entirely encoded in the entries of those vectors."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 268.96,
+            "end": 272.4,
+            "text": " After that, these vectors pass through a different kind of operation,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 272.4,
+            "end": 273.84,
+            "text": " and depending on the source that you're reading,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 273.84,
+            "end": 276.4,
+            "text": " this will be referred to as a multi-layer perceptron,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 276.4,
+            "end": 278.4,
+            "text": " or maybe a feed-forward layer."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 278.4,
+            "end": 280.4,
+            "text": " And here, the vectors don't talk to each other."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 280.4,
+            "end": 282.88,
+            "text": " They all go through the same operation in parallel."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 282.88,
+            "end": 285.52,
+            "text": " And while this block is a little bit harder to interpret,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 285.52,
+            "end": 289.76,
+            "text": " later on we'll talk about how the step is a little bit like asking a long list of questions"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 289.76,
+            "end": 293.91999999999996,
+            "text": " about each vector, and then updating them based on the answers to those questions."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 294.71999999999997,
+            "end": 300.47999999999996,
+            "text": " All of the operations in both of these blocks look like a giant pile of matrix multiplications,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 300.47999999999996,
+            "end": 305.35999999999996,
+            "text": " and our primary job is going to be to understand how to read the underlying matrices."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 305.76,
+            "end": 309.92,
+            "text": " I'm glossing over some details about some normalization steps that happen in between,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 309.92,
+            "end": 312.32,
+            "text": " but this is, after all, a high-level preview."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 312.32,
+            "end": 314.48,
+            "text": " After that, the process essentially repeats."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 314.48,
+            "end": 318.40000000000003,
+            "text": " You go back and forth between attention blocks and multi-layer perceptron blocks,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 319.28000000000003,
+            "end": 323.76,
+            "text": " until at the very end, the hope is that all of the essential meaning of the passage"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 323.76,
+            "end": 327.6,
+            "text": " has somehow been baked into the very last vector in the sequence."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 327.6,
+            "end": 330.48,
+            "text": " We then perform a certain operation on that last vector"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 330.48,
+            "end": 334.40000000000003,
+            "text": " that produces a probability distribution over all possible tokens,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 335.35999999999996,
+            "end": 338.71999999999997,
+            "text": " all possible little chunks of text, that might come next."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 338.71999999999997,
+            "end": 343.44,
+            "text": " And like I said, once you have a tool that predicts what comes next given a snippet of text,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 343.44,
+            "end": 348.0,
+            "text": " you can feed it a little bit of seed text and have it repeatedly play this game of predicting"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 348.0,
+            "end": 353.44,
+            "text": " what comes next, sampling from the distribution, appending it, and then repeating over and over."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 353.44,
+            "end": 358.0,
+            "text": " Some of you in the know may remember how, long before chat-gpt came into the scene,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 358.0,
+            "end": 360.79999999999995,
+            "text": " this is what early demos of gpt3 looked like."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 360.88,
+            "end": 364.56,
+            "text": " You would have it auto-complete stories and essays based on an initial snippet."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 365.44,
+            "end": 370.16,
+            "text": " To make a tool like this into a chatbot, the easiest starting point is to have a little bit"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 370.16,
+            "end": 375.04,
+            "text": " of text that establishes the setting of a user interacting with a helpful AI assistant,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 375.04,
+            "end": 379.52,
+            "text": " what you would call the system prompt, and then you would use the user's initial question,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 379.52,
+            "end": 383.36,
+            "text": " or prompt, as the first bit of dialogue, and then you have it start predicting"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 383.36,
+            "end": 386.88,
+            "text": " what such a helpful AI assistant would say in response."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 387.6,
+            "end": 391.6,
+            "text": " There is more to say about an added step of training that's required to make this work well,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 391.6,
+            "end": 394.0,
+            "text": " but at a high level, this is the general idea."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 395.84,
+            "end": 399.2,
+            "text": " In this chapter, you and I are going to expand on the details of what happens"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 399.2,
+            "end": 402.8,
+            "text": " at the very beginning of the network, at the very end of the network,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 402.8,
+            "end": 406.64,
+            "text": " and I also want to spend a lot of time reviewing some important bits of background knowledge,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 406.64,
+            "end": 410.56,
+            "text": " things that would have been second nature to any machine learning engineer"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 410.56,
+            "end": 412.88,
+            "text": " by the time transformers came around."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 412.88,
+            "end": 415.68,
+            "text": " If you're comfortable with that background knowledge and a little impatient,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 415.68,
+            "end": 417.92,
+            "text": " you could probably feel free to skip to the next chapter,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 417.92,
+            "end": 420.40000000000003,
+            "text": " which is going to focus on the attention blocks,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 420.40000000000003,
+            "end": 423.28000000000003,
+            "text": " generally considered the heart of the transformer."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 423.28000000000003,
+            "end": 426.88,
+            "text": " After that, I want to talk more about these multi-layer perceptron blocks,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 426.88,
+            "end": 431.44,
+            "text": " how training works, and a number of other details that will have been skipped up to that point."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 432.0,
+            "end": 436.56,
+            "text": " For broader context, these videos are additions to a mini-series about deep learning,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 436.56,
+            "end": 440.56,
+            "text": " and it's okay if you haven't watched the previous ones, I think you can do it out of order,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 440.56,
+            "end": 443.28000000000003,
+            "text": " but before diving into transformers specifically,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 443.28,
+            "end": 445.76,
+            "text": " I do think it's worth making sure that we're on the same page"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 445.76,
+            "end": 448.79999999999995,
+            "text": " about the basic premise and structure of deep learning."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 448.79999999999995,
+            "end": 452.96,
+            "text": " At the risk of stating the obvious, this is one approach to machine learning,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 452.96,
+            "end": 458.15999999999997,
+            "text": " which describes any model where you're using data to somehow determine how a model behaves."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 458.88,
+            "end": 462.4,
+            "text": " What I mean by that is, let's say you want a function that takes in an image,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 462.4,
+            "end": 464.23999999999995,
+            "text": " and it produces a label describing it,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 464.23999999999995,
+            "end": 468.08,
+            "text": " or our example of predicting the next word given a passage of text,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 468.08,
+            "end": 472.71999999999997,
+            "text": " or any other task that seems to require some element of intuition and pattern recognition."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 473.28,
+            "end": 476.64,
+            "text": " We almost take this for granted these days, but the idea with machine learning is that"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 476.64,
+            "end": 481.2,
+            "text": " rather than trying to explicitly define a procedure for how to do that task in code,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 481.2,
+            "end": 484.23999999999995,
+            "text": " which is what people would have done in the earliest days of AI,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 484.23999999999995,
+            "end": 488.08,
+            "text": " instead, you set up a very flexible structure with tunable parameters,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 488.08,
+            "end": 491.44,
+            "text": " like a bunch of knobs and dials, and then, somehow,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 491.44,
+            "end": 495.84,
+            "text": " you use many examples of what the output should look like for a given input"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 495.84,
+            "end": 500.15999999999997,
+            "text": " to tweak and tune the values of those parameters to mimic this behavior."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 500.16,
+            "end": 504.64000000000004,
+            "text": " For example, maybe the simplest form of machine learning is linear regression,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 504.64000000000004,
+            "end": 507.76000000000005,
+            "text": " where your inputs and outputs are each single numbers,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 507.76000000000005,
+            "end": 510.88000000000005,
+            "text": " something like the square footage of a house and its price,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 510.88000000000005,
+            "end": 514.8000000000001,
+            "text": " and what you want is to find a line of best fit through this data,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 514.8000000000001,
+            "end": 517.2,
+            "text": " you know, to predict future house prices."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 517.2,
+            "end": 520.4,
+            "text": " That line is described by two continuous parameters,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 520.4,
+            "end": 522.48,
+            "text": " say the slope and the y-intercept,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 522.48,
+            "end": 528.08,
+            "text": " and the goal of linear regression is to determine those parameters to closely match the data."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 528.72,
+            "end": 532.4000000000001,
+            "text": " Needless to say, deep learning models get much more complicated."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 532.4000000000001,
+            "end": 537.9200000000001,
+            "text": " GPT-3, for example, has not two, but 175 billion parameters."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 537.9200000000001,
+            "end": 541.9200000000001,
+            "text": " But here's the thing, it's not a given that you can create some giant model"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 541.9200000000001,
+            "end": 546.88,
+            "text": " with a huge number of parameters without it either grossly overfitting the training data,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 546.88,
+            "end": 549.44,
+            "text": " or being completely intractable to train."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 550.1600000000001,
+            "end": 554.08,
+            "text": " Deep learning describes a class of models that in the last couple decades"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 554.08,
+            "end": 556.32,
+            "text": " have proven to scale remarkably well."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 556.32,
+            "end": 559.5200000000001,
+            "text": " What unifies them is that they all use the same training algorithm,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 559.5200000000001,
+            "end": 562.96,
+            "text": " it's called backpropagation, we talked about it in previous chapters,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 562.96,
+            "end": 565.36,
+            "text": " and the context that I want you to have as we go in"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 565.36,
+            "end": 568.5600000000001,
+            "text": " is that in order for this training algorithm to work well at scale,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 568.5600000000001,
+            "end": 571.6,
+            "text": " these models have to follow a certain specific format."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 571.6,
+            "end": 573.7600000000001,
+            "text": " And if you know this format going in,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 573.7600000000001,
+            "end": 577.7600000000001,
+            "text": " it helps to explain many of the choices for how a transformer processes language,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 577.7600000000001,
+            "end": 580.5600000000001,
+            "text": " which otherwise run the risk of feeling kind of arbitrary."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 581.36,
+            "end": 583.44,
+            "text": " First, whatever kind of model you're making,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 583.44,
+            "end": 587.12,
+            "text": " the input has to be formatted as an array of real numbers."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 587.12,
+            "end": 591.0400000000001,
+            "text": " This could simply mean a list of numbers, it could be a two-dimensional array,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 591.0400000000001,
+            "end": 593.7600000000001,
+            "text": " or very often you deal with higher dimensional arrays,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 593.7600000000001,
+            "end": 596.32,
+            "text": " where the general term used is tensor."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 596.32,
+            "end": 600.24,
+            "text": " You often think of that input data as being progressively transformed"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 600.24,
+            "end": 602.1600000000001,
+            "text": " into many distinct layers,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 602.1600000000001,
+            "end": 606.0,
+            "text": " where again, each layer is always structured as some kind of array of real numbers,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 606.0,
+            "end": 609.12,
+            "text": " until you get to a final layer which you consider the output."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 609.12,
+            "end": 612.1600000000001,
+            "text": " For example, the final layer in our text processing model"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 612.16,
+            "end": 615.28,
+            "text": " is a list of numbers representing the probability distribution"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 615.28,
+            "end": 617.52,
+            "text": " for all possible next tokens."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 617.52,
+            "end": 621.92,
+            "text": " In deep learning, these model parameters are almost always referred to as weights,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 621.92,
+            "end": 624.24,
+            "text": " and this is because a key feature of these models"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 624.24,
+            "end": 628.24,
+            "text": " is that the only way these parameters interact with the data being processed"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 628.24,
+            "end": 630.0799999999999,
+            "text": " is through weighted sums."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 630.0799999999999,
+            "end": 632.64,
+            "text": " You also sprinkle some nonlinear functions throughout,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 632.64,
+            "end": 634.3199999999999,
+            "text": " but they won't depend on parameters."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 634.9599999999999,
+            "end": 637.68,
+            "text": " Typically though, instead of seeing the weighted sums"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 637.68,
+            "end": 640.24,
+            "text": " all naked and written out explicitly like this,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 640.24,
+            "end": 642.5600000000001,
+            "text": " you'll instead find them packaged together"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 642.5600000000001,
+            "end": 645.52,
+            "text": " as various components in a matrix vector product."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 646.5600000000001,
+            "end": 648.24,
+            "text": " It amounts to saying the same thing,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 648.24,
+            "end": 651.12,
+            "text": " if you think back to how matrix vector multiplication works,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 651.12,
+            "end": 654.08,
+            "text": " each component in the output looks like a weighted sum."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 654.72,
+            "end": 658.96,
+            "text": " It's just often conceptually cleaner for you and me to think about matrices"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 658.96,
+            "end": 661.12,
+            "text": " that are filled with tunable parameters"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 661.12,
+            "end": 665.28,
+            "text": " that transform vectors that are drawn from the data being processed."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 666.32,
+            "end": 670.16,
+            "text": " For example, those 175 billion weights in GPT-3"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 670.64,
+            "end": 674.7199999999999,
+            "text": " are organized into just under 28,000 distinct matrices."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 674.7199999999999,
+            "end": 677.76,
+            "text": " Those matrices in turn fall into eight different categories,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 677.76,
+            "end": 680.9599999999999,
+            "text": " and what you and I are going to do is step through each one of those categories"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 680.9599999999999,
+            "end": 683.1999999999999,
+            "text": " to understand what that type does."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 683.1999999999999,
+            "end": 687.6,
+            "text": " As we go through, I think it's kind of fun to reference the specific numbers from GPT-3"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 687.6,
+            "end": 691.28,
+            "text": " to count up exactly where those 175 billion come from."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 691.92,
+            "end": 694.88,
+            "text": " Even if nowadays there are bigger and better models,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 694.88,
+            "end": 697.6,
+            "text": " this one has a certain charm as the first large language model"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 697.6,
+            "end": 701.0400000000001,
+            "text": " to really capture the world's attention outside of ML communities."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 701.0400000000001,
+            "end": 704.32,
+            "text": " Also, practically speaking, companies tend to keep much tighter lips"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 704.32,
+            "end": 707.12,
+            "text": " around the specific numbers for more modern networks."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 707.12,
+            "end": 710.24,
+            "text": " I just want to set the scene going in that as you peek under the hood"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 710.24,
+            "end": 713.2,
+            "text": " to see what happens inside a tool like chat-gpt,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 713.2,
+            "end": 717.6800000000001,
+            "text": " almost all of the actual computation looks like matrix vector multiplication."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 717.6800000000001,
+            "end": 721.44,
+            "text": " There's a little bit of a risk getting lost in the sea of billions of numbers,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 721.44,
+            "end": 724.24,
+            "text": " but you should draw a very sharp distinction in your mind"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 724.32,
+            "end": 728.64,
+            "text": " between the weights of the model, which I'll always color in blue or red,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 728.64,
+            "end": 732.08,
+            "text": " and the data being processed, which I'll always color in gray."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 732.08,
+            "end": 734.0,
+            "text": " The weights are the actual brains."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 734.0,
+            "end": 738.16,
+            "text": " They are the things learned during training, and they determine how it behaves."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 738.16,
+            "end": 742.24,
+            "text": " The data being processed simply encodes whatever specific input"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 742.24,
+            "end": 746.4,
+            "text": " is fed into the model for a given run, like an example snippet of text."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 747.44,
+            "end": 752.4,
+            "text": " With all of that as foundation, let's dig into the first step of this text processing example,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 752.4,
+            "end": 756.72,
+            "text": " which is to break up the input into little chunks and turn those chunks into vectors."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 756.72,
+            "end": 761.52,
+            "text": " I mentioned how those chunks are called tokens, which might be pieces of words or punctuation,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 761.52,
+            "end": 764.64,
+            "text": " but every now and then in this chapter, and especially in the next one,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 764.64,
+            "end": 768.48,
+            "text": " I'd like to just pretend that it's broken more cleanly into words."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 768.48,
+            "end": 770.0799999999999,
+            "text": " Because we humans think in words,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 770.0799999999999,
+            "end": 774.0,
+            "text": " this will just make it much easier to reference little examples and clarify each step."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 775.12,
+            "end": 781.12,
+            "text": " The model has a predefined vocabulary, some list of all possible words, say 50,000 of them,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 781.12,
+            "end": 784.96,
+            "text": " and the first matrix that we'll encounter, known as the embedding matrix,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 784.96,
+            "end": 787.68,
+            "text": " has a single column for each one of these words."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 788.8,
+            "end": 793.6,
+            "text": " These columns are what determines what vector each word turns into in that first step."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 794.88,
+            "end": 798.64,
+            "text": " We label it W-E, and like all the matrices we see,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 798.64,
+            "end": 802.24,
+            "text": " its values begin random, but they're going to be learned based on data."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 803.44,
+            "end": 808.48,
+            "text": " Turning words into vectors was common practice in machine learning long before transformers,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 808.48,
+            "end": 811.12,
+            "text": " but it's a little weird if you've never seen it before,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 811.12,
+            "end": 813.6800000000001,
+            "text": " and it sets the foundation for everything that follows,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 813.6800000000001,
+            "end": 815.84,
+            "text": " so let's take a moment to get familiar with it."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 815.84,
+            "end": 819.9200000000001,
+            "text": " We often call this embedding a word, which invites you to think of these vectors"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 819.9200000000001,
+            "end": 823.9200000000001,
+            "text": " very geometrically, as points in some high dimensional space."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 823.9200000000001,
+            "end": 828.96,
+            "text": " Visualizing a list of three numbers as coordinates for points in 3D space would be no problem,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 828.96,
+            "end": 832.08,
+            "text": " but word embeddings tend to be much much higher dimensional."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 832.08,
+            "end": 835.9200000000001,
+            "text": " In GPT-3, they have 12,288 dimensions,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 835.92,
+            "end": 840.4,
+            "text": " and as you'll see, it matters to work in a space that has a lot of distinct directions."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 841.04,
+            "end": 844.88,
+            "text": " In the same way that you could take a two-dimensional slice through a 3D space,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 844.88,
+            "end": 847.5999999999999,
+            "text": " and project all the points onto that slice,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 847.5999999999999,
+            "end": 851.12,
+            "text": " for the sake of animating word embeddings that a simple model is giving me,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 851.12,
+            "end": 854.4,
+            "text": " I'm going to do an analogous thing by choosing a three-dimensional"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 854.4,
+            "end": 856.8,
+            "text": " slice through this very high dimensional space,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 856.8,
+            "end": 860.4,
+            "text": " and projecting the word vectors down onto that, and displaying the results."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 861.12,
+            "end": 864.9599999999999,
+            "text": " The big idea here is that as a model tweaks and tunes its weights"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 864.96,
+            "end": 868.96,
+            "text": " to determine how exactly words get embedded as vectors during training,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 868.96,
+            "end": 872.8000000000001,
+            "text": " it tends to settle on a set of embeddings where directions in the space"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 872.8000000000001,
+            "end": 874.88,
+            "text": " have a kind of semantic meaning."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 874.88,
+            "end": 877.52,
+            "text": " For the simple word-to-vector model I'm running here,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 877.52,
+            "end": 882.0,
+            "text": " if I run a search for all the words whose embeddings are closest to that of tower,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 882.0,
+            "end": 886.08,
+            "text": " you'll notice how they all seem to give very similar tower-ish vibes."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 886.08,
+            "end": 888.64,
+            "text": " And if you want to pull up some Python and play along at home,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 888.64,
+            "end": 891.6800000000001,
+            "text": " this is the specific model that I'm using to make the animations."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 891.68,
+            "end": 894.8,
+            "text": " It's not a transformer, but it's enough to illustrate the idea"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 894.8,
+            "end": 897.5999999999999,
+            "text": " that directions in the space can carry semantic meaning."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 898.16,
+            "end": 902.0,
+            "text": " A very classic example of this is how if you take the difference"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 902.0,
+            "end": 904.2399999999999,
+            "text": " between the vectors for woman and man,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 904.2399999999999,
+            "end": 906.9599999999999,
+            "text": " something you would visualize as a little vector in the space"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 906.9599999999999,
+            "end": 909.4399999999999,
+            "text": " connecting the tip of one to the tip of the other,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 909.4399999999999,
+            "end": 913.04,
+            "text": " it's very similar to the difference between king and queen."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 914.88,
+            "end": 917.8399999999999,
+            "text": " So let's say you didn't know the word for a female monarch,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 917.84,
+            "end": 922.88,
+            "text": " you could find it by taking king, adding this woman-man direction,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 922.88,
+            "end": 925.2,
+            "text": " and searching for the embeddings closest to that point."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 926.8000000000001,
+            "end": 928.24,
+            "text": " At least, kind of."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 928.24,
+            "end": 931.2,
+            "text": " Despite this being a classic example, for the model I'm playing with,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 931.2,
+            "end": 935.0400000000001,
+            "text": " the true embedding of queen is actually a little farther off than this would suggest,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 935.0400000000001,
+            "end": 938.4,
+            "text": " presumably because the way that queen is used in training data"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 938.4,
+            "end": 940.72,
+            "text": " is not merely a feminine version of king."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 941.36,
+            "end": 945.12,
+            "text": " When I played around, family relations seemed to illustrate the idea much better."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 946.08,
+            "end": 949.6,
+            "text": " The point is, it looks like during training, the model found it advantageous"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 949.6,
+            "end": 954.8,
+            "text": " to choose embeddings such that one direction in this space encodes gender information."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 956.64,
+            "end": 959.6,
+            "text": " Another example is that if you take the embedding of Italy,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 959.6,
+            "end": 961.92,
+            "text": " and you subtract the embedding of Germany,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 961.92,
+            "end": 964.8,
+            "text": " and then you add that to the embedding of Hitler,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 964.8,
+            "end": 968.4,
+            "text": " you get something very close to the embedding of Mussolini."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 968.4,
+            "end": 972.88,
+            "text": " It's as if the model learned to associate some directions with Italian-ness,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 972.88,
+            "end": 975.6,
+            "text": " and others with WWII axis leaders."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 976.32,
+            "end": 979.76,
+            "text": " Maybe my favorite example in this vein is how in some models,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 979.76,
+            "end": 982.56,
+            "text": " if you take the difference between Germany and Japan,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 982.56,
+            "end": 986.08,
+            "text": " and you add it to sushi, you end up very close to Broadwurst."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 987.28,
+            "end": 989.6,
+            "text": " Also, in playing this game of finding nearest neighbors,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 989.6,
+            "end": 993.76,
+            "text": " I was very pleased to see how close cat was to both beast and monster."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 994.4,
+            "end": 997.28,
+            "text": " One bit of mathematical intuition that's helpful to have in mind,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 997.28,
+            "end": 998.96,
+            "text": " especially for the next chapter,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 998.96,
+            "end": 1001.04,
+            "text": " is how the dot product of two vectors"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1001.04,
+            "end": 1003.68,
+            "text": " can be thought of as a way to measure how well they align."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1004.3199999999999,
+            "end": 1009.04,
+            "text": " Computationally, dot products involve multiplying all the corresponding components,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1009.04,
+            "end": 1010.7199999999999,
+            "text": " and then adding the results,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1010.7199999999999,
+            "end": 1014.16,
+            "text": " which is good, since so much of our computation has to look like weighted sums."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1014.8,
+            "end": 1020.24,
+            "text": " Geometrically, the dot product is positive when vectors point in similar directions,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1020.24,
+            "end": 1022.48,
+            "text": " it's zero if they're perpendicular,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1022.48,
+            "end": 1025.52,
+            "text": " and it's negative whenever they point in opposite directions."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1026.3999999999999,
+            "end": 1028.96,
+            "text": " For example, let's say you were playing with this model,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1028.96,
+            "end": 1033.68,
+            "text": " and you hypothesize that the embedding of cats minus cat"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1033.68,
+            "end": 1037.28,
+            "text": " might represent a sort of plurality direction in this space."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1037.28,
+            "end": 1040.72,
+            "text": " To test this, I'm going to take this vector and compute its dot product"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1040.72,
+            "end": 1043.3600000000001,
+            "text": " against the embeddings of certain singular nouns,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1043.3600000000001,
+            "end": 1046.96,
+            "text": " and compare it to the dot products with the corresponding plural nouns."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1046.96,
+            "end": 1049.6000000000001,
+            "text": " If you play around with this, you'll notice that the plural ones"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1049.6000000000001,
+            "end": 1053.44,
+            "text": " do indeed seem to consistently give higher values than the singular ones,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1053.44,
+            "end": 1056.0,
+            "text": " indicating that they align more with this direction."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1056.8,
+            "end": 1060.24,
+            "text": " It's also fun how if you take this dot product with the embeddings of the words"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1060.24,
+            "end": 1064.24,
+            "text": " one, two, three, and so on, they give increasing values,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1064.24,
+            "end": 1068.88,
+            "text": " so it's as if we can quantitatively measure how plural the model finds a given word."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1070.08,
+            "end": 1073.76,
+            "text": " Again, the specifics for how words get embedded is learned using data."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1073.76,
+            "end": 1077.52,
+            "text": " This embedding matrix, whose columns tell us what happens to each word,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1077.52,
+            "end": 1079.68,
+            "text": " is the first pile of weights in our model,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1079.68,
+            "end": 1085.52,
+            "text": " and using the GPT-3 numbers, the vocabulary size specifically is 50,257,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1085.6,
+            "end": 1089.76,
+            "text": " and again, technically this consists not of words per se, but of tokens,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1090.32,
+            "end": 1093.68,
+            "text": " and the embedding dimension is 12,288."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1093.68,
+            "end": 1098.0,
+            "text": " Multiplying those tells us this consists of about 617 million weights."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1098.0,
+            "end": 1100.24,
+            "text": " Let's go ahead and add this to a running tally,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1100.24,
+            "end": 1103.84,
+            "text": " remembering that by the end, we should count up to 175 billion."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1105.36,
+            "end": 1109.28,
+            "text": " In the case of transformers, you really want to think of the vectors in this embedding space"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1109.28,
+            "end": 1112.4,
+            "text": " as not merely representing individual words."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1112.4,
+            "end": 1116.3200000000002,
+            "text": " For one thing, they also encode information about the position of that word,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1116.3200000000002,
+            "end": 1117.8400000000001,
+            "text": " which we'll talk about later,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1117.8400000000001,
+            "end": 1123.2,
+            "text": " but more importantly, you should think of them as having the capacity to soak in context."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1123.2,
+            "end": 1127.44,
+            "text": " A vector that started its life as the embedding of the word king, for example,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1127.44,
+            "end": 1131.3600000000001,
+            "text": " might progressively get tugged and pulled by various blocks in this network,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1131.3600000000001,
+            "end": 1135.68,
+            "text": " so that by the end, it points in a much more specific and nuanced direction"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1135.68,
+            "end": 1139.1200000000001,
+            "text": " that somehow encodes that it was a king who lived in Scotland,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1139.1200000000001,
+            "end": 1142.3200000000002,
+            "text": " and who had achieved his post after murdering the previous king."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1142.96,
+            "end": 1145.12,
+            "text": " Describing the word in a given language is a very simple task,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1145.12,
+            "end": 1148.08,
+            "text": " but think about your own understanding of a given word."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1148.08,
+            "end": 1151.76,
+            "text": " The meaning of that word is clearly informed by the surroundings,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1151.76,
+            "end": 1155.36,
+            "text": " and sometimes this includes context from a long distance away."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1155.36,
+            "end": 1159.76,
+            "text": " So in putting together a model that has the ability to predict what word comes next,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1159.76,
+            "end": 1163.84,
+            "text": " the goal is to somehow empower it to incorporate context efficiently."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1163.84,
+            "end": 1168.3999999999999,
+            "text": " To be clear, in that very first step, when you create the array of vectors based on the input text,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1168.3999999999999,
+            "end": 1171.6,
+            "text": " each one of those is simply plucked out of the embedding matrix."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1171.6,
+            "end": 1174.9599999999998,
+            "text": " So initially, each one can only encode the meaning of a single word"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1174.9599999999998,
+            "end": 1176.8,
+            "text": " without any input from its surroundings."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1177.52,
+            "end": 1181.36,
+            "text": " But you should think of the primary goal of this network that it flows through"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1181.36,
+            "end": 1184.6399999999999,
+            "text": " as being to enable each one of those vectors to soak up a meaning"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1184.6399999999999,
+            "end": 1189.28,
+            "text": " that's much more rich and specific than what mere individual words could represent."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1189.28,
+            "end": 1192.56,
+            "text": " The network can only process a fixed number of vectors at a time,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1192.56,
+            "end": 1194.32,
+            "text": " known as its context size."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1194.32,
+            "end": 1198.3999999999999,
+            "text": " For GPT-3, it was trained with a context size of 2048,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1198.4,
+            "end": 1203.1200000000001,
+            "text": " so the data flowing through the network always looks like this array of 2048 columns,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1203.1200000000001,
+            "end": 1205.44,
+            "text": " each of which has 12,000 dimensions."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1205.44,
+            "end": 1209.76,
+            "text": " This context size limits how much text the transformer can incorporate"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1209.76,
+            "end": 1212.16,
+            "text": " when it's making a prediction of the next word."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1212.16,
+            "end": 1217.0400000000002,
+            "text": " This is why long conversations with certain chatbots, like the early versions of chatGPT,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1217.0400000000002,
+            "end": 1221.92,
+            "text": " often gave the feeling of the bot kind of losing the thread of conversation as you continued too long."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1222.8000000000002,
+            "end": 1226.0,
+            "text": " We'll go into the details of attention in due time, but skipping ahead,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1226.0,
+            "end": 1228.64,
+            "text": " I want to talk for a minute about what happens at the very end."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1229.2,
+            "end": 1232.64,
+            "text": " Remember, the desired output is a probability distribution"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1232.64,
+            "end": 1234.96,
+            "text": " over all tokens that might come next."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1234.96,
+            "end": 1238.32,
+            "text": " For example, if the very last word is professor,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1238.32,
+            "end": 1241.52,
+            "text": " and the context includes words like Harry Potter,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1241.52,
+            "end": 1244.72,
+            "text": " and immediately preceding we see least favorite teacher,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1244.72,
+            "end": 1249.2,
+            "text": " and also if you give me some leeway by letting me pretend that tokens simply look like full words,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1249.2,
+            "end": 1252.56,
+            "text": " then a well-trained network that had built up knowledge of Harry Potter"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1252.56,
+            "end": 1256.32,
+            "text": " would presumably assign a high number to the word Snape."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1256.32,
+            "end": 1258.1599999999999,
+            "text": " This involves two different steps."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1258.1599999999999,
+            "end": 1263.36,
+            "text": " The first one is to use another matrix that maps the very last vector in that context"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1263.36,
+            "end": 1267.6,
+            "text": " to a list of 50,000 values, one for each token in the vocabulary."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1268.24,
+            "end": 1272.3999999999999,
+            "text": " Then there's a function that normalizes this into a probability distribution."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1272.3999999999999,
+            "end": 1275.44,
+            "text": " It's called softmax, and we'll talk more about it in just a second."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1275.44,
+            "end": 1279.6799999999998,
+            "text": " But before that, it might seem a little bit weird to only use this last embedding"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1279.68,
+            "end": 1282.64,
+            "text": " to make a prediction, when after all, in that last step,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1282.64,
+            "end": 1286.3200000000002,
+            "text": " there are thousands of other vectors in the layer just sitting there"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1286.3200000000002,
+            "end": 1288.64,
+            "text": " with their own context-rich meanings."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1288.64,
+            "end": 1291.2,
+            "text": " This has to do with the fact that in the training process,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1291.2,
+            "end": 1296.16,
+            "text": " it turns out to be much more efficient if you use each one of those vectors in the final layer"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1296.16,
+            "end": 1300.0800000000002,
+            "text": " to simultaneously make a prediction for what would come immediately after it."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1300.72,
+            "end": 1302.96,
+            "text": " There's a lot more to be said about training later on,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1302.96,
+            "end": 1304.72,
+            "text": " but I just want to call that out right now."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1305.6000000000001,
+            "end": 1310.0,
+            "text": " This matrix is called the unembedding matrix, and we give it the label wU."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1310.0,
+            "end": 1312.16,
+            "text": " Again, like all the weight matrices we see,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1312.16,
+            "end": 1316.24,
+            "text": " its entries begin at random, but they are learned during the training process."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1316.24,
+            "end": 1318.32,
+            "text": " Keeping score on our total parameter count,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1318.32,
+            "end": 1322.16,
+            "text": " this unembedding matrix has one row for each word in the vocabulary,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1322.16,
+            "end": 1325.6000000000001,
+            "text": " and each row has the same number of elements as the embedding dimension."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1326.16,
+            "end": 1329.3600000000001,
+            "text": " It's very similar to the embedding matrix, just with the order swapped,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1329.3600000000001,
+            "end": 1332.88,
+            "text": " so it adds another 617 million parameters to the network,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1332.88,
+            "end": 1336.0800000000002,
+            "text": " meaning our count so far is a little over a billion,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1336.0800000000002,
+            "end": 1341.6000000000001,
+            "text": " a small but not wholly insignificant fraction of the 175 billion that we'll end up with in total."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1342.5600000000002,
+            "end": 1347.0400000000002,
+            "text": " As the very last mini-lesson for this chapter, I want to talk more about the softmax function,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1347.0400000000002,
+            "end": 1350.48,
+            "text": " since it makes another appearance for us once we dive into the attention blocks."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1351.5200000000002,
+            "end": 1356.0800000000002,
+            "text": " The idea is that if you want a sequence of numbers to act as a probability distribution,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1356.0800000000002,
+            "end": 1359.1200000000001,
+            "text": " say a distribution over all possible next words,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1359.1200000000001,
+            "end": 1361.6000000000001,
+            "text": " then each value has to be between 0 and 1,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1362.3999999999999,
+            "end": 1364.48,
+            "text": " and you also need all of them to add up to 1."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1365.12,
+            "end": 1367.6,
+            "text": " However, if you're playing the deep learning game,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1367.6,
+            "end": 1370.56,
+            "text": " where everything you do looks like matrix vector multiplication,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1371.1999999999998,
+            "end": 1375.04,
+            "text": " the outputs you get by default don't abide by this at all."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1375.04,
+            "end": 1380.24,
+            "text": " The values are often negative or much bigger than 1, and they almost certainly don't add up to 1."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1380.24,
+            "end": 1385.52,
+            "text": " Softmax is the standard way to turn an arbitrary list of numbers into a valid distribution,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1385.52,
+            "end": 1388.9599999999998,
+            "text": " in such a way that the largest values end up closest to 1,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1388.9599999999998,
+            "end": 1391.28,
+            "text": " and the smaller values end up very close to 0."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1391.6,
+            "end": 1393.04,
+            "text": " That's all you really need to know."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1393.04,
+            "end": 1398.48,
+            "text": " But if you're curious, the way that it works is to first raise e to the power of each of the numbers,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1398.48,
+            "end": 1401.36,
+            "text": " which means you now have a list of positive values,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1401.36,
+            "end": 1406.56,
+            "text": " and then you can take the sum of all those positive values and divide each term by that sum,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1406.56,
+            "end": 1409.36,
+            "text": " which normalizes it into a list that adds up to 1."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1410.0,
+            "end": 1414.24,
+            "text": " You'll notice that if one of the numbers in the input is meaningfully bigger than the rest,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1414.24,
+            "end": 1418.32,
+            "text": " then in the output, the corresponding term dominates the distribution,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1418.32,
+            "end": 1422.8799999999999,
+            "text": " so if you were sampling from it, you'd almost certainly just be picking the maximizing input."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1422.8799999999999,
+            "end": 1428.24,
+            "text": " But it's softer than just picking the max, in the sense that when other values are similarly large,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1428.24,
+            "end": 1430.8799999999999,
+            "text": " they also get meaningful weight in the distribution,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1430.8799999999999,
+            "end": 1434.96,
+            "text": " and everything changes continuously as you continuously vary the inputs."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1434.96,
+            "end": 1440.1599999999999,
+            "text": " In some situations, like when chat.gpt is using this distribution to create a next word,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1440.1599999999999,
+            "end": 1445.12,
+            "text": " there's room for a little bit of extra fun by adding a little extra spice into this function,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1445.12,
+            "end": 1449.28,
+            "text": " with a constant t thrown into the denominator of those exponents."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1449.28,
+            "end": 1453.36,
+            "text": " We call it the temperature, since it vaguely resembles the role of temperature in certain"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1453.36,
+            "end": 1459.1999999999998,
+            "text": " thermodynamics equations, and the effect is that when t is larger, you give more weight to the"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1459.1999999999998,
+            "end": 1464.4799999999998,
+            "text": " lower values, meaning the distribution is a little bit more uniform, and if t is smaller,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1464.4799999999998,
+            "end": 1468.6399999999999,
+            "text": " then the bigger values will dominate more aggressively, where in the extreme,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1468.6399999999999,
+            "end": 1472.6399999999999,
+            "text": " setting t equal to 0 means all of the weight goes to that maximum value."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1473.2800000000002,
+            "end": 1477.76,
+            "text": " For example, I'll have gpt3 generate a story with the seed text"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1477.76,
+            "end": 1482.72,
+            "text": " once upon a time there was a, but I'm going to use different temperatures in each case."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1483.44,
+            "end": 1487.5200000000002,
+            "text": " Temperature 0 means that it always goes with the most predictable word,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1488.16,
+            "end": 1492.24,
+            "text": " and what you get ends up being a trite derivative of Goldilocks."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1492.88,
+            "end": 1498.0800000000002,
+            "text": " A higher temperature gives it a chance to choose less likely words, but it comes with a risk."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1498.0800000000002,
+            "end": 1500.8000000000002,
+            "text": " In this case, the story starts out a bit more originally,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1500.8,
+            "end": 1506.0,
+            "text": " about a young web artist from South Korea, but it quickly degenerates into nonsense."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1506.8,
+            "end": 1511.04,
+            "text": " Technically speaking, the API doesn't actually let you pick a temperature bigger than 2."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1511.04,
+            "end": 1515.2,
+            "text": " There is no mathematical reason for this, it's just an arbitrary constraint imposed,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1515.2,
+            "end": 1519.68,
+            "text": " I suppose to keep their tool from being seen generating things that are too nonsensical."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1519.68,
+            "end": 1522.56,
+            "text": " So if you're curious the way this animation is actually working,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1522.56,
+            "end": 1526.96,
+            "text": " is I'm taking the 20 most probable next tokens that gpt3 generates,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1526.96,
+            "end": 1529.36,
+            "text": " which seems to be the maximum they'll give me,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1529.36,
+            "end": 1532.4799999999998,
+            "text": " and then I tweak the probabilities based on an exponent of 1 5th."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1533.04,
+            "end": 1536.6399999999999,
+            "text": " As another bit of jargon, in the same way that you might call the components of the"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1536.6399999999999,
+            "end": 1542.24,
+            "text": " output of this function probabilities, people often refer to the inputs as logits."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1542.24,
+            "end": 1546.32,
+            "text": " Or some people say logits, some people say logits, I'm going to say logits."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1546.32,
+            "end": 1549.76,
+            "text": " So for instance, when you feed in some text, you have all these word embeddings flow through"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1549.76,
+            "end": 1553.84,
+            "text": " the network, and you do this final multiplication with the unembedding matrix,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1553.84,
+            "end": 1558.9599999999998,
+            "text": " machine learning people would refer to the components in that raw, unnormalized output"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1558.96,
+            "end": 1561.28,
+            "text": " as the logits for the next word prediction."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1563.2,
+            "end": 1566.72,
+            "text": " A lot of the goal with this chapter was to lay the foundations for understanding"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1566.72,
+            "end": 1570.64,
+            "text": " the attention mechanism, karate kid wax on wax off style."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1570.64,
+            "end": 1575.04,
+            "text": " You see, if you have a strong intuition for word embeddings, for softmax,"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1575.04,
+            "end": 1579.44,
+            "text": " for how dot products measure similarity, and also the underlying premise that most"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1579.44,
+            "end": 1583.92,
+            "text": " of the calculations have to look like matrix multiplication with matrices full of tunable"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1583.92,
+            "end": 1589.52,
+            "text": " parameters, then understanding the attention mechanism, this cornerstone piece in the whole"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1589.52,
+            "end": 1594.4,
+            "text": " modern boom in AI should be relatively smooth. For that, come join me in the next chapter."
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1596.48,
+            "end": 1600.64,
+            "text": " As I'm publishing this, a draft of that next chapter is available for review by Patreon"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1600.64,
+            "end": 1605.04,
+            "text": " supporters. A final version should be up in public in a week or two, it usually depends"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1605.04,
+            "end": 1609.1200000000001,
+            "text": " on how much I end up changing based on that review. In the meantime, if you want to dive"
+        },
+        {
+            "number": "14",
+            "title": "Transformers",
+            "start": 1609.12,
+            "end": 1613.12,
+            "text": " into attention, and if you want to help the channel out a little bit, it's there waiting."
+        }
+    ],
+    "text": " The initials GPT stand for Generative Pre-trained Transformer. So that first word is straightforward enough, these are bots that generate new text. Pre-trained refers to how the model went through a process of learning from a massive amount of data, and the prefix insinuates that there's more room to fine-tune it on specific tasks with additional training. But the last word, that's the real key piece. A transformer is a specific kind of neural network, a machine learning model, and it's the core invention underlying the current boom in AI. What I want to do with this video and the following chapters is go through a visually driven explanation for what actually happens inside a transformer. We're going to follow the data that flows through it and go step by step. There are many different kinds of models that you can build using transformers. Some models take in audio and produce a transcript. This sentence comes from a model going the other way around, producing synthetic speech just from text. All those tools that took the world by storm in 2022, like Dolly and Midjourney, that take in a text description and produce an image, are based on transformers. And even if I can't quite get it to understand what a pie creature is supposed to be, I'm still blown away that this kind of thing is even remotely possible. And the original transformer, introduced in 2017 by Google, was invented for the specific use case of translating text from one language into another. But the variant that you and I will focus on, which is the type that underlies tools like chatGPT, will be a model that's trained to take in a piece of text, maybe even with some surrounding images or sound accompanying it, and produce a prediction for what comes next in the passage. That prediction takes the form of a probability distribution over many different chunks of text that might follow. At first glance, you might think that predicting the next word feels like a very different goal from generating new text. But once you have a prediction model like this, a simple thing you could try to make it generate a longer piece of text is to give it an initial snippet to work with, have it take a random sample from the distribution it just generated, append that sample to the text, and then run the whole process again to make a new prediction, based on all the new text, including what it just added. I don't know about you, but it really doesn't feel like this should actually work. In this animation, for example, I'm running GPT-2 on my laptop, and having it repeatedly predict and sample the next chunk of text to generate a story based on the seed text. And the story just doesn't actually really make that much sense. But if I swap it out for API calls to GPT-3 instead, which is the same basic model, just much bigger, suddenly, almost magically, we do get a sensible story, one that even seems to infer that a pie creature would live in a land of math and computation. This process here of repeated prediction and sampling is essentially what's happening when you interact with chat-gpt, or any of these other large language models, and you see them producing one word at a time. In fact, one feature that I would very much enjoy is the ability to see the underlying distribution for each new word that it chooses. Let's kick things off with a very high-level preview of how data flows through a transformer. We will spend much more time motivating and interpreting and expanding on the details of each step, but in broad strokes, when one of these chatbots generates a given word, here's what's going on under the hood. First, the input is broken up into a bunch of little pieces. These pieces are called tokens, and in the case of text, these tend to be words, or little pieces of words, or other common character combinations. If images or sound are involved, then tokens could be little patches of that image, or little chunks of that sound. Each one of these tokens is then associated with a vector, meaning some list of numbers, which is meant to somehow encode the meaning of that piece. If you think of these vectors as giving coordinates in some very high-dimensional space, words with similar meanings tend to land on vectors that are close to each other in that space. This sequence of vectors then passes through an operation that's known as an attention block, and this allows the vectors to talk to each other and pass information back and forth to update their values. For example, the meaning of the word model in the phrase a machine learning model is different from its meaning in the phrase a fashion model. The attention block is what's responsible for figuring out which words in the context are relevant to updating the meanings of which other words, and how exactly those meanings should be updated. And again, whenever I use the word meaning, this is somehow entirely encoded in the entries of those vectors. After that, these vectors pass through a different kind of operation, and depending on the source that you're reading, this will be referred to as a multi-layer perceptron, or maybe a feed-forward layer. And here, the vectors don't talk to each other. They all go through the same operation in parallel. And while this block is a little bit harder to interpret, later on we'll talk about how the step is a little bit like asking a long list of questions about each vector, and then updating them based on the answers to those questions. All of the operations in both of these blocks look like a giant pile of matrix multiplications, and our primary job is going to be to understand how to read the underlying matrices. I'm glossing over some details about some normalization steps that happen in between, but this is, after all, a high-level preview. After that, the process essentially repeats. You go back and forth between attention blocks and multi-layer perceptron blocks, until at the very end, the hope is that all of the essential meaning of the passage has somehow been baked into the very last vector in the sequence. We then perform a certain operation on that last vector that produces a probability distribution over all possible tokens, all possible little chunks of text, that might come next. And like I said, once you have a tool that predicts what comes next given a snippet of text, you can feed it a little bit of seed text and have it repeatedly play this game of predicting what comes next, sampling from the distribution, appending it, and then repeating over and over. Some of you in the know may remember how, long before chat-gpt came into the scene, this is what early demos of gpt3 looked like. You would have it auto-complete stories and essays based on an initial snippet. To make a tool like this into a chatbot, the easiest starting point is to have a little bit of text that establishes the setting of a user interacting with a helpful AI assistant, what you would call the system prompt, and then you would use the user's initial question, or prompt, as the first bit of dialogue, and then you have it start predicting what such a helpful AI assistant would say in response. There is more to say about an added step of training that's required to make this work well, but at a high level, this is the general idea. In this chapter, you and I are going to expand on the details of what happens at the very beginning of the network, at the very end of the network, and I also want to spend a lot of time reviewing some important bits of background knowledge, things that would have been second nature to any machine learning engineer by the time transformers came around. If you're comfortable with that background knowledge and a little impatient, you could probably feel free to skip to the next chapter, which is going to focus on the attention blocks, generally considered the heart of the transformer. After that, I want to talk more about these multi-layer perceptron blocks, how training works, and a number of other details that will have been skipped up to that point. For broader context, these videos are additions to a mini-series about deep learning, and it's okay if you haven't watched the previous ones, I think you can do it out of order, but before diving into transformers specifically, I do think it's worth making sure that we're on the same page about the basic premise and structure of deep learning. At the risk of stating the obvious, this is one approach to machine learning, which describes any model where you're using data to somehow determine how a model behaves. What I mean by that is, let's say you want a function that takes in an image, and it produces a label describing it, or our example of predicting the next word given a passage of text, or any other task that seems to require some element of intuition and pattern recognition. We almost take this for granted these days, but the idea with machine learning is that rather than trying to explicitly define a procedure for how to do that task in code, which is what people would have done in the earliest days of AI, instead, you set up a very flexible structure with tunable parameters, like a bunch of knobs and dials, and then, somehow, you use many examples of what the output should look like for a given input to tweak and tune the values of those parameters to mimic this behavior. For example, maybe the simplest form of machine learning is linear regression, where your inputs and outputs are each single numbers, something like the square footage of a house and its price, and what you want is to find a line of best fit through this data, you know, to predict future house prices. That line is described by two continuous parameters, say the slope and the y-intercept, and the goal of linear regression is to determine those parameters to closely match the data. Needless to say, deep learning models get much more complicated. GPT-3, for example, has not two, but 175 billion parameters. But here's the thing, it's not a given that you can create some giant model with a huge number of parameters without it either grossly overfitting the training data, or being completely intractable to train. Deep learning describes a class of models that in the last couple decades have proven to scale remarkably well. What unifies them is that they all use the same training algorithm, it's called backpropagation, we talked about it in previous chapters, and the context that I want you to have as we go in is that in order for this training algorithm to work well at scale, these models have to follow a certain specific format. And if you know this format going in, it helps to explain many of the choices for how a transformer processes language, which otherwise run the risk of feeling kind of arbitrary. First, whatever kind of model you're making, the input has to be formatted as an array of real numbers. This could simply mean a list of numbers, it could be a two-dimensional array, or very often you deal with higher dimensional arrays, where the general term used is tensor. You often think of that input data as being progressively transformed into many distinct layers, where again, each layer is always structured as some kind of array of real numbers, until you get to a final layer which you consider the output. For example, the final layer in our text processing model is a list of numbers representing the probability distribution for all possible next tokens. In deep learning, these model parameters are almost always referred to as weights, and this is because a key feature of these models is that the only way these parameters interact with the data being processed is through weighted sums. You also sprinkle some nonlinear functions throughout, but they won't depend on parameters. Typically though, instead of seeing the weighted sums all naked and written out explicitly like this, you'll instead find them packaged together as various components in a matrix vector product. It amounts to saying the same thing, if you think back to how matrix vector multiplication works, each component in the output looks like a weighted sum. It's just often conceptually cleaner for you and me to think about matrices that are filled with tunable parameters that transform vectors that are drawn from the data being processed. For example, those 175 billion weights in GPT-3 are organized into just under 28,000 distinct matrices. Those matrices in turn fall into eight different categories, and what you and I are going to do is step through each one of those categories to understand what that type does. As we go through, I think it's kind of fun to reference the specific numbers from GPT-3 to count up exactly where those 175 billion come from. Even if nowadays there are bigger and better models, this one has a certain charm as the first large language model to really capture the world's attention outside of ML communities. Also, practically speaking, companies tend to keep much tighter lips around the specific numbers for more modern networks. I just want to set the scene going in that as you peek under the hood to see what happens inside a tool like chat-gpt, almost all of the actual computation looks like matrix vector multiplication. There's a little bit of a risk getting lost in the sea of billions of numbers, but you should draw a very sharp distinction in your mind between the weights of the model, which I'll always color in blue or red, and the data being processed, which I'll always color in gray. The weights are the actual brains. They are the things learned during training, and they determine how it behaves. The data being processed simply encodes whatever specific input is fed into the model for a given run, like an example snippet of text. With all of that as foundation, let's dig into the first step of this text processing example, which is to break up the input into little chunks and turn those chunks into vectors. I mentioned how those chunks are called tokens, which might be pieces of words or punctuation, but every now and then in this chapter, and especially in the next one, I'd like to just pretend that it's broken more cleanly into words. Because we humans think in words, this will just make it much easier to reference little examples and clarify each step. The model has a predefined vocabulary, some list of all possible words, say 50,000 of them, and the first matrix that we'll encounter, known as the embedding matrix, has a single column for each one of these words. These columns are what determines what vector each word turns into in that first step. We label it W-E, and like all the matrices we see, its values begin random, but they're going to be learned based on data. Turning words into vectors was common practice in machine learning long before transformers, but it's a little weird if you've never seen it before, and it sets the foundation for everything that follows, so let's take a moment to get familiar with it. We often call this embedding a word, which invites you to think of these vectors very geometrically, as points in some high dimensional space. Visualizing a list of three numbers as coordinates for points in 3D space would be no problem, but word embeddings tend to be much much higher dimensional. In GPT-3, they have 12,288 dimensions, and as you'll see, it matters to work in a space that has a lot of distinct directions. In the same way that you could take a two-dimensional slice through a 3D space, and project all the points onto that slice, for the sake of animating word embeddings that a simple model is giving me, I'm going to do an analogous thing by choosing a three-dimensional slice through this very high dimensional space, and projecting the word vectors down onto that, and displaying the results. The big idea here is that as a model tweaks and tunes its weights to determine how exactly words get embedded as vectors during training, it tends to settle on a set of embeddings where directions in the space have a kind of semantic meaning. For the simple word-to-vector model I'm running here, if I run a search for all the words whose embeddings are closest to that of tower, you'll notice how they all seem to give very similar tower-ish vibes. And if you want to pull up some Python and play along at home, this is the specific model that I'm using to make the animations. It's not a transformer, but it's enough to illustrate the idea that directions in the space can carry semantic meaning. A very classic example of this is how if you take the difference between the vectors for woman and man, something you would visualize as a little vector in the space connecting the tip of one to the tip of the other, it's very similar to the difference between king and queen. So let's say you didn't know the word for a female monarch, you could find it by taking king, adding this woman-man direction, and searching for the embeddings closest to that point. At least, kind of. Despite this being a classic example, for the model I'm playing with, the true embedding of queen is actually a little farther off than this would suggest, presumably because the way that queen is used in training data is not merely a feminine version of king. When I played around, family relations seemed to illustrate the idea much better. The point is, it looks like during training, the model found it advantageous to choose embeddings such that one direction in this space encodes gender information. Another example is that if you take the embedding of Italy, and you subtract the embedding of Germany, and then you add that to the embedding of Hitler, you get something very close to the embedding of Mussolini. It's as if the model learned to associate some directions with Italian-ness, and others with WWII axis leaders. Maybe my favorite example in this vein is how in some models, if you take the difference between Germany and Japan, and you add it to sushi, you end up very close to Broadwurst. Also, in playing this game of finding nearest neighbors, I was very pleased to see how close cat was to both beast and monster. One bit of mathematical intuition that's helpful to have in mind, especially for the next chapter, is how the dot product of two vectors can be thought of as a way to measure how well they align. Computationally, dot products involve multiplying all the corresponding components, and then adding the results, which is good, since so much of our computation has to look like weighted sums. Geometrically, the dot product is positive when vectors point in similar directions, it's zero if they're perpendicular, and it's negative whenever they point in opposite directions. For example, let's say you were playing with this model, and you hypothesize that the embedding of cats minus cat might represent a sort of plurality direction in this space. To test this, I'm going to take this vector and compute its dot product against the embeddings of certain singular nouns, and compare it to the dot products with the corresponding plural nouns. If you play around with this, you'll notice that the plural ones do indeed seem to consistently give higher values than the singular ones, indicating that they align more with this direction. It's also fun how if you take this dot product with the embeddings of the words one, two, three, and so on, they give increasing values, so it's as if we can quantitatively measure how plural the model finds a given word. Again, the specifics for how words get embedded is learned using data. This embedding matrix, whose columns tell us what happens to each word, is the first pile of weights in our model, and using the GPT-3 numbers, the vocabulary size specifically is 50,257, and again, technically this consists not of words per se, but of tokens, and the embedding dimension is 12,288. Multiplying those tells us this consists of about 617 million weights. Let's go ahead and add this to a running tally, remembering that by the end, we should count up to 175 billion. In the case of transformers, you really want to think of the vectors in this embedding space as not merely representing individual words. For one thing, they also encode information about the position of that word, which we'll talk about later, but more importantly, you should think of them as having the capacity to soak in context. A vector that started its life as the embedding of the word king, for example, might progressively get tugged and pulled by various blocks in this network, so that by the end, it points in a much more specific and nuanced direction that somehow encodes that it was a king who lived in Scotland, and who had achieved his post after murdering the previous king. Describing the word in a given language is a very simple task, but think about your own understanding of a given word. The meaning of that word is clearly informed by the surroundings, and sometimes this includes context from a long distance away. So in putting together a model that has the ability to predict what word comes next, the goal is to somehow empower it to incorporate context efficiently. To be clear, in that very first step, when you create the array of vectors based on the input text, each one of those is simply plucked out of the embedding matrix. So initially, each one can only encode the meaning of a single word without any input from its surroundings. But you should think of the primary goal of this network that it flows through as being to enable each one of those vectors to soak up a meaning that's much more rich and specific than what mere individual words could represent. The network can only process a fixed number of vectors at a time, known as its context size. For GPT-3, it was trained with a context size of 2048, so the data flowing through the network always looks like this array of 2048 columns, each of which has 12,000 dimensions. This context size limits how much text the transformer can incorporate when it's making a prediction of the next word. This is why long conversations with certain chatbots, like the early versions of chatGPT, often gave the feeling of the bot kind of losing the thread of conversation as you continued too long. We'll go into the details of attention in due time, but skipping ahead, I want to talk for a minute about what happens at the very end. Remember, the desired output is a probability distribution over all tokens that might come next. For example, if the very last word is professor, and the context includes words like Harry Potter, and immediately preceding we see least favorite teacher, and also if you give me some leeway by letting me pretend that tokens simply look like full words, then a well-trained network that had built up knowledge of Harry Potter would presumably assign a high number to the word Snape. This involves two different steps. The first one is to use another matrix that maps the very last vector in that context to a list of 50,000 values, one for each token in the vocabulary. Then there's a function that normalizes this into a probability distribution. It's called softmax, and we'll talk more about it in just a second. But before that, it might seem a little bit weird to only use this last embedding to make a prediction, when after all, in that last step, there are thousands of other vectors in the layer just sitting there with their own context-rich meanings. This has to do with the fact that in the training process, it turns out to be much more efficient if you use each one of those vectors in the final layer to simultaneously make a prediction for what would come immediately after it. There's a lot more to be said about training later on, but I just want to call that out right now. This matrix is called the unembedding matrix, and we give it the label wU. Again, like all the weight matrices we see, its entries begin at random, but they are learned during the training process. Keeping score on our total parameter count, this unembedding matrix has one row for each word in the vocabulary, and each row has the same number of elements as the embedding dimension. It's very similar to the embedding matrix, just with the order swapped, so it adds another 617 million parameters to the network, meaning our count so far is a little over a billion, a small but not wholly insignificant fraction of the 175 billion that we'll end up with in total. As the very last mini-lesson for this chapter, I want to talk more about the softmax function, since it makes another appearance for us once we dive into the attention blocks. The idea is that if you want a sequence of numbers to act as a probability distribution, say a distribution over all possible next words, then each value has to be between 0 and 1, and you also need all of them to add up to 1. However, if you're playing the deep learning game, where everything you do looks like matrix vector multiplication, the outputs you get by default don't abide by this at all. The values are often negative or much bigger than 1, and they almost certainly don't add up to 1. Softmax is the standard way to turn an arbitrary list of numbers into a valid distribution, in such a way that the largest values end up closest to 1, and the smaller values end up very close to 0. That's all you really need to know. But if you're curious, the way that it works is to first raise e to the power of each of the numbers, which means you now have a list of positive values, and then you can take the sum of all those positive values and divide each term by that sum, which normalizes it into a list that adds up to 1. You'll notice that if one of the numbers in the input is meaningfully bigger than the rest, then in the output, the corresponding term dominates the distribution, so if you were sampling from it, you'd almost certainly just be picking the maximizing input. But it's softer than just picking the max, in the sense that when other values are similarly large, they also get meaningful weight in the distribution, and everything changes continuously as you continuously vary the inputs. In some situations, like when chat.gpt is using this distribution to create a next word, there's room for a little bit of extra fun by adding a little extra spice into this function, with a constant t thrown into the denominator of those exponents. We call it the temperature, since it vaguely resembles the role of temperature in certain thermodynamics equations, and the effect is that when t is larger, you give more weight to the lower values, meaning the distribution is a little bit more uniform, and if t is smaller, then the bigger values will dominate more aggressively, where in the extreme, setting t equal to 0 means all of the weight goes to that maximum value. For example, I'll have gpt3 generate a story with the seed text once upon a time there was a, but I'm going to use different temperatures in each case. Temperature 0 means that it always goes with the most predictable word, and what you get ends up being a trite derivative of Goldilocks. A higher temperature gives it a chance to choose less likely words, but it comes with a risk. In this case, the story starts out a bit more originally, about a young web artist from South Korea, but it quickly degenerates into nonsense. Technically speaking, the API doesn't actually let you pick a temperature bigger than 2. There is no mathematical reason for this, it's just an arbitrary constraint imposed, I suppose to keep their tool from being seen generating things that are too nonsensical. So if you're curious the way this animation is actually working, is I'm taking the 20 most probable next tokens that gpt3 generates, which seems to be the maximum they'll give me, and then I tweak the probabilities based on an exponent of 1 5th. As another bit of jargon, in the same way that you might call the components of the output of this function probabilities, people often refer to the inputs as logits. Or some people say logits, some people say logits, I'm going to say logits. So for instance, when you feed in some text, you have all these word embeddings flow through the network, and you do this final multiplication with the unembedding matrix, machine learning people would refer to the components in that raw, unnormalized output as the logits for the next word prediction. A lot of the goal with this chapter was to lay the foundations for understanding the attention mechanism, karate kid wax on wax off style. You see, if you have a strong intuition for word embeddings, for softmax, for how dot products measure similarity, and also the underlying premise that most of the calculations have to look like matrix multiplication with matrices full of tunable parameters, then understanding the attention mechanism, this cornerstone piece in the whole modern boom in AI should be relatively smooth. For that, come join me in the next chapter. As I'm publishing this, a draft of that next chapter is available for review by Patreon supporters. A final version should be up in public in a week or two, it usually depends on how much I end up changing based on that review. In the meantime, if you want to dive into attention, and if you want to help the channel out a little bit, it's there waiting."
+}

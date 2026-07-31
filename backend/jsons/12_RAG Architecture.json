@@ -1,0 +1,2441 @@
+{
+    "chunks": [
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 0.0,
+            "end": 8.0,
+            "text": " Let's look at the agenda for this particular video."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 8.0,
+            "end": 10.76,
+            "text": " We are going to look at what is RAG,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 10.76,
+            "end": 13.08,
+            "text": " what does the RAG architecture look like,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 13.08,
+            "end": 14.3,
+            "text": " what are the different types of"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 14.3,
+            "end": 16.46,
+            "text": " RAG architectures which we can come across,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 16.46,
+            "end": 18.48,
+            "text": " and I'll explain these architectures with"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 18.48,
+            "end": 20.12,
+            "text": " a case study examples of"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 20.12,
+            "end": 22.84,
+            "text": " a food delivery app by using an AI assistant,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 22.84,
+            "end": 24.080000000000002,
+            "text": " and also I will leverage"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 24.080000000000002,
+            "end": 26.6,
+            "text": " a document search for a simple RAG use case."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 26.6,
+            "end": 28.8,
+            "text": " We will also discuss the pros and cons of"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 28.8,
+            "end": 30.72,
+            "text": " the RAG architecture and finally,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 30.72,
+            "end": 32.46,
+            "text": " I'll end up with a trivia question which you can"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 32.46,
+            "end": 35.44,
+            "text": " answer and we can interact in the comment section below."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 35.44,
+            "end": 39.04,
+            "text": " So what is RAG? In a typical AI use case,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 39.04,
+            "end": 41.44,
+            "text": " let's consider an example where we have"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 41.44,
+            "end": 43.56,
+            "text": " a chat interface where a user is"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 43.56,
+            "end": 45.980000000000004,
+            "text": " interacting with an LLM or a JNAI model."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 45.980000000000004,
+            "end": 47.88,
+            "text": " Maybe we use an existing model or"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 47.88,
+            "end": 49.96,
+            "text": " we trained a new model and we have used it."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 49.96,
+            "end": 51.36,
+            "text": " We are going to interact with"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 51.36,
+            "end": 53.58,
+            "text": " this particular model using an actual language."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 53.58,
+            "end": 55.72,
+            "text": " We use prompts to make it better,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 55.72,
+            "end": 57.96,
+            "text": " and there are prompt engineers who are making"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 57.96,
+            "end": 60.76,
+            "text": " the LLM which is served for this chat client"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 60.76,
+            "end": 63.44,
+            "text": " better by giving specific prompts"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 63.44,
+            "end": 66.08,
+            "text": " and training these LLMs on specific prompts."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 66.08,
+            "end": 68.24,
+            "text": " However, there are some cases"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 68.24,
+            "end": 70.44,
+            "text": " where you want to get dynamic information."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 70.44,
+            "end": 73.32,
+            "text": " For example, I asked this particular LLM,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 73.32,
+            "end": 75.0,
+            "text": " what is the temperature right now?"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 75.0,
+            "end": 77.86,
+            "text": " Now, when you train an LLM,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 77.86,
+            "end": 79.88,
+            "text": " you train with a predefined dataset."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 79.88,
+            "end": 82.64,
+            "text": " Now, this LLM may not be able to answer"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 82.64,
+            "end": 84.76,
+            "text": " this dynamic information because"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 84.76,
+            "end": 87.36,
+            "text": " temperatures are changing every now and then,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 87.36,
+            "end": 89.64,
+            "text": " and how will the LLM know where to"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 89.64,
+            "end": 92.24,
+            "text": " take the data from or where to source the data from?"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 92.24,
+            "end": 93.88,
+            "text": " So the LLMs respond with,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 93.88,
+            "end": 95.56,
+            "text": " sorry, I don't have data."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 95.56,
+            "end": 98.52,
+            "text": " Now, these pre-trained LLMs don't have"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 98.52,
+            "end": 101.6,
+            "text": " the information about these dynamic behavior or"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 101.6,
+            "end": 104.88,
+            "text": " the dynamic changes with respect to specific data."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 104.88,
+            "end": 107.0,
+            "text": " Now, in this case, we need a way"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 107.0,
+            "end": 109.44,
+            "text": " to source data from an external entity."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 109.44,
+            "end": 111.92,
+            "text": " This is where RAG comes into picture."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 111.92,
+            "end": 115.32,
+            "text": " So RAG is an architecture using which you can have"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 115.32,
+            "end": 118.39999999999999,
+            "text": " external data sources leveraged by the LLM."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 118.39999999999999,
+            "end": 121.03999999999999,
+            "text": " These are also called as grounded generation."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 121.03999999999999,
+            "end": 123.52,
+            "text": " If you hear about the term grounded generation,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 123.52,
+            "end": 125.52,
+            "text": " these are basically the RAG architecture."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 125.52,
+            "end": 127.67999999999999,
+            "text": " Let's see how to get the LLM,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 127.67999999999999,
+            "end": 129.56,
+            "text": " talk to these external data sources."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 129.56,
+            "end": 131.07999999999998,
+            "text": " It's not a straightforward approach,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 131.07999999999998,
+            "end": 132.76,
+            "text": " but let's see how we can do that."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 132.76,
+            "end": 134.92,
+            "text": " To understand the RAG architecture,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 134.92,
+            "end": 138.6,
+            "text": " we know that we will be giving an input to the GenAI model."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 138.6,
+            "end": 141.95999999999998,
+            "text": " There is a knowledge base which we need to get data from."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 141.95999999999998,
+            "end": 143.48,
+            "text": " In this case, let's say, for example,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 143.48,
+            "end": 145.16,
+            "text": " we need to get some temperature information."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 145.72,
+            "end": 147.96,
+            "text": " We are going to get a source of truth"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 147.96,
+            "end": 151.28,
+            "text": " from external weather application."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 151.28,
+            "end": 154.16,
+            "text": " We need to convert the data into smaller chunks"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 154.16,
+            "end": 155.8,
+            "text": " so that we can convert this into"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 155.8,
+            "end": 157.8,
+            "text": " a machine understandable language,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 157.8,
+            "end": 159.88,
+            "text": " for example, vectors or embeddings."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 159.88,
+            "end": 161.68,
+            "text": " We need to create some embeddings."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 161.68,
+            "end": 163.4,
+            "text": " Embeddings are nothing but vectors."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 163.4,
+            "end": 166.16,
+            "text": " We can convert these data, filter these data,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 166.16,
+            "end": 168.76,
+            "text": " and then push them into a database"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 168.76,
+            "end": 170.84,
+            "text": " which can host these vector indexes."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 170.84,
+            "end": 174.72,
+            "text": " Vector indexes are the language which the LLMs talk in."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 174.88,
+            "end": 176.48,
+            "text": " These are machine understandable languages."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 176.48,
+            "end": 180.68,
+            "text": " We saw tokenizers in the previous video in prompt engineering."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 180.68,
+            "end": 182.76,
+            "text": " These are the same vectors which we create"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 182.76,
+            "end": 184.84,
+            "text": " out of the tokens from a word."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 184.84,
+            "end": 187.48,
+            "text": " Once our temperature or the data source"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 187.48,
+            "end": 189.56,
+            "text": " gets converted into a vector embedding,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 189.56,
+            "end": 192.48,
+            "text": " we need to also have prompts created by the prompt engineer"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 192.48,
+            "end": 195.44,
+            "text": " so that these data can be uniquely identified"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 195.44,
+            "end": 198.16,
+            "text": " and linked to them with the existing prompts"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 198.16,
+            "end": 201.12,
+            "text": " or maybe prompts which are relevant to that particular data."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 201.12,
+            "end": 202.92,
+            "text": " So prompt engineers play a key role"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 202.95999999999998,
+            "end": 207.32,
+            "text": " in having these prompts structured in a way"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 207.32,
+            "end": 209.51999999999998,
+            "text": " so that these are converted into embeddings or vectors"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 209.51999999999998,
+            "end": 211.23999999999998,
+            "text": " which can be relevant."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 211.23999999999998,
+            "end": 216.07999999999998,
+            "text": " Now, using the context and the most relevant text,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 216.07999999999998,
+            "end": 218.92,
+            "text": " we can identify what the user wants"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 218.92,
+            "end": 221.27999999999997,
+            "text": " by linking the data from the vector indexes"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 221.27999999999997,
+            "end": 224.56,
+            "text": " and also what the LLM requires."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 224.56,
+            "end": 226.79999999999998,
+            "text": " Finally, the LLM converts that data"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 226.79999999999998,
+            "end": 228.48,
+            "text": " if it found that particular data"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 228.48,
+            "end": 231.27999999999997,
+            "text": " and then sends it back to the caller."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 231.28,
+            "end": 233.2,
+            "text": " At a high level, this is the architecture,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 233.2,
+            "end": 236.4,
+            "text": " but then let me go deeper into individual components"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 236.4,
+            "end": 237.92000000000002,
+            "text": " of the RAG architecture."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 237.92000000000002,
+            "end": 239.36,
+            "text": " When we convert the knowledge base"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 239.36,
+            "end": 241.96,
+            "text": " or the source of truth into embeddings,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 241.96,
+            "end": 244.76,
+            "text": " we will have a lot of data preparation to be done."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 244.76,
+            "end": 247.44,
+            "text": " These raw data sources or the messages"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 247.44,
+            "end": 251.92000000000002,
+            "text": " needs to be converted by extracting meaningful information"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 251.92000000000002,
+            "end": 253.92000000000002,
+            "text": " from these data sources,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 253.92000000000002,
+            "end": 256.72,
+            "text": " and we need to chunk them into smaller blocks"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 256.72,
+            "end": 259.16,
+            "text": " so that we can convert them into vectors."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 259.20000000000005,
+            "end": 262.08000000000004,
+            "text": " In the previous videos, we saw about tokenization."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 262.08000000000004,
+            "end": 263.16,
+            "text": " So this is somewhat similar."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 263.16,
+            "end": 266.68,
+            "text": " So we convert the document or the knowledge base,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 266.68,
+            "end": 268.48,
+            "text": " chunk them into smaller objects,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 268.48,
+            "end": 271.36,
+            "text": " and we feed that into an embedding conversion logic"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 271.36,
+            "end": 276.6,
+            "text": " where we again split these chunks into smaller vectors."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 276.6,
+            "end": 278.48,
+            "text": " We store them in the vector index,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 278.48,
+            "end": 281.36,
+            "text": " and also we create linkages between the data"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 281.36,
+            "end": 283.84000000000003,
+            "text": " and the vectors which we created."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 283.84000000000003,
+            "end": 286.16,
+            "text": " So for example, we created some source data."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 286.16,
+            "end": 288.56,
+            "text": " With the source data, we link the vector index,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 288.56,
+            "end": 293.4,
+            "text": " whatever got created, so that we can decode that easily."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 293.4,
+            "end": 295.88,
+            "text": " So generating embeddings is basically converting"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 295.88,
+            "end": 302.32,
+            "text": " your source data into vectors which the LLMs can understand."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 302.32,
+            "end": 305.2,
+            "text": " So the part where the knowledge base is fed"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 305.2,
+            "end": 310.0,
+            "text": " and converted into text using vectors,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 310.0,
+            "end": 311.6,
+            "text": " that is called as content generation."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 311.6,
+            "end": 315.76,
+            "text": " So essentially, we create the content for the LLM."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 315.76,
+            "end": 319.2,
+            "text": " The process in which we retrieve this information"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 319.2,
+            "end": 323.44,
+            "text": " using meaningful context is the retrieval part."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 323.44,
+            "end": 325.59999999999997,
+            "text": " So RAG is basically a combination"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 325.59999999999997,
+            "end": 328.08,
+            "text": " of content generation and retrieval,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 328.08,
+            "end": 332.84,
+            "text": " and that's why it is retrieval augmented generation."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 332.84,
+            "end": 335.88,
+            "text": " So based on what you want to retrieve from the vector"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 335.88,
+            "end": 338.8,
+            "text": " indexes or from the LLM, the data"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 338.8,
+            "end": 340.52,
+            "text": " gets pulled in from the knowledge base"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 340.52,
+            "end": 344.52,
+            "text": " or the source of truth and gets fed into the LLM"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 344.52,
+            "end": 348.56,
+            "text": " by vectors, by converting them as embeddings or vectors."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 348.56,
+            "end": 350.32,
+            "text": " That can be understood by the LLM"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 350.32,
+            "end": 355.2,
+            "text": " and can be streamlined further by giving only relevant text."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 355.2,
+            "end": 357.52,
+            "text": " This kind of an approach is called as an open book"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 357.52,
+            "end": 362.0,
+            "text": " approach because you can plug in your content generation logic."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 362.0,
+            "end": 364.59999999999997,
+            "text": " You can have different sources, et cetera."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 364.59999999999997,
+            "end": 368.15999999999997,
+            "text": " The architecture says that you can have an LLM use vector"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 368.15999999999997,
+            "end": 370.56,
+            "text": " indices using relevant information,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 370.56,
+            "end": 373.71999999999997,
+            "text": " and the vector indexes are created by content generation"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 373.72,
+            "end": 376.0,
+            "text": " using a specific methodology where"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 376.0,
+            "end": 378.28000000000003,
+            "text": " we create embeddings or vectors and feed it"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 378.28000000000003,
+            "end": 379.8,
+            "text": " to the vector indexes."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 379.8,
+            "end": 381.76000000000005,
+            "text": " Coming to the types of RAG architectures,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 381.76000000000005,
+            "end": 384.40000000000003,
+            "text": " there are simple and complex RAG architectures."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 384.40000000000003,
+            "end": 386.40000000000003,
+            "text": " We will look at a simple RAG architecture"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 386.40000000000003,
+            "end": 389.56,
+            "text": " by using an example of a document search."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 389.56,
+            "end": 392.52000000000004,
+            "text": " So let's take the same chatbot kind of an interface"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 392.52000000000004,
+            "end": 395.92,
+            "text": " where I have created a chatbot to go"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 395.92,
+            "end": 397.48,
+            "text": " through my local documents."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 397.48,
+            "end": 400.96000000000004,
+            "text": " So imagine that I have local documents in my computer."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 400.96000000000004,
+            "end": 403.52000000000004,
+            "text": " I have all these in my folders."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 404.32,
+            "end": 407.59999999999997,
+            "text": " So I created a chatbot which I need to talk to"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 407.59999999999997,
+            "end": 409.91999999999996,
+            "text": " so that I can understand where my documents are,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 409.91999999999996,
+            "end": 414.28,
+            "text": " or I don't know which document my specific data is present in."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 414.28,
+            "end": 418.91999999999996,
+            "text": " So I have fed all these into the LLM using the RAG architecture."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 418.91999999999996,
+            "end": 423.12,
+            "text": " So the local documents got converted into vectors"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 423.12,
+            "end": 425.56,
+            "text": " using smaller chunks, and they got linked"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 425.56,
+            "end": 427.44,
+            "text": " in the vector indexes table."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 427.44,
+            "end": 430.76,
+            "text": " Now, my LLM which I'm using is using specific prompts,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 430.76,
+            "end": 432.76,
+            "text": " and then it can go and talk to the vector indexes"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 432.8,
+            "end": 435.24,
+            "text": " so that it can give me some relevant information."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 435.24,
+            "end": 438.32,
+            "text": " So this is an example of how you can create a document search"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 438.32,
+            "end": 439.8,
+            "text": " using RAG architecture."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 439.8,
+            "end": 441.76,
+            "text": " Now, I'm going to ask this particular"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 443.08,
+            "end": 447.24,
+            "text": " to show me what are the cons of the option two"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 447.24,
+            "end": 448.68,
+            "text": " of project X design."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 448.68,
+            "end": 450.64,
+            "text": " So I created a project X,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 450.64,
+            "end": 453.12,
+            "text": " and then I have put that into a design document,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 453.12,
+            "end": 456.64,
+            "text": " and I'm asking it to give me the cons of the option two."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 456.64,
+            "end": 459.84,
+            "text": " So unless we have read the document"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 459.84,
+            "end": 462.12,
+            "text": " and understood it and consumed it,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 462.12,
+            "end": 464.68,
+            "text": " we cannot return what is the option two"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 464.68,
+            "end": 466.6,
+            "text": " from that specific document."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 466.6,
+            "end": 469.52,
+            "text": " So what happens during the chunking process is"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 469.52,
+            "end": 470.48,
+            "text": " the documents are read,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 470.48,
+            "end": 472.04,
+            "text": " and these are converted into smaller,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 472.04,
+            "end": 474.6,
+            "text": " meaningful information given into the vector,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 474.6,
+            "end": 478.8,
+            "text": " and the vector has linkages between the new vectors"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 478.8,
+            "end": 481.2,
+            "text": " which got created with the source data."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 481.2,
+            "end": 484.24,
+            "text": " And using the LLM's capability to search"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 484.24,
+            "end": 487.52,
+            "text": " and provide information to the caller,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 487.52,
+            "end": 489.56,
+            "text": " so we will be leveraging the RAG architecture"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 489.56,
+            "end": 491.04,
+            "text": " to convert the dynamic information,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 491.04,
+            "end": 492.84000000000003,
+            "text": " and then that is fed into the LLM."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 492.84000000000003,
+            "end": 494.8,
+            "text": " Now, when I modify this document,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 494.8,
+            "end": 498.64000000000004,
+            "text": " the LLM should be able to easily use the new updated version"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 498.64000000000004,
+            "end": 501.40000000000003,
+            "text": " because we are constantly looking at these documents"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 501.40000000000003,
+            "end": 503.40000000000003,
+            "text": " and then converting them into vector indices"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 503.40000000000003,
+            "end": 505.32000000000005,
+            "text": " and then feeding that into the database,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 505.32000000000005,
+            "end": 508.12,
+            "text": " which the LLM's can leverage at runtime."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 508.12,
+            "end": 510.48,
+            "text": " Now, coming to the complex use case of a RAG,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 510.48,
+            "end": 512.8000000000001,
+            "text": " so let's imagine that there is a chat assistant"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 512.8000000000001,
+            "end": 515.88,
+            "text": " or an AI assistant in the chat support available"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 515.88,
+            "end": 517.44,
+            "text": " within a food delivery application."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 517.44,
+            "end": 519.4,
+            "text": " So these days you find a lot of these"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 519.4,
+            "end": 521.52,
+            "text": " already present in the food delivery apps"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 521.52,
+            "end": 524.3199999999999,
+            "text": " or maybe like cab booking apps, et cetera."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 524.3199999999999,
+            "end": 527.0,
+            "text": " So let's try envisioning how we can design one"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 527.0,
+            "end": 528.3199999999999,
+            "text": " for a food delivery application"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 528.3199999999999,
+            "end": 530.56,
+            "text": " and how complicated it can get into."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 530.56,
+            "end": 533.4399999999999,
+            "text": " So again, I'm going to build the same architecture of the RAG."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 533.4399999999999,
+            "end": 534.84,
+            "text": " The skeleton architecture is basically"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 534.84,
+            "end": 536.36,
+            "text": " you have some source of truth,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 536.36,
+            "end": 537.64,
+            "text": " we convert them into chunks"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 537.64,
+            "end": 540.72,
+            "text": " and then give it into the vector indexes"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 540.72,
+            "end": 542.72,
+            "text": " where the embeddings are created."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 542.72,
+            "end": 545.84,
+            "text": " Now the LLM model uses these to streamline them"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 545.84,
+            "end": 547.64,
+            "text": " and then fine tune them using prompts,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 547.64,
+            "end": 549.76,
+            "text": " and then they are given back to the chat user."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 549.76,
+            "end": 552.56,
+            "text": " So as a user, I'm going to ask this particular question,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 552.56,
+            "end": 555.1999999999999,
+            "text": " how long will my order take?"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 555.1999999999999,
+            "end": 556.96,
+            "text": " So now there are two things here."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 556.96,
+            "end": 560.6,
+            "text": " One, we need to figure out who's this particular user."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 560.6,
+            "end": 563.16,
+            "text": " So there needs to be some context of our decisions"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 563.16,
+            "end": 564.4399999999999,
+            "text": " which needs to be made"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 564.4399999999999,
+            "end": 567.16,
+            "text": " where we need to identify that particular user"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 567.16,
+            "end": 569.48,
+            "text": " and fetch the order ID of that particular user."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 569.48,
+            "end": 571.28,
+            "text": " So that is one specific task,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 571.28,
+            "end": 572.6,
+            "text": " which is like slightly complicated"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 572.6,
+            "end": 574.16,
+            "text": " because it's dynamic again,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 574.16,
+            "end": 576.12,
+            "text": " an order can vary for different users."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 576.12,
+            "end": 577.8,
+            "text": " So we need to fetch that."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 577.8,
+            "end": 579.44,
+            "text": " And the other task is we need to identify"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 579.44,
+            "end": 582.92,
+            "text": " where is the delivery partner location right now, right?"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 582.92,
+            "end": 585.32,
+            "text": " So we need to identify where is this order"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 585.32,
+            "end": 588.24,
+            "text": " so that we can create a final number"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 588.24,
+            "end": 589.5600000000001,
+            "text": " of how long it's going to take."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 589.5600000000001,
+            "end": 591.52,
+            "text": " So the user asked how long it's going to take."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 591.52,
+            "end": 593.4,
+            "text": " He didn't ask where is the delivery partner,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 593.4,
+            "end": 595.36,
+            "text": " but he asked how long the order is going to take."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 595.36,
+            "end": 598.8,
+            "text": " So we need to calculate how long it's going to take"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 598.8,
+            "end": 601.6,
+            "text": " for the delivery partner to reach from his destination"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 601.6,
+            "end": 604.52,
+            "text": " to the destination of the customer."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 604.52,
+            "end": 607.16,
+            "text": " So we will have to do complex logics there."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 607.16,
+            "end": 608.52,
+            "text": " So we will have to understand"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 608.52,
+            "end": 611.48,
+            "text": " where that particular delivery partner is present right now."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 611.48,
+            "end": 614.36,
+            "text": " Before that, we will have to pre-compute some information"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 614.36,
+            "end": 617.1999999999999,
+            "text": " on what is the order ID for this particular user."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 617.1999999999999,
+            "end": 619.84,
+            "text": " So there is some complication required there."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 619.84,
+            "end": 621.3199999999999,
+            "text": " And the data preparation is key"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 621.3199999999999,
+            "end": 623.3199999999999,
+            "text": " because we need to get these dynamically"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 623.3199999999999,
+            "end": 624.4399999999999,
+            "text": " from some restraint points"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 624.4399999999999,
+            "end": 626.6,
+            "text": " that are exposed within the ecosystem."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 626.6,
+            "end": 629.16,
+            "text": " And then we need to fit that back into the RAG architecture."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 629.16,
+            "end": 632.1999999999999,
+            "text": " Another possible question which people can ask is,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 632.1999999999999,
+            "end": 633.8,
+            "text": " where is my order, right?"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 633.8,
+            "end": 636.92,
+            "text": " In that case, we need to also get the order status, right?"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 636.92,
+            "end": 639.52,
+            "text": " And we need to identify where the delivery partner is,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 639.52,
+            "end": 640.7199999999999,
+            "text": " which we already saw."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 640.7199999999999,
+            "end": 642.68,
+            "text": " So we will have to get both these informations"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 642.68,
+            "end": 644.4,
+            "text": " and then we need to fit that back to the user,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 644.4,
+            "end": 647.3199999999999,
+            "text": " saying that, okay, your order is right now getting delivered."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 647.3199999999999,
+            "end": 650.5999999999999,
+            "text": " It will take two kilometers or something, so and so, right?"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 650.5999999999999,
+            "end": 652.64,
+            "text": " So the LLMs can help in stitching the data"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 652.64,
+            "end": 654.5999999999999,
+            "text": " and giving it in a reasonable format."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 654.5999999999999,
+            "end": 657.8,
+            "text": " But to get the data from the dynamic source,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 657.8,
+            "end": 659.56,
+            "text": " we need to have the RAG architecture."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 659.56,
+            "end": 662.4799999999999,
+            "text": " So in this case, data preparation helps"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 662.48,
+            "end": 664.04,
+            "text": " in getting these data dynamically"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 664.04,
+            "end": 666.08,
+            "text": " and generate embeddings converts these data"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 666.08,
+            "end": 667.24,
+            "text": " into meaningful information"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 667.24,
+            "end": 669.52,
+            "text": " so that we can make the LLM understand"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 669.52,
+            "end": 672.2,
+            "text": " what we intend to tell."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 672.2,
+            "end": 675.88,
+            "text": " So these are two examples of RAG architectures in real world."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 675.88,
+            "end": 679.12,
+            "text": " Now, going to the pros of the RAG architecture,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 679.12,
+            "end": 681.4,
+            "text": " RAG architectures reduce the need"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 681.4,
+            "end": 683.4,
+            "text": " for continuously training the LLM."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 683.4,
+            "end": 686.28,
+            "text": " So we constantly used to train these LLMs earlier"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 686.28,
+            "end": 687.9200000000001,
+            "text": " before this RAG architecture."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 687.9200000000001,
+            "end": 690.24,
+            "text": " We give these datasets again and again,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 690.24,
+            "end": 691.8,
+            "text": " we get different samples,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 691.8,
+            "end": 693.24,
+            "text": " we get different dataset samples"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 693.24,
+            "end": 695.92,
+            "text": " and then train these LLMs to make it better."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 696.8,
+            "end": 698.76,
+            "text": " But using RAG, now we don't have to do that"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 698.76,
+            "end": 700.32,
+            "text": " because we are getting dynamic information"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 700.32,
+            "end": 702.04,
+            "text": " from the data source."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 702.04,
+            "end": 705.12,
+            "text": " RAG also reduces the computational and financial cost"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 705.12,
+            "end": 706.88,
+            "text": " in training these models continuously"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 706.88,
+            "end": 709.92,
+            "text": " because we are retrieving the data instantly,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 709.92,
+            "end": 711.64,
+            "text": " like how we get it from a REST API."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 711.64,
+            "end": 715.5600000000001,
+            "text": " RAGs can also help diverse models"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 715.5600000000001,
+            "end": 717.64,
+            "text": " because you can create some generic models"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 717.64,
+            "end": 719.2,
+            "text": " which can help us in like pulling"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 719.2,
+            "end": 721.72,
+            "text": " some generic information and then just replace that"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 721.72,
+            "end": 724.12,
+            "text": " with some meaningful use case specific information."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 724.12,
+            "end": 727.08,
+            "text": " So we can create specific and diverse models"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 727.08,
+            "end": 729.1600000000001,
+            "text": " with RAG architecture."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 729.1600000000001,
+            "end": 731.36,
+            "text": " Coming to the cons of the RAG architecture."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 731.36,
+            "end": 734.2800000000001,
+            "text": " So there could be misleading information from the LLM itself"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 734.2800000000001,
+            "end": 736.32,
+            "text": " because if let's say the LLM is not equipped"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 736.32,
+            "end": 738.08,
+            "text": " for specific needs,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 738.08,
+            "end": 741.24,
+            "text": " then it cannot answer those specific information"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 741.24,
+            "end": 742.4000000000001,
+            "text": " about that particular data"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 742.4000000000001,
+            "end": 744.76,
+            "text": " because though you give some data specific to it,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 744.76,
+            "end": 746.5600000000001,
+            "text": " but may not understand that"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 746.5600000000001,
+            "end": 748.5200000000001,
+            "text": " because it was not trained for a specific purpose."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 748.92,
+            "end": 751.4399999999999,
+            "text": " So still RAG would need to be like fine tuned,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 751.4399999999999,
+            "end": 753.64,
+            "text": " but there could be like possibility"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 753.64,
+            "end": 754.92,
+            "text": " of misleading information."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 754.92,
+            "end": 757.4399999999999,
+            "text": " There is no 100% foolproof response"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 757.4399999999999,
+            "end": 760.0799999999999,
+            "text": " which will be coming from a RAG architecture using the LLMs"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 760.0799999999999,
+            "end": 763.1999999999999,
+            "text": " because LLM itself can be like sometimes misleading."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 764.52,
+            "end": 767.3199999999999,
+            "text": " Coming to the trivia question, which I wanted you to ask."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 767.3199999999999,
+            "end": 769.16,
+            "text": " So which of the following scenarios"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 769.16,
+            "end": 772.4399999999999,
+            "text": " best represents a use case for a RAG?"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 772.4399999999999,
+            "end": 773.92,
+            "text": " So I'll give you four options."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 773.92,
+            "end": 777.28,
+            "text": " The first option is generating poetry based on user prompts."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 777.28,
+            "end": 779.68,
+            "text": " Do you think this can be a use case for a RAG"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 779.68,
+            "end": 783.68,
+            "text": " or creating a personalized chatbot responses,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 783.68,
+            "end": 786.4399999999999,
+            "text": " translating text between languages,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 786.4399999999999,
+            "end": 788.8399999999999,
+            "text": " enhancing search results with relevant context."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 788.8399999999999,
+            "end": 792.64,
+            "text": " So which of this do you think can be a best use case"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 792.64,
+            "end": 794.4399999999999,
+            "text": " for the RAG architecture?"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 794.4399999999999,
+            "end": 796.8,
+            "text": " Of course, I created this particular trivia"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 796.8,
+            "end": 800.16,
+            "text": " using the copilot, which is based on GPT-3."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 802.72,
+            "end": 805.24,
+            "text": " Do let me know the answer in the comment section below"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 805.24,
+            "end": 807.1999999999999,
+            "text": " and we can interact more there."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 808.28,
+            "end": 811.24,
+            "text": " To summarize what we just saw in this particular video,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 811.24,
+            "end": 812.48,
+            "text": " we saw what is the RAG."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 812.48,
+            "end": 815.36,
+            "text": " RAG is Retrieval Augmented Generation."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 815.36,
+            "end": 816.9599999999999,
+            "text": " Using the RAG architecture,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 816.9599999999999,
+            "end": 820.52,
+            "text": " we can leverage the LLMs to be trained instantly"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 820.52,
+            "end": 822.9599999999999,
+            "text": " by connecting to external data sources."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 822.9599999999999,
+            "end": 826.16,
+            "text": " We convert the raw data into chunks."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 826.16,
+            "end": 828.64,
+            "text": " These chunks are then converted into vectors."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 828.64,
+            "end": 830.48,
+            "text": " We link the source data and the vectors"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 830.48,
+            "end": 832.64,
+            "text": " and then store that in the vector indexes."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 832.64,
+            "end": 835.48,
+            "text": " LLMs can now go and read the data from the vector indexes"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 835.52,
+            "end": 838.0,
+            "text": " and then convert them into a meaningful response,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 838.0,
+            "end": 840.4,
+            "text": " which can be given back to the caller."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 840.4,
+            "end": 841.72,
+            "text": " There are different types of RAGs."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 841.72,
+            "end": 845.44,
+            "text": " We saw a simple RAG using document search."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 845.44,
+            "end": 849.16,
+            "text": " We also saw a complex RAG using the AI assistant support"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 849.16,
+            "end": 850.88,
+            "text": " in a food delivery application."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 850.88,
+            "end": 854.6,
+            "text": " We finally also saw the pros and cons of RAG architecture."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 854.6,
+            "end": 857.64,
+            "text": " If you're creating any AI application using an LLM"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 857.64,
+            "end": 859.8000000000001,
+            "text": " and you want to feed in dynamic data,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 859.8000000000001,
+            "end": 862.0,
+            "text": " RAG is the way to go forward."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 862.0,
+            "end": 863.88,
+            "text": " There are different frameworks"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 863.88,
+            "end": 866.56,
+            "text": " which are using RAG architectures to implement"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 866.56,
+            "end": 868.0,
+            "text": " so that you can leverage them."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 868.0,
+            "end": 870.28,
+            "text": " We will see that in the subsequent videos."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 870.28,
+            "end": 873.0,
+            "text": " As always, if you like the video, go ahead and like it."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 873.0,
+            "end": 874.32,
+            "text": " If you haven't subscribed to the channel,"
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 874.32,
+            "end": 875.64,
+            "text": " go ahead and subscribe to it."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 875.64,
+            "end": 877.08,
+            "text": " Meet you again in the next video."
+        },
+        {
+            "number": "12",
+            "title": "RAG Architecture",
+            "start": 877.08,
+            "end": 878.08,
+            "text": " Thank you very much."
+        }
+    ],
+    "text": " Let's look at the agenda for this particular video. We are going to look at what is RAG, what does the RAG architecture look like, what are the different types of RAG architectures which we can come across, and I'll explain these architectures with a case study examples of a food delivery app by using an AI assistant, and also I will leverage a document search for a simple RAG use case. We will also discuss the pros and cons of the RAG architecture and finally, I'll end up with a trivia question which you can answer and we can interact in the comment section below. So what is RAG? In a typical AI use case, let's consider an example where we have a chat interface where a user is interacting with an LLM or a JNAI model. Maybe we use an existing model or we trained a new model and we have used it. We are going to interact with this particular model using an actual language. We use prompts to make it better, and there are prompt engineers who are making the LLM which is served for this chat client better by giving specific prompts and training these LLMs on specific prompts. However, there are some cases where you want to get dynamic information. For example, I asked this particular LLM, what is the temperature right now? Now, when you train an LLM, you train with a predefined dataset. Now, this LLM may not be able to answer this dynamic information because temperatures are changing every now and then, and how will the LLM know where to take the data from or where to source the data from? So the LLMs respond with, sorry, I don't have data. Now, these pre-trained LLMs don't have the information about these dynamic behavior or the dynamic changes with respect to specific data. Now, in this case, we need a way to source data from an external entity. This is where RAG comes into picture. So RAG is an architecture using which you can have external data sources leveraged by the LLM. These are also called as grounded generation. If you hear about the term grounded generation, these are basically the RAG architecture. Let's see how to get the LLM, talk to these external data sources. It's not a straightforward approach, but let's see how we can do that. To understand the RAG architecture, we know that we will be giving an input to the GenAI model. There is a knowledge base which we need to get data from. In this case, let's say, for example, we need to get some temperature information. We are going to get a source of truth from external weather application. We need to convert the data into smaller chunks so that we can convert this into a machine understandable language, for example, vectors or embeddings. We need to create some embeddings. Embeddings are nothing but vectors. We can convert these data, filter these data, and then push them into a database which can host these vector indexes. Vector indexes are the language which the LLMs talk in. These are machine understandable languages. We saw tokenizers in the previous video in prompt engineering. These are the same vectors which we create out of the tokens from a word. Once our temperature or the data source gets converted into a vector embedding, we need to also have prompts created by the prompt engineer so that these data can be uniquely identified and linked to them with the existing prompts or maybe prompts which are relevant to that particular data. So prompt engineers play a key role in having these prompts structured in a way so that these are converted into embeddings or vectors which can be relevant. Now, using the context and the most relevant text, we can identify what the user wants by linking the data from the vector indexes and also what the LLM requires. Finally, the LLM converts that data if it found that particular data and then sends it back to the caller. At a high level, this is the architecture, but then let me go deeper into individual components of the RAG architecture. When we convert the knowledge base or the source of truth into embeddings, we will have a lot of data preparation to be done. These raw data sources or the messages needs to be converted by extracting meaningful information from these data sources, and we need to chunk them into smaller blocks so that we can convert them into vectors. In the previous videos, we saw about tokenization. So this is somewhat similar. So we convert the document or the knowledge base, chunk them into smaller objects, and we feed that into an embedding conversion logic where we again split these chunks into smaller vectors. We store them in the vector index, and also we create linkages between the data and the vectors which we created. So for example, we created some source data. With the source data, we link the vector index, whatever got created, so that we can decode that easily. So generating embeddings is basically converting your source data into vectors which the LLMs can understand. So the part where the knowledge base is fed and converted into text using vectors, that is called as content generation. So essentially, we create the content for the LLM. The process in which we retrieve this information using meaningful context is the retrieval part. So RAG is basically a combination of content generation and retrieval, and that's why it is retrieval augmented generation. So based on what you want to retrieve from the vector indexes or from the LLM, the data gets pulled in from the knowledge base or the source of truth and gets fed into the LLM by vectors, by converting them as embeddings or vectors. That can be understood by the LLM and can be streamlined further by giving only relevant text. This kind of an approach is called as an open book approach because you can plug in your content generation logic. You can have different sources, et cetera. The architecture says that you can have an LLM use vector indices using relevant information, and the vector indexes are created by content generation using a specific methodology where we create embeddings or vectors and feed it to the vector indexes. Coming to the types of RAG architectures, there are simple and complex RAG architectures. We will look at a simple RAG architecture by using an example of a document search. So let's take the same chatbot kind of an interface where I have created a chatbot to go through my local documents. So imagine that I have local documents in my computer. I have all these in my folders. So I created a chatbot which I need to talk to so that I can understand where my documents are, or I don't know which document my specific data is present in. So I have fed all these into the LLM using the RAG architecture. So the local documents got converted into vectors using smaller chunks, and they got linked in the vector indexes table. Now, my LLM which I'm using is using specific prompts, and then it can go and talk to the vector indexes so that it can give me some relevant information. So this is an example of how you can create a document search using RAG architecture. Now, I'm going to ask this particular to show me what are the cons of the option two of project X design. So I created a project X, and then I have put that into a design document, and I'm asking it to give me the cons of the option two. So unless we have read the document and understood it and consumed it, we cannot return what is the option two from that specific document. So what happens during the chunking process is the documents are read, and these are converted into smaller, meaningful information given into the vector, and the vector has linkages between the new vectors which got created with the source data. And using the LLM's capability to search and provide information to the caller, so we will be leveraging the RAG architecture to convert the dynamic information, and then that is fed into the LLM. Now, when I modify this document, the LLM should be able to easily use the new updated version because we are constantly looking at these documents and then converting them into vector indices and then feeding that into the database, which the LLM's can leverage at runtime. Now, coming to the complex use case of a RAG, so let's imagine that there is a chat assistant or an AI assistant in the chat support available within a food delivery application. So these days you find a lot of these already present in the food delivery apps or maybe like cab booking apps, et cetera. So let's try envisioning how we can design one for a food delivery application and how complicated it can get into. So again, I'm going to build the same architecture of the RAG. The skeleton architecture is basically you have some source of truth, we convert them into chunks and then give it into the vector indexes where the embeddings are created. Now the LLM model uses these to streamline them and then fine tune them using prompts, and then they are given back to the chat user. So as a user, I'm going to ask this particular question, how long will my order take? So now there are two things here. One, we need to figure out who's this particular user. So there needs to be some context of our decisions which needs to be made where we need to identify that particular user and fetch the order ID of that particular user. So that is one specific task, which is like slightly complicated because it's dynamic again, an order can vary for different users. So we need to fetch that. And the other task is we need to identify where is the delivery partner location right now, right? So we need to identify where is this order so that we can create a final number of how long it's going to take. So the user asked how long it's going to take. He didn't ask where is the delivery partner, but he asked how long the order is going to take. So we need to calculate how long it's going to take for the delivery partner to reach from his destination to the destination of the customer. So we will have to do complex logics there. So we will have to understand where that particular delivery partner is present right now. Before that, we will have to pre-compute some information on what is the order ID for this particular user. So there is some complication required there. And the data preparation is key because we need to get these dynamically from some restraint points that are exposed within the ecosystem. And then we need to fit that back into the RAG architecture. Another possible question which people can ask is, where is my order, right? In that case, we need to also get the order status, right? And we need to identify where the delivery partner is, which we already saw. So we will have to get both these informations and then we need to fit that back to the user, saying that, okay, your order is right now getting delivered. It will take two kilometers or something, so and so, right? So the LLMs can help in stitching the data and giving it in a reasonable format. But to get the data from the dynamic source, we need to have the RAG architecture. So in this case, data preparation helps in getting these data dynamically and generate embeddings converts these data into meaningful information so that we can make the LLM understand what we intend to tell. So these are two examples of RAG architectures in real world. Now, going to the pros of the RAG architecture, RAG architectures reduce the need for continuously training the LLM. So we constantly used to train these LLMs earlier before this RAG architecture. We give these datasets again and again, we get different samples, we get different dataset samples and then train these LLMs to make it better. But using RAG, now we don't have to do that because we are getting dynamic information from the data source. RAG also reduces the computational and financial cost in training these models continuously because we are retrieving the data instantly, like how we get it from a REST API. RAGs can also help diverse models because you can create some generic models which can help us in like pulling some generic information and then just replace that with some meaningful use case specific information. So we can create specific and diverse models with RAG architecture. Coming to the cons of the RAG architecture. So there could be misleading information from the LLM itself because if let's say the LLM is not equipped for specific needs, then it cannot answer those specific information about that particular data because though you give some data specific to it, but may not understand that because it was not trained for a specific purpose. So still RAG would need to be like fine tuned, but there could be like possibility of misleading information. There is no 100% foolproof response which will be coming from a RAG architecture using the LLMs because LLM itself can be like sometimes misleading. Coming to the trivia question, which I wanted you to ask. So which of the following scenarios best represents a use case for a RAG? So I'll give you four options. The first option is generating poetry based on user prompts. Do you think this can be a use case for a RAG or creating a personalized chatbot responses, translating text between languages, enhancing search results with relevant context. So which of this do you think can be a best use case for the RAG architecture? Of course, I created this particular trivia using the copilot, which is based on GPT-3. Do let me know the answer in the comment section below and we can interact more there. To summarize what we just saw in this particular video, we saw what is the RAG. RAG is Retrieval Augmented Generation. Using the RAG architecture, we can leverage the LLMs to be trained instantly by connecting to external data sources. We convert the raw data into chunks. These chunks are then converted into vectors. We link the source data and the vectors and then store that in the vector indexes. LLMs can now go and read the data from the vector indexes and then convert them into a meaningful response, which can be given back to the caller. There are different types of RAGs. We saw a simple RAG using document search. We also saw a complex RAG using the AI assistant support in a food delivery application. We finally also saw the pros and cons of RAG architecture. If you're creating any AI application using an LLM and you want to feed in dynamic data, RAG is the way to go forward. There are different frameworks which are using RAG architectures to implement so that you can leverage them. We will see that in the subsequent videos. As always, if you like the video, go ahead and like it. If you haven't subscribed to the channel, go ahead and subscribe to it. Meet you again in the next video. Thank you very much."
+}

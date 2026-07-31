@@ -1,0 +1,1468 @@
+{
+    "chunks": [
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 0.0,
+            "end": 6.72,
+            "text": " My goal for today's video is to provide you with no BS extremely simple agentic AI explanation."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 6.72,
+            "end": 11.32,
+            "text": " I'm going to show you some real agentic AI systems along with the code."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 11.32,
+            "end": 13.120000000000001,
+            "text": " So please stay with me till the end."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 13.120000000000001,
+            "end": 16.72,
+            "text": " We will start with a real life example of my own company."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 16.72,
+            "end": 23.46,
+            "text": " We have 55 plus people and for these people we want to build an HR assistant which can"
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 23.46,
+            "end": 28.400000000000002,
+            "text": " answer simple questions on policies such as how many vacation days do they have per year"
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 28.4,
+            "end": 35.12,
+            "text": " or what is the policy on sick leave and for this all this policy data you have it available"
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 35.12,
+            "end": 36.519999999999996,
+            "text": " in PDF files."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 36.519999999999996,
+            "end": 43.66,
+            "text": " You can build a retrieval augmented generation chat board which can simply pull the information"
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 43.66,
+            "end": 46.78,
+            "text": " from this PDF and answer these questions."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 46.78,
+            "end": 49.78,
+            "text": " Now is this an agentic AI?"
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 49.78,
+            "end": 51.94,
+            "text": " The answer is no."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 51.94,
+            "end": 57.78,
+            "text": " Anthropic has this document on building effective agents and they categorize these AI applications"
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 57.78,
+            "end": 60.800000000000004,
+            "text": " into two categories workflows and agents."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 60.800000000000004,
+            "end": 63.64,
+            "text": " This rag based chat board is actually a workflow."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 63.64,
+            "end": 65.64,
+            "text": " It is not agentic."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 65.64,
+            "end": 72.8,
+            "text": " Let's advance this chat board a bit more and let's add a support where you can ask question"
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 72.8,
+            "end": 78.6,
+            "text": " okay how many leaves do I have left specifically you know as an employee how many leaves do"
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 78.6,
+            "end": 80.0,
+            "text": " I have left."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 80.0,
+            "end": 82.84,
+            "text": " You can also apply for the leaves right here."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 82.84,
+            "end": 83.84,
+            "text": " Now see this is important."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 83.84,
+            "end": 85.52000000000001,
+            "text": " This is not just question and answer."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 85.52000000000001,
+            "end": 87.44,
+            "text": " You are taking actions."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 88.1,
+            "end": 94.02,
+            "text": " So here you obviously have access to your policy data via PDF but on top of that you"
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 94.02,
+            "end": 101.44,
+            "text": " integrated LLM with HR management system through their APIs where you can not only pull the"
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 101.44,
+            "end": 107.02,
+            "text": " leaves for a given employee you can also apply for a leave."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 107.02,
+            "end": 109.78,
+            "text": " So here it will detect your login."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 109.78,
+            "end": 116.82,
+            "text": " It will identify whether you are Mohan Sharma or Abdul Qadir whoever you are and it will"
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 116.82,
+            "end": 120.38,
+            "text": " take the necessary action."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 120.38,
+            "end": 121.97999999999999,
+            "text": " Do we call this agentic AI?"
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 121.97999999999999,
+            "end": 123.89999999999999,
+            "text": " Well the answer is again no."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 123.89999999999999,
+            "end": 127.86,
+            "text": " This is tool augmented chat board."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 127.86,
+            "end": 135.9,
+            "text": " We want to advance this further and give it a goal such as prepare for Sara's maternity"
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 135.9,
+            "end": 136.9,
+            "text": " leave."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 136.9,
+            "end": 142.1,
+            "text": " Now this requires multi step reasoning and multi turn planning."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 142.1,
+            "end": 146.34,
+            "text": " Another question on board the new intern joining next Monday."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 146.86,
+            "end": 149.98,
+            "text": " Well this again requires multi step planning."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 149.98,
+            "end": 152.74,
+            "text": " So let's call this a broader goal."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 152.74,
+            "end": 154.58,
+            "text": " It is not a simple task."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 154.58,
+            "end": 162.02,
+            "text": " It's a complex task and it requires multi step reasoning first of all and then you come"
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 162.02,
+            "end": 168.86,
+            "text": " up with a plan that I need to schedule a welcome meeting with this intern and you will actually"
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 168.86,
+            "end": 174.94,
+            "text": " send the meeting invite via outlook or whatever calendar system that you are using."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 174.94,
+            "end": 179.66,
+            "text": " Then you might want to create intern's profile in HR management system."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 179.66,
+            "end": 186.57999999999998,
+            "text": " So now you have integration through your HR management system APIs where it can go and"
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 186.57999999999998,
+            "end": 189.46,
+            "text": " create intern's profile."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 189.46,
+            "end": 194.5,
+            "text": " At every step there will be some generation also right because you let's say if you want"
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 194.5,
+            "end": 198.98,
+            "text": " to schedule a meeting you need to write some description on what this meeting is about"
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 198.98,
+            "end": 203.26,
+            "text": " and all of that you can generate using this LLM that you have."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 203.26,
+            "end": 210.14,
+            "text": " Then you want to create a ticket in IT helpdesk where you get Wi-Fi credentials the email"
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 210.14,
+            "end": 214.73999999999998,
+            "text": " slack access etc for that particular intern."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 214.73999999999998,
+            "end": 221.06,
+            "text": " Again here you will have LLM's role being played as well as you have integration with"
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 221.06,
+            "end": 226.57999999999998,
+            "text": " multiple tools such as slack outlook your Wi-Fi system and so on."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 226.57999999999998,
+            "end": 228.57999999999998,
+            "text": " And then you want to order a laptop."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 228.62,
+            "end": 234.26000000000002,
+            "text": " So you have some kind of you know inventory management system or some kind of IT support"
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 234.26000000000002,
+            "end": 240.18,
+            "text": " desk where you can issue ID card order laptop and so on."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 240.18,
+            "end": 242.60000000000002,
+            "text": " This is agentic AI folks."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 242.60000000000002,
+            "end": 248.42000000000002,
+            "text": " It requires multi-step reasoning and you have to do multi-step planning and in each of these"
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 248.42000000000002,
+            "end": 254.36,
+            "text": " steps LLM's will be involved along with APIs and tools and knowledge and memory and so"
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 254.36,
+            "end": 255.42000000000002,
+            "text": " on."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 255.42,
+            "end": 262.21999999999997,
+            "text": " So if you describe a few characteristics of agentic AI system then first one is goal oriented"
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 262.21999999999997,
+            "end": 263.21999999999997,
+            "text": " planning."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 263.21999999999997,
+            "end": 267.58,
+            "text": " You are not giving a task such as tell me how many leaves I have left."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 267.58,
+            "end": 268.58,
+            "text": " Okay two."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 268.58,
+            "end": 269.88,
+            "text": " That is a simple task."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 269.88,
+            "end": 278.82,
+            "text": " You are giving here a complex task which requires reasoning as well as multi-step planning."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 278.82,
+            "end": 279.82,
+            "text": " Okay."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 279.82,
+            "end": 283.8,
+            "text": " So the first characteristic is goal oriented planning."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 283.8,
+            "end": 286.6,
+            "text": " Second one is multi-step reasoning."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 286.6,
+            "end": 289.1,
+            "text": " Then autonomous decision making."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 289.1,
+            "end": 291.36,
+            "text": " See this system will send an email."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 291.36,
+            "end": 294.96000000000004,
+            "text": " It will send the invite for the meeting."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 294.96000000000004,
+            "end": 298.56,
+            "text": " So all of that it is doing in an autonomous way."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 298.56,
+            "end": 301.36,
+            "text": " It is not saying okay go to outlook click this button."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 301.36,
+            "end": 303.22,
+            "text": " It is actually doing that work."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 303.22,
+            "end": 305.88,
+            "text": " It is performing actions for you."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 305.88,
+            "end": 308.28000000000003,
+            "text": " Then it has access to tools."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 308.28000000000003,
+            "end": 309.28000000000003,
+            "text": " All these tools."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 309.28000000000003,
+            "end": 312.32,
+            "text": " Okay outlook and HR management system and so on."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 312.32,
+            "end": 315.84,
+            "text": " Knowledge which can be a PDF files database and so on."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 315.84,
+            "end": 317.15999999999997,
+            "text": " It will also have a memory."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 317.15999999999997,
+            "end": 320.12,
+            "text": " So when you are having a conversation it will have a context."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 320.12,
+            "end": 322.56,
+            "text": " It will remember things."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 322.56,
+            "end": 324.36,
+            "text": " So this is agentic chatbot."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 324.36,
+            "end": 325.36,
+            "text": " Okay."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 325.36,
+            "end": 331.0,
+            "text": " And any AI system that you are building which has autonomy."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 331.0,
+            "end": 332.0,
+            "text": " Okay."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 332.0,
+            "end": 336.88,
+            "text": " It has some kind of agency where it can make certain decisions and it can take certain"
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 336.88,
+            "end": 339.08,
+            "text": " actions on its own."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 339.32,
+            "end": 343.68,
+            "text": " Plus it has multi-step complex reasoning and planning."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 343.68,
+            "end": 346.0,
+            "text": " That system is called agentic AI."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 346.0,
+            "end": 349.02,
+            "text": " If I have to put it in a very simple definition."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 349.02,
+            "end": 355.41999999999996,
+            "text": " Agentic AI is an AI system that can make decisions and take actions on its own to achieve a goal"
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 355.41999999999996,
+            "end": 361.96,
+            "text": " without being told exactly what to do at every step."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 361.96,
+            "end": 366.24,
+            "text": " Here is a table summarizing the capabilities of all three chatbots."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 366.24,
+            "end": 370.04,
+            "text": " The rack based chatbot is reactive which means more like Q&A."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 370.04,
+            "end": 372.40000000000003,
+            "text": " You ask a question it responds."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 372.40000000000003,
+            "end": 375.48,
+            "text": " But it doesn't have tool uses, reasoning, etc."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 375.48,
+            "end": 382.84000000000003,
+            "text": " The second one tool augmented chatbot is reactive and it also has access to tool but it cannot"
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 382.84000000000003,
+            "end": 385.8,
+            "text": " reason, plan and be proactive."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 385.8,
+            "end": 390.04,
+            "text": " Whereas agentic AI system has all these characteristics."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 390.04,
+            "end": 392.68,
+            "text": " There are many examples of agentic AI systems."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 392.68,
+            "end": 393.94,
+            "text": " For example AI coding."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 393.94,
+            "end": 401.1,
+            "text": " If you are using lovable or repel it to create a react native app similar to Todoist."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 401.1,
+            "end": 407.62,
+            "text": " Then see it will first figure out what kind of features Todoist has."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 407.62,
+            "end": 415.5,
+            "text": " Then it will do this kind of multi-step planning and it will then write code, execute code,"
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 415.5,
+            "end": 421.18,
+            "text": " it will debug it, fix issues, again write code, execute it and so on."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 421.18,
+            "end": 428.38,
+            "text": " So AI coding being done through lovable, repel it, etc. is an example of an agentic"
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 428.38,
+            "end": 429.98,
+            "text": " AI system."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 429.98,
+            "end": 432.06,
+            "text": " The other one is travel assistant."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 432.06,
+            "end": 436.82,
+            "text": " You might have a travel assistant where you can say book a 7 day trip to London in May"
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 436.82,
+            "end": 440.62,
+            "text": " where the weather is sunny for at least 4 days."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 440.62,
+            "end": 441.62,
+            "text": " This is usually my criteria."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 441.62,
+            "end": 445.3,
+            "text": " You know whenever I go anywhere I want the weather to be sunny."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 445.3,
+            "end": 448.82,
+            "text": " And you have some budget constraints."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 448.82,
+            "end": 454.86,
+            "text": " So now if you have built agentic AI system it will first prepare a plan."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 454.86,
+            "end": 460.26,
+            "text": " You know how deep seek creates that plan or any other reasoning model will create a plan."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 460.26,
+            "end": 467.34,
+            "text": " So it will first create a plan then it will execute that plan step by step with the help"
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 467.34,
+            "end": 471.64,
+            "text": " of all the tools and APIs that you have integrated."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 471.64,
+            "end": 478.8,
+            "text": " In this particular system I might have integrated AccuWeather API for weather, Expedia API for"
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 479.32,
+            "end": 481.40000000000003,
+            "text": " booking flights and so on."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 481.40000000000003,
+            "end": 487.76,
+            "text": " Here is a small example of agentic AI system where you are writing an agent to assist an"
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 487.76,
+            "end": 489.56,
+            "text": " equity research analyst."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 489.56,
+            "end": 492.12,
+            "text": " They usually write reports on companies."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 492.12,
+            "end": 494.12,
+            "text": " So here you are giving a goal."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 494.12,
+            "end": 495.92,
+            "text": " You are not giving the exit steps."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 495.92,
+            "end": 498.92,
+            "text": " Okay, write a report on Nvidia."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 498.92,
+            "end": 503.34000000000003,
+            "text": " You are also giving it access to y-finance tool, reasoning tools."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 503.34000000000003,
+            "end": 506.32,
+            "text": " You can provide DuckDuckGo search and so on."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 506.32,
+            "end": 508.64,
+            "text": " And here we are using Agno framework."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 509.47999999999996,
+            "end": 511.76,
+            "text": " You can just say pip install agno and you can run this code."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 511.76,
+            "end": 514.56,
+            "text": " This code is available in the video description below."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 514.56,
+            "end": 520.52,
+            "text": " Now when I run this, see here I am using Gemini as a model here."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 520.52,
+            "end": 527.72,
+            "text": " And what it will do is it will look at this goal and it will do multi-step reasoning,"
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 527.72,
+            "end": 530.06,
+            "text": " planning and then it will execute those steps."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 530.06,
+            "end": 532.56,
+            "text": " So see here it is doing reasoning."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 532.56,
+            "end": 535.36,
+            "text": " Okay I need to gather this much information."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 535.36,
+            "end": 536.88,
+            "text": " Here is my reasoning."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 537.0,
+            "end": 540.48,
+            "text": " This is the step number two, compile a report."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 540.48,
+            "end": 543.2,
+            "text": " You need to perform all the steps, right?"
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 543.2,
+            "end": 546.96,
+            "text": " Like getting a company info, analyst recommendation, company news."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 546.96,
+            "end": 551.72,
+            "text": " So it is doing all of that step by step and generating this comprehensive report which"
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 551.72,
+            "end": 556.8,
+            "text": " has some key statistics for that company."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 556.8,
+            "end": 561.04,
+            "text": " Analyst recommendation is one of the common things you will find in any equity research"
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 561.04,
+            "end": 563.52,
+            "text": " report and recent news as well."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 563.52,
+            "end": 568.96,
+            "text": " I did not say okay have news in the bottom, have analyst recommendation and so on."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 568.96,
+            "end": 571.92,
+            "text": " It kind of figured it out on its own."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 571.92,
+            "end": 573.52,
+            "text": " You don't have to always write the code."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 573.52,
+            "end": 578.28,
+            "text": " You can use low code or no code tools such as Zapier."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 578.28,
+            "end": 582.72,
+            "text": " Here they are showing a cloud integration with their Zapier MCP server and you have"
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 582.72,
+            "end": 585.92,
+            "text": " connected all these tools and now you are saying what's on my calendar."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 585.92,
+            "end": 591.6,
+            "text": " It will access the calendar tool and it will tell you what do you have."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 591.6800000000001,
+            "end": 593.44,
+            "text": " Then you can have some other tasks."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 593.44,
+            "end": 597.36,
+            "text": " See here it is showing me the calendar items."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 597.36,
+            "end": 602.4,
+            "text": " Then you can say can you tell me more about this particular thing and it will call the"
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 602.4,
+            "end": 612.12,
+            "text": " appropriate tool and it will tell you Lars Vedder is a CEO at whatever company."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 612.12,
+            "end": 615.38,
+            "text": " These are simple tasks but you can have complex tasks."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 615.38,
+            "end": 623.22,
+            "text": " You can use a reasoning model and you can design your MCP server such that it can handle"
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 623.22,
+            "end": 625.42,
+            "text": " those multi-step reasoning process."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 625.42,
+            "end": 631.7,
+            "text": " The other tool I want to mention which is similar to Zapier is N8n where you can do"
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 631.7,
+            "end": 638.74,
+            "text": " drag and drop essentially and see here let's say you are doing create user form submission"
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 638.74,
+            "end": 644.34,
+            "text": " and then it will trigger this AI agent which has anthropic chat model, it has postgres"
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 644.34,
+            "end": 650.46,
+            "text": " chat memory, it has access to Jira, Microsoft, Enter ID and so on and then you can define"
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 650.46,
+            "end": 652.0600000000001,
+            "text": " this kind of workflows."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 652.0600000000001,
+            "end": 658.86,
+            "text": " You can define this kind of workflows and you can create rack based system or tool augmented"
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 658.86,
+            "end": 661.94,
+            "text": " system or even agentic AI."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 661.94,
+            "end": 665.98,
+            "text": " So for agentic AI this AI agent piece is going to be important."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 665.98,
+            "end": 672.96,
+            "text": " The kind of prompt that you write you can make it solve really complex issues using"
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 673.08,
+            "end": 676.6,
+            "text": " the reasoning model such as GPT 4.0."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 676.6,
+            "end": 680.8000000000001,
+            "text": " You may have this question what is the difference between AI agent and agentic AI?"
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 680.8000000000001,
+            "end": 682.6800000000001,
+            "text": " Well you see this diagram."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 682.6800000000001,
+            "end": 690.08,
+            "text": " This is a diagram of an agentic AI system in N8n and any agentic AI system will have"
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 690.08,
+            "end": 691.88,
+            "text": " one or more agents."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 691.88,
+            "end": 694.2,
+            "text": " So here you have this one agent."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 694.2,
+            "end": 699.76,
+            "text": " You can have multiple agents okay but you need at least one AI agent with that agentic"
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 699.76,
+            "end": 702.2,
+            "text": " complex reasoning behavior."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 702.2,
+            "end": 707.32,
+            "text": " The second question you might have is what is the difference between gen AI okay?"
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 707.32,
+            "end": 710.88,
+            "text": " Gen AI versus agentic AI."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 710.88,
+            "end": 714.3000000000001,
+            "text": " Well gen AI is part of agentic AI."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 714.3000000000001,
+            "end": 717.4000000000001,
+            "text": " So you see this Google Gemini model."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 717.4000000000001,
+            "end": 723.08,
+            "text": " So this model might generate some text, it might write email, it might summarize something."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 723.08,
+            "end": 728.6,
+            "text": " It will have all those generation capabilities and it is one of the component in your agentic"
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 728.6,
+            "end": 729.6,
+            "text": " AI system."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 729.6,
+            "end": 730.6,
+            "text": " All right?"
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 730.6,
+            "end": 735.9200000000001,
+            "text": " So generative AI is related to generating new data, text, video, images and so on and"
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 735.9200000000001,
+            "end": 740.6,
+            "text": " you can have that as a subcomponent within your agentic AI system."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 740.6,
+            "end": 745.0,
+            "text": " If you want to see some real project examples along with the code for RAG and tool augmented"
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 745.0,
+            "end": 749.24,
+            "text": " AI systems then I have two different videos we have given all the code."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 749.24,
+            "end": 751.76,
+            "text": " See the code for both the projects is here."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 751.76,
+            "end": 758.96,
+            "text": " This is a cold email generator and the second one is MCP for that HR leave management and"
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 758.96,
+            "end": 766.36,
+            "text": " also I would suggest you read this building effective agents guide by Anthropic."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 766.36,
+            "end": 768.9200000000001,
+            "text": " They have mentioned various design patterns."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 768.9200000000001,
+            "end": 774.2800000000001,
+            "text": " So this is one workflow based design pattern where let's say you have a chat board and"
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 774.2800000000001,
+            "end": 780.6800000000001,
+            "text": " the question might be routed to technical support team or a sales team or some other"
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 780.6800000000001,
+            "end": 786.6,
+            "text": " team in that case you can have LLM as a router and then individual LLMs each for sales team,"
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 786.6,
+            "end": 788.9200000000001,
+            "text": " technical team and so on."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 788.92,
+            "end": 791.68,
+            "text": " Everything is hardwired through code here."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 791.68,
+            "end": 792.68,
+            "text": " So this is a workflow."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 792.68,
+            "end": 798.7199999999999,
+            "text": " There is another example of a workflow where you perform individual tasks using these LLMs"
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 798.7199999999999,
+            "end": 800.88,
+            "text": " and then you aggregate them."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 800.88,
+            "end": 801.88,
+            "text": " Okay?"
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 801.88,
+            "end": 805.42,
+            "text": " Here is another example of orchestrator based workers."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 805.42,
+            "end": 808.92,
+            "text": " This is also a workflow and then comes agents."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 808.92,
+            "end": 811.7199999999999,
+            "text": " So for agents see there will be this kind of loop."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 811.7199999999999,
+            "end": 817.12,
+            "text": " So action feedback, action feedback, you know, multi-step reasoning, multi-step planning."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 817.28,
+            "end": 820.48,
+            "text": " I hope now it is clear what exactly is agentic AI."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 820.48,
+            "end": 821.68,
+            "text": " It's just a jargon."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 821.68,
+            "end": 823.44,
+            "text": " The idea is really simple."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 823.44,
+            "end": 826.5600000000001,
+            "text": " Please check video description for the code and other resources."
+        },
+        {
+            "number": "16",
+            "title": "What is Agentic AI",
+            "start": 826.5600000000001,
+            "end": 828.8,
+            "text": " If you have any questions, there is a comment box below."
+        }
+    ],
+    "text": " My goal for today's video is to provide you with no BS extremely simple agentic AI explanation. I'm going to show you some real agentic AI systems along with the code. So please stay with me till the end. We will start with a real life example of my own company. We have 55 plus people and for these people we want to build an HR assistant which can answer simple questions on policies such as how many vacation days do they have per year or what is the policy on sick leave and for this all this policy data you have it available in PDF files. You can build a retrieval augmented generation chat board which can simply pull the information from this PDF and answer these questions. Now is this an agentic AI? The answer is no. Anthropic has this document on building effective agents and they categorize these AI applications into two categories workflows and agents. This rag based chat board is actually a workflow. It is not agentic. Let's advance this chat board a bit more and let's add a support where you can ask question okay how many leaves do I have left specifically you know as an employee how many leaves do I have left. You can also apply for the leaves right here. Now see this is important. This is not just question and answer. You are taking actions. So here you obviously have access to your policy data via PDF but on top of that you integrated LLM with HR management system through their APIs where you can not only pull the leaves for a given employee you can also apply for a leave. So here it will detect your login. It will identify whether you are Mohan Sharma or Abdul Qadir whoever you are and it will take the necessary action. Do we call this agentic AI? Well the answer is again no. This is tool augmented chat board. We want to advance this further and give it a goal such as prepare for Sara's maternity leave. Now this requires multi step reasoning and multi turn planning. Another question on board the new intern joining next Monday. Well this again requires multi step planning. So let's call this a broader goal. It is not a simple task. It's a complex task and it requires multi step reasoning first of all and then you come up with a plan that I need to schedule a welcome meeting with this intern and you will actually send the meeting invite via outlook or whatever calendar system that you are using. Then you might want to create intern's profile in HR management system. So now you have integration through your HR management system APIs where it can go and create intern's profile. At every step there will be some generation also right because you let's say if you want to schedule a meeting you need to write some description on what this meeting is about and all of that you can generate using this LLM that you have. Then you want to create a ticket in IT helpdesk where you get Wi-Fi credentials the email slack access etc for that particular intern. Again here you will have LLM's role being played as well as you have integration with multiple tools such as slack outlook your Wi-Fi system and so on. And then you want to order a laptop. So you have some kind of you know inventory management system or some kind of IT support desk where you can issue ID card order laptop and so on. This is agentic AI folks. It requires multi-step reasoning and you have to do multi-step planning and in each of these steps LLM's will be involved along with APIs and tools and knowledge and memory and so on. So if you describe a few characteristics of agentic AI system then first one is goal oriented planning. You are not giving a task such as tell me how many leaves I have left. Okay two. That is a simple task. You are giving here a complex task which requires reasoning as well as multi-step planning. Okay. So the first characteristic is goal oriented planning. Second one is multi-step reasoning. Then autonomous decision making. See this system will send an email. It will send the invite for the meeting. So all of that it is doing in an autonomous way. It is not saying okay go to outlook click this button. It is actually doing that work. It is performing actions for you. Then it has access to tools. All these tools. Okay outlook and HR management system and so on. Knowledge which can be a PDF files database and so on. It will also have a memory. So when you are having a conversation it will have a context. It will remember things. So this is agentic chatbot. Okay. And any AI system that you are building which has autonomy. Okay. It has some kind of agency where it can make certain decisions and it can take certain actions on its own. Plus it has multi-step complex reasoning and planning. That system is called agentic AI. If I have to put it in a very simple definition. Agentic AI is an AI system that can make decisions and take actions on its own to achieve a goal without being told exactly what to do at every step. Here is a table summarizing the capabilities of all three chatbots. The rack based chatbot is reactive which means more like Q&A. You ask a question it responds. But it doesn't have tool uses, reasoning, etc. The second one tool augmented chatbot is reactive and it also has access to tool but it cannot reason, plan and be proactive. Whereas agentic AI system has all these characteristics. There are many examples of agentic AI systems. For example AI coding. If you are using lovable or repel it to create a react native app similar to Todoist. Then see it will first figure out what kind of features Todoist has. Then it will do this kind of multi-step planning and it will then write code, execute code, it will debug it, fix issues, again write code, execute it and so on. So AI coding being done through lovable, repel it, etc. is an example of an agentic AI system. The other one is travel assistant. You might have a travel assistant where you can say book a 7 day trip to London in May where the weather is sunny for at least 4 days. This is usually my criteria. You know whenever I go anywhere I want the weather to be sunny. And you have some budget constraints. So now if you have built agentic AI system it will first prepare a plan. You know how deep seek creates that plan or any other reasoning model will create a plan. So it will first create a plan then it will execute that plan step by step with the help of all the tools and APIs that you have integrated. In this particular system I might have integrated AccuWeather API for weather, Expedia API for booking flights and so on. Here is a small example of agentic AI system where you are writing an agent to assist an equity research analyst. They usually write reports on companies. So here you are giving a goal. You are not giving the exit steps. Okay, write a report on Nvidia. You are also giving it access to y-finance tool, reasoning tools. You can provide DuckDuckGo search and so on. And here we are using Agno framework. You can just say pip install agno and you can run this code. This code is available in the video description below. Now when I run this, see here I am using Gemini as a model here. And what it will do is it will look at this goal and it will do multi-step reasoning, planning and then it will execute those steps. So see here it is doing reasoning. Okay I need to gather this much information. Here is my reasoning. This is the step number two, compile a report. You need to perform all the steps, right? Like getting a company info, analyst recommendation, company news. So it is doing all of that step by step and generating this comprehensive report which has some key statistics for that company. Analyst recommendation is one of the common things you will find in any equity research report and recent news as well. I did not say okay have news in the bottom, have analyst recommendation and so on. It kind of figured it out on its own. You don't have to always write the code. You can use low code or no code tools such as Zapier. Here they are showing a cloud integration with their Zapier MCP server and you have connected all these tools and now you are saying what's on my calendar. It will access the calendar tool and it will tell you what do you have. Then you can have some other tasks. See here it is showing me the calendar items. Then you can say can you tell me more about this particular thing and it will call the appropriate tool and it will tell you Lars Vedder is a CEO at whatever company. These are simple tasks but you can have complex tasks. You can use a reasoning model and you can design your MCP server such that it can handle those multi-step reasoning process. The other tool I want to mention which is similar to Zapier is N8n where you can do drag and drop essentially and see here let's say you are doing create user form submission and then it will trigger this AI agent which has anthropic chat model, it has postgres chat memory, it has access to Jira, Microsoft, Enter ID and so on and then you can define this kind of workflows. You can define this kind of workflows and you can create rack based system or tool augmented system or even agentic AI. So for agentic AI this AI agent piece is going to be important. The kind of prompt that you write you can make it solve really complex issues using the reasoning model such as GPT 4.0. You may have this question what is the difference between AI agent and agentic AI? Well you see this diagram. This is a diagram of an agentic AI system in N8n and any agentic AI system will have one or more agents. So here you have this one agent. You can have multiple agents okay but you need at least one AI agent with that agentic complex reasoning behavior. The second question you might have is what is the difference between gen AI okay? Gen AI versus agentic AI. Well gen AI is part of agentic AI. So you see this Google Gemini model. So this model might generate some text, it might write email, it might summarize something. It will have all those generation capabilities and it is one of the component in your agentic AI system. All right? So generative AI is related to generating new data, text, video, images and so on and you can have that as a subcomponent within your agentic AI system. If you want to see some real project examples along with the code for RAG and tool augmented AI systems then I have two different videos we have given all the code. See the code for both the projects is here. This is a cold email generator and the second one is MCP for that HR leave management and also I would suggest you read this building effective agents guide by Anthropic. They have mentioned various design patterns. So this is one workflow based design pattern where let's say you have a chat board and the question might be routed to technical support team or a sales team or some other team in that case you can have LLM as a router and then individual LLMs each for sales team, technical team and so on. Everything is hardwired through code here. So this is a workflow. There is another example of a workflow where you perform individual tasks using these LLMs and then you aggregate them. Okay? Here is another example of orchestrator based workers. This is also a workflow and then comes agents. So for agents see there will be this kind of loop. So action feedback, action feedback, you know, multi-step reasoning, multi-step planning. I hope now it is clear what exactly is agentic AI. It's just a jargon. The idea is really simple. Please check video description for the code and other resources. If you have any questions, there is a comment box below."
+}

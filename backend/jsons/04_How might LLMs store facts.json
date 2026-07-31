@@ -1,0 +1,2553 @@
+{
+    "chunks": [
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 0.0,
+            "end": 2.32,
+            "text": " If you feed a large language model the phrase,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 2.32,
+            "end": 4.96,
+            "text": " Michael Jordan plays the sport of blank,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 4.96,
+            "end": 6.96,
+            "text": " and you have it predict what comes next,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 6.96,
+            "end": 9.52,
+            "text": " and it correctly predicts basketball,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 9.52,
+            "end": 11.36,
+            "text": " this would suggest that somewhere,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 11.36,
+            "end": 14.16,
+            "text": " inside its hundreds of billions of parameters,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 14.16,
+            "end": 16.88,
+            "text": " it's baked in knowledge about a specific person"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 16.88,
+            "end": 18.72,
+            "text": " and his specific sport."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 18.72,
+            "end": 19.6,
+            "text": " And I think in general,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 19.6,
+            "end": 21.76,
+            "text": " anyone who's played around with one of these models"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 21.76,
+            "end": 23.92,
+            "text": " has the clear sense that it's memorized"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 23.92,
+            "end": 25.52,
+            "text": " tons and tons of facts."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 25.52,
+            "end": 27.76,
+            "text": " So a reasonable question you could ask is,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 27.76,
+            "end": 29.36,
+            "text": " how exactly does that work?"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 29.36,
+            "end": 30.88,
+            "text": " And where do those facts live?"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 35.84,
+            "end": 38.56,
+            "text": " Last December, a few researchers from Google DeepMind"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 38.56,
+            "end": 40.8,
+            "text": " posted about work on this question,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 40.8,
+            "end": 42.56,
+            "text": " and they were using the specific example"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 42.56,
+            "end": 44.72,
+            "text": " of matching athletes to their sports."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 44.72,
+            "end": 46.96,
+            "text": " And although a full mechanistic understanding"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 46.96,
+            "end": 49.44,
+            "text": " of how facts are stored remains unsolved,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 49.44,
+            "end": 51.36,
+            "text": " they had some interesting partial results,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 51.36,
+            "end": 54.0,
+            "text": " including the very general high-level conclusion"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 54.0,
+            "end": 55.68,
+            "text": " that the facts seem to live"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 55.68,
+            "end": 57.84,
+            "text": " inside a specific part of these networks,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 57.84,
+            "end": 60.88,
+            "text": " known fancifully as the multilayer perceptrons,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 60.88,
+            "end": 62.96,
+            "text": " or MLPs for short."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 62.96,
+            "end": 64.24000000000001,
+            "text": " In the last couple of chapters,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 64.24000000000001,
+            "end": 66.16,
+            "text": " you and I have been digging into the details"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 66.16,
+            "end": 67.68,
+            "text": " behind transformers,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 67.68,
+            "end": 70.16,
+            "text": " the architecture underlying large language models,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 70.16,
+            "end": 72.88000000000001,
+            "text": " and also underlying a lot of other modern AI."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 72.88000000000001,
+            "end": 74.0,
+            "text": " In the most recent chapter,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 74.0,
+            "end": 76.64,
+            "text": " we were focusing on a piece called attention."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 76.64,
+            "end": 78.4,
+            "text": " And the next step for you and me"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 78.4,
+            "end": 80.64,
+            "text": " is to dig into the details of what happens"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 80.64,
+            "end": 82.96000000000001,
+            "text": " inside these multilayer perceptrons,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 82.96000000000001,
+            "end": 84.96000000000001,
+            "text": " which make up the other big portion of the network."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 85.52,
+            "end": 88.16,
+            "text": " The computation here is actually relatively simple,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 88.16,
+            "end": 90.32,
+            "text": " especially when you compare it to attention."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 90.32,
+            "end": 93.44,
+            "text": " It boils down essentially to a pair of matrix multiplications"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 93.44,
+            "end": 94.88,
+            "text": " with a simple something in between."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 95.52,
+            "end": 98.88,
+            "text": " However, interpreting what these computations are doing"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 98.88,
+            "end": 100.39999999999999,
+            "text": " is exceedingly challenging."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 101.44,
+            "end": 104.0,
+            "text": " Our main goal here is to step through the computations"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 104.0,
+            "end": 105.19999999999999,
+            "text": " and make them memorable,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 105.19999999999999,
+            "end": 107.28,
+            "text": " but I'd like to do it in the context of showing"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 107.28,
+            "end": 110.16,
+            "text": " a specific example of how one of these blocks could,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 110.16,
+            "end": 113.44,
+            "text": " at least in principle, store a concrete fact."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 113.44,
+            "end": 115.28,
+            "text": " Specifically, it'll be storing the fact"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 115.28,
+            "end": 117.12,
+            "text": " that Michael Jordan plays basketball."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 118.0,
+            "end": 119.67999999999999,
+            "text": " I should mention the layout here is inspired"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 119.67999999999999,
+            "end": 121.44,
+            "text": " by a conversation I had with one of those"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 121.44,
+            "end": 123.2,
+            "text": " deep mind researchers, Neil Nanda."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 123.84,
+            "end": 125.92,
+            "text": " For the most part, I will assume that you've either"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 125.92,
+            "end": 127.28,
+            "text": " watched the last two chapters,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 127.28,
+            "end": 128.88,
+            "text": " or otherwise you have a basic sense"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 128.88,
+            "end": 130.48,
+            "text": " for what a transformer is,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 130.48,
+            "end": 132.07999999999998,
+            "text": " but refreshers never hurt,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 132.07999999999998,
+            "end": 134.56,
+            "text": " so here's the quick reminder of the overall flow."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 135.2,
+            "end": 136.88,
+            "text": " You and I have been studying a model"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 136.88,
+            "end": 139.68,
+            "text": " that's trained to take in a piece of text"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 139.68,
+            "end": 141.6,
+            "text": " and predict what comes next."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 141.6,
+            "end": 144.96,
+            "text": " That input text is first broken into a bunch of tokens,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 144.96,
+            "end": 147.28,
+            "text": " which means little chunks that are typically words"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 147.28,
+            "end": 149.12,
+            "text": " or little pieces of words,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 149.12,
+            "end": 153.12,
+            "text": " and each token is associated with a high-dimensional vector,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 153.12,
+            "end": 155.68,
+            "text": " which is to say a long list of numbers."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 155.68,
+            "end": 159.51999999999998,
+            "text": " This sequence of vectors then repeatedly passes through"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 159.51999999999998,
+            "end": 161.12,
+            "text": " two kinds of operation."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 161.12,
+            "end": 164.0,
+            "text": " Attention, which allows the vectors to pass information"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 164.0,
+            "end": 165.44,
+            "text": " between one another,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 165.44,
+            "end": 167.44,
+            "text": " and then the multilayered perceptrons,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 167.44,
+            "end": 169.6,
+            "text": " the thing that we're going to dig into today."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 169.6,
+            "end": 172.32,
+            "text": " And also there's a certain normalization step in between."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 173.28,
+            "end": 175.51999999999998,
+            "text": " After the sequence of vectors has flowed through"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 175.51999999999998,
+            "end": 178.56,
+            "text": " many, many different iterations of both of these blocks,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 178.56,
+            "end": 181.44,
+            "text": " by the end, the hope is that each vector"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 181.44,
+            "end": 183.68,
+            "text": " has soaked up enough information,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 183.68,
+            "end": 185.2,
+            "text": " both from the context,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 185.2,
+            "end": 187.2,
+            "text": " all of the other words in the input,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 187.2,
+            "end": 189.12,
+            "text": " and also from the general knowledge"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 189.12,
+            "end": 191.51999999999998,
+            "text": " that was baked into the model weights through training,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 192.07999999999998,
+            "end": 194.32,
+            "text": " that it can be used to make a prediction"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 194.32,
+            "end": 195.92,
+            "text": " of what token comes next."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 196.72,
+            "end": 199.35999999999999,
+            "text": " One of the key ideas that I want you to have in your mind"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 199.68,
+            "end": 203.36,
+            "text": " is that all of these vectors live in a very, very high-dimensional space,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 203.36,
+            "end": 205.28,
+            "text": " and when you think about that space,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 205.28,
+            "end": 208.96,
+            "text": " different directions can encode different kinds of meaning."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 210.08,
+            "end": 213.12,
+            "text": " So a very classic example that I like to refer back to"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 213.12,
+            "end": 215.52,
+            "text": " is how if you look at the embedding of woman"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 215.52,
+            "end": 217.44000000000003,
+            "text": " and subtract the embedding of man,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 218.08,
+            "end": 219.52,
+            "text": " and you take that little step"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 219.52,
+            "end": 221.52,
+            "text": " and you add it to another masculine noun,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 221.52,
+            "end": 222.88000000000002,
+            "text": " something like uncle,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 222.88000000000002,
+            "end": 224.72000000000003,
+            "text": " you land somewhere very, very close"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 224.72000000000003,
+            "end": 226.72000000000003,
+            "text": " to the corresponding feminine noun."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 226.72000000000003,
+            "end": 227.84,
+            "text": " In this sense,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 227.84,
+            "end": 230.8,
+            "text": " this particular direction encodes gender information."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 231.52,
+            "end": 234.08,
+            "text": " The idea is that many other distinct directions"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 234.08,
+            "end": 236.24,
+            "text": " in this super high-dimensional space"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 236.24,
+            "end": 237.92000000000002,
+            "text": " could correspond to other features"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 237.92000000000002,
+            "end": 239.6,
+            "text": " that the model might want to represent."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 241.36,
+            "end": 242.4,
+            "text": " In a transformer,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 242.4,
+            "end": 246.0,
+            "text": " these vectors don't merely encode the meaning of a single word, though."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 246.64000000000001,
+            "end": 248.4,
+            "text": " As they flow through the network,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 248.4,
+            "end": 250.8,
+            "text": " they imbibe a much richer meaning"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 250.8,
+            "end": 252.88,
+            "text": " based on all the context around them,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 252.88,
+            "end": 255.12,
+            "text": " and also based on the model's knowledge."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 255.76,
+            "end": 257.84000000000003,
+            "text": " Ultimately, each one needs to encode"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 257.84000000000003,
+            "end": 260.64,
+            "text": " something far, far beyond the meaning of a single word,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 260.64,
+            "end": 263.6,
+            "text": " since it needs to be sufficient to predict what will come next."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 264.32,
+            "end": 268.0,
+            "text": " We've already seen how attention blocks let you incorporate context,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 268.0,
+            "end": 270.16,
+            "text": " but a majority of the model parameters"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 270.16,
+            "end": 272.72,
+            "text": " actually live inside the MLP blocks,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 272.72,
+            "end": 274.96,
+            "text": " and one thought for what they might be doing"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 274.96,
+            "end": 278.0,
+            "text": " is that they offer extra capacity to store facts."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 278.56,
+            "end": 279.12,
+            "text": " Like I said,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 279.12,
+            "end": 282.48,
+            "text": " the lesson here is going to center on the concrete toy example"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 282.48,
+            "end": 284.24,
+            "text": " of how exactly it could store the fact"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 284.24,
+            "end": 286.16,
+            "text": " that Michael Jordan plays basketball."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 286.88,
+            "end": 288.48,
+            "text": " Now this toy example is going to require"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 288.48,
+            "end": 290.32,
+            "text": " that you and I make a couple of assumptions"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 290.32,
+            "end": 292.16,
+            "text": " about that high-dimensional space."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 292.16,
+            "end": 294.24,
+            "text": " First, we'll suppose that one of the directions"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 294.24,
+            "end": 297.12,
+            "text": " represents the idea of a first name Michael,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 297.12,
+            "end": 300.16,
+            "text": " and then another, nearly perpendicular direction,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 300.16,
+            "end": 303.04,
+            "text": " represents the idea of the last name Jordan,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 303.04,
+            "end": 304.56,
+            "text": " and then yet a third direction"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 304.56,
+            "end": 306.48,
+            "text": " will represent the idea of basketball."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 307.2,
+            "end": 308.8,
+            "text": " So specifically what I mean by this"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 308.8,
+            "end": 309.92,
+            "text": " is if you look in the network"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 309.92,
+            "end": 312.40000000000003,
+            "text": " and you pluck out one of the vectors being processed,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 312.4,
+            "end": 316.23999999999995,
+            "text": " if its dot product with this first name Michael direction is 1,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 316.79999999999995,
+            "end": 318.88,
+            "text": " that's what it would mean for the vector"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 318.88,
+            "end": 322.23999999999995,
+            "text": " to be encoding the idea of a person with that first name."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 323.35999999999996,
+            "end": 326.15999999999997,
+            "text": " Otherwise, that dot product would be 0 or negative,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 326.15999999999997,
+            "end": 328.64,
+            "text": " meaning the vector doesn't really align with that direction."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 329.2,
+            "end": 330.15999999999997,
+            "text": " And for simplicity,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 330.15999999999997,
+            "end": 332.64,
+            "text": " let's completely ignore the very reasonable question"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 332.64,
+            "end": 335.2,
+            "text": " of what it might mean if that dot product was bigger than 1."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 336.0,
+            "end": 339.35999999999996,
+            "text": " Similarly, its dot product with these other directions"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 339.35999999999996,
+            "end": 342.0,
+            "text": " would tell you whether it represents the last name Jordan."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 342.64,
+            "end": 343.76,
+            "text": " Or basketball."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 344.71999999999997,
+            "end": 348.88,
+            "text": " So let's say a vector is meant to represent the full name Michael Jordan,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 348.88,
+            "end": 352.56,
+            "text": " then its dot product with both of these directions would have to be 1."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 353.28,
+            "end": 356.71999999999997,
+            "text": " Since the text Michael Jordan spans two different tokens,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 356.71999999999997,
+            "end": 360.08,
+            "text": " this would also mean we have to assume that an earlier attention block"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 360.08,
+            "end": 364.4,
+            "text": " has successfully passed information to the second of these two vectors"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 364.4,
+            "end": 366.79999999999995,
+            "text": " so as to ensure that it can encode both names."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 367.67999999999995,
+            "end": 369.2,
+            "text": " With all of those as the assumptions,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 369.2,
+            "end": 371.84,
+            "text": " let's now dive into the meat of the lesson."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 371.84,
+            "end": 374.79999999999995,
+            "text": " What happens inside a multilayer perceptron?"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 377.28,
+            "end": 380.71999999999997,
+            "text": " You might think of this sequence of vectors flowing into the block."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 380.71999999999997,
+            "end": 383.35999999999996,
+            "text": " And remember, each vector was originally associated"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 383.35999999999996,
+            "end": 385.84,
+            "text": " with one of the tokens from the input text."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 385.84,
+            "end": 389.52,
+            "text": " What's going to happen is that each individual vector from that sequence"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 389.52,
+            "end": 391.59999999999997,
+            "text": " goes through a short series of operations,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 391.59999999999997,
+            "end": 393.44,
+            "text": " we'll unpack them in just a moment,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 393.44,
+            "end": 396.64,
+            "text": " and at the end we'll get another vector with the same dimension."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 396.64,
+            "end": 400.71999999999997,
+            "text": " That other vector is going to get added to the original one that flowed in,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 400.72,
+            "end": 403.6,
+            "text": " and that sum is the result flowing out."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 403.6,
+            "end": 407.92,
+            "text": " This sequence of operations is something you apply to every vector in the sequence"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 407.92,
+            "end": 411.92,
+            "text": " associated with every token in the input, and it all happens in parallel."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 411.92,
+            "end": 414.56,
+            "text": " In particular, the vectors don't talk to each other in this step,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 414.56,
+            "end": 416.48,
+            "text": " they're all kind of doing their own thing."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 416.48,
+            "end": 419.04,
+            "text": " And for you and me, that actually makes it a lot simpler,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 419.04,
+            "end": 422.56,
+            "text": " because it means if we understand what happens to just one of the vectors"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 422.56,
+            "end": 425.92,
+            "text": " through this block, we effectively understand what happens to all of them."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 426.88,
+            "end": 430.96000000000004,
+            "text": " When I say this block is going to encode the fact that Michael Jordan plays basketball,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 430.96000000000004,
+            "end": 436.48,
+            "text": " what I mean is that if a vector flows in that encodes first name Michael and last name Jordan,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 436.48,
+            "end": 441.44,
+            "text": " then this sequence of computations will produce something that includes that direction basketball,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 441.44,
+            "end": 443.92,
+            "text": " which is what will add on to the vector in that position."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 445.44,
+            "end": 449.92,
+            "text": " The first step of this process looks like multiplying that vector by a very big matrix,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 449.92,
+            "end": 452.48,
+            "text": " no surprises there, this is deep learning."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 452.48,
+            "end": 454.88,
+            "text": " And this matrix, like all of the other ones we've seen,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 454.88,
+            "end": 458.24,
+            "text": " is filled with model parameters that are learned from data,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 458.24,
+            "end": 461.44,
+            "text": " which you might think of as a bunch of knobs and dials that get tweaked and tuned"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 461.44,
+            "end": 463.36,
+            "text": " to determine what the model behavior is."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 464.24,
+            "end": 468.24,
+            "text": " Now one nice way to think about matrix multiplication is to imagine each row of that"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 468.24,
+            "end": 473.44,
+            "text": " matrix as being its own vector, and taking a bunch of dot products between those rows"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 473.44,
+            "end": 477.12,
+            "text": " and the vector being processed, which I'll label as e for embedding."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 477.12,
+            "end": 482.24,
+            "text": " For example, suppose that very first row happened to equal this first name Michael direction"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 482.24,
+            "end": 483.92,
+            "text": " that we're presuming exists."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 484.48,
+            "end": 489.04,
+            "text": " That would mean that the first component in this output, this dot product right here,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 489.04,
+            "end": 494.8,
+            "text": " would be 1 if that vector encodes the first name Michael, and 0 or negative otherwise."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 495.68,
+            "end": 499.52,
+            "text": " Even more fun, take a moment to think about what it would mean if that first row"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 499.52,
+            "end": 503.44,
+            "text": " was this first name Michael plus last name Jordan direction."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 503.44,
+            "end": 507.2,
+            "text": " And for simplicity, let me go ahead and write that down as m plus j."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 507.92,
+            "end": 510.48,
+            "text": " Then taking a dot product with this embedding e,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 510.48,
+            "end": 515.12,
+            "text": " things distribute really nicely so it looks like m.e plus j.e."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 515.12,
+            "end": 520.24,
+            "text": " And notice how that means the ultimate value would be 2 if the vector encodes the full name"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 520.24,
+            "end": 524.5600000000001,
+            "text": " Michael Jordan, and otherwise it would be 1 or something smaller than 1."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 525.2,
+            "end": 527.44,
+            "text": " And that's just one row in this matrix."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 527.44,
+            "end": 532.16,
+            "text": " You might think of all of the other rows as in parallel asking some other kinds of questions,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 532.16,
+            "end": 535.9200000000001,
+            "text": " probing at some other sorts of features of the vector being processed."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 536.4799999999999,
+            "end": 539.8399999999999,
+            "text": " Very often this step also involves adding another vector to the output,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 539.8399999999999,
+            "end": 542.4799999999999,
+            "text": " which is full of model parameters learned from data."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 542.4799999999999,
+            "end": 544.9599999999999,
+            "text": " This other vector is known as the bias."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 544.9599999999999,
+            "end": 549.68,
+            "text": " For our example, I want you to imagine that the value of this bias in that very first component"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 549.68,
+            "end": 555.4399999999999,
+            "text": " is negative 1, meaning our final output looks like that relevant dot product, but minus 1."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 556.0,
+            "end": 560.64,
+            "text": " You might very reasonably ask why I would want you to assume that the model has learned this,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 560.64,
+            "end": 565.36,
+            "text": " and in a moment you'll see why it's very clean and nice if we have a value here which is"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 565.36,
+            "end": 570.08,
+            "text": " positive if and only if our vector encodes the full name Michael Jordan,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 570.08,
+            "end": 572.16,
+            "text": " and otherwise it's 0 or negative."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 572.8000000000001,
+            "end": 577.36,
+            "text": " The total number of rows in this matrix, which is something like the number of questions being"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 577.36,
+            "end": 582.96,
+            "text": " asked in the case of GPT-3, whose numbers we've been following, is just under 50,000."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 582.96,
+            "end": 586.72,
+            "text": " In fact, it's exactly four times the number of dimensions in this embedding space."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 586.72,
+            "end": 589.44,
+            "text": " That's a design choice, you could make it more, you could make it less,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 589.44,
+            "end": 592.5600000000001,
+            "text": " but having a clean multiple tends to be friendly for hardware."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 592.56,
+            "end": 596.7199999999999,
+            "text": " Since this matrix full of weights maps us into a higher dimensional space,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 596.7199999999999,
+            "end": 599.1999999999999,
+            "text": " I'm going to give it the shorthand wup."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 599.1999999999999,
+            "end": 602.4799999999999,
+            "text": " I'll continue labeling the vector we're processing as e,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 602.4799999999999,
+            "end": 607.1199999999999,
+            "text": " and let's label this bias vector as bup and put that all back down in the diagram."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 609.1199999999999,
+            "end": 612.8,
+            "text": " At this point, a problem is that this operation is purely linear,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 612.8,
+            "end": 615.76,
+            "text": " but language is a very non-linear process."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 615.76,
+            "end": 619.5999999999999,
+            "text": " If the entry that we're measuring is high for Michael plus Jordan,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 619.6,
+            "end": 623.6,
+            "text": " it would also necessarily be somewhat triggered by Michael plus Phelps,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 623.6,
+            "end": 628.48,
+            "text": " and also Alexis plus Jordan, despite those being unrelated conceptually."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 628.48,
+            "end": 631.9200000000001,
+            "text": " What you really want is a simple yes or no for the full name."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 632.64,
+            "end": 636.64,
+            "text": " So the next step is to pass this large intermediate vector through a very simple"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 636.64,
+            "end": 641.0400000000001,
+            "text": " non-linear function. A common choice is one that takes all of the negative values"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 641.0400000000001,
+            "end": 645.2,
+            "text": " and maps them to 0, and leaves all of the positive values unchanged."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 646.1600000000001,
+            "end": 650.0,
+            "text": " And continuing with the deep learning tradition of overly fancy names,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 650.0,
+            "end": 656.08,
+            "text": " this very simple function is often called the rectified linear unit, or ReLU for short."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 656.08,
+            "end": 657.44,
+            "text": " Here's what the graph looks like."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 658.0,
+            "end": 663.12,
+            "text": " So taking our imagined example where this first entry of the intermediate vector is 1"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 663.12,
+            "end": 668.0,
+            "text": " if and only if the full name is Michael Jordan, and 0 or negative otherwise,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 668.5600000000001,
+            "end": 672.4000000000001,
+            "text": " after you pass it through the ReLU, you end up with a very clean value"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 672.4,
+            "end": 675.92,
+            "text": " where all of the 0 and negative values just get clipped to 0."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 675.92,
+            "end": 679.76,
+            "text": " So this output would be 1 for the full name Michael Jordan and 0 otherwise."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 680.4,
+            "end": 684.16,
+            "text": " In other words, it very directly mimics the behavior of an AND gate."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 685.6,
+            "end": 689.4399999999999,
+            "text": " Often, models will use a slightly modified function that's called the JLU,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 689.4399999999999,
+            "end": 692.24,
+            "text": " which has the same basic shape, it's just a bit smoother,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 692.24,
+            "end": 695.76,
+            "text": " but for our purposes it's a little bit cleaner if we only think about the ReLU."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 696.56,
+            "end": 700.16,
+            "text": " Also, when you hear people refer to the neurons of a transformer,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 700.16,
+            "end": 702.64,
+            "text": " they're talking about these values right here."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 702.64,
+            "end": 706.24,
+            "text": " Whenever you see that common neural network picture with a layer of dots"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 706.24,
+            "end": 710.56,
+            "text": " and a bunch of lines connecting to the previous layer, which we had earlier in this series,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 710.56,
+            "end": 716.48,
+            "text": " that's typically meant to convey this combination of a linear step, a matrix multiplication,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 716.48,
+            "end": 721.1999999999999,
+            "text": " followed by some simple term-wise nonlinear function like a ReLU."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 722.24,
+            "end": 726.24,
+            "text": " You would say that this neuron is active whenever this value is positive,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 726.24,
+            "end": 728.88,
+            "text": " and that it's inactive if that value is 0."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 729.84,
+            "end": 732.4,
+            "text": " The next step looks very similar to the first one."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 732.4,
+            "end": 736.8,
+            "text": " You multiply by a very large matrix, and you add on a certain bias term."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 736.8,
+            "end": 741.52,
+            "text": " In this case, the number of dimensions in the output is back down to the size of that embedding"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 741.52,
+            "end": 745.4399999999999,
+            "text": " space, so I'm going to call this the down-projection matrix."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 746.08,
+            "end": 750.24,
+            "text": " This time, instead of thinking of things row by row, it's actually nicer to think of it"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 750.24,
+            "end": 751.6,
+            "text": " column by column."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 751.6,
+            "end": 755.52,
+            "text": " You see, another way you can hold matrix multiplication in your head"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 755.6,
+            "end": 760.72,
+            "text": " is to imagine taking each column of the matrix and multiplying it by the corresponding term"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 760.72,
+            "end": 765.52,
+            "text": " in the vector that it's processing, and adding together all of those rescaled columns."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 766.72,
+            "end": 770.88,
+            "text": " The reason it's nicer to think about this way is because here, the columns have the"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 770.88,
+            "end": 775.92,
+            "text": " same dimension as the embedding space, so we can think of them as directions in that space."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 775.92,
+            "end": 779.84,
+            "text": " For instance, we will imagine that the model has learned to make that first column"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 779.84,
+            "end": 782.96,
+            "text": " into this basketball direction that we suppose exists."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 783.9200000000001,
+            "end": 788.4000000000001,
+            "text": " What that would mean is that when the relevant neuron in that first position is active,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 788.4000000000001,
+            "end": 791.0400000000001,
+            "text": " we'll be adding this column to the final result."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 791.0400000000001,
+            "end": 795.6800000000001,
+            "text": " But if that neuron was inactive, if that number was zero, then this would have no effect."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 796.32,
+            "end": 800.08,
+            "text": " And it doesn't just have to be basketball, the model could also bake into this column"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 800.08,
+            "end": 804.72,
+            "text": " many other features that it wants to associate with something that has the full name Michael"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 804.72,
+            "end": 805.12,
+            "text": " Jordan."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 806.8000000000001,
+            "end": 812.48,
+            "text": " And at the same time, all of the other columns in this matrix are telling you what will be"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 812.5600000000001,
+            "end": 816.5600000000001,
+            "text": " added to the final result if the corresponding neuron is active."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 817.2,
+            "end": 821.44,
+            "text": " And if you have a bias in this case, it's something that you're just adding every single"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 821.44,
+            "end": 823.84,
+            "text": " time, regardless of the neuron values."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 823.84,
+            "end": 828.08,
+            "text": " You might wonder what's that doing, as with all parameter-filled objects here, it's kind"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 828.08,
+            "end": 832.16,
+            "text": " of hard to say exactly, maybe there's some bookkeeping that the network needs to do,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 832.16,
+            "end": 834.48,
+            "text": " but you can feel free to ignore it for now."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 834.48,
+            "end": 838.96,
+            "text": " Making our notation a little more compact again, I'll call this big matrix W down,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 839.6,
+            "end": 844.5600000000001,
+            "text": " and similarly call that bias vector B down, and put that back into our diagram."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 844.5600000000001,
+            "end": 849.12,
+            "text": " Like I previewed earlier, what you do with this final result is add it to the vector"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 849.12,
+            "end": 853.6,
+            "text": " that flowed into the block at that position, and that gets you this final result."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 853.6,
+            "end": 860.1600000000001,
+            "text": " So for example, if the vector flowing in encoded both first name Michael and last name Jordan,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 860.1600000000001,
+            "end": 864.88,
+            "text": " then because this sequence of operations will trigger that AND gate, it will add on the"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 864.88,
+            "end": 869.6,
+            "text": " basketball direction, so what pops out will encode all of those together."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 869.6,
+            "end": 874.64,
+            "text": " And remember, this is a process happening to every one of those vectors in parallel."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 874.64,
+            "end": 879.04,
+            "text": " In particular, taking the GPT-3 numbers, it means that this block doesn't just have"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 879.04,
+            "end": 884.72,
+            "text": " 50,000 neurons in it, it has 50,000 times the number of tokens in the input."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 888.32,
+            "end": 893.28,
+            "text": " So that is the entire operation, two matrix products, each with a bias added,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 893.28,
+            "end": 895.1999999999999,
+            "text": " and a simple clipping function in between."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 895.8399999999999,
+            "end": 900.24,
+            "text": " Any of you who watched the earlier videos of this series will recognize this structure as the most"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 900.24,
+            "end": 905.04,
+            "text": " basic kind of neural network we studied there, in that example it was trained to recognize"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 905.04,
+            "end": 910.56,
+            "text": " handwritten digits. Over here, in the context of a transformer for a large language model,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 910.56,
+            "end": 916.88,
+            "text": " this is one piece in a larger architecture, and any attempt to interpret what exactly it's doing"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 916.88,
+            "end": 920.48,
+            "text": " is heavily intertwined with the idea of encoding information"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 920.48,
+            "end": 922.96,
+            "text": " into vectors of a high-dimensional embedding space."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 924.16,
+            "end": 928.72,
+            "text": " That is the core lesson, but I do want to step back and reflect on two different things,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 928.72,
+            "end": 933.6,
+            "text": " the first of which is a kind of bookkeeping, and the second of which involves a very thought-provoking"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 933.6,
+            "end": 938.0,
+            "text": " fact about higher dimensions that I actually didn't know until I dug into transformers."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 941.36,
+            "end": 945.28,
+            "text": " In the last two chapters, you and I started counting up the total number of parameters"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 945.28,
+            "end": 950.64,
+            "text": " in GPT-3 and seeing exactly where they live, so let's quickly finish up the game here."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 951.1999999999999,
+            "end": 955.8399999999999,
+            "text": " I already mentioned how this up projection matrix has just under 50,000 rows,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 955.8399999999999,
+            "end": 962.3199999999999,
+            "text": " and that each row matches the size of the embedding space, which for GPT-3 is 12,288."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 963.04,
+            "end": 968.16,
+            "text": " Multiplying those together, it gives us 604 million parameters just for that matrix,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 969.4399999999999,
+            "end": 974.24,
+            "text": " and the down projection has the same number of parameters, just with a transposed shape,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 974.24,
+            "end": 979.36,
+            "text": " so together they give about 1.2 billion parameters. The bias vector also accounts"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 979.36,
+            "end": 983.52,
+            "text": " for a couple more parameters, but it's a trivial proportion of the total, so I'm not even going to"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 983.52,
+            "end": 990.48,
+            "text": " show it. In GPT-3, this sequence of embedding vectors flows through not one, but 96 distinct"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 990.48,
+            "end": 998.08,
+            "text": " MLPs, so the total number of parameters devoted to all of these blocks adds up to about 116 billion."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 998.8,
+            "end": 1003.2,
+            "text": " This is around two-thirds of the total parameters in the network, and when you add it to everything"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1003.2,
+            "end": 1007.2800000000001,
+            "text": " that we had before for the attention blocks, the embedding, and the unembedding,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1007.2800000000001,
+            "end": 1011.5200000000001,
+            "text": " you do indeed get that grand total of 175 billion as advertised."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1012.88,
+            "end": 1017.2,
+            "text": " It's probably worth mentioning there's another set of parameters associated with those normalization"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1017.2,
+            "end": 1022.0,
+            "text": " steps that this explanation has skipped over, but like the bias vector, they account for a"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1022.0,
+            "end": 1028.64,
+            "text": " very trivial proportion of the total. As to that second point of reflection, you might be wondering"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1028.64,
+            "end": 1033.76,
+            "text": " if this central toy example we've been spending so much time on reflects how facts are actually"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1033.76,
+            "end": 1039.1200000000001,
+            "text": " stored in real large language models. It is true that the rows of that first matrix can be thought"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1039.1200000000001,
+            "end": 1044.3200000000002,
+            "text": " of as directions in this embedding space, and that means the activation of each neuron tells"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1044.3200000000002,
+            "end": 1048.88,
+            "text": " you how much a given vector aligns with some specific direction. It's also true that the"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1048.88,
+            "end": 1054.72,
+            "text": " columns of that second matrix tell you what will be added to the result if that neuron is active."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1054.72,
+            "end": 1060.72,
+            "text": " Both of those are just mathematical facts. However, the evidence does suggest that individual"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1060.72,
+            "end": 1066.48,
+            "text": " neurons very rarely represent a single clean feature like Michael Jordan, and there may actually"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1066.48,
+            "end": 1071.28,
+            "text": " be a very good reason this is the case, related to an idea floating around interpretability"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1071.28,
+            "end": 1076.72,
+            "text": " researchers these days known as superposition. This is a hypothesis that might help to explain"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1076.72,
+            "end": 1082.24,
+            "text": " both why the models are especially hard to interpret, and also why they scale surprisingly well."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1083.2,
+            "end": 1088.4,
+            "text": " The basic idea is that if you have an n-dimensional space, and you want to represent a bunch of"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1088.4,
+            "end": 1093.76,
+            "text": " different features using directions that are all perpendicular to one another in that space,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1093.76,
+            "end": 1098.0,
+            "text": " you know, that way if you add a component in one direction it doesn't influence any of the other"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1098.0,
+            "end": 1104.32,
+            "text": " directions, then the maximum number of vectors you can fit is only n, the number of dimensions."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1104.32,
+            "end": 1110.0,
+            "text": " To a mathematician, actually, this is the definition of dimension. But where it gets interesting is if"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1110.0,
+            "end": 1115.44,
+            "text": " you relax that constraint a little bit and you tolerate some noise. Say you allow those features"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1115.44,
+            "end": 1120.88,
+            "text": " to be represented by vectors that aren't exactly perpendicular, they're just nearly perpendicular,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1120.88,
+            "end": 1127.52,
+            "text": " maybe between 89 and 91 degrees apart. If we were in two or three dimensions, this makes no"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1127.52,
+            "end": 1132.16,
+            "text": " difference, that gives you hardly any extra wiggle room to fit more vectors in, which makes it all"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1132.16,
+            "end": 1136.72,
+            "text": " the more counterintuitive that for higher dimensions the answer changes dramatically."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1137.44,
+            "end": 1141.52,
+            "text": " I can give you a really quick and dirty illustration of this using some scrappy python"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1141.52,
+            "end": 1147.1200000000001,
+            "text": " that's going to create a list of 100 dimensional vectors, each one initialized randomly,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1147.1200000000001,
+            "end": 1153.68,
+            "text": " and this list is going to contain 10,000 distinct vectors, so 100 times as many vectors as there are"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1153.68,
+            "end": 1159.3600000000001,
+            "text": " dimensions. This plot right here shows the distribution of angles between pairs of these"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1159.3600000000001,
+            "end": 1165.3600000000001,
+            "text": " vectors, so because they started at random those angles could be anything from 0 to 180 degrees,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1165.36,
+            "end": 1170.08,
+            "text": " but you'll notice that already, even just for random vectors, there's this heavy bias for"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1170.08,
+            "end": 1175.36,
+            "text": " things to be closer to 90 degrees. Then what I'm going to do is run a certain optimization process"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1175.36,
+            "end": 1181.04,
+            "text": " that iteratively nudges all of these vectors so that they try to become more perpendicular to one"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1181.04,
+            "end": 1185.84,
+            "text": " another. After repeating this many different times, here's what the distribution of angles"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1185.84,
+            "end": 1191.36,
+            "text": " looks like. We have to actually zoom in on it here, because all of the possible angles between"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1191.36,
+            "end": 1199.36,
+            "text": " pairs of vectors sit inside this narrow range between 89 and 91 degrees. In general, a consequence"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1199.36,
+            "end": 1204.24,
+            "text": " of something known as the Johnson-Lindenstrauss lemma is that the number of vectors you can cram"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1204.24,
+            "end": 1210.1599999999999,
+            "text": " into a space that are nearly perpendicular like this grows exponentially with the number of"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1210.1599999999999,
+            "end": 1215.6,
+            "text": " dimensions. This is very significant for large language models, which might benefit from"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1215.6,
+            "end": 1220.8799999999999,
+            "text": " associating independent ideas with nearly perpendicular directions. It means that it's"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1220.88,
+            "end": 1226.48,
+            "text": " possible for it to store many, many more ideas than there are dimensions in the space that it's allotted."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1227.2,
+            "end": 1233.3600000000001,
+            "text": " This might partially explain why model performance seems to scale so well with size. A space that has"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1233.3600000000001,
+            "end": 1239.2800000000002,
+            "text": " 10 times as many dimensions can store way, way more than 10 times as many independent ideas."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1240.24,
+            "end": 1244.4,
+            "text": " And this is relevant not just to that embedding space where the vectors flowing through the model"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1244.4,
+            "end": 1249.6000000000001,
+            "text": " live, but also to that vector full of neurons in the middle of that multi-layer perceptron that we"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1249.9199999999998,
+            "end": 1256.56,
+            "text": " studied. That is to say, at the sizes of GPT-3, it might not just be probing at 50,000 features,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1256.56,
+            "end": 1262.24,
+            "text": " but if it instead leveraged this enormous added capacity by using nearly perpendicular directions"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1262.24,
+            "end": 1267.6,
+            "text": " of the space, it could be probing at many, many more features of the vector being processed."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1267.6,
+            "end": 1272.56,
+            "text": " But if it was doing that, what it means is that individual features aren't going to be visible"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1272.56,
+            "end": 1277.6,
+            "text": " as a single neuron lighting up, it would have to look like some specific combination of neurons"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1277.6,
+            "end": 1283.9199999999998,
+            "text": " instead, a superposition. For any of you curious to learn more, a key relevant search term here is"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1283.9199999999998,
+            "end": 1289.1999999999998,
+            "text": " sparse autoencoder, which is a tool that some of the interpretability people use to try to extract"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1289.1999999999998,
+            "end": 1294.08,
+            "text": " what the true features are, even if they're very superimposed on all these neurons. I'll link to"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1294.08,
+            "end": 1299.6,
+            "text": " a couple really great anthropic posts all about this. At this point, we haven't touched every"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1299.6,
+            "end": 1304.32,
+            "text": " detail of a transformer, but you and I have hit the most important points. The main thing that"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1304.32,
+            "end": 1309.84,
+            "text": " I want to cover in a next chapter is the training process. On the one hand, the short answer for"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1309.84,
+            "end": 1314.72,
+            "text": " how training works is that it's all backpropagation, and we covered backpropagation in a separate"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1314.72,
+            "end": 1320.32,
+            "text": " context with earlier chapters in the series. But there is more to discuss, like the specific cost"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1320.32,
+            "end": 1325.12,
+            "text": " function used for language models, the idea of fine-tuning using reinforcement learning with"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1325.12,
+            "end": 1330.8799999999999,
+            "text": " human feedback, and the notion of scaling laws. Quick note for the active followers among you,"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1330.88,
+            "end": 1334.5600000000002,
+            "text": " there are a number of non-machine learning related videos that I'm excited to sink my"
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1334.5600000000002,
+            "end": 1340.3200000000002,
+            "text": " teeth into before I make that next chapter, so it might be a while, but I do promise it'll come in due time."
+        },
+        {
+            "number": "4",
+            "title": "How might LLMs store facts",
+            "start": 1360.88,
+            "end": 1361.92,
+            "text": " Bye."
+        }
+    ],
+    "text": " If you feed a large language model the phrase, Michael Jordan plays the sport of blank, and you have it predict what comes next, and it correctly predicts basketball, this would suggest that somewhere, inside its hundreds of billions of parameters, it's baked in knowledge about a specific person and his specific sport. And I think in general, anyone who's played around with one of these models has the clear sense that it's memorized tons and tons of facts. So a reasonable question you could ask is, how exactly does that work? And where do those facts live? Last December, a few researchers from Google DeepMind posted about work on this question, and they were using the specific example of matching athletes to their sports. And although a full mechanistic understanding of how facts are stored remains unsolved, they had some interesting partial results, including the very general high-level conclusion that the facts seem to live inside a specific part of these networks, known fancifully as the multilayer perceptrons, or MLPs for short. In the last couple of chapters, you and I have been digging into the details behind transformers, the architecture underlying large language models, and also underlying a lot of other modern AI. In the most recent chapter, we were focusing on a piece called attention. And the next step for you and me is to dig into the details of what happens inside these multilayer perceptrons, which make up the other big portion of the network. The computation here is actually relatively simple, especially when you compare it to attention. It boils down essentially to a pair of matrix multiplications with a simple something in between. However, interpreting what these computations are doing is exceedingly challenging. Our main goal here is to step through the computations and make them memorable, but I'd like to do it in the context of showing a specific example of how one of these blocks could, at least in principle, store a concrete fact. Specifically, it'll be storing the fact that Michael Jordan plays basketball. I should mention the layout here is inspired by a conversation I had with one of those deep mind researchers, Neil Nanda. For the most part, I will assume that you've either watched the last two chapters, or otherwise you have a basic sense for what a transformer is, but refreshers never hurt, so here's the quick reminder of the overall flow. You and I have been studying a model that's trained to take in a piece of text and predict what comes next. That input text is first broken into a bunch of tokens, which means little chunks that are typically words or little pieces of words, and each token is associated with a high-dimensional vector, which is to say a long list of numbers. This sequence of vectors then repeatedly passes through two kinds of operation. Attention, which allows the vectors to pass information between one another, and then the multilayered perceptrons, the thing that we're going to dig into today. And also there's a certain normalization step in between. After the sequence of vectors has flowed through many, many different iterations of both of these blocks, by the end, the hope is that each vector has soaked up enough information, both from the context, all of the other words in the input, and also from the general knowledge that was baked into the model weights through training, that it can be used to make a prediction of what token comes next. One of the key ideas that I want you to have in your mind is that all of these vectors live in a very, very high-dimensional space, and when you think about that space, different directions can encode different kinds of meaning. So a very classic example that I like to refer back to is how if you look at the embedding of woman and subtract the embedding of man, and you take that little step and you add it to another masculine noun, something like uncle, you land somewhere very, very close to the corresponding feminine noun. In this sense, this particular direction encodes gender information. The idea is that many other distinct directions in this super high-dimensional space could correspond to other features that the model might want to represent. In a transformer, these vectors don't merely encode the meaning of a single word, though. As they flow through the network, they imbibe a much richer meaning based on all the context around them, and also based on the model's knowledge. Ultimately, each one needs to encode something far, far beyond the meaning of a single word, since it needs to be sufficient to predict what will come next. We've already seen how attention blocks let you incorporate context, but a majority of the model parameters actually live inside the MLP blocks, and one thought for what they might be doing is that they offer extra capacity to store facts. Like I said, the lesson here is going to center on the concrete toy example of how exactly it could store the fact that Michael Jordan plays basketball. Now this toy example is going to require that you and I make a couple of assumptions about that high-dimensional space. First, we'll suppose that one of the directions represents the idea of a first name Michael, and then another, nearly perpendicular direction, represents the idea of the last name Jordan, and then yet a third direction will represent the idea of basketball. So specifically what I mean by this is if you look in the network and you pluck out one of the vectors being processed, if its dot product with this first name Michael direction is 1, that's what it would mean for the vector to be encoding the idea of a person with that first name. Otherwise, that dot product would be 0 or negative, meaning the vector doesn't really align with that direction. And for simplicity, let's completely ignore the very reasonable question of what it might mean if that dot product was bigger than 1. Similarly, its dot product with these other directions would tell you whether it represents the last name Jordan. Or basketball. So let's say a vector is meant to represent the full name Michael Jordan, then its dot product with both of these directions would have to be 1. Since the text Michael Jordan spans two different tokens, this would also mean we have to assume that an earlier attention block has successfully passed information to the second of these two vectors so as to ensure that it can encode both names. With all of those as the assumptions, let's now dive into the meat of the lesson. What happens inside a multilayer perceptron? You might think of this sequence of vectors flowing into the block. And remember, each vector was originally associated with one of the tokens from the input text. What's going to happen is that each individual vector from that sequence goes through a short series of operations, we'll unpack them in just a moment, and at the end we'll get another vector with the same dimension. That other vector is going to get added to the original one that flowed in, and that sum is the result flowing out. This sequence of operations is something you apply to every vector in the sequence associated with every token in the input, and it all happens in parallel. In particular, the vectors don't talk to each other in this step, they're all kind of doing their own thing. And for you and me, that actually makes it a lot simpler, because it means if we understand what happens to just one of the vectors through this block, we effectively understand what happens to all of them. When I say this block is going to encode the fact that Michael Jordan plays basketball, what I mean is that if a vector flows in that encodes first name Michael and last name Jordan, then this sequence of computations will produce something that includes that direction basketball, which is what will add on to the vector in that position. The first step of this process looks like multiplying that vector by a very big matrix, no surprises there, this is deep learning. And this matrix, like all of the other ones we've seen, is filled with model parameters that are learned from data, which you might think of as a bunch of knobs and dials that get tweaked and tuned to determine what the model behavior is. Now one nice way to think about matrix multiplication is to imagine each row of that matrix as being its own vector, and taking a bunch of dot products between those rows and the vector being processed, which I'll label as e for embedding. For example, suppose that very first row happened to equal this first name Michael direction that we're presuming exists. That would mean that the first component in this output, this dot product right here, would be 1 if that vector encodes the first name Michael, and 0 or negative otherwise. Even more fun, take a moment to think about what it would mean if that first row was this first name Michael plus last name Jordan direction. And for simplicity, let me go ahead and write that down as m plus j. Then taking a dot product with this embedding e, things distribute really nicely so it looks like m.e plus j.e. And notice how that means the ultimate value would be 2 if the vector encodes the full name Michael Jordan, and otherwise it would be 1 or something smaller than 1. And that's just one row in this matrix. You might think of all of the other rows as in parallel asking some other kinds of questions, probing at some other sorts of features of the vector being processed. Very often this step also involves adding another vector to the output, which is full of model parameters learned from data. This other vector is known as the bias. For our example, I want you to imagine that the value of this bias in that very first component is negative 1, meaning our final output looks like that relevant dot product, but minus 1. You might very reasonably ask why I would want you to assume that the model has learned this, and in a moment you'll see why it's very clean and nice if we have a value here which is positive if and only if our vector encodes the full name Michael Jordan, and otherwise it's 0 or negative. The total number of rows in this matrix, which is something like the number of questions being asked in the case of GPT-3, whose numbers we've been following, is just under 50,000. In fact, it's exactly four times the number of dimensions in this embedding space. That's a design choice, you could make it more, you could make it less, but having a clean multiple tends to be friendly for hardware. Since this matrix full of weights maps us into a higher dimensional space, I'm going to give it the shorthand wup. I'll continue labeling the vector we're processing as e, and let's label this bias vector as bup and put that all back down in the diagram. At this point, a problem is that this operation is purely linear, but language is a very non-linear process. If the entry that we're measuring is high for Michael plus Jordan, it would also necessarily be somewhat triggered by Michael plus Phelps, and also Alexis plus Jordan, despite those being unrelated conceptually. What you really want is a simple yes or no for the full name. So the next step is to pass this large intermediate vector through a very simple non-linear function. A common choice is one that takes all of the negative values and maps them to 0, and leaves all of the positive values unchanged. And continuing with the deep learning tradition of overly fancy names, this very simple function is often called the rectified linear unit, or ReLU for short. Here's what the graph looks like. So taking our imagined example where this first entry of the intermediate vector is 1 if and only if the full name is Michael Jordan, and 0 or negative otherwise, after you pass it through the ReLU, you end up with a very clean value where all of the 0 and negative values just get clipped to 0. So this output would be 1 for the full name Michael Jordan and 0 otherwise. In other words, it very directly mimics the behavior of an AND gate. Often, models will use a slightly modified function that's called the JLU, which has the same basic shape, it's just a bit smoother, but for our purposes it's a little bit cleaner if we only think about the ReLU. Also, when you hear people refer to the neurons of a transformer, they're talking about these values right here. Whenever you see that common neural network picture with a layer of dots and a bunch of lines connecting to the previous layer, which we had earlier in this series, that's typically meant to convey this combination of a linear step, a matrix multiplication, followed by some simple term-wise nonlinear function like a ReLU. You would say that this neuron is active whenever this value is positive, and that it's inactive if that value is 0. The next step looks very similar to the first one. You multiply by a very large matrix, and you add on a certain bias term. In this case, the number of dimensions in the output is back down to the size of that embedding space, so I'm going to call this the down-projection matrix. This time, instead of thinking of things row by row, it's actually nicer to think of it column by column. You see, another way you can hold matrix multiplication in your head is to imagine taking each column of the matrix and multiplying it by the corresponding term in the vector that it's processing, and adding together all of those rescaled columns. The reason it's nicer to think about this way is because here, the columns have the same dimension as the embedding space, so we can think of them as directions in that space. For instance, we will imagine that the model has learned to make that first column into this basketball direction that we suppose exists. What that would mean is that when the relevant neuron in that first position is active, we'll be adding this column to the final result. But if that neuron was inactive, if that number was zero, then this would have no effect. And it doesn't just have to be basketball, the model could also bake into this column many other features that it wants to associate with something that has the full name Michael Jordan. And at the same time, all of the other columns in this matrix are telling you what will be added to the final result if the corresponding neuron is active. And if you have a bias in this case, it's something that you're just adding every single time, regardless of the neuron values. You might wonder what's that doing, as with all parameter-filled objects here, it's kind of hard to say exactly, maybe there's some bookkeeping that the network needs to do, but you can feel free to ignore it for now. Making our notation a little more compact again, I'll call this big matrix W down, and similarly call that bias vector B down, and put that back into our diagram. Like I previewed earlier, what you do with this final result is add it to the vector that flowed into the block at that position, and that gets you this final result. So for example, if the vector flowing in encoded both first name Michael and last name Jordan, then because this sequence of operations will trigger that AND gate, it will add on the basketball direction, so what pops out will encode all of those together. And remember, this is a process happening to every one of those vectors in parallel. In particular, taking the GPT-3 numbers, it means that this block doesn't just have 50,000 neurons in it, it has 50,000 times the number of tokens in the input. So that is the entire operation, two matrix products, each with a bias added, and a simple clipping function in between. Any of you who watched the earlier videos of this series will recognize this structure as the most basic kind of neural network we studied there, in that example it was trained to recognize handwritten digits. Over here, in the context of a transformer for a large language model, this is one piece in a larger architecture, and any attempt to interpret what exactly it's doing is heavily intertwined with the idea of encoding information into vectors of a high-dimensional embedding space. That is the core lesson, but I do want to step back and reflect on two different things, the first of which is a kind of bookkeeping, and the second of which involves a very thought-provoking fact about higher dimensions that I actually didn't know until I dug into transformers. In the last two chapters, you and I started counting up the total number of parameters in GPT-3 and seeing exactly where they live, so let's quickly finish up the game here. I already mentioned how this up projection matrix has just under 50,000 rows, and that each row matches the size of the embedding space, which for GPT-3 is 12,288. Multiplying those together, it gives us 604 million parameters just for that matrix, and the down projection has the same number of parameters, just with a transposed shape, so together they give about 1.2 billion parameters. The bias vector also accounts for a couple more parameters, but it's a trivial proportion of the total, so I'm not even going to show it. In GPT-3, this sequence of embedding vectors flows through not one, but 96 distinct MLPs, so the total number of parameters devoted to all of these blocks adds up to about 116 billion. This is around two-thirds of the total parameters in the network, and when you add it to everything that we had before for the attention blocks, the embedding, and the unembedding, you do indeed get that grand total of 175 billion as advertised. It's probably worth mentioning there's another set of parameters associated with those normalization steps that this explanation has skipped over, but like the bias vector, they account for a very trivial proportion of the total. As to that second point of reflection, you might be wondering if this central toy example we've been spending so much time on reflects how facts are actually stored in real large language models. It is true that the rows of that first matrix can be thought of as directions in this embedding space, and that means the activation of each neuron tells you how much a given vector aligns with some specific direction. It's also true that the columns of that second matrix tell you what will be added to the result if that neuron is active. Both of those are just mathematical facts. However, the evidence does suggest that individual neurons very rarely represent a single clean feature like Michael Jordan, and there may actually be a very good reason this is the case, related to an idea floating around interpretability researchers these days known as superposition. This is a hypothesis that might help to explain both why the models are especially hard to interpret, and also why they scale surprisingly well. The basic idea is that if you have an n-dimensional space, and you want to represent a bunch of different features using directions that are all perpendicular to one another in that space, you know, that way if you add a component in one direction it doesn't influence any of the other directions, then the maximum number of vectors you can fit is only n, the number of dimensions. To a mathematician, actually, this is the definition of dimension. But where it gets interesting is if you relax that constraint a little bit and you tolerate some noise. Say you allow those features to be represented by vectors that aren't exactly perpendicular, they're just nearly perpendicular, maybe between 89 and 91 degrees apart. If we were in two or three dimensions, this makes no difference, that gives you hardly any extra wiggle room to fit more vectors in, which makes it all the more counterintuitive that for higher dimensions the answer changes dramatically. I can give you a really quick and dirty illustration of this using some scrappy python that's going to create a list of 100 dimensional vectors, each one initialized randomly, and this list is going to contain 10,000 distinct vectors, so 100 times as many vectors as there are dimensions. This plot right here shows the distribution of angles between pairs of these vectors, so because they started at random those angles could be anything from 0 to 180 degrees, but you'll notice that already, even just for random vectors, there's this heavy bias for things to be closer to 90 degrees. Then what I'm going to do is run a certain optimization process that iteratively nudges all of these vectors so that they try to become more perpendicular to one another. After repeating this many different times, here's what the distribution of angles looks like. We have to actually zoom in on it here, because all of the possible angles between pairs of vectors sit inside this narrow range between 89 and 91 degrees. In general, a consequence of something known as the Johnson-Lindenstrauss lemma is that the number of vectors you can cram into a space that are nearly perpendicular like this grows exponentially with the number of dimensions. This is very significant for large language models, which might benefit from associating independent ideas with nearly perpendicular directions. It means that it's possible for it to store many, many more ideas than there are dimensions in the space that it's allotted. This might partially explain why model performance seems to scale so well with size. A space that has 10 times as many dimensions can store way, way more than 10 times as many independent ideas. And this is relevant not just to that embedding space where the vectors flowing through the model live, but also to that vector full of neurons in the middle of that multi-layer perceptron that we studied. That is to say, at the sizes of GPT-3, it might not just be probing at 50,000 features, but if it instead leveraged this enormous added capacity by using nearly perpendicular directions of the space, it could be probing at many, many more features of the vector being processed. But if it was doing that, what it means is that individual features aren't going to be visible as a single neuron lighting up, it would have to look like some specific combination of neurons instead, a superposition. For any of you curious to learn more, a key relevant search term here is sparse autoencoder, which is a tool that some of the interpretability people use to try to extract what the true features are, even if they're very superimposed on all these neurons. I'll link to a couple really great anthropic posts all about this. At this point, we haven't touched every detail of a transformer, but you and I have hit the most important points. The main thing that I want to cover in a next chapter is the training process. On the one hand, the short answer for how training works is that it's all backpropagation, and we covered backpropagation in a separate context with earlier chapters in the series. But there is more to discuss, like the specific cost function used for language models, the idea of fine-tuning using reinforcement learning with human feedback, and the notion of scaling laws. Quick note for the active followers among you, there are a number of non-machine learning related videos that I'm excited to sink my teeth into before I make that next chapter, so it might be a while, but I do promise it'll come in due time. Bye."
+}

@@ -1,0 +1,1195 @@
+{
+    "chunks": [
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 0.0,
+            "end": 2.2,
+            "text": " Hello guys, welcome to another video."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 2.2,
+            "end": 6.38,
+            "text": " In this video, we will try to understand what is metadata filtering."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 6.38,
+            "end": 9.72,
+            "text": " So there is an option called metadata filtering in vector databases."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 9.72,
+            "end": 13.8,
+            "text": " Till now we have seen how to do the similarity search, different techniques of similarity"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 13.8,
+            "end": 15.88,
+            "text": " search in the previous videos."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 15.88,
+            "end": 20.6,
+            "text": " And then in the very recent video, we saw what is hybrid search and how hybrid search"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 20.6,
+            "end": 24.5,
+            "text": " works, how to make an hybrid search, what is alpha value and all those things."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 24.5,
+            "end": 30.66,
+            "text": " So now along with those at the vector DB level, we can even do a filter of metadata"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 30.66,
+            "end": 31.82,
+            "text": " as well."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 31.82,
+            "end": 38.7,
+            "text": " So when you go to the vector DBs, if you see this is a specific index we have written the"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 38.7,
+            "end": 44.019999999999996,
+            "text": " data into and inside this index we check the data and we store."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 44.019999999999996,
+            "end": 48.94,
+            "text": " If you see, check text is a text where we have the information, all the actual text"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 48.94,
+            "end": 50.92,
+            "text": " information which is checked."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 50.92,
+            "end": 55.64,
+            "text": " But there are other fields like which department this belongs to, what is the document type,"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 55.64,
+            "end": 57.92,
+            "text": " region, source, year and all."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 57.92,
+            "end": 62.6,
+            "text": " So this kind of information is called metadata information."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 62.6,
+            "end": 67.92,
+            "text": " If you see here it's 24, it's a finance information, but now it's a HR policy information, some"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 67.92,
+            "end": 69.0,
+            "text": " things."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 69.0,
+            "end": 72.76,
+            "text": " So now I have few of the documents here, normal documents."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 72.76,
+            "end": 76.88,
+            "text": " I have changed them and I'm stored it into the vector store."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 76.88,
+            "end": 80.72,
+            "text": " But while storing into the vector store, I'm adding some kind of metadata information"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 80.72,
+            "end": 83.64,
+            "text": " as well along with the actual check information."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 83.64,
+            "end": 89.08,
+            "text": " So one of the major use case here is, let's say you are building a chart board of some"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 89.08,
+            "end": 93.56,
+            "text": " documents, let's say you have some 2000 documents and you have built a rank chart board using"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 93.56,
+            "end": 95.0,
+            "text": " Langraph and all."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 95.0,
+            "end": 100.19999999999999,
+            "text": " Now let's say if the business asks you saying, Hey, at the end we have to even store the"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 100.19999999999999,
+            "end": 105.67999999999999,
+            "text": " URL of the specific document as well from where the response has been fetched."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 105.67999999999999,
+            "end": 106.67999999999999,
+            "text": " So how do we do?"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 107.48,
+            "end": 111.04,
+            "text": " We first read those documents, that's the first step."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 111.04,
+            "end": 114.68,
+            "text": " And then we check those documents, that's the second step."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 114.68,
+            "end": 123.28,
+            "text": " And the third step is we keep the metadata as well, like the URL of each doc."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 123.28,
+            "end": 128.96,
+            "text": " Let's say if the doc is changed into five chunks, let's assume the document is changed"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 128.96,
+            "end": 130.14000000000001,
+            "text": " into five chunks."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 130.14,
+            "end": 138.1,
+            "text": " So for all those five chunks in the metadata, we keep the URL of that specific document"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 138.1,
+            "end": 139.45999999999998,
+            "text": " for all those five chunks."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 139.45999999999998,
+            "end": 144.54,
+            "text": " So whenever the response has been fetched by our vector DB, whenever the similarity"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 144.54,
+            "end": 152.14,
+            "text": " score has been given as a high score by our vector retrieval while retrieving, and if"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 152.14,
+            "end": 155.85999999999999,
+            "text": " it is of that specific chunk, we have the metadata information and there is a URL as"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 155.85999999999999,
+            "end": 156.85999999999999,
+            "text": " well."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 156.86,
+            "end": 162.18,
+            "text": " And while generating the response, we even add this document URL as well."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 162.18,
+            "end": 167.78,
+            "text": " That's the one of the use case which I have solved in the real time to show the original"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 167.78,
+            "end": 173.94000000000003,
+            "text": " reference document in the response and how we are doing that original reference URL is"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 173.94000000000003,
+            "end": 178.38000000000002,
+            "text": " by storing that in the metadata information and fetching it while retrieving."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 178.38000000000002,
+            "end": 181.98000000000002,
+            "text": " So I'll show you while we're retrieving, what are the information we get so that we'll understand"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 181.98000000000002,
+            "end": 183.86,
+            "text": " it, but not just the URL."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 183.86,
+            "end": 187.86,
+            "text": " You can store any kind of information, the year of the document and the source of the"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 187.86,
+            "end": 189.42000000000002,
+            "text": " document and everything."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 189.42000000000002,
+            "end": 194.22000000000003,
+            "text": " And another use case is let's say you have an HR policy for the year 2025 and your company"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 194.22000000000003,
+            "end": 196.60000000000002,
+            "text": " policies might change in 2026."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 196.60000000000002,
+            "end": 201.06,
+            "text": " So when you have this kind of metadata filter, you can override this information in the vector"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 201.06,
+            "end": 206.82000000000002,
+            "text": " database or else if you don't want to override, if you want to keep all the years information,"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 206.82000000000002,
+            "end": 208.9,
+            "text": " then you can keep all the years information as well."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 208.9,
+            "end": 213.9,
+            "text": " But while fetching from the metadata, we make sure we fetch only the very latest year"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 213.9,
+            "end": 215.78,
+            "text": " 2026 alone by applying the filter."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 215.78,
+            "end": 220.98000000000002,
+            "text": " I'll show you on how we apply the filter in the metadata so that our rag boat is up to"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 220.98000000000002,
+            "end": 221.98000000000002,
+            "text": " date."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 221.98000000000002,
+            "end": 226.5,
+            "text": " So this metadata columns are even helping us to update the information in the vector"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 226.5,
+            "end": 230.66,
+            "text": " DB when we have the fresh information."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 230.66,
+            "end": 235.62,
+            "text": " One of the problems with fine tuning is updating the model when we go with fine tuning technique"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 235.62,
+            "end": 236.62,
+            "text": " is costly."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 236.62,
+            "end": 240.46,
+            "text": " That's why we come to the rag, but even the rag information can be updated."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 240.46,
+            "end": 241.82,
+            "text": " How do you update that information?"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 241.82,
+            "end": 247.58,
+            "text": " So one of the techniques is by using the metadata information."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 247.58,
+            "end": 251.62,
+            "text": " So now if we come to the code, so I have an ingest.py file where I'm testing same pine"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 251.62,
+            "end": 252.62,
+            "text": " cone connection."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 252.62,
+            "end": 256.46,
+            "text": " I'm checking if there are indexes and if the index is not there, I'm just creating the"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 256.46,
+            "end": 258.74,
+            "text": " indexes with these dimensions."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 258.74,
+            "end": 264.86,
+            "text": " There's one important thing is the dimensions here is 1536 and the embedding model should"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 264.86,
+            "end": 266.64,
+            "text": " also generate 1536."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 266.64,
+            "end": 271.58000000000004,
+            "text": " If the embedding model generates higher dimensions, then we can't write into this particular index"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 271.58000000000004,
+            "end": 272.58000000000004,
+            "text": " higher or lower."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 272.58000000000004,
+            "end": 276.58000000000004,
+            "text": " If we generate this by default, generate 1536 dimensions."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 276.58000000000004,
+            "end": 280.54,
+            "text": " So that's why while creating the index, I kept the dimension is 1536."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 280.54,
+            "end": 281.8,
+            "text": " That's it."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 281.8,
+            "end": 282.98,
+            "text": " And we created the indexes."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 282.98,
+            "end": 286.56,
+            "text": " And if you see, these are the files we have, the path and the metadata fields for each"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 286.56,
+            "end": 290.78000000000003,
+            "text": " and every file inside this folder for each and everything."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 290.78000000000003,
+            "end": 292.82,
+            "text": " I'm just keeping the metadata information."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 292.82,
+            "end": 293.82,
+            "text": " That's it."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 293.82,
+            "end": 296.02,
+            "text": " So I'm checking the information."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 296.02,
+            "end": 298.14,
+            "text": " I have the text splitter class to chunk."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 298.14,
+            "end": 300.58,
+            "text": " Now I'm iterating file by file."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 300.58,
+            "end": 305.86,
+            "text": " I'm opening each file and using that recursive text splitter, I'm splitting that particular"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 305.86,
+            "end": 312.21999999999997,
+            "text": " chunk and for each chunk, I am again iterating and appending to this documents variable of"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 312.21999999999997,
+            "end": 318.34,
+            "text": " type document, the page content with nothing but the chunked content and the metadata fields."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 318.34,
+            "end": 321.02,
+            "text": " These metadata fields are coming from the file."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 321.02,
+            "end": 322.82,
+            "text": " File is nothing but the files."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 322.82,
+            "end": 326.7,
+            "text": " Index is nothing but this particular metadata information."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 326.7,
+            "end": 327.7,
+            "text": " That's it."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 327.7,
+            "end": 330.54,
+            "text": " So that's why I'm getting the metadata and appending to these documents."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 330.54,
+            "end": 332.14,
+            "text": " We did not still convert into the embeddings."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 332.14,
+            "end": 337.42,
+            "text": " So these documents I'm iterating one by one and I'm converting into embeddings and then"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 337.42,
+            "end": 343.18,
+            "text": " that embeddings and the metadata information I'm updating into this particular list."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 343.18,
+            "end": 347.58,
+            "text": " And this list I'm writing into the vector DB index."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 347.58,
+            "end": 348.58,
+            "text": " That's it."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 348.58,
+            "end": 349.58,
+            "text": " And I'm creating a namespace here."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 349.58,
+            "end": 353.14,
+            "text": " So a namespace in Pinecone is nothing but a kind of a subfolder we can think."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 353.14,
+            "end": 354.34,
+            "text": " Let's say you have all the policy information."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 354.34,
+            "end": 357.65999999999997,
+            "text": " You might have HR policy, company policy, finance policy and all."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 357.65999999999997,
+            "end": 361.65999999999997,
+            "text": " If you want to segregate separately, then you can use namespace so that while searching"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 361.65999999999997,
+            "end": 365.65999999999997,
+            "text": " you can even filter based on the namespace and search only in that namespace."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 365.65999999999997,
+            "end": 371.41999999999996,
+            "text": " So these are the techniques to avoid searching on the whole vector DB, the metadata filtering,"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 371.41999999999996,
+            "end": 373.26,
+            "text": " the namespace and all those things."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 373.26,
+            "end": 374.26,
+            "text": " And we ingest the data."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 374.26,
+            "end": 381.14,
+            "text": " So if I run this particular code, yes, the data has been ingested."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 381.14,
+            "end": 384.86,
+            "text": " Now if I go here and this is my fresh data, that's it."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 384.86,
+            "end": 390.18,
+            "text": " If you see that's a chunk is actual text information and then the metadata information."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 390.18,
+            "end": 393.98,
+            "text": " As we discussed, we can use metadata to update these records."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 393.98,
+            "end": 398.26,
+            "text": " And in case if you want to filter out while fetching, we can use and we can even use in"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 398.26,
+            "end": 403.78,
+            "text": " the scenarios like URL where we can store this particular original document URL and"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 404.29999999999995,
+            "end": 407.85999999999996,
+            "text": " return that in the response to the user for the ragboat, which we will see in the coming"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 407.85999999999996,
+            "end": 409.58,
+            "text": " videos."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 409.58,
+            "end": 416.29999999999995,
+            "text": " So now if I go to the main.py file, I'm just in this file, we'll see how and how we can"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 416.29999999999995,
+            "end": 418.61999999999995,
+            "text": " filter the metadata."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 418.61999999999995,
+            "end": 422.26,
+            "text": " Right now we have added the metadata and written into the vector database."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 422.26,
+            "end": 424.65999999999997,
+            "text": " Now we have to leverage this added metadata."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 424.65999999999997,
+            "end": 426.94,
+            "text": " That is we look into the here."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 426.94,
+            "end": 428.5,
+            "text": " So I have the Pinecone connection."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 428.5,
+            "end": 429.5,
+            "text": " I have the index."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 429.5,
+            "end": 431.3,
+            "text": " I have the embeddings."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 431.3,
+            "end": 434.58,
+            "text": " And then I have the query, which I'm embedding the input query."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 434.58,
+            "end": 436.3,
+            "text": " How can the diseases be prevented?"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 436.3,
+            "end": 440.3,
+            "text": " So these diseases information will be there only in the medical guide."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 440.3,
+            "end": 445.38,
+            "text": " I don't need to search that in the financial report namespace or HR policy namespace and"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 445.38,
+            "end": 446.38,
+            "text": " all."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 446.38,
+            "end": 450.38,
+            "text": " So if you see index.search and this is the query, return me the top five results and"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 450.38,
+            "end": 454.02,
+            "text": " return me these fields only out of all the fields we have in the vector."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 454.02,
+            "end": 456.5,
+            "text": " So return me only these fields because we have many other fields."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 456.5,
+            "end": 457.5,
+            "text": " I don't need chunk ID."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 457.5,
+            "end": 462.3,
+            "text": " I just need department, the chunk text and the year."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 462.3,
+            "end": 463.3,
+            "text": " That's it."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 463.3,
+            "end": 465.78,
+            "text": " So out of all these, I'm just filtering and asking only these fields."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 465.78,
+            "end": 467.16,
+            "text": " Directly you can do."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 467.16,
+            "end": 471.98,
+            "text": " If you see here, if not, you can even do some things like if you see here, we just added"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 471.98,
+            "end": 472.98,
+            "text": " fields, right?"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 472.98,
+            "end": 477.46,
+            "text": " There is another parameter called filter here where for the department equal to medical"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 477.46,
+            "end": 482.78,
+            "text": " only filter these things because here we have a thing called department like HR."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 482.78,
+            "end": 485.98,
+            "text": " And if I scroll down, there are other departments, finance and medical."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 485.98,
+            "end": 489.70000000000005,
+            "text": " So I'm filtering out only these kind of fields and only search in those fields only."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 489.70000000000005,
+            "end": 494.34000000000003,
+            "text": " I don't need to search in finance and all because this is a question related to the"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 494.34000000000003,
+            "end": 495.62,
+            "text": " medical thing."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 495.62,
+            "end": 497.22,
+            "text": " So that's why I need to search only in the medical."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 497.22,
+            "end": 500.74,
+            "text": " So we can add this kind of filters here."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 500.74,
+            "end": 502.22,
+            "text": " And what are the fields you want to fetch?"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 502.22,
+            "end": 503.54,
+            "text": " These are the fields you want to fetch."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 503.54,
+            "end": 508.94,
+            "text": " There are other techniques like in the, I mean the input query can be in HR or medical"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 508.94,
+            "end": 509.94,
+            "text": " like that."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 509.94,
+            "end": 514.58,
+            "text": " EQ means equal to and all these kind of filters we can add."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 514.58,
+            "end": 520.0600000000001,
+            "text": " Like all the where condition filters in an SQL statement, right?"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 520.0600000000001,
+            "end": 528.62,
+            "text": " So when I do this, if I just copy paste the response, see if you see the, there are two"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 528.62,
+            "end": 531.5400000000001,
+            "text": " print statements I have added in my main."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 531.5400000000001,
+            "end": 538.7,
+            "text": " I added two filters, this one with the equals to medical and the first one is a whole search."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 538.7,
+            "end": 540.3000000000001,
+            "text": " And now that response has been kept here."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 540.3,
+            "end": 548.74,
+            "text": " If you just check this response, see in both the cases, we got this chunk with the highest"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 548.74,
+            "end": 552.5799999999999,
+            "text": " core 0.5 similarity, and this is the chunk text."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 552.5799999999999,
+            "end": 556.66,
+            "text": " And once we chunk after the chunk test, we have the department and year because these"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 556.66,
+            "end": 560.0799999999999,
+            "text": " are all the fields we are asking here, chunk test, department, year."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 560.0799999999999,
+            "end": 562.9799999999999,
+            "text": " So those fields only we got in the response that way."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 562.9799999999999,
+            "end": 564.8599999999999,
+            "text": " So that's all about metadata filtering."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 564.8599999999999,
+            "end": 569.5799999999999,
+            "text": " As I said, the major use case, at least I have used in the real time is to filter them"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 569.86,
+            "end": 576.22,
+            "text": " in the vector database so that we can no need to search the whole vector database and we"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 576.22,
+            "end": 577.9000000000001,
+            "text": " can search in a specific."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 577.9000000000001,
+            "end": 582.7800000000001,
+            "text": " And the second use case is we can use the metadata to overwrite or update the information"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 582.7800000000001,
+            "end": 584.3000000000001,
+            "text": " in the vector DB."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 584.3000000000001,
+            "end": 589.86,
+            "text": " And the third use case I have used is to add the original URL of the document for my rank"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 589.86,
+            "end": 594.74,
+            "text": " board so that the in case if the response is not relevant or if the user wants to navigate"
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 594.74,
+            "end": 598.5400000000001,
+            "text": " to that specific document directly, he can navigate to the document."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 598.54,
+            "end": 599.78,
+            "text": " So these are all the use case."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 599.78,
+            "end": 603.42,
+            "text": " The last use case, we look into it in another agentic right video."
+        },
+        {
+            "number": "11",
+            "title": "RAG  Metadata Filtering",
+            "start": 603.42,
+            "end": 604.62,
+            "text": " Thank you so much for watching."
+        }
+    ],
+    "text": " Hello guys, welcome to another video. In this video, we will try to understand what is metadata filtering. So there is an option called metadata filtering in vector databases. Till now we have seen how to do the similarity search, different techniques of similarity search in the previous videos. And then in the very recent video, we saw what is hybrid search and how hybrid search works, how to make an hybrid search, what is alpha value and all those things. So now along with those at the vector DB level, we can even do a filter of metadata as well. So when you go to the vector DBs, if you see this is a specific index we have written the data into and inside this index we check the data and we store. If you see, check text is a text where we have the information, all the actual text information which is checked. But there are other fields like which department this belongs to, what is the document type, region, source, year and all. So this kind of information is called metadata information. If you see here it's 24, it's a finance information, but now it's a HR policy information, some things. So now I have few of the documents here, normal documents. I have changed them and I'm stored it into the vector store. But while storing into the vector store, I'm adding some kind of metadata information as well along with the actual check information. So one of the major use case here is, let's say you are building a chart board of some documents, let's say you have some 2000 documents and you have built a rank chart board using Langraph and all. Now let's say if the business asks you saying, Hey, at the end we have to even store the URL of the specific document as well from where the response has been fetched. So how do we do? We first read those documents, that's the first step. And then we check those documents, that's the second step. And the third step is we keep the metadata as well, like the URL of each doc. Let's say if the doc is changed into five chunks, let's assume the document is changed into five chunks. So for all those five chunks in the metadata, we keep the URL of that specific document for all those five chunks. So whenever the response has been fetched by our vector DB, whenever the similarity score has been given as a high score by our vector retrieval while retrieving, and if it is of that specific chunk, we have the metadata information and there is a URL as well. And while generating the response, we even add this document URL as well. That's the one of the use case which I have solved in the real time to show the original reference document in the response and how we are doing that original reference URL is by storing that in the metadata information and fetching it while retrieving. So I'll show you while we're retrieving, what are the information we get so that we'll understand it, but not just the URL. You can store any kind of information, the year of the document and the source of the document and everything. And another use case is let's say you have an HR policy for the year 2025 and your company policies might change in 2026. So when you have this kind of metadata filter, you can override this information in the vector database or else if you don't want to override, if you want to keep all the years information, then you can keep all the years information as well. But while fetching from the metadata, we make sure we fetch only the very latest year 2026 alone by applying the filter. I'll show you on how we apply the filter in the metadata so that our rag boat is up to date. So this metadata columns are even helping us to update the information in the vector DB when we have the fresh information. One of the problems with fine tuning is updating the model when we go with fine tuning technique is costly. That's why we come to the rag, but even the rag information can be updated. How do you update that information? So one of the techniques is by using the metadata information. So now if we come to the code, so I have an ingest.py file where I'm testing same pine cone connection. I'm checking if there are indexes and if the index is not there, I'm just creating the indexes with these dimensions. There's one important thing is the dimensions here is 1536 and the embedding model should also generate 1536. If the embedding model generates higher dimensions, then we can't write into this particular index higher or lower. If we generate this by default, generate 1536 dimensions. So that's why while creating the index, I kept the dimension is 1536. That's it. And we created the indexes. And if you see, these are the files we have, the path and the metadata fields for each and every file inside this folder for each and everything. I'm just keeping the metadata information. That's it. So I'm checking the information. I have the text splitter class to chunk. Now I'm iterating file by file. I'm opening each file and using that recursive text splitter, I'm splitting that particular chunk and for each chunk, I am again iterating and appending to this documents variable of type document, the page content with nothing but the chunked content and the metadata fields. These metadata fields are coming from the file. File is nothing but the files. Index is nothing but this particular metadata information. That's it. So that's why I'm getting the metadata and appending to these documents. We did not still convert into the embeddings. So these documents I'm iterating one by one and I'm converting into embeddings and then that embeddings and the metadata information I'm updating into this particular list. And this list I'm writing into the vector DB index. That's it. And I'm creating a namespace here. So a namespace in Pinecone is nothing but a kind of a subfolder we can think. Let's say you have all the policy information. You might have HR policy, company policy, finance policy and all. If you want to segregate separately, then you can use namespace so that while searching you can even filter based on the namespace and search only in that namespace. So these are the techniques to avoid searching on the whole vector DB, the metadata filtering, the namespace and all those things. And we ingest the data. So if I run this particular code, yes, the data has been ingested. Now if I go here and this is my fresh data, that's it. If you see that's a chunk is actual text information and then the metadata information. As we discussed, we can use metadata to update these records. And in case if you want to filter out while fetching, we can use and we can even use in the scenarios like URL where we can store this particular original document URL and return that in the response to the user for the ragboat, which we will see in the coming videos. So now if I go to the main.py file, I'm just in this file, we'll see how and how we can filter the metadata. Right now we have added the metadata and written into the vector database. Now we have to leverage this added metadata. That is we look into the here. So I have the Pinecone connection. I have the index. I have the embeddings. And then I have the query, which I'm embedding the input query. How can the diseases be prevented? So these diseases information will be there only in the medical guide. I don't need to search that in the financial report namespace or HR policy namespace and all. So if you see index.search and this is the query, return me the top five results and return me these fields only out of all the fields we have in the vector. So return me only these fields because we have many other fields. I don't need chunk ID. I just need department, the chunk text and the year. That's it. So out of all these, I'm just filtering and asking only these fields. Directly you can do. If you see here, if not, you can even do some things like if you see here, we just added fields, right? There is another parameter called filter here where for the department equal to medical only filter these things because here we have a thing called department like HR. And if I scroll down, there are other departments, finance and medical. So I'm filtering out only these kind of fields and only search in those fields only. I don't need to search in finance and all because this is a question related to the medical thing. So that's why I need to search only in the medical. So we can add this kind of filters here. And what are the fields you want to fetch? These are the fields you want to fetch. There are other techniques like in the, I mean the input query can be in HR or medical like that. EQ means equal to and all these kind of filters we can add. Like all the where condition filters in an SQL statement, right? So when I do this, if I just copy paste the response, see if you see the, there are two print statements I have added in my main. I added two filters, this one with the equals to medical and the first one is a whole search. And now that response has been kept here. If you just check this response, see in both the cases, we got this chunk with the highest core 0.5 similarity, and this is the chunk text. And once we chunk after the chunk test, we have the department and year because these are all the fields we are asking here, chunk test, department, year. So those fields only we got in the response that way. So that's all about metadata filtering. As I said, the major use case, at least I have used in the real time is to filter them in the vector database so that we can no need to search the whole vector database and we can search in a specific. And the second use case is we can use the metadata to overwrite or update the information in the vector DB. And the third use case I have used is to add the original URL of the document for my rank board so that the in case if the response is not relevant or if the user wants to navigate to that specific document directly, he can navigate to the document. So these are all the use case. The last use case, we look into it in another agentic right video. Thank you so much for watching."
+}

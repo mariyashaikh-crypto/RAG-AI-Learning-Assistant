@@ -1,0 +1,1349 @@
+{
+    "chunks": [
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 0.0,
+            "end": 2.04,
+            "text": " What is machine learning?"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 2.04,
+            "end": 7.22,
+            "text": " At its core, machine learning is about teaching computers to learn from experience."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 7.22,
+            "end": 11.8,
+            "text": " But instead of giving a computer exact step-by-step instructions, we let it figure things out"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 11.8,
+            "end": 15.6,
+            "text": " by showing it examples and letting math do the rest."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 15.6,
+            "end": 20.080000000000002,
+            "text": " So basically, machine learning is when computers learn patterns from data and use them to make"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 20.080000000000002,
+            "end": 24.72,
+            "text": " predictions or decisions without being explicitly programmed for every single step."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 24.72,
+            "end": 29.98,
+            "text": " It's kind of like how you learn not to touch a hot stove as a kid once you got burned."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 29.98,
+            "end": 34.06,
+            "text": " But before I really get into what machine learning is, let me give you more of a contextual"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 34.06,
+            "end": 35.06,
+            "text": " understanding."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 35.06,
+            "end": 39.1,
+            "text": " You might have heard of this little thing called AI over the past few years."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 39.1,
+            "end": 42.1,
+            "text": " I mean, it's not like it's ever mentioned."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 42.1,
+            "end": 46.34,
+            "text": " Okay, yeah, it's everywhere."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 46.34,
+            "end": 49.86,
+            "text": " If buzzwords had a leaderboard, AI would be number one."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 49.86,
+            "end": 53.94,
+            "text": " But the thing about AI is that it's a very broad field."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 53.94,
+            "end": 58.980000000000004,
+            "text": " At its core, AI, or artificial intelligence, is about building systems that can perform"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 58.98,
+            "end": 62.58,
+            "text": " tasks that normally require human intelligence."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 62.58,
+            "end": 67.34,
+            "text": " Things like recognizing speech, making decisions, answering questions, or suggesting what you"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 67.34,
+            "end": 70.97999999999999,
+            "text": " should watch next when you really should be going to bed."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 70.97999999999999,
+            "end": 72.3,
+            "text": " Okay, cool."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 72.3,
+            "end": 75.22,
+            "text": " So what does this have to do with machine learning?"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 75.22,
+            "end": 80.44,
+            "text": " Well, it turns out that machine learning is a subset of AI."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 80.44,
+            "end": 85.74,
+            "text": " It's basically the engine that powers AI's digital brain to actually learn and improve."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 85.78,
+            "end": 90.53999999999999,
+            "text": " Basically, if AI is about simulating human intelligence, then machine learning is the"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 90.53999999999999,
+            "end": 93.61999999999999,
+            "text": " way to actually make that happen."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 93.61999999999999,
+            "end": 98.69999999999999,
+            "text": " Instead of explicit programming, machine learning uses algorithms to analyze large amounts of"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 98.69999999999999,
+            "end": 103.22,
+            "text": " data in order to learn and improve from experience."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 103.22,
+            "end": 107.06,
+            "text": " Along with AI and machine learning, there is an even further subset of machine learning"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 107.06,
+            "end": 112.52,
+            "text": " called deep learning that uses layered neural networks inspired by the human brain, which"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 112.6,
+            "end": 116.0,
+            "text": " learns even more complex patterns from data."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 116.0,
+            "end": 119.96,
+            "text": " Feel free to comment below if you want a separate video for deep learning, as it's a beast of"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 119.96,
+            "end": 122.11999999999999,
+            "text": " a topic on its own."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 122.11999999999999,
+            "end": 127.16,
+            "text": " Okay, now that we've established what machine learning is, let's talk about the core components"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 127.16,
+            "end": 130.0,
+            "text": " that make a machine learning system actually work."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 130.0,
+            "end": 133.4,
+            "text": " To keep it simple, we will focus on four key areas."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 133.4,
+            "end": 139.1,
+            "text": " Data, algorithms, models, and training and evaluation."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 139.1,
+            "end": 140.72,
+            "text": " First up, data."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 140.72,
+            "end": 144.48,
+            "text": " Data is like the ingredients that the machine learning feeds on."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 144.48,
+            "end": 148.52,
+            "text": " Without data, there's literally nothing for the machines to learn from."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 148.52,
+            "end": 152.04,
+            "text": " No data would be like having a car with no gasoline."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 152.04,
+            "end": 153.6,
+            "text": " But here's the thing."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 153.6,
+            "end": 157.52,
+            "text": " While you need a lot of data to train your machine, the quality of your data can be more"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 157.52,
+            "end": 159.74,
+            "text": " important than the quantity."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 159.74,
+            "end": 164.07999999999998,
+            "text": " You put garbage data in, you often get garbage data out."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 164.07999999999998,
+            "end": 168.72,
+            "text": " For example, if you have a data set that's full of errors, biases, or irrelevant features,"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 168.72,
+            "end": 171.92,
+            "text": " well, no algorithm can fix that."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 171.92,
+            "end": 178.44,
+            "text": " The importance of having quality data is largely the reason why data analysts and data scientists exist."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 178.44,
+            "end": 181.44,
+            "text": " So what does quality data look like?"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 181.44,
+            "end": 183.56,
+            "text": " Quality data has three things."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 183.56,
+            "end": 188.28,
+            "text": " Accuracy, which means the data should represent reality as closely as possible."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 188.28,
+            "end": 193.44,
+            "text": " Relevance, which means the features should directly relate to the prediction task."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 193.44,
+            "end": 199.52,
+            "text": " And cleanliness, which removes duplicates, fixes typos, and handles missing values."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 199.52,
+            "end": 205.38,
+            "text": " Also, more data generally equals better performance, because it covers more scenarios for edge"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 205.38,
+            "end": 211.76,
+            "text": " cases and lets the model learn subtle relationships it couldn't spot with a limited sample size."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 211.76,
+            "end": 216.16,
+            "text": " But more data only helps if it's good data."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 216.16,
+            "end": 222.07999999999998,
+            "text": " Millions of noisy or irrelevant data features will actually work against your goals."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 222.12,
+            "end": 224.72,
+            "text": " Next up, we have algorithms."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 224.72,
+            "end": 229.64000000000001,
+            "text": " Algorithms are the learning process where we actually extract meaningful insights from the data."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 229.64000000000001,
+            "end": 234.16000000000003,
+            "text": " It's a set of rules and calculations we use to extract patterns, instructions, or decision"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 234.16000000000003,
+            "end": 236.98000000000002,
+            "text": " strategies from the data set."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 236.98000000000002,
+            "end": 241.4,
+            "text": " If data is like the ingredients that machine learning needs, then algorithms are kind of"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 241.4,
+            "end": 245.60000000000002,
+            "text": " like the chef that turns the raw data into something useful."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 245.60000000000002,
+            "end": 249.60000000000002,
+            "text": " There are tons of different algorithms in machine learning, such as linear regression,"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 249.6,
+            "end": 254.0,
+            "text": " logistic regression, principal component analysis, clustering, anomaly detection."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 254.0,
+            "end": 257.96,
+            "text": " Basically, there's way too many algorithms to cover in the scope of this one video."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 257.96,
+            "end": 261.6,
+            "text": " But the point is that the algorithms vary by task."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 261.6,
+            "end": 266.36,
+            "text": " Some algorithms are good for prediction, others for pattern discovery, and others for trial"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 266.36,
+            "end": 268.32,
+            "text": " and error learning."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 268.32,
+            "end": 273.68,
+            "text": " These algorithms iteratively adjust their internal parameters, called weights and biases,"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 273.68,
+            "end": 276.08,
+            "text": " to improve their accuracy."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 276.08,
+            "end": 279.42,
+            "text": " It's kind of like tuning an old AM FM radio."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 279.42,
+            "end": 283.7,
+            "text": " At first, you hear a bunch of static, but you adjust the dials with tiny nudges until"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 283.7,
+            "end": 285.90000000000003,
+            "text": " the station comes through."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 285.90000000000003,
+            "end": 288.38,
+            "text": " That's basically what a learning algorithm does."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 288.38,
+            "end": 293.54,
+            "text": " It keeps tweaking its internal parameters, step by step, to reduce the noise, or the"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 293.54,
+            "end": 296.54,
+            "text": " errors, until the predictions come through clearly."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 296.54,
+            "end": 299.66,
+            "text": " The next component is the model."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 299.66,
+            "end": 305.94,
+            "text": " If data is the ingredients, and the algorithm is the chef, then the model is like the dish."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 305.94,
+            "end": 308.78000000000003,
+            "text": " It's what you get after the algorithm is done learning."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 309.14,
+            "end": 314.29999999999995,
+            "text": " Basically, the model is a mathematical function that takes input and produces an output, whether"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 314.29999999999995,
+            "end": 319.73999999999995,
+            "text": " that's a prediction, classification, recommendation, or action, all based on what it learned from"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 319.73999999999995,
+            "end": 321.73999999999995,
+            "text": " the training data."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 321.73999999999995,
+            "end": 326.34,
+            "text": " For example, your model can predict whether your emails are spam or not spam, which is"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 326.34,
+            "end": 328.5,
+            "text": " called classification."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 328.5,
+            "end": 332.85999999999996,
+            "text": " Or you can train your model to estimate the price of a house, based on the details of"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 332.85999999999996,
+            "end": 336.41999999999996,
+            "text": " a home, which is something called regression."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 336.41999999999996,
+            "end": 338.65999999999997,
+            "text": " The complexity of the model can vary."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 338.66,
+            "end": 341.3,
+            "text": " It really depends on your end goal."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 341.3,
+            "end": 346.54,
+            "text": " So for example, these models can range from a simple straight line regression equation,"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 346.54,
+            "end": 350.86,
+            "text": " to complex deep networks with billions of parameters."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 350.86,
+            "end": 356.98,
+            "text": " That complexity depends on your problem, data scale, and depth of your pockets."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 356.98,
+            "end": 361.34000000000003,
+            "text": " In short, the model is basically the brain that is the result of your training data and"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 361.34000000000003,
+            "end": 363.34000000000003,
+            "text": " your algorithm."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 363.34000000000003,
+            "end": 367.54,
+            "text": " Lastly, we have training and evaluation."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 367.54,
+            "end": 369.82,
+            "text": " Training is the model's practice phase."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 369.82,
+            "end": 374.02000000000004,
+            "text": " This is where the algorithm has access to data and uses it to learn patterns, adjust"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 374.02000000000004,
+            "end": 378.74,
+            "text": " parameters, and of course, get better at making predictions or decisions."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 378.74,
+            "end": 381.34000000000003,
+            "text": " Machine learning models don't start knowing the rules."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 381.34000000000003,
+            "end": 385.38,
+            "text": " They discover them from exposure to more quality data."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 385.38,
+            "end": 390.06,
+            "text": " Just like how a pro boxer needs to train to improve and sharpen his skills, the model"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 390.06,
+            "end": 391.58000000000004,
+            "text": " needs training as well."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 391.58000000000004,
+            "end": 395.5,
+            "text": " Otherwise, it will end up just making random guesses."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 395.5,
+            "end": 401.38,
+            "text": " Each cycle of training reduces error and improves the ability of the model."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 401.38,
+            "end": 405.62,
+            "text": " Evaluation is exactly how it sounds, which is to assess how our model is doing."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 405.62,
+            "end": 411.18,
+            "text": " If our model is like the dish, then the evaluation is like the taste test."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 411.18,
+            "end": 416.94,
+            "text": " It's where we find out if all that training actually resulted in a capable model."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 416.94,
+            "end": 420.66,
+            "text": " In practice, you will typically see training and evaluation performed by dividing up the"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 420.66,
+            "end": 423.02000000000004,
+            "text": " data into three categories."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 423.02000000000004,
+            "end": 427.70000000000005,
+            "text": " The training set, which is used to initially teach the model using the data."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 427.70000000000005,
+            "end": 432.46000000000004,
+            "text": " The validation set, which is used to tune hyperparameters like the learning rate."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 432.46000000000004,
+            "end": 437.14000000000004,
+            "text": " And the test set, which is used to measure the performance of your model."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 437.14000000000004,
+            "end": 440.5,
+            "text": " The model starts with random or default parameters."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 440.5,
+            "end": 444.26000000000005,
+            "text": " As data flows through the algorithm, predictions are made."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 444.26000000000005,
+            "end": 449.1,
+            "text": " A math formula called a loss function, which might look something like this, is used to"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 449.1,
+            "end": 452.06,
+            "text": " measure how wrong the predictions are."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 452.06,
+            "end": 454.70000000000005,
+            "text": " In case this equation you see on screen makes you want to go,"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 454.70000000000005,
+            "end": 457.70000000000005,
+            "text": " Oh hell no!"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 457.70000000000005,
+            "end": 460.90000000000003,
+            "text": " Don't worry, I'll make it sound super simple."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 460.90000000000003,
+            "end": 465.26000000000005,
+            "text": " This equation is a way of telling the model just how badly it messed up."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 465.26000000000005,
+            "end": 469.26000000000005,
+            "text": " It's kind of like a parent telling their kid, you were this close."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 469.26000000000005,
+            "end": 470.26000000000005,
+            "text": " Try again."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 470.26000000000005,
+            "end": 475.58000000000004,
+            "text": " Basically, a loss function tells the model what it needs to fix."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 475.58,
+            "end": 480.34,
+            "text": " After that, an optimization method such as gradient descent is used to adjust parameters"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 480.34,
+            "end": 482.94,
+            "text": " to reduce that loss."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 482.94,
+            "end": 487.5,
+            "text": " This process repeats itself a bunch of times across the training set until performance"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 487.5,
+            "end": 490.09999999999997,
+            "text": " reaches an acceptable level."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 490.09999999999997,
+            "end": 497.94,
+            "text": " So to sum it all up, training builds the skill and evaluation measures the skill."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 497.94,
+            "end": 502.7,
+            "text": " The types of machine learning you'll hear most often about are supervised, unsupervised,"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 502.82,
+            "end": 506.78,
+            "text": " reinforcement, and semi-supervised learning."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 506.78,
+            "end": 511.09999999999997,
+            "text": " Supervised learning is when the machine learning model learns from labeled examples."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 511.09999999999997,
+            "end": 514.78,
+            "text": " Unsupervised learning is when the model finds patterns or structure in data without any"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 514.78,
+            "end": 516.42,
+            "text": " labels."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 516.42,
+            "end": 520.14,
+            "text": " Reinforcement learning is when the model learns by taking actions and receiving rewards or"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 520.14,
+            "end": 522.62,
+            "text": " penalties from the environment."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 522.62,
+            "end": 527.58,
+            "text": " And in semi-supervised learning, the model learns from a combination of labeled and unlabeled"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 527.58,
+            "end": 528.8199999999999,
+            "text": " data."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 528.82,
+            "end": 532.7800000000001,
+            "text": " In supervised learning, for example, if you have photos of apples and bananas with the"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 532.7800000000001,
+            "end": 537.5,
+            "text": " correct labels, eventually the model will be able to look at a brand new photo and determine"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 537.5,
+            "end": 540.1400000000001,
+            "text": " whether it's an apple or a banana."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 540.1400000000001,
+            "end": 545.08,
+            "text": " This is what's known as classification, when you predict a discrete output."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 545.08,
+            "end": 549.5200000000001,
+            "text": " If you feed the model thousands of housing details and prices, it learns to estimate"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 549.5200000000001,
+            "end": 551.2,
+            "text": " a price for a new house."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 551.2,
+            "end": 555.1,
+            "text": " This is known as regression, where you predict a continuous output."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 555.1,
+            "end": 559.94,
+            "text": " That's kind of like studying for a test with all the answers."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 559.94,
+            "end": 563.22,
+            "text": " Unsupervised learning is where there are no correct answers provided, meaning it's just"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 563.22,
+            "end": 565.82,
+            "text": " raw data with no labels."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 565.82,
+            "end": 567.5400000000001,
+            "text": " So what does the model do?"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 567.5400000000001,
+            "end": 570.94,
+            "text": " Well, the model's job here is to spot structure."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 570.94,
+            "end": 575.34,
+            "text": " Here the focus is to group things that are similar, find patterns, and detect anomalies."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 575.34,
+            "end": 580.62,
+            "text": " It initially has no idea that these are circles, squares, and triangles, but it learns to group"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 580.62,
+            "end": 585.46,
+            "text": " them together based on similar patterns, such as the color of the circles being blue"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 585.46,
+            "end": 587.7,
+            "text": " or the squares having four sides."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 587.7,
+            "end": 591.66,
+            "text": " Unsupervised learning is kind of like walking into a room full of people and figuring out"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 591.66,
+            "end": 596.3,
+            "text": " which ones are introverts versus extroverts based on their behavior patterns."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 596.3,
+            "end": 598.46,
+            "text": " Reinforcement learning is a bit different."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 598.46,
+            "end": 600.78,
+            "text": " It's all about trial and error."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 600.78,
+            "end": 605.34,
+            "text": " Here there's something called an agent that interacts with an environment, takes actions,"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 605.34,
+            "end": 609.34,
+            "text": " gets rewards or penalties, and then tunes its strategy, which is something called a"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 609.34,
+            "end": 613.46,
+            "text": " policy, in order to maximize long-term reward."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 613.46,
+            "end": 616.62,
+            "text": " It's a lot like learning how to play a difficult video game."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 616.62,
+            "end": 622.26,
+            "text": " You die repeatedly, but you get slightly further each time until you master the level."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 622.26,
+            "end": 625.98,
+            "text": " Here's a real-world example of reinforcement learning in action."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 625.98,
+            "end": 630.5,
+            "text": " As you can see, the robot failed at first, but eventually was successful at walking over"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 630.5,
+            "end": 634.3000000000001,
+            "text": " the obstacle, much like humans attempting things for the first time before getting good"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 634.3000000000001,
+            "end": 635.3000000000001,
+            "text": " at it."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 635.3000000000001,
+            "end": 639.14,
+            "text": " And lastly, we have semi-supervised learning."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 639.14,
+            "end": 642.86,
+            "text": " Supervised learning is like the fusion between supervised and unsupervised learning."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 642.86,
+            "end": 644.86,
+            "text": " It's exactly what it sounds like."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 644.86,
+            "end": 649.3,
+            "text": " You have some labeled data, but not enough to train a great supervised model, so you"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 649.3,
+            "end": 654.98,
+            "text": " let the algorithm use the unlabeled data to learn additional structure and improve performance."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 654.98,
+            "end": 659.78,
+            "text": " For instance, if you have a few photos of dogs and cats, each with labels, the model"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 659.78,
+            "end": 663.9,
+            "text": " will look at these labels and features and use what it learned to try and identify the"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 663.9,
+            "end": 667.26,
+            "text": " unlabeled ones."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 667.26,
+            "end": 669.9399999999999,
+            "text": " Think of these as different ways to get good at something."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 669.9399999999999,
+            "end": 673.74,
+            "text": " Kind of like the way we humans learn either by having a teacher, figuring stuff on our"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 673.74,
+            "end": 678.9,
+            "text": " own, or just messing around until we finally get it right."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 678.9,
+            "end": 682.7,
+            "text": " And now, you're smarter in machine learning than you were 10 minutes ago."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 682.7,
+            "end": 683.9,
+            "text": " Congratulations!"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 683.9,
+            "end": 686.9399999999999,
+            "text": " Machine learning is a fascinating and constantly evolving world."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 686.9399999999999,
+            "end": 691.7,
+            "text": " But at the core of it, it isn't some mysterious black box or magic."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 691.7,
+            "end": 696.8199999999999,
+            "text": " It's really just data, algorithms, and some trial and error doing their thing."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 696.82,
+            "end": 700.36,
+            "text": " If you want to learn more about machine learning, I've got a free ebook that breaks machine"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 700.36,
+            "end": 703.74,
+            "text": " learning down in a super simple and easy way."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 703.74,
+            "end": 707.5400000000001,
+            "text": " It goes over all the concepts that I've covered here, but it also does a deeper dive into"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 707.5400000000001,
+            "end": 711.4200000000001,
+            "text": " the different algorithms used, as well as cover some more of the fundamentals of machine"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 711.4200000000001,
+            "end": 712.4200000000001,
+            "text": " learning."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 712.4200000000001,
+            "end": 717.5400000000001,
+            "text": " It's called Machine Learning Simplified, no scary math or complex jargon."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 717.5400000000001,
+            "end": 721.82,
+            "text": " You can click the link in the description or scan the QR code on screen to get your"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 721.82,
+            "end": 722.82,
+            "text": " copy."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 722.82,
+            "end": 726.86,
+            "text": " Open and read it at your own pace, and again, it's totally free."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 726.86,
+            "end": 730.7800000000001,
+            "text": " If you liked this video, please like and subscribe, and leave a comment down below of what topic"
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 730.7800000000001,
+            "end": 732.1800000000001,
+            "text": " you'd like to see covered next."
+        },
+        {
+            "number": "7",
+            "title": "Machine Learning",
+            "start": 732.1800000000001,
+            "end": 733.94,
+            "text": " I'll see you guys in the next video."
+        }
+    ],
+    "text": " What is machine learning? At its core, machine learning is about teaching computers to learn from experience. But instead of giving a computer exact step-by-step instructions, we let it figure things out by showing it examples and letting math do the rest. So basically, machine learning is when computers learn patterns from data and use them to make predictions or decisions without being explicitly programmed for every single step. It's kind of like how you learn not to touch a hot stove as a kid once you got burned. But before I really get into what machine learning is, let me give you more of a contextual understanding. You might have heard of this little thing called AI over the past few years. I mean, it's not like it's ever mentioned. Okay, yeah, it's everywhere. If buzzwords had a leaderboard, AI would be number one. But the thing about AI is that it's a very broad field. At its core, AI, or artificial intelligence, is about building systems that can perform tasks that normally require human intelligence. Things like recognizing speech, making decisions, answering questions, or suggesting what you should watch next when you really should be going to bed. Okay, cool. So what does this have to do with machine learning? Well, it turns out that machine learning is a subset of AI. It's basically the engine that powers AI's digital brain to actually learn and improve. Basically, if AI is about simulating human intelligence, then machine learning is the way to actually make that happen. Instead of explicit programming, machine learning uses algorithms to analyze large amounts of data in order to learn and improve from experience. Along with AI and machine learning, there is an even further subset of machine learning called deep learning that uses layered neural networks inspired by the human brain, which learns even more complex patterns from data. Feel free to comment below if you want a separate video for deep learning, as it's a beast of a topic on its own. Okay, now that we've established what machine learning is, let's talk about the core components that make a machine learning system actually work. To keep it simple, we will focus on four key areas. Data, algorithms, models, and training and evaluation. First up, data. Data is like the ingredients that the machine learning feeds on. Without data, there's literally nothing for the machines to learn from. No data would be like having a car with no gasoline. But here's the thing. While you need a lot of data to train your machine, the quality of your data can be more important than the quantity. You put garbage data in, you often get garbage data out. For example, if you have a data set that's full of errors, biases, or irrelevant features, well, no algorithm can fix that. The importance of having quality data is largely the reason why data analysts and data scientists exist. So what does quality data look like? Quality data has three things. Accuracy, which means the data should represent reality as closely as possible. Relevance, which means the features should directly relate to the prediction task. And cleanliness, which removes duplicates, fixes typos, and handles missing values. Also, more data generally equals better performance, because it covers more scenarios for edge cases and lets the model learn subtle relationships it couldn't spot with a limited sample size. But more data only helps if it's good data. Millions of noisy or irrelevant data features will actually work against your goals. Next up, we have algorithms. Algorithms are the learning process where we actually extract meaningful insights from the data. It's a set of rules and calculations we use to extract patterns, instructions, or decision strategies from the data set. If data is like the ingredients that machine learning needs, then algorithms are kind of like the chef that turns the raw data into something useful. There are tons of different algorithms in machine learning, such as linear regression, logistic regression, principal component analysis, clustering, anomaly detection. Basically, there's way too many algorithms to cover in the scope of this one video. But the point is that the algorithms vary by task. Some algorithms are good for prediction, others for pattern discovery, and others for trial and error learning. These algorithms iteratively adjust their internal parameters, called weights and biases, to improve their accuracy. It's kind of like tuning an old AM FM radio. At first, you hear a bunch of static, but you adjust the dials with tiny nudges until the station comes through. That's basically what a learning algorithm does. It keeps tweaking its internal parameters, step by step, to reduce the noise, or the errors, until the predictions come through clearly. The next component is the model. If data is the ingredients, and the algorithm is the chef, then the model is like the dish. It's what you get after the algorithm is done learning. Basically, the model is a mathematical function that takes input and produces an output, whether that's a prediction, classification, recommendation, or action, all based on what it learned from the training data. For example, your model can predict whether your emails are spam or not spam, which is called classification. Or you can train your model to estimate the price of a house, based on the details of a home, which is something called regression. The complexity of the model can vary. It really depends on your end goal. So for example, these models can range from a simple straight line regression equation, to complex deep networks with billions of parameters. That complexity depends on your problem, data scale, and depth of your pockets. In short, the model is basically the brain that is the result of your training data and your algorithm. Lastly, we have training and evaluation. Training is the model's practice phase. This is where the algorithm has access to data and uses it to learn patterns, adjust parameters, and of course, get better at making predictions or decisions. Machine learning models don't start knowing the rules. They discover them from exposure to more quality data. Just like how a pro boxer needs to train to improve and sharpen his skills, the model needs training as well. Otherwise, it will end up just making random guesses. Each cycle of training reduces error and improves the ability of the model. Evaluation is exactly how it sounds, which is to assess how our model is doing. If our model is like the dish, then the evaluation is like the taste test. It's where we find out if all that training actually resulted in a capable model. In practice, you will typically see training and evaluation performed by dividing up the data into three categories. The training set, which is used to initially teach the model using the data. The validation set, which is used to tune hyperparameters like the learning rate. And the test set, which is used to measure the performance of your model. The model starts with random or default parameters. As data flows through the algorithm, predictions are made. A math formula called a loss function, which might look something like this, is used to measure how wrong the predictions are. In case this equation you see on screen makes you want to go, Oh hell no! Don't worry, I'll make it sound super simple. This equation is a way of telling the model just how badly it messed up. It's kind of like a parent telling their kid, you were this close. Try again. Basically, a loss function tells the model what it needs to fix. After that, an optimization method such as gradient descent is used to adjust parameters to reduce that loss. This process repeats itself a bunch of times across the training set until performance reaches an acceptable level. So to sum it all up, training builds the skill and evaluation measures the skill. The types of machine learning you'll hear most often about are supervised, unsupervised, reinforcement, and semi-supervised learning. Supervised learning is when the machine learning model learns from labeled examples. Unsupervised learning is when the model finds patterns or structure in data without any labels. Reinforcement learning is when the model learns by taking actions and receiving rewards or penalties from the environment. And in semi-supervised learning, the model learns from a combination of labeled and unlabeled data. In supervised learning, for example, if you have photos of apples and bananas with the correct labels, eventually the model will be able to look at a brand new photo and determine whether it's an apple or a banana. This is what's known as classification, when you predict a discrete output. If you feed the model thousands of housing details and prices, it learns to estimate a price for a new house. This is known as regression, where you predict a continuous output. That's kind of like studying for a test with all the answers. Unsupervised learning is where there are no correct answers provided, meaning it's just raw data with no labels. So what does the model do? Well, the model's job here is to spot structure. Here the focus is to group things that are similar, find patterns, and detect anomalies. It initially has no idea that these are circles, squares, and triangles, but it learns to group them together based on similar patterns, such as the color of the circles being blue or the squares having four sides. Unsupervised learning is kind of like walking into a room full of people and figuring out which ones are introverts versus extroverts based on their behavior patterns. Reinforcement learning is a bit different. It's all about trial and error. Here there's something called an agent that interacts with an environment, takes actions, gets rewards or penalties, and then tunes its strategy, which is something called a policy, in order to maximize long-term reward. It's a lot like learning how to play a difficult video game. You die repeatedly, but you get slightly further each time until you master the level. Here's a real-world example of reinforcement learning in action. As you can see, the robot failed at first, but eventually was successful at walking over the obstacle, much like humans attempting things for the first time before getting good at it. And lastly, we have semi-supervised learning. Supervised learning is like the fusion between supervised and unsupervised learning. It's exactly what it sounds like. You have some labeled data, but not enough to train a great supervised model, so you let the algorithm use the unlabeled data to learn additional structure and improve performance. For instance, if you have a few photos of dogs and cats, each with labels, the model will look at these labels and features and use what it learned to try and identify the unlabeled ones. Think of these as different ways to get good at something. Kind of like the way we humans learn either by having a teacher, figuring stuff on our own, or just messing around until we finally get it right. And now, you're smarter in machine learning than you were 10 minutes ago. Congratulations! Machine learning is a fascinating and constantly evolving world. But at the core of it, it isn't some mysterious black box or magic. It's really just data, algorithms, and some trial and error doing their thing. If you want to learn more about machine learning, I've got a free ebook that breaks machine learning down in a super simple and easy way. It goes over all the concepts that I've covered here, but it also does a deeper dive into the different algorithms used, as well as cover some more of the fundamentals of machine learning. It's called Machine Learning Simplified, no scary math or complex jargon. You can click the link in the description or scan the QR code on screen to get your copy. Open and read it at your own pace, and again, it's totally free. If you liked this video, please like and subscribe, and leave a comment down below of what topic you'd like to see covered next. I'll see you guys in the next video."
+}

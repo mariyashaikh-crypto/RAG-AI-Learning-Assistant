@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color: #172033;
+    background: #ffffff;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply m-0 overflow-x-hidden bg-white font-sans text-ink antialiased;
+  }
+
+  button,
+  a,
+  input,
+  textarea {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2;
+  }
+
+  button,
+  a {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  ::selection {
+    @apply bg-brand-100 text-brand-700;
+  }
+}
+
+@layer components {
+  .page-container {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .prose-chat {
+    @apply text-[0.95rem] leading-7 text-slate-700;
+  }
+
+  .prose-chat>*:first-child {
+    @apply mt-0;
+  }
+
+  .prose-chat>*:last-child {
+    @apply mb-0;
+  }
+
+  .prose-chat p,
+  .prose-chat ul,
+  .prose-chat ol,
+  .prose-chat blockquote,
+  .prose-chat pre {
+    @apply my-3;
+  }
+
+  .prose-chat h1,
+  .prose-chat h2,
+  .prose-chat h3 {
+    @apply mb-2 mt-5 font-semibold text-ink;
+  }
+
+  .prose-chat h1 {
+    @apply text-xl;
+  }
+
+  .prose-chat h2 {
+    @apply text-lg;
+  }
+
+  .prose-chat h3 {
+    @apply text-base;
+  }
+
+  .prose-chat ul {
+    @apply list-disc pl-6;
+  }
+
+  .prose-chat ol {
+    @apply list-decimal pl-6;
+  }
+
+  .prose-chat a {
+    @apply font-medium text-brand-600 underline underline-offset-4;
+  }
+
+  .prose-chat blockquote {
+    @apply border-l-4 border-brand-100 pl-4 text-muted;
+  }
+
+  .prose-chat code:not(pre code) {
+    @apply rounded bg-slate-100 px-1.5 py-0.5 font-mono text-[0.88em] text-slate-800;
+  }
+
+  .prose-chat table {
+    @apply my-4 block max-w-full overflow-x-auto border-collapse;
+  }
+
+  .prose-chat th,
+  .prose-chat td {
+    @apply border border-line px-3 py-2 text-left;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

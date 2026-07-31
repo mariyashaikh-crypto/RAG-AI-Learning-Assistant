@@ -1,0 +1,607 @@
+{
+    "chunks": [
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 0.0,
+            "end": 5.82,
+            "text": " Hello all. Today we'll be discussing about the natural language processing in machine"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 5.82,
+            "end": 10.72,
+            "text": " learning. In my previous videos, in my playlist, you have seen different kinds of videos with"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 10.72,
+            "end": 15.120000000000001,
+            "text": " respect to machine learning and deep learning. Whenever I was talking about machine learning,"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 15.120000000000001,
+            "end": 20.84,
+            "text": " I was taking some kind of data. In that data, we had some specific features or columns and"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 20.84,
+            "end": 26.240000000000002,
+            "text": " each column were either an integer or in categorical features or it was also having text. Most"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 26.24,
+            "end": 30.4,
+            "text": " of the text were in the form of category features and we use some data pre-processing techniques"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 30.4,
+            "end": 36.28,
+            "text": " to handle those category features. But now just let me take an example. If your whole"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 36.28,
+            "end": 41.76,
+            "text": " feature is of text only, how do you handle that? Let me just take an example of that."
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 41.76,
+            "end": 45.92,
+            "text": " Let us take an Amazon website where you buy different kinds of products. After buying"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 45.92,
+            "end": 49.92,
+            "text": " products, people usually like to put comments with respect to that product, like how the"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 49.92,
+            "end": 56.16,
+            "text": " product is actually performing, or you can basically say it as reviews. Some of the reviews"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 56.16,
+            "end": 61.4,
+            "text": " that you see, when we as a human read that review, we'll be basically able to understand"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 61.4,
+            "end": 66.24,
+            "text": " whether that review is a positive sentiment or a negative sentiment. But how can a machine"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 66.24,
+            "end": 71.2,
+            "text": " learning model understand whether that review is a positive sentiment or a negative sentiment?"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 71.2,
+            "end": 76.72,
+            "text": " Because it is not a human. It cannot understand sarcasm. For that purpose, we basically use"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 76.72,
+            "end": 81.1,
+            "text": " natural language processing. There are different kinds of text processing that we usually use"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 81.1,
+            "end": 86.74,
+            "text": " to handle those kinds of scenarios. One of the very most recent applications of natural"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 86.74,
+            "end": 93.97999999999999,
+            "text": " language processing is basically the use of Google Assistant in phones, in our smartphones."
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 93.97999999999999,
+            "end": 98.38,
+            "text": " Some other examples are Shree that is used in iPhones, and you have also heard of Google"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 98.38,
+            "end": 103.58,
+            "text": " Assistant. You have heard of Amazon Alexa. So these are some of the examples. With respect"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 103.58,
+            "end": 109.94,
+            "text": " to applications, I hope everybody remembers Gmail. Many of them use Gmail. In Gmail, I"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 109.98,
+            "end": 114.3,
+            "text": " think you have heard of something called a spam classifier. So spam classifier works"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 114.3,
+            "end": 120.06,
+            "text": " completely based on natural language processing. So in this playlist, we'll be completely discussing"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 120.06,
+            "end": 124.86,
+            "text": " about natural language processing, all best practices that are actually used for doing"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 124.86,
+            "end": 130.42,
+            "text": " text processing, and we'll be discussing all the scenarios. NLTK is a very good library"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 130.42,
+            "end": 138.06,
+            "text": " that is present in natural language processing. And this library is an open source. This library"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 138.22,
+            "end": 143.58,
+            "text": " does a lot of functionalities, something called tokenization. It also performs stemming,"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 143.58,
+            "end": 149.9,
+            "text": " lemmatization. Stemming and lemmatization we'll be discussing after a while. Now, let's just see"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 149.9,
+            "end": 155.58,
+            "text": " how the tokenization basically happens. Now, as defined, tokenization basically means that we'll"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 155.58,
+            "end": 161.62,
+            "text": " be taking a paragraph of quotes or sentences, and then we'll be converting those paragraphs"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 161.62,
+            "end": 168.54,
+            "text": " into sentences. Now, this is one of the famous speech that I have taken from our former president"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 168.54,
+            "end": 175.66,
+            "text": " of India, that is APJ Abdul Kalam. He was a really good scientist. He was a very good president"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 175.66,
+            "end": 181.70000000000002,
+            "text": " altogether. And this was the speech that was written and that was actually spoken by him in"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 181.70000000000002,
+            "end": 190.74,
+            "text": " one of the recent seminars in IIT. So this was the speech that is taken, and we'll try to take"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 190.74,
+            "end": 195.78,
+            "text": " this particular speech and we'll try to apply different kind of text processing in this particular"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 195.78,
+            "end": 203.22,
+            "text": " speech. So always the first step is basically to import the NLTK. So once I import the NLTK,"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 203.22,
+            "end": 208.34,
+            "text": " this library is the most important library because all the text pre-processing will be using this"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 208.34,
+            "end": 215.46,
+            "text": " particular NLTK library. Now, after importing the library, it'll take some time and just let us wait"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 215.46,
+            "end": 220.58,
+            "text": " till this gets executed. Now you can see that this has got executed successfully. As soon as we"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 220.58,
+            "end": 227.06,
+            "text": " import NLTK, the next step is that we need to download all the libraries inside NLTK. So once"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 227.06,
+            "end": 233.06,
+            "text": " I execute this, in the right hand side, you'll see that there will be a pop-up that will be opening."
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 233.06,
+            "end": 237.70000000000002,
+            "text": " You click this pop-up and you can see all the packages that are present inside NLTK."
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 238.26000000000002,
+            "end": 244.5,
+            "text": " The first step is always you just click the first identifier, that is all. We are just"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 244.5,
+            "end": 249.06,
+            "text": " considering all the packages, so you don't have to download it again and again. After clicking on"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 249.06,
+            "end": 254.82,
+            "text": " this, you just click on this download button. As soon as you download this, all the packages will"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 254.82,
+            "end": 261.14,
+            "text": " be downloaded from this particular server index or server URL and it will be downloaded inside"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 261.14,
+            "end": 267.3,
+            "text": " your local data where your Anaconda is actually installed. So just to perform this particular"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 267.3,
+            "end": 273.38,
+            "text": " step before you do the text pre-processing because all the packages are present inside this NLTK and"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 273.38,
+            "end": 279.14,
+            "text": " you have to download it manually by using NLTK.download. I'm not going to download it"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 279.14,
+            "end": 287.46,
+            "text": " because I've already downloaded all the packages altogether. After that,"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 287.46,
+            "end": 291.78,
+            "text": " what you do is that after you download it, you don't have to download this library separately,"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 291.78,
+            "end": 297.86,
+            "text": " so I can remove this. Once you download it, all the packages will get downloaded automatically."
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 297.86,
+            "end": 303.3,
+            "text": " Now, the first step of tokenization is that I will always be having a paragraph or a corpus."
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 303.3,
+            "end": 309.86,
+            "text": " This is basically called a corpus or a paragraph. Then, once we take this paragraph, we have to"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 309.86,
+            "end": 315.86,
+            "text": " convert this paragraph into sentences. In order to convert the paragraph into sentences, I will"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 315.86,
+            "end": 324.58000000000004,
+            "text": " be using an inbuilt function which is called as nltk.sent.tokenize. Sent.tokenize is a function"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 324.58,
+            "end": 330.9,
+            "text": " inside NLTK which takes the corpus, that is the paragraph, and it applies a lot of regular"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 330.9,
+            "end": 337.94,
+            "text": " expression inside this function. This regular expression will be responsible in converting the"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 337.94,
+            "end": 344.26,
+            "text": " paragraph into different sentences. Let me just execute this particular variable, that is my"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 344.26,
+            "end": 350.5,
+            "text": " paragraph. Once I execute it, you can see that the variable will be created with something called as"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 350.5,
+            "end": 356.74,
+            "text": " paragraph and this is my complete paragraph. Now, the next step is that I will take up this"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 359.06,
+            "end": 366.18,
+            "text": " paragraph and then I'll convert this into sentences by using the function that is present inside NLTK"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 366.18,
+            "end": 372.1,
+            "text": " which is called as nltk.sent.tokenize. Once I execute this, you will be seeing that"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 372.82,
+            "end": 378.26,
+            "text": " all the paragraph from this particular paragraph, the sentences will be taken and it will be taken"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 378.26,
+            "end": 382.82,
+            "text": " in the form of list. Now, if I click on this particular sentence, you can see that there are"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 382.82,
+            "end": 389.53999999999996,
+            "text": " unique 31 different lists. Basically, you can see that there are 31 sentences in this particular"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 389.53999999999996,
+            "end": 397.46,
+            "text": " paragraph. Now, after taking the sentences, the text pre-processing usually happens on each and"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 397.46,
+            "end": 403.3,
+            "text": " every word of this particular paragraph or these particular words or these particular sentences."
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 404.26,
+            "end": 410.1,
+            "text": " After we convert this into sentences, we will be converting the sentences into words to find out"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 410.1,
+            "end": 415.3,
+            "text": " how many total number of words are present in this particular paragraph. For that, I have a"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 415.3,
+            "end": 420.5,
+            "text": " different function which is called as word underscore tokenize. Word underscore tokenize"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 420.5,
+            "end": 427.3,
+            "text": " responsibility is basically taking all this paragraph and this paragraph can be converted"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 427.3,
+            "end": 433.22,
+            "text": " to word by word by using this word underscore tokenize. Once I execute this, you can see that"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 435.3,
+            "end": 439.94,
+            "text": " I'll be having all the number of words that I have in this particular paragraph. So, I have"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 439.94,
+            "end": 446.5,
+            "text": " around 399 words, 399 total words in this particular paragraph. This will be in the form of"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 446.5,
+            "end": 452.26,
+            "text": " list. Now, you can see that each and every word, even the punctuation mark, even the full stop mark,"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 452.26,
+            "end": 457.86,
+            "text": " even the comma mark is also taken over here and it is considered as a word. So, they are around"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 457.86,
+            "end": 464.82,
+            "text": " 399 words and it may be repeated. It may be having repeated words. So, this is the first step."
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 464.82,
+            "end": 470.26,
+            "text": " Always remember with respect to tokenization in NLP, we have to convert the curves into sentences"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 470.26,
+            "end": 475.86,
+            "text": " or words and this is the two best techniques to do it. Either you use sent underscore tokenize"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 475.86,
+            "end": 481.06,
+            "text": " or you can use word underscore tokenize to convert this into words. Sent underscore tokenize is"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 481.06,
+            "end": 485.78000000000003,
+            "text": " basically used to convert into sentences and this all we are working on a particular paragraph."
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 486.34,
+            "end": 492.58,
+            "text": " So, in my next video, I'll be explaining to you about something called stemming and lemmatization."
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 492.58,
+            "end": 497.94,
+            "text": " Okay. So, till then, this is the first video in the playlist. I hope you like the video. Share"
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 497.94,
+            "end": 502.26,
+            "text": " with your friends, subscribe to the channel and keep supporting the channel. Thank you."
+        },
+        {
+            "number": "9",
+            "title": "Natural Language Processing",
+            "start": 502.26,
+            "end": 503.14,
+            "text": " Thank you one and all."
+        }
+    ],
+    "text": " Hello all. Today we'll be discussing about the natural language processing in machine learning. In my previous videos, in my playlist, you have seen different kinds of videos with respect to machine learning and deep learning. Whenever I was talking about machine learning, I was taking some kind of data. In that data, we had some specific features or columns and each column were either an integer or in categorical features or it was also having text. Most of the text were in the form of category features and we use some data pre-processing techniques to handle those category features. But now just let me take an example. If your whole feature is of text only, how do you handle that? Let me just take an example of that. Let us take an Amazon website where you buy different kinds of products. After buying products, people usually like to put comments with respect to that product, like how the product is actually performing, or you can basically say it as reviews. Some of the reviews that you see, when we as a human read that review, we'll be basically able to understand whether that review is a positive sentiment or a negative sentiment. But how can a machine learning model understand whether that review is a positive sentiment or a negative sentiment? Because it is not a human. It cannot understand sarcasm. For that purpose, we basically use natural language processing. There are different kinds of text processing that we usually use to handle those kinds of scenarios. One of the very most recent applications of natural language processing is basically the use of Google Assistant in phones, in our smartphones. Some other examples are Shree that is used in iPhones, and you have also heard of Google Assistant. You have heard of Amazon Alexa. So these are some of the examples. With respect to applications, I hope everybody remembers Gmail. Many of them use Gmail. In Gmail, I think you have heard of something called a spam classifier. So spam classifier works completely based on natural language processing. So in this playlist, we'll be completely discussing about natural language processing, all best practices that are actually used for doing text processing, and we'll be discussing all the scenarios. NLTK is a very good library that is present in natural language processing. And this library is an open source. This library does a lot of functionalities, something called tokenization. It also performs stemming, lemmatization. Stemming and lemmatization we'll be discussing after a while. Now, let's just see how the tokenization basically happens. Now, as defined, tokenization basically means that we'll be taking a paragraph of quotes or sentences, and then we'll be converting those paragraphs into sentences. Now, this is one of the famous speech that I have taken from our former president of India, that is APJ Abdul Kalam. He was a really good scientist. He was a very good president altogether. And this was the speech that was written and that was actually spoken by him in one of the recent seminars in IIT. So this was the speech that is taken, and we'll try to take this particular speech and we'll try to apply different kind of text processing in this particular speech. So always the first step is basically to import the NLTK. So once I import the NLTK, this library is the most important library because all the text pre-processing will be using this particular NLTK library. Now, after importing the library, it'll take some time and just let us wait till this gets executed. Now you can see that this has got executed successfully. As soon as we import NLTK, the next step is that we need to download all the libraries inside NLTK. So once I execute this, in the right hand side, you'll see that there will be a pop-up that will be opening. You click this pop-up and you can see all the packages that are present inside NLTK. The first step is always you just click the first identifier, that is all. We are just considering all the packages, so you don't have to download it again and again. After clicking on this, you just click on this download button. As soon as you download this, all the packages will be downloaded from this particular server index or server URL and it will be downloaded inside your local data where your Anaconda is actually installed. So just to perform this particular step before you do the text pre-processing because all the packages are present inside this NLTK and you have to download it manually by using NLTK.download. I'm not going to download it because I've already downloaded all the packages altogether. After that, what you do is that after you download it, you don't have to download this library separately, so I can remove this. Once you download it, all the packages will get downloaded automatically. Now, the first step of tokenization is that I will always be having a paragraph or a corpus. This is basically called a corpus or a paragraph. Then, once we take this paragraph, we have to convert this paragraph into sentences. In order to convert the paragraph into sentences, I will be using an inbuilt function which is called as nltk.sent.tokenize. Sent.tokenize is a function inside NLTK which takes the corpus, that is the paragraph, and it applies a lot of regular expression inside this function. This regular expression will be responsible in converting the paragraph into different sentences. Let me just execute this particular variable, that is my paragraph. Once I execute it, you can see that the variable will be created with something called as paragraph and this is my complete paragraph. Now, the next step is that I will take up this paragraph and then I'll convert this into sentences by using the function that is present inside NLTK which is called as nltk.sent.tokenize. Once I execute this, you will be seeing that all the paragraph from this particular paragraph, the sentences will be taken and it will be taken in the form of list. Now, if I click on this particular sentence, you can see that there are unique 31 different lists. Basically, you can see that there are 31 sentences in this particular paragraph. Now, after taking the sentences, the text pre-processing usually happens on each and every word of this particular paragraph or these particular words or these particular sentences. After we convert this into sentences, we will be converting the sentences into words to find out how many total number of words are present in this particular paragraph. For that, I have a different function which is called as word underscore tokenize. Word underscore tokenize responsibility is basically taking all this paragraph and this paragraph can be converted to word by word by using this word underscore tokenize. Once I execute this, you can see that I'll be having all the number of words that I have in this particular paragraph. So, I have around 399 words, 399 total words in this particular paragraph. This will be in the form of list. Now, you can see that each and every word, even the punctuation mark, even the full stop mark, even the comma mark is also taken over here and it is considered as a word. So, they are around 399 words and it may be repeated. It may be having repeated words. So, this is the first step. Always remember with respect to tokenization in NLP, we have to convert the curves into sentences or words and this is the two best techniques to do it. Either you use sent underscore tokenize or you can use word underscore tokenize to convert this into words. Sent underscore tokenize is basically used to convert into sentences and this all we are working on a particular paragraph. So, in my next video, I'll be explaining to you about something called stemming and lemmatization. Okay. So, till then, this is the first video in the playlist. I hope you like the video. Share with your friends, subscribe to the channel and keep supporting the channel. Thank you. Thank you one and all."
+}

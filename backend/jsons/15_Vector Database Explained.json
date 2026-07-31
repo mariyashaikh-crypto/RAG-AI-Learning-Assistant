@@ -1,0 +1,572 @@
+{
+    "chunks": [
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 0.0,
+            "end": 6.8,
+            "text": " There are some AI startups that have raised millions of dollars of funding and they have one product in common which is"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 7.2,
+            "end": 14.56,
+            "text": " Vector database. Let's try to understand what exactly is vector database today when you search in google calories in apple versus"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 14.780000000000001,
+            "end": 20.88,
+            "text": " Employees in apple google figures out that the first apple means fruit and the second one is a company"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 21.2,
+            "end": 23.76,
+            "text": " Have you ever wondered how does google does this?"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 24.240000000000002,
+            "end": 31.12,
+            "text": " It uses a technique called semantic search semantic search means not searching using the exact keyword matching"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 31.520000000000003,
+            "end": 32.46,
+            "text": " but"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 32.46,
+            "end": 39.28,
+            "text": " Understanding the intent of a user query and using the context to perform the search for doing semantic search"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 39.58,
+            "end": 46.58,
+            "text": " Internally, it uses the concept of embedding word embedding or sentence embedding is nothing but a numerical"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 47.28,
+            "end": 51.22,
+            "text": " Numerical representation of text. Let's first understand how exactly embedding works"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 51.54,
+            "end": 56.2,
+            "text": " Let's figure out how you can represent this word apple into a numeric presentation"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 56.98,
+            "end": 62.82,
+            "text": " Given this particular context one way is to think about different features or properties of words"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 63.3,
+            "end": 70.52,
+            "text": " Here you can have related to phones easy location has stock etc as properties and then you assign value for each of these properties"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 70.9,
+            "end": 76.5,
+            "text": " Revenue here means 82 billion dollar you get a sequence of numbers as a result"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 76.89999999999999,
+            "end": 78.89999999999999,
+            "text": " And that is nothing but a vector"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 79.06,
+            "end": 84.02,
+            "text": " So this vector is a word embedding for the word apple for this particular context"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 84.1,
+            "end": 88.34,
+            "text": " If you're talking about apple the fruit then the embedding might look something different"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 88.66,
+            "end": 94.98,
+            "text": " Because the value of these properties is different and when you have the embeddings for different words"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 95.62,
+            "end": 98.9,
+            "text": " Looking at the embedding you can say that the second apple"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 99.53999999999999,
+            "end": 104.42,
+            "text": " And the word orange they are similar because look at their values"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 104.66,
+            "end": 111.06,
+            "text": " They're matching of course, there are some values which are not matching but compared to this vector in the first vector"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 111.7,
+            "end": 114.34,
+            "text": " Second and third vector are kind of similar"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 115.3,
+            "end": 120.98,
+            "text": " Same way if you have let's say samsung as a word you can represent that into a numeric"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 121.68,
+            "end": 125.14,
+            "text": " Presentation is it related to phones? Yes. Is it a location?"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 125.14,
+            "end": 132.02,
+            "text": " No, and when you look at again all these vectors you can figure out that the first and the fourth vectors are kind of similar"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 132.34,
+            "end": 134.34,
+            "text": " so using these"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 134.42,
+            "end": 136.92,
+            "text": " Vectors, you can figure out the similarity"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 137.45999999999998,
+            "end": 145.06,
+            "text": " Not just similarity you can actually do a complex arithmetic such as this. This is a famous example in the"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 145.6,
+            "end": 147.06,
+            "text": " NLP domain"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 147.06,
+            "end": 154.66,
+            "text": " Where you can perform this mathematics using a technique called word2vec word2vec is a technique to represent word into"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 155.22,
+            "end": 156.1,
+            "text": " a"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 156.1,
+            "end": 158.42,
+            "text": " Numeric representation. I have made a separate video"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 158.57999999999998,
+            "end": 162.98,
+            "text": " So if you want to know more about it, you can go and look at this video in that video"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 162.98,
+            "end": 169.7,
+            "text": " I have explained how you can generate handcrafted features for each of these and you can do this particular math"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 169.85999999999999,
+            "end": 174.26,
+            "text": " Now just for intuition I explain everything using handcrafted features"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 174.66,
+            "end": 181.45999999999998,
+            "text": " But in reality you use some complex statistical techniques to generate these word embeddings again"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 181.54,
+            "end": 186.89999999999998,
+            "text": " If you have curiosity, you can watch those two videos or this particular video on bird so far"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 187.54,
+            "end": 192.57999999999998,
+            "text": " let's say you have this understanding that there are variety of these techniques that you can use to"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 193.11999999999998,
+            "end": 196.73999999999998,
+            "text": " represent a word or a sentence or even a"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 197.11999999999998,
+            "end": 201.94,
+            "text": " Document into an embedding and here are just different techniques which are being used"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 202.26,
+            "end": 207.78,
+            "text": " Uh in chat gpt era, obviously transformer based embedding techniques are getting popular"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 207.94,
+            "end": 211.54,
+            "text": " So when you're using open ai api for embedding, uh, you know"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 211.7,
+            "end": 217.45999999999998,
+            "text": " What technique it is using underneath when you are building any text-based ai application you might have"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 218.0,
+            "end": 224.42000000000002,
+            "text": " Thousands or even millions of embedding vectors and you need to store them somewhere when you think about storing them"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 224.5,
+            "end": 228.36,
+            "text": " The first option that comes to mind is a traditional relational database"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 228.74,
+            "end": 230.5,
+            "text": " So let's say for our use case"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 230.5,
+            "end": 236.10000000000002,
+            "text": " We have these four articles the first two red are related to apple the fruit the remaining are apple the company"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 236.34,
+            "end": 238.34,
+            "text": " You will first generate the embedding"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 238.42000000000002,
+            "end": 244.26000000000002,
+            "text": " Let's say using open ai api and then you will save that into let's say your sql database"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 244.58,
+            "end": 246.58,
+            "text": " Now when you have a search query"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 247.06,
+            "end": 249.62,
+            "text": " You will also generate embedding for that"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 249.94000000000003,
+            "end": 255.94,
+            "text": " And you will try to compare this embedding with the stored embedding and try to retrieve the relevant documents here"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 256.34000000000003,
+            "end": 261.38,
+            "text": " You will use a concept of cosine similarity to retrieve the matching"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 261.78000000000003,
+            "end": 265.62,
+            "text": " Vectors and you can display it in your google search result this in theory works"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 265.62,
+            "end": 272.5,
+            "text": " Okay, but in reality you will have millions of records or even millions of records in your database"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 272.74,
+            "end": 279.14,
+            "text": " And that's when things starts getting interesting because just think about matching this vector for a query vector"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 279.46,
+            "end": 283.06,
+            "text": " If you want to match with these stored vectors"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 283.14,
+            "end": 287.7,
+            "text": " Then one of the approach you can use is linear search where you go one by one"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 288.02,
+            "end": 293.86,
+            "text": " And if cosine similarity is close to one then you will put that vector into your result data set"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 294.18,
+            "end": 298.34,
+            "text": " And then you can keep on going and store your result vectors"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 298.73999999999995,
+            "end": 305.78,
+            "text": " Now you already realize the problem if there are millions of stored vector embeddings your computation is going to be too much"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 306.17999999999995,
+            "end": 312.2,
+            "text": " You know your hairs will be raised because you can't handle delay and computational"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 313.12,
+            "end": 317.14,
+            "text": " Uh requirements for such a use case you need to do something smart"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 317.62,
+            "end": 323.62,
+            "text": " How do we do this in a traditional database? Well, we use a thing called index database index"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 324.34000000000003,
+            "end": 330.66,
+            "text": " Helps you search things faster. Similarly in this particular use case we can use one hashing function"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 330.98,
+            "end": 333.3,
+            "text": " We don't need to go into detail what that hashing function is"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 333.46,
+            "end": 339.3,
+            "text": " But let's say this hashing function is creating buckets of similar looking embeddings"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 339.38,
+            "end": 340.02,
+            "text": " Okay"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 340.02,
+            "end": 346.66,
+            "text": " And then when you have a search query you can let that go through the same hashing function which will"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 346.98,
+            "end": 353.3,
+            "text": " Bucket it into one of these three buckets and then within that bucket you can do individual linear search this way"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 353.38,
+            "end": 357.38,
+            "text": " You are only matching with those vectors which are in bucket one"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 357.54,
+            "end": 362.74,
+            "text": " You don't have to match it with bucket two and bucket three. This will speed things up and"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 363.22,
+            "end": 369.08000000000004,
+            "text": " This technique is called locality sensitive hashing. This is one of the techniques that vector databases"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 369.86,
+            "end": 376.66,
+            "text": " Is using there are many such techniques and those techniques are outlined in this beautifully written article"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 376.66,
+            "end": 380.02,
+            "text": " I'll provide a link to this article you can read through it"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 380.34,
+            "end": 384.97999999999996,
+            "text": " So far you realize that vector databases help you do faster search"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 385.46,
+            "end": 390.91999999999996,
+            "text": " They also help you store things in an optimal way. So these are the two big benefits"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 391.38,
+            "end": 394.2,
+            "text": " Why vector databases are gaining popularity?"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 394.82,
+            "end": 398.97999999999996,
+            "text": " I hope this video helped you understand the intuition behind vector databases"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 399.21999999999997,
+            "end": 402.82,
+            "text": " If you have any question, please post in the comment box below if you like this video"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 403.06,
+            "end": 406.35999999999996,
+            "text": " Please give it a thumbs up and share it with your friends. Thank you for watching"
+        },
+        {
+            "number": "15",
+            "title": "Vector Database Explained",
+            "start": 410.02,
+            "end": 412.02,
+            "text": " You"
+        }
+    ],
+    "text": " There are some AI startups that have raised millions of dollars of funding and they have one product in common which is Vector database. Let's try to understand what exactly is vector database today when you search in google calories in apple versus Employees in apple google figures out that the first apple means fruit and the second one is a company Have you ever wondered how does google does this? It uses a technique called semantic search semantic search means not searching using the exact keyword matching but Understanding the intent of a user query and using the context to perform the search for doing semantic search Internally, it uses the concept of embedding word embedding or sentence embedding is nothing but a numerical Numerical representation of text. Let's first understand how exactly embedding works Let's figure out how you can represent this word apple into a numeric presentation Given this particular context one way is to think about different features or properties of words Here you can have related to phones easy location has stock etc as properties and then you assign value for each of these properties Revenue here means 82 billion dollar you get a sequence of numbers as a result And that is nothing but a vector So this vector is a word embedding for the word apple for this particular context If you're talking about apple the fruit then the embedding might look something different Because the value of these properties is different and when you have the embeddings for different words Looking at the embedding you can say that the second apple And the word orange they are similar because look at their values They're matching of course, there are some values which are not matching but compared to this vector in the first vector Second and third vector are kind of similar Same way if you have let's say samsung as a word you can represent that into a numeric Presentation is it related to phones? Yes. Is it a location? No, and when you look at again all these vectors you can figure out that the first and the fourth vectors are kind of similar so using these Vectors, you can figure out the similarity Not just similarity you can actually do a complex arithmetic such as this. This is a famous example in the NLP domain Where you can perform this mathematics using a technique called word2vec word2vec is a technique to represent word into a Numeric representation. I have made a separate video So if you want to know more about it, you can go and look at this video in that video I have explained how you can generate handcrafted features for each of these and you can do this particular math Now just for intuition I explain everything using handcrafted features But in reality you use some complex statistical techniques to generate these word embeddings again If you have curiosity, you can watch those two videos or this particular video on bird so far let's say you have this understanding that there are variety of these techniques that you can use to represent a word or a sentence or even a Document into an embedding and here are just different techniques which are being used Uh in chat gpt era, obviously transformer based embedding techniques are getting popular So when you're using open ai api for embedding, uh, you know What technique it is using underneath when you are building any text-based ai application you might have Thousands or even millions of embedding vectors and you need to store them somewhere when you think about storing them The first option that comes to mind is a traditional relational database So let's say for our use case We have these four articles the first two red are related to apple the fruit the remaining are apple the company You will first generate the embedding Let's say using open ai api and then you will save that into let's say your sql database Now when you have a search query You will also generate embedding for that And you will try to compare this embedding with the stored embedding and try to retrieve the relevant documents here You will use a concept of cosine similarity to retrieve the matching Vectors and you can display it in your google search result this in theory works Okay, but in reality you will have millions of records or even millions of records in your database And that's when things starts getting interesting because just think about matching this vector for a query vector If you want to match with these stored vectors Then one of the approach you can use is linear search where you go one by one And if cosine similarity is close to one then you will put that vector into your result data set And then you can keep on going and store your result vectors Now you already realize the problem if there are millions of stored vector embeddings your computation is going to be too much You know your hairs will be raised because you can't handle delay and computational Uh requirements for such a use case you need to do something smart How do we do this in a traditional database? Well, we use a thing called index database index Helps you search things faster. Similarly in this particular use case we can use one hashing function We don't need to go into detail what that hashing function is But let's say this hashing function is creating buckets of similar looking embeddings Okay And then when you have a search query you can let that go through the same hashing function which will Bucket it into one of these three buckets and then within that bucket you can do individual linear search this way You are only matching with those vectors which are in bucket one You don't have to match it with bucket two and bucket three. This will speed things up and This technique is called locality sensitive hashing. This is one of the techniques that vector databases Is using there are many such techniques and those techniques are outlined in this beautifully written article I'll provide a link to this article you can read through it So far you realize that vector databases help you do faster search They also help you store things in an optimal way. So these are the two big benefits Why vector databases are gaining popularity? I hope this video helped you understand the intuition behind vector databases If you have any question, please post in the comment box below if you like this video Please give it a thumbs up and share it with your friends. Thank you for watching You"
+}

@@ -1,0 +1,1517 @@
+{
+    "chunks": [
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 0.0,
+            "end": 5.6000000000000005,
+            "text": " In almost all Gen AI engineer job postings, you will find one common skill, Retrieval"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 5.6000000000000005,
+            "end": 8.24,
+            "text": " Augmented Generation also known as RAG."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 8.24,
+            "end": 14.42,
+            "text": " In my company at Lake, when we build AI projects for our clients, more than 40% of these projects"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 14.42,
+            "end": 16.34,
+            "text": " have RAG component in it."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 16.34,
+            "end": 17.78,
+            "text": " So what exactly is RAG?"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 17.78,
+            "end": 19.06,
+            "text": " What are different types?"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 19.06,
+            "end": 21.66,
+            "text": " Is Naive RAG dead due to Vectorless RAG?"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 21.66,
+            "end": 26.7,
+            "text": " We are going to cover all these RAG basics in a very simple and intuitive language."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 26.7,
+            "end": 32.2,
+            "text": " We will not just talk theory, I will show you a RAG project which is a customer care"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 32.2,
+            "end": 34.76,
+            "text": " chatbot in telecom domain."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 34.76,
+            "end": 40.2,
+            "text": " In the end, I will share some useful resources including RAG interview questions."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 40.2,
+            "end": 41.96,
+            "text": " Alright let's get started."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 41.96,
+            "end": 44.0,
+            "text": " Let's understand RAG using a simple example."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 44.0,
+            "end": 49.54,
+            "text": " When you ask chatGPT a policy question for some private company, it won't be able to"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 49.54,
+            "end": 54.8,
+            "text": " answer it because chatGPT is trained on general internet knowledge."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 54.9,
+            "end": 60.699999999999996,
+            "text": " It doesn't know the HR policy details of any private company."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 60.699999999999996,
+            "end": 66.39999999999999,
+            "text": " But if you give HR policy document to this LLM which acts like a brain, it should be"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 66.39999999999999,
+            "end": 71.22,
+            "text": " able to read a relevant section and provide you with the answer."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 71.22,
+            "end": 77.17999999999999,
+            "text": " This is similar to having a very smart student Mira who is a computer science student and"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 77.17999999999999,
+            "end": 82.53999999999999,
+            "text": " you are asking her to appear in a microbiology exam which is an open book exam."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 82.54,
+            "end": 88.32000000000001,
+            "text": " Now Mira is generally good in terms of reading, writing, comprehension, understanding etc."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 88.32000000000001,
+            "end": 90.92,
+            "text": " But she doesn't know anything about microbiology."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 90.92,
+            "end": 95.88000000000001,
+            "text": " But in this exam, she has been given a book on microbiology from which they are going"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 95.88000000000001,
+            "end": 97.04,
+            "text": " to ask the questions."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 97.04,
+            "end": 104.08000000000001,
+            "text": " Now Mira can use her reading, writing, comprehension skills to look at the book and she can write"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 104.08000000000001,
+            "end": 105.96000000000001,
+            "text": " answers in the exam."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 105.96000000000001,
+            "end": 111.84,
+            "text": " So here Mira's brain is like LLM which has a good understanding of language, it has reasoning"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 111.86,
+            "end": 115.14,
+            "text": " capabilities and the book is like an HR policy document."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 115.14,
+            "end": 120.5,
+            "text": " It is an external knowledge where LLM can look into it and pull the answers."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 120.5,
+            "end": 125.34,
+            "text": " Let's now understand the two-step process of how rag works underneath."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 125.34,
+            "end": 132.46,
+            "text": " So here I have HR policy document from atlic which will have a section on retirement benefits."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 132.46,
+            "end": 139.42000000000002,
+            "text": " So now if I go to chatGPT and if I copy this particular section and I ask my question related"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 139.44,
+            "end": 143.55999999999997,
+            "text": " to contribution to employees retirement fund."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 143.55999999999997,
+            "end": 148.51999999999998,
+            "text": " In that case, chatGPT will be able to answer that question because here you are asking"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 148.51999999999998,
+            "end": 155.67999999999998,
+            "text": " question and providing knowledge as a reference in the context and it can pull the answer."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 155.67999999999998,
+            "end": 160.32,
+            "text": " But what if your HR policy document is 3000 page PDF?"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 160.32,
+            "end": 162.72,
+            "text": " What if that knowledge is very big?"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 162.72,
+            "end": 167.79999999999998,
+            "text": " What's going to happen in that case is you will run out of your context window limit"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 168.02,
+            "end": 174.34,
+            "text": " and even if you have a huge context window, you should still not feed the entire knowledge"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 174.34,
+            "end": 176.54000000000002,
+            "text": " because it will be too many tokens."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 176.54000000000002,
+            "end": 177.82000000000002,
+            "text": " It will be costly."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 177.82000000000002,
+            "end": 181.9,
+            "text": " So what people do is they will chunk this document."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 181.9,
+            "end": 188.82000000000002,
+            "text": " So they will create let's say basic strategy is fixed size chunks and then for a given"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 188.82000000000002,
+            "end": 191.76000000000002,
+            "text": " question you can pull the relevant chunks."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 191.76000000000002,
+            "end": 197.78,
+            "text": " So for this particular question, let's say my first chunk is 70% probability that it"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 197.78,
+            "end": 198.78,
+            "text": " will contain the answer."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 198.78,
+            "end": 203.0,
+            "text": " Second chunk is 60% match and you can have by the way I'm showing just three but you"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 203.0,
+            "end": 209.56,
+            "text": " can have 1000 chunks and some of the chunks might have 5% or even 10% possibility that"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 209.56,
+            "end": 211.16,
+            "text": " it may contain the answer."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 211.16,
+            "end": 218.44,
+            "text": " Let's say the chunk contains information on when Atleek was founded, culture, founders,"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 218.44,
+            "end": 219.44,
+            "text": " etc."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 219.44,
+            "end": 224.0,
+            "text": " Then that doesn't have anything to do with the retirement question that you are asking."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 224.02,
+            "end": 228.46,
+            "text": " So the relevance of that chunk will be very low."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 228.46,
+            "end": 231.78,
+            "text": " Now how do you exactly find this kind of similarity?"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 231.78,
+            "end": 234.7,
+            "text": " So there is this concept of embedding."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 234.7,
+            "end": 241.98,
+            "text": " So embedding is a process of converting text into a vector such that it can represent its"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 241.98,
+            "end": 242.98,
+            "text": " meaning."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 242.98,
+            "end": 248.94,
+            "text": " So of all the chunks you will convert them into vector embeddings and then you will store"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 248.94,
+            "end": 251.44,
+            "text": " them into a vector database."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 251.44,
+            "end": 253.84,
+            "text": " This is different than your regular database."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 253.84,
+            "end": 259.42,
+            "text": " Your regular database can search using exit values whereas vector database will be able"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 259.42,
+            "end": 261.71999999999997,
+            "text": " to search using the meaning."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 261.71999999999997,
+            "end": 269.24,
+            "text": " So when you search for let's say a company that is a leader in electric vehicle it will"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 269.24,
+            "end": 271.82,
+            "text": " return Tesla from the database."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 271.82,
+            "end": 275.88,
+            "text": " So it is searching based on the meaning not based on the exit word."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 275.88,
+            "end": 280.68,
+            "text": " To generate embedding you can use variety of models sentence transformer text embedding"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 280.68,
+            "end": 285.72,
+            "text": " three small and so on and there are many vector database choices that you have in market"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 285.72,
+            "end": 288.72,
+            "text": " millworth quadrant chroma db and so on."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 288.72,
+            "end": 290.94,
+            "text": " This step is called indexing."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 290.94,
+            "end": 297.36,
+            "text": " This is the first step in rack process where you are indexing all these vectors of chunks"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 297.36,
+            "end": 298.96000000000004,
+            "text": " into a vector database."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 298.96000000000004,
+            "end": 304.12,
+            "text": " The second step is retrieval where for a given question you will generate embedding using"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 304.12,
+            "end": 305.9,
+            "text": " the same embedding model."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 305.9,
+            "end": 309.8,
+            "text": " Then you will try to find the relevant chunks in a vector database."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 309.92,
+            "end": 314.76,
+            "text": " So here it is doing the semantic search giving you a relevant vectors."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 314.76,
+            "end": 316.72,
+            "text": " You can specify top k factor."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 316.72,
+            "end": 323.24,
+            "text": " Let's say I need two chunks or five chunks and so on and then you will generate the actual"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 323.24,
+            "end": 329.08000000000004,
+            "text": " text out of those chunks and you will put it in your prompt along with the question"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 329.08000000000004,
+            "end": 332.88,
+            "text": " and when the question is given to llm it will give you the answer."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 332.88,
+            "end": 339.26,
+            "text": " So here below the question what you are doing is you are providing only the relevant chunks."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 339.71999999999997,
+            "end": 344.62,
+            "text": " So this way llm will not hallucinate and it will give you accurate answer."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 344.62,
+            "end": 349.46,
+            "text": " That takes us into our next segment which is the two major benefits of rag."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 349.46,
+            "end": 356.21999999999997,
+            "text": " The first one is the answers that you get will be highly accurate and the chances of"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 356.21999999999997,
+            "end": 362.06,
+            "text": " hallucination will reduce because you are grounding your responses in the knowledge"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 362.06,
+            "end": 364.21999999999997,
+            "text": " in the source of truth."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 364.21999999999997,
+            "end": 368.9,
+            "text": " Second it is very cost effective because if you pass the entire context then you are sending"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 368.94,
+            "end": 374.02,
+            "text": " too many tokens to llm and these llm apis they charge you per token."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 374.02,
+            "end": 378.82,
+            "text": " So if you send less number of tokens only the relevant knowledge then you will save"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 378.82,
+            "end": 380.53999999999996,
+            "text": " money on your api bill."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 380.53999999999996,
+            "end": 383.65999999999997,
+            "text": " Here is a hands-on customer care assistant rag project."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 383.65999999999997,
+            "end": 386.41999999999996,
+            "text": " I have given the code in the video description below."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 386.41999999999996,
+            "end": 387.65999999999997,
+            "text": " You can ask different questions."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 387.65999999999997,
+            "end": 394.14,
+            "text": " For example why is my mobile internet slow and it will find the answer based on the knowledge"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 394.14,
+            "end": 395.14,
+            "text": " that it has."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 395.14,
+            "end": 399.3,
+            "text": " So the knowledge is stored in terms of the troubleshooting pdf file."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 399.3,
+            "end": 405.09999999999997,
+            "text": " So here is the pdf file and let's say you have this question on how do you want to enable"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 405.09999999999997,
+            "end": 411.09999999999997,
+            "text": " the LTE then it is pulling that answer from this particular pdf file."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 411.09999999999997,
+            "end": 417.7,
+            "text": " The other source is the csv file containing all the FAQs and the third source is a SQLite"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 417.7,
+            "end": 420.3,
+            "text": " database containing all the past tickets."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 420.3,
+            "end": 423.46,
+            "text": " Here we are using chroma db as vector database."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 423.46,
+            "end": 428.9,
+            "text": " So we are ingesting FAQs then pdf and tickets into chroma db."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 428.9,
+            "end": 433.65999999999997,
+            "text": " So these are the three files which is ingesting into a vector database."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 433.65999999999997,
+            "end": 439.14,
+            "text": " If you look at ingest pdf here we are using the chunk size of 600 overlap of 100."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 439.14,
+            "end": 444.78,
+            "text": " We are using recursive character text printer strategy and for embedding we are using this"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 444.78,
+            "end": 447.85999999999996,
+            "text": " particular embedding model from hugging face."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 447.85999999999996,
+            "end": 450.02,
+            "text": " As a framework we have used lang chain."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 450.02,
+            "end": 456.9,
+            "text": " Now the retriever will try to find relevant chunks from FAQ tickets or guides."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 456.9,
+            "end": 460.38,
+            "text": " In terms of LLM we are using quen from chat grok."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 460.38,
+            "end": 465.41999999999996,
+            "text": " Please download the project on your computer try to run it to enhance your understanding"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 465.41999999999996,
+            "end": 467.34,
+            "text": " on rack concepts."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 467.34,
+            "end": 472.46,
+            "text": " Telecom support chatbot that we just saw is an example of enterprise QA chatbots."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 472.46,
+            "end": 475.59999999999997,
+            "text": " There are many other industry use cases for rack."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 475.6,
+            "end": 481.40000000000003,
+            "text": " For example you can build medical knowledge assistant which can look at the vast amount"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 481.40000000000003,
+            "end": 485.72,
+            "text": " of medical knowledge and pulls a relevant answer for your query."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 485.72,
+            "end": 488.6,
+            "text": " The other one is legal and compliance tools."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 488.6,
+            "end": 493.48,
+            "text": " Once again here the knowledge will be your legal documents and you want to pull the most"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 493.48,
+            "end": 495.0,
+            "text": " relevant and accurate answer."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 495.0,
+            "end": 497.40000000000003,
+            "text": " HR chatbot is another example."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 497.40000000000003,
+            "end": 499.16,
+            "text": " Let's now look at rack categories."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 499.16,
+            "end": 504.6,
+            "text": " The first one is a vector rack and naive rag is the example that we just saw where you"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 504.6,
+            "end": 511.88,
+            "text": " pull the top k relevant chunks from a vector database and answer users question."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 511.88,
+            "end": 518.32,
+            "text": " The second category is vector less rag in which you can perform a keyword rag."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 518.32,
+            "end": 522.08,
+            "text": " So here you are not generating any vector embeddings."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 522.08,
+            "end": 528.36,
+            "text": " You don't have a vector database but you are using keyword match or techniques like bm25"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 528.36,
+            "end": 534.92,
+            "text": " tfidf etc to query into the document using the exact keywords."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 534.92,
+            "end": 541.36,
+            "text": " This method will work when you have a lot of codes, jargons, IDs, citations."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 541.36,
+            "end": 546.44,
+            "text": " Let's say you are doing research and you are always searching using some particular ID"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 546.44,
+            "end": 550.2,
+            "text": " or a particular keyword then this will work."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 550.2,
+            "end": 554.8000000000001,
+            "text": " This is weak for semantic understanding when you are not doing exact keyword matching and"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 554.8,
+            "end": 556.9599999999999,
+            "text": " searching using meaning."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 556.9599999999999,
+            "end": 563.16,
+            "text": " This is not a good choice and the key tools that uses keyword rag concepts like bm25 is"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 563.16,
+            "end": 566.56,
+            "text": " elastic search and apache solar."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 566.56,
+            "end": 572.56,
+            "text": " The next category in vector rag is hybrid rag where you are combining vector search"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 572.56,
+            "end": 573.76,
+            "text": " and keyword search."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 573.76,
+            "end": 574.76,
+            "text": " Okay."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 574.76,
+            "end": 578.1999999999999,
+            "text": " You do both of these in parallel and merge the results."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 578.1999999999999,
+            "end": 582.1999999999999,
+            "text": " This is based for most of the production systems."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 582.2,
+            "end": 586.5200000000001,
+            "text": " The key tools here are elastic search plus any vector db."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 586.5200000000001,
+            "end": 592.1600000000001,
+            "text": " Now in atlick we worked on one rag project for our client where we have developed our"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 592.1600000000001,
+            "end": 599.4000000000001,
+            "text": " own custom hybrid method for doing rag and we have given details of this approach in"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 599.4000000000001,
+            "end": 600.44,
+            "text": " a different video."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 600.44,
+            "end": 602.6400000000001,
+            "text": " You can check it out if you are interested."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 602.6400000000001,
+            "end": 607.2,
+            "text": " Also if you want to learn AI engineering by building production grade AI systems similar"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 607.2,
+            "end": 612.48,
+            "text": " to the projects that I just mentioned then check our AI engineering cohort where we have"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 612.48,
+            "end": 618.72,
+            "text": " live sessions on weekends and we will teach you all the concepts plus you will build 8"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 618.72,
+            "end": 620.6800000000001,
+            "text": " plus production grade projects."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 620.6800000000001,
+            "end": 624.72,
+            "text": " The next category in vectorless rag is a graph rag."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 624.72,
+            "end": 627.34,
+            "text": " It is also known as kg rag."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 627.34,
+            "end": 630.2800000000001,
+            "text": " So here you will generate a knowledge graph."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 630.2800000000001,
+            "end": 634.12,
+            "text": " So let's say your knowledge is Elon Musk and all the companies he has founded."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 634.12,
+            "end": 638.72,
+            "text": " So in that case you will build this kind of knowledge graph where you will say Elon Musk"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 638.72,
+            "end": 642.5600000000001,
+            "text": " founded Tesla, SpaceX, Neuralink, OpenAI and so on."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 642.5600000000001,
+            "end": 645.5600000000001,
+            "text": " And then these companies will be operating in this different domain."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 645.5600000000001,
+            "end": 650.5600000000001,
+            "text": " So these are all the entities and they are connected through some kind of relationship."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 650.5600000000001,
+            "end": 655.0,
+            "text": " Now when you ask a question which companies are founded by Elon Musk which are working"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 655.0,
+            "end": 659.4,
+            "text": " in AI you will traverse this particular path."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 659.4,
+            "end": 663.6800000000001,
+            "text": " So you will look at all the companies and then you will do breadth first traversal and"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 663.68,
+            "end": 667.28,
+            "text": " you will find that OpenAI is working in AI."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 667.28,
+            "end": 669.68,
+            "text": " The next one is SQL rag."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 669.68,
+            "end": 671.8599999999999,
+            "text": " This is also known as text to SQL."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 671.8599999999999,
+            "end": 673.2399999999999,
+            "text": " This method is very simple."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 673.2399999999999,
+            "end": 678.8399999999999,
+            "text": " Let's say you have sales database which contains the sales of products."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 678.8399999999999,
+            "end": 683.0799999999999,
+            "text": " Now you are asking this question which product sold the most last month."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 683.0799999999999,
+            "end": 687.0,
+            "text": " Using LLM you can first generate a query for that database."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 687.0,
+            "end": 691.52,
+            "text": " You will execute the query, get the results and then give it back to LLM to generate a"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 691.52,
+            "end": 693.54,
+            "text": " comprehensive answer."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 694.4,
+            "end": 700.4599999999999,
+            "text": " You are taking a sentence in a natural language converting it to SQL using LLM and putting"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 700.4599999999999,
+            "end": 703.86,
+            "text": " a query in your database to get the results."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 703.86,
+            "end": 708.5,
+            "text": " And the last method which is relatively new is called page index."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 708.5,
+            "end": 711.5,
+            "text": " It is reasoning based rag."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 711.5,
+            "end": 715.66,
+            "text": " So here let's say you have 3000 page PDF document."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 715.66,
+            "end": 719.2199999999999,
+            "text": " First you will generate the table of content."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 719.2199999999999,
+            "end": 723.24,
+            "text": " The table of content or your information structure."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 723.94,
+            "end": 727.6,
+            "text": " This is like you are having a book and you are having all the chapter and topic layout."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 727.6,
+            "end": 731.24,
+            "text": " Now when somebody asks this question what does the contract say about compensation for"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 731.24,
+            "end": 732.96,
+            "text": " breach of contract?"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 732.96,
+            "end": 740.92,
+            "text": " The LLM will use its reasoning capability and this particular table of content to traverse"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 740.92,
+            "end": 746.64,
+            "text": " this particular graph and locate the thing that it is looking for."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 746.64,
+            "end": 751.28,
+            "text": " So for example in this case it will first find out that this is related to performance"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 751.3199999999999,
+            "end": 754.3199999999999,
+            "text": " of contracts because the contract is already executed."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 754.3199999999999,
+            "end": 758.9,
+            "text": " So it has to be related to this and then it finds compensation of breach."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 758.9,
+            "end": 763.4399999999999,
+            "text": " So it goes from here to here and then you are discussing loss."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 763.4399999999999,
+            "end": 769.3199999999999,
+            "text": " So due to that it will out of all these nodes it will go to this particular node and it"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 769.3199999999999,
+            "end": 772.36,
+            "text": " will pull the relevant document."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 772.36,
+            "end": 777.36,
+            "text": " Now this might give you an index and using index you might have to refer back to the"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 777.36,
+            "end": 779.16,
+            "text": " original knowledge."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 779.16,
+            "end": 781.6,
+            "text": " So here is a GitHub for page index."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 781.6,
+            "end": 786.8399999999999,
+            "text": " It is known as vectorless reg but it is one of the categories of vectorless reg."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 786.8399999999999,
+            "end": 787.8399999999999,
+            "text": " Okay."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 787.8399999999999,
+            "end": 790.16,
+            "text": " The right term is reasoning based reg."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 790.16,
+            "end": 794.16,
+            "text": " So here you can see from document you are generating a tree which is your knowledge"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 794.16,
+            "end": 800.7199999999999,
+            "text": " tree structure index of documents and then LLM will do its reasoning to find the relevant"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 800.7199999999999,
+            "end": 801.7199999999999,
+            "text": " chunk."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 801.7199999999999,
+            "end": 802.7199999999999,
+            "text": " Here you are not using any vectors."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 802.7199999999999,
+            "end": 805.12,
+            "text": " You are not using any embeddings."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 805.12,
+            "end": 806.5600000000001,
+            "text": " No vector db."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 806.5600000000001,
+            "end": 812.72,
+            "text": " Just by looking at the structure you know the table layout which looks something like"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 812.72,
+            "end": 814.0,
+            "text": " this."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 814.0,
+            "end": 816.44,
+            "text": " You will try to find a given node."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 816.44,
+            "end": 817.44,
+            "text": " Okay."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 817.44,
+            "end": 818.76,
+            "text": " And see here there is a summary."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 818.76,
+            "end": 825.12,
+            "text": " So using the summary LLM can reason and it can say okay maybe the answer is in this particular"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 825.12,
+            "end": 830.16,
+            "text": " node and then it will go to that node refer to the original document and pull the answer."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 830.1999999999999,
+            "end": 835.24,
+            "text": " I have attached this PDF in the video description below where you have categories of reg."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 835.24,
+            "end": 838.88,
+            "text": " You also have a table comparing when to use what."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 838.88,
+            "end": 843.8,
+            "text": " It is not that reasoning reg is here so you should not use naive reg."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 843.8,
+            "end": 849.56,
+            "text": " You should use it when you have general text, QnA boards etc. and the complexity here is"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 849.56,
+            "end": 850.56,
+            "text": " low."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 850.56,
+            "end": 853.4399999999999,
+            "text": " The complexity in case of page index is high."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 853.4399999999999,
+            "end": 858.16,
+            "text": " You should use it when you have hierarchical tree index, LLM traversal."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 858.16,
+            "end": 859.38,
+            "text": " You know these are the use cases."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 859.6,
+            "end": 865.54,
+            "text": " So you can use this table to determine when to use what kind of reg and then we have reg"
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 865.54,
+            "end": 866.54,
+            "text": " interview questions."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 866.54,
+            "end": 867.54,
+            "text": " Alright folks."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 867.54,
+            "end": 868.54,
+            "text": " So please check it out."
+        },
+        {
+            "number": "13",
+            "title": "RAG Explained  All about RAG",
+            "start": 868.54,
+            "end": 871.1,
+            "text": " If you have any question post in the comment box below."
+        }
+    ],
+    "text": " In almost all Gen AI engineer job postings, you will find one common skill, Retrieval Augmented Generation also known as RAG. In my company at Lake, when we build AI projects for our clients, more than 40% of these projects have RAG component in it. So what exactly is RAG? What are different types? Is Naive RAG dead due to Vectorless RAG? We are going to cover all these RAG basics in a very simple and intuitive language. We will not just talk theory, I will show you a RAG project which is a customer care chatbot in telecom domain. In the end, I will share some useful resources including RAG interview questions. Alright let's get started. Let's understand RAG using a simple example. When you ask chatGPT a policy question for some private company, it won't be able to answer it because chatGPT is trained on general internet knowledge. It doesn't know the HR policy details of any private company. But if you give HR policy document to this LLM which acts like a brain, it should be able to read a relevant section and provide you with the answer. This is similar to having a very smart student Mira who is a computer science student and you are asking her to appear in a microbiology exam which is an open book exam. Now Mira is generally good in terms of reading, writing, comprehension, understanding etc. But she doesn't know anything about microbiology. But in this exam, she has been given a book on microbiology from which they are going to ask the questions. Now Mira can use her reading, writing, comprehension skills to look at the book and she can write answers in the exam. So here Mira's brain is like LLM which has a good understanding of language, it has reasoning capabilities and the book is like an HR policy document. It is an external knowledge where LLM can look into it and pull the answers. Let's now understand the two-step process of how rag works underneath. So here I have HR policy document from atlic which will have a section on retirement benefits. So now if I go to chatGPT and if I copy this particular section and I ask my question related to contribution to employees retirement fund. In that case, chatGPT will be able to answer that question because here you are asking question and providing knowledge as a reference in the context and it can pull the answer. But what if your HR policy document is 3000 page PDF? What if that knowledge is very big? What's going to happen in that case is you will run out of your context window limit and even if you have a huge context window, you should still not feed the entire knowledge because it will be too many tokens. It will be costly. So what people do is they will chunk this document. So they will create let's say basic strategy is fixed size chunks and then for a given question you can pull the relevant chunks. So for this particular question, let's say my first chunk is 70% probability that it will contain the answer. Second chunk is 60% match and you can have by the way I'm showing just three but you can have 1000 chunks and some of the chunks might have 5% or even 10% possibility that it may contain the answer. Let's say the chunk contains information on when Atleek was founded, culture, founders, etc. Then that doesn't have anything to do with the retirement question that you are asking. So the relevance of that chunk will be very low. Now how do you exactly find this kind of similarity? So there is this concept of embedding. So embedding is a process of converting text into a vector such that it can represent its meaning. So of all the chunks you will convert them into vector embeddings and then you will store them into a vector database. This is different than your regular database. Your regular database can search using exit values whereas vector database will be able to search using the meaning. So when you search for let's say a company that is a leader in electric vehicle it will return Tesla from the database. So it is searching based on the meaning not based on the exit word. To generate embedding you can use variety of models sentence transformer text embedding three small and so on and there are many vector database choices that you have in market millworth quadrant chroma db and so on. This step is called indexing. This is the first step in rack process where you are indexing all these vectors of chunks into a vector database. The second step is retrieval where for a given question you will generate embedding using the same embedding model. Then you will try to find the relevant chunks in a vector database. So here it is doing the semantic search giving you a relevant vectors. You can specify top k factor. Let's say I need two chunks or five chunks and so on and then you will generate the actual text out of those chunks and you will put it in your prompt along with the question and when the question is given to llm it will give you the answer. So here below the question what you are doing is you are providing only the relevant chunks. So this way llm will not hallucinate and it will give you accurate answer. That takes us into our next segment which is the two major benefits of rag. The first one is the answers that you get will be highly accurate and the chances of hallucination will reduce because you are grounding your responses in the knowledge in the source of truth. Second it is very cost effective because if you pass the entire context then you are sending too many tokens to llm and these llm apis they charge you per token. So if you send less number of tokens only the relevant knowledge then you will save money on your api bill. Here is a hands-on customer care assistant rag project. I have given the code in the video description below. You can ask different questions. For example why is my mobile internet slow and it will find the answer based on the knowledge that it has. So the knowledge is stored in terms of the troubleshooting pdf file. So here is the pdf file and let's say you have this question on how do you want to enable the LTE then it is pulling that answer from this particular pdf file. The other source is the csv file containing all the FAQs and the third source is a SQLite database containing all the past tickets. Here we are using chroma db as vector database. So we are ingesting FAQs then pdf and tickets into chroma db. So these are the three files which is ingesting into a vector database. If you look at ingest pdf here we are using the chunk size of 600 overlap of 100. We are using recursive character text printer strategy and for embedding we are using this particular embedding model from hugging face. As a framework we have used lang chain. Now the retriever will try to find relevant chunks from FAQ tickets or guides. In terms of LLM we are using quen from chat grok. Please download the project on your computer try to run it to enhance your understanding on rack concepts. Telecom support chatbot that we just saw is an example of enterprise QA chatbots. There are many other industry use cases for rack. For example you can build medical knowledge assistant which can look at the vast amount of medical knowledge and pulls a relevant answer for your query. The other one is legal and compliance tools. Once again here the knowledge will be your legal documents and you want to pull the most relevant and accurate answer. HR chatbot is another example. Let's now look at rack categories. The first one is a vector rack and naive rag is the example that we just saw where you pull the top k relevant chunks from a vector database and answer users question. The second category is vector less rag in which you can perform a keyword rag. So here you are not generating any vector embeddings. You don't have a vector database but you are using keyword match or techniques like bm25 tfidf etc to query into the document using the exact keywords. This method will work when you have a lot of codes, jargons, IDs, citations. Let's say you are doing research and you are always searching using some particular ID or a particular keyword then this will work. This is weak for semantic understanding when you are not doing exact keyword matching and searching using meaning. This is not a good choice and the key tools that uses keyword rag concepts like bm25 is elastic search and apache solar. The next category in vector rag is hybrid rag where you are combining vector search and keyword search. Okay. You do both of these in parallel and merge the results. This is based for most of the production systems. The key tools here are elastic search plus any vector db. Now in atlick we worked on one rag project for our client where we have developed our own custom hybrid method for doing rag and we have given details of this approach in a different video. You can check it out if you are interested. Also if you want to learn AI engineering by building production grade AI systems similar to the projects that I just mentioned then check our AI engineering cohort where we have live sessions on weekends and we will teach you all the concepts plus you will build 8 plus production grade projects. The next category in vectorless rag is a graph rag. It is also known as kg rag. So here you will generate a knowledge graph. So let's say your knowledge is Elon Musk and all the companies he has founded. So in that case you will build this kind of knowledge graph where you will say Elon Musk founded Tesla, SpaceX, Neuralink, OpenAI and so on. And then these companies will be operating in this different domain. So these are all the entities and they are connected through some kind of relationship. Now when you ask a question which companies are founded by Elon Musk which are working in AI you will traverse this particular path. So you will look at all the companies and then you will do breadth first traversal and you will find that OpenAI is working in AI. The next one is SQL rag. This is also known as text to SQL. This method is very simple. Let's say you have sales database which contains the sales of products. Now you are asking this question which product sold the most last month. Using LLM you can first generate a query for that database. You will execute the query, get the results and then give it back to LLM to generate a comprehensive answer. You are taking a sentence in a natural language converting it to SQL using LLM and putting a query in your database to get the results. And the last method which is relatively new is called page index. It is reasoning based rag. So here let's say you have 3000 page PDF document. First you will generate the table of content. The table of content or your information structure. This is like you are having a book and you are having all the chapter and topic layout. Now when somebody asks this question what does the contract say about compensation for breach of contract? The LLM will use its reasoning capability and this particular table of content to traverse this particular graph and locate the thing that it is looking for. So for example in this case it will first find out that this is related to performance of contracts because the contract is already executed. So it has to be related to this and then it finds compensation of breach. So it goes from here to here and then you are discussing loss. So due to that it will out of all these nodes it will go to this particular node and it will pull the relevant document. Now this might give you an index and using index you might have to refer back to the original knowledge. So here is a GitHub for page index. It is known as vectorless reg but it is one of the categories of vectorless reg. Okay. The right term is reasoning based reg. So here you can see from document you are generating a tree which is your knowledge tree structure index of documents and then LLM will do its reasoning to find the relevant chunk. Here you are not using any vectors. You are not using any embeddings. No vector db. Just by looking at the structure you know the table layout which looks something like this. You will try to find a given node. Okay. And see here there is a summary. So using the summary LLM can reason and it can say okay maybe the answer is in this particular node and then it will go to that node refer to the original document and pull the answer. I have attached this PDF in the video description below where you have categories of reg. You also have a table comparing when to use what. It is not that reasoning reg is here so you should not use naive reg. You should use it when you have general text, QnA boards etc. and the complexity here is low. The complexity in case of page index is high. You should use it when you have hierarchical tree index, LLM traversal. You know these are the use cases. So you can use this table to determine when to use what kind of reg and then we have reg interview questions. Alright folks. So please check it out. If you have any question post in the comment box below."
+}

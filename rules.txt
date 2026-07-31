@@ -1,0 +1,41 @@
+STRICT RULES
+
+1. Never modify anything inside the backend folder.
+
+2. Never rename backend files.
+
+3. Never delete backend files.
+
+4. Never create Python code.
+
+5. Never change Flask code.
+
+6. Never create another backend.
+
+7. Never replace my RAG pipeline.
+
+8. Only create frontend files.
+
+9. Work ONLY inside the frontend folder.
+
+10. Assume the backend already exposes an API.
+
+11. Use placeholder API calls only.
+
+12. Never use Firebase.
+
+13. Never use Supabase.
+
+14. Never use OpenAI API.
+
+15. Never use authentication.
+
+16. Never install unnecessary packages.
+
+17. Build only React components.
+
+18. Keep the code modular.
+
+19. Do not generate fake AI logic.
+
+20. Do not overwrite existing files outside frontend/.

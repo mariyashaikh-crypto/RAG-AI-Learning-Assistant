@@ -1,0 +1,2399 @@
+{
+    "chunks": [
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 0.0,
+            "end": 4.8,
+            "text": " Hello all my name is Krishnayak and welcome to my youtube channel."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 4.8,
+            "end": 8.96,
+            "text": " So guys today in this particular video I am going to discuss about this amazing topic"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 8.96,
+            "end": 14.200000000000001,
+            "text": " to make you understand the differences between Langchin vs Langraph."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 14.200000000000001,
+            "end": 19.44,
+            "text": " Now I have been making similar kind of videos from past couple of weeks or from past month"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 19.44,
+            "end": 24.76,
+            "text": " and here our main aim is to make our fundamentals quite stronger."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 24.76,
+            "end": 27.96,
+            "text": " Let's say that if I ask you a question in an interview when should we probably go ahead"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 27.96,
+            "end": 33.120000000000005,
+            "text": " and use Langraph or what is the differences between Langchin and Langraph what would you"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 33.120000000000005,
+            "end": 34.4,
+            "text": " probably try to explain."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 34.4,
+            "end": 39.2,
+            "text": " Just write down in the comment section before seeing this specific video and then after"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 39.2,
+            "end": 43.6,
+            "text": " you write down the comment right just go through this entire video and then try to see that"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 43.6,
+            "end": 47.84,
+            "text": " how many things that I have actually told does it matches with all the information that"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 47.84,
+            "end": 49.480000000000004,
+            "text": " you have right."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 49.480000000000004,
+            "end": 54.480000000000004,
+            "text": " So please make sure to do that but in this video we are going to have a detailed discussion"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 54.48,
+            "end": 57.839999999999996,
+            "text": " between Langchin vs Langraph."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 57.839999999999996,
+            "end": 62.8,
+            "text": " Trust me just watch till the end you will definitely learn a lot many things."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 62.8,
+            "end": 69.2,
+            "text": " Now if I talk about Langchin you know and I hope it is one of the most popular framework"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 69.2,
+            "end": 73.12,
+            "text": " which is basically used to create generative AI application."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 73.12,
+            "end": 75.69999999999999,
+            "text": " First of all we will just go ahead and talk about Langchin."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 75.69999999999999,
+            "end": 82.0,
+            "text": " So let's go ahead and write it down over here like Langchin."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 82.0,
+            "end": 87.6,
+            "text": " Now if I talk about Langchin in Langchin obviously this is this Langchin is basically"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 87.6,
+            "end": 96.4,
+            "text": " used to create if I probably say it is used to create LLM powered application."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 96.4,
+            "end": 106.96000000000001,
+            "text": " LLM powered chatbot assistant it can be an application or generative AI application."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 106.96000000000001,
+            "end": 110.44,
+            "text": " Now when I say LLM powered that basically means anything that you create whether you"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 110.67999999999999,
+            "end": 116.48,
+            "text": " create a chatbot whether you create a simple app or whether you create any kind of application"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 116.48,
+            "end": 121.8,
+            "text": " right at the end of the day you are specifically using LLMs right."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 121.8,
+            "end": 126.16,
+            "text": " On top of this LLMs there are multiple things that can be used."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 126.16,
+            "end": 134.24,
+            "text": " Here you can use prompts along with the LLMs you can use tools you can use different kind"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 134.24,
+            "end": 137.96,
+            "text": " of integrations and many more things."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 137.96,
+            "end": 143.68,
+            "text": " So overall if I probably talk about Langchin any application that is basically developed"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 143.68,
+            "end": 149.84,
+            "text": " in Langchin a generative AI application or LLM powered application or AI chatbot assistant"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 149.84,
+            "end": 153.92000000000002,
+            "text": " there are three main important steps that happens in Langchin."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 153.92000000000002,
+            "end": 156.14000000000001,
+            "text": " This is my one step."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 156.14000000000001,
+            "end": 163.88,
+            "text": " This is my another step and this is my third step."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 163.88,
+            "end": 165.9,
+            "text": " So these are the three main components."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 165.9,
+            "end": 167.76000000000002,
+            "text": " Now what are these specific components."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 168.56,
+            "end": 170.32,
+            "text": " When I say steps I am basically talking about components."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 170.32,
+            "end": 176.67999999999998,
+            "text": " The first component is nothing but it is basically called as retrieve."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 176.67999999999998,
+            "end": 182.04,
+            "text": " So here we are basically going to write it as retrieve or retriever."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 182.04,
+            "end": 189.07999999999998,
+            "text": " Then the second important component is nothing but summarize and the third important component"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 189.07999999999998,
+            "end": 194.95999999999998,
+            "text": " is nothing but your final answer or output."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 194.96,
+            "end": 198.56,
+            "text": " Now when we talk about this components."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 198.56,
+            "end": 201.72,
+            "text": " So here I will just go ahead and write output."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 201.72,
+            "end": 205.48000000000002,
+            "text": " When we talk about the specific components in Langchin whether you generate any kind"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 205.48000000000002,
+            "end": 211.44,
+            "text": " of generative AI applications or LLM powered application or AI assistant these three components"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 211.44,
+            "end": 213.4,
+            "text": " will be definitely there."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 213.4,
+            "end": 218.48000000000002,
+            "text": " Now the question rises Krish what does exactly happen in the retrieve."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 218.48000000000002,
+            "end": 222.76000000000002,
+            "text": " In retrieve there are three main important things that we basically do."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 222.76,
+            "end": 227.6,
+            "text": " One is data ingestion."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 227.6,
+            "end": 229.67999999999998,
+            "text": " Another question rises what is data ingestion."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 229.67999999999998,
+            "end": 230.67999999999998,
+            "text": " Data ingestion is very simple."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 230.67999999999998,
+            "end": 232.95999999999998,
+            "text": " We ingest a data."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 232.95999999999998,
+            "end": 236.72,
+            "text": " We probably load a data from a specific source."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 236.72,
+            "end": 240.84,
+            "text": " Now the main thing is that here the source can be different."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 240.84,
+            "end": 242.56,
+            "text": " It can be a PDF file."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 242.56,
+            "end": 244.01999999999998,
+            "text": " It can be an external database."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 244.01999999999998,
+            "end": 245.01999999999998,
+            "text": " It can be an Excel file."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 245.01999999999998,
+            "end": 246.01999999999998,
+            "text": " It can be a website."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 246.01999999999998,
+            "end": 248.48,
+            "text": " You need to probably web scrap the data."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 248.48,
+            "end": 252.38,
+            "text": " There may be various different ways in data ingestion."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 253.0,
+            "end": 257.5,
+            "text": " So when we talk about data ingestion this is also called as we basically use something"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 257.5,
+            "end": 260.9,
+            "text": " called as document loader over here."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 260.9,
+            "end": 263.42,
+            "text": " So we use nothing but document loader."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 263.42,
+            "end": 269.3,
+            "text": " So in Langchin you have a specific class where you have lot of packages and integrations"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 269.3,
+            "end": 272.14,
+            "text": " specifically with respect to document loader."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 272.14,
+            "end": 277.78,
+            "text": " Here the main aim is that you try to load documents from different sources."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 277.78,
+            "end": 279.42,
+            "text": " It can be any source."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 279.42,
+            "end": 280.88,
+            "text": " It can be a PDF file."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 280.88,
+            "end": 283.0,
+            "text": " It can be an Excel file."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 283.0,
+            "end": 284.56,
+            "text": " It can be a CSV file."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 284.56,
+            "end": 289.64,
+            "text": " It can even be some third party APIs like Wikipedia."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 289.64,
+            "end": 290.64,
+            "text": " It can be RSIV."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 290.64,
+            "end": 293.04,
+            "text": " It can be anything as such."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 293.04,
+            "end": 299.2,
+            "text": " So there are multiple sources and Langchin has a huge amount of different, different"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 299.2,
+            "end": 302.88,
+            "text": " kind of integrations already provided in terms of document loader."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 302.88,
+            "end": 307.04,
+            "text": " And what I feel is that whenever you try to develop any of this kind of application this"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 307.04,
+            "end": 312.84000000000003,
+            "text": " is the most important step because here the parsing of the data will happen."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 312.84000000000003,
+            "end": 316.68,
+            "text": " The parsing of the data will happen."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 316.68,
+            "end": 321.24,
+            "text": " When you do the parsing, if you do this much more accurately then you will definitely be"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 321.24,
+            "end": 327.16,
+            "text": " able to generate or create a generative AI application with much more accuracy."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 327.16,
+            "end": 332.5,
+            "text": " So now they are dedicated companies who specifically do this particular task, who create this kind"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 332.5,
+            "end": 335.44,
+            "text": " of packages with respect to document loader."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 335.44,
+            "end": 340.4,
+            "text": " I need to probably, I create a document loader to let's say web scrap the data from the internet"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 340.4,
+            "end": 344.8,
+            "text": " which will be a very important use case for most of the use cases that we specifically"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 344.8,
+            "end": 346.9,
+            "text": " implement in the industry."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 346.9,
+            "end": 349.12,
+            "text": " So in document loader this basically happens, right?"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 349.12,
+            "end": 351.76,
+            "text": " And that is a part of data ingestion."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 351.76,
+            "end": 354.88,
+            "text": " Now coming to the second most important component."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 354.88,
+            "end": 360.92,
+            "text": " The second most important component is nothing but it is called as TextSplitter."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 361.2,
+            "end": 364.72,
+            "text": " Now TextSplitter is also a separate class that is available in Lanchain or a separate"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 364.72,
+            "end": 369.28000000000003,
+            "text": " package wherein there are multiple ways of splitting the text."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 369.28000000000003,
+            "end": 373.88,
+            "text": " Once you read the data from all these kind of sources, right, I cannot just directly"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 373.88,
+            "end": 378.5,
+            "text": " provide the entire data to my LLM model as a context, right?"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 378.5,
+            "end": 380.68,
+            "text": " So what I have to do, why I cannot provide?"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 380.68,
+            "end": 386.12,
+            "text": " Because there is a very important component which is called as context window."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 386.12,
+            "end": 390.56,
+            "text": " Every LLM has a limitation with respect to the context window."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 391.2,
+            "end": 395.0,
+            "text": " So in order to overcome this, what we do is that once we read the data from this data"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 395.0,
+            "end": 404.32,
+            "text": " source, we try to divide this data into smaller chunks, into smaller chunks, smaller chunks,"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 404.32,
+            "end": 406.36,
+            "text": " smaller chunks."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 406.36,
+            "end": 412.08,
+            "text": " Once we divide this data into smaller chunk, then the next step, because after we divide"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 412.08,
+            "end": 414.32,
+            "text": " this, we need to store it somewhere, right?"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 414.32,
+            "end": 421.48,
+            "text": " And that is where your third important component comes, is nothing but VectorDatabases."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 421.48,
+            "end": 427.71999999999997,
+            "text": " Now inside this VectorDatabases, when we are specifically using VectorDatabases, here we"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 427.71999999999997,
+            "end": 432.76,
+            "text": " also use something called as VectorEmbeddings."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 432.76,
+            "end": 437.84,
+            "text": " Now for VectorEmbeddings, it is nothing but we are converting the text into vectors."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 437.84,
+            "end": 443.3,
+            "text": " That is the main aim with respect to VectorEmbeddings, right?"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 443.3,
+            "end": 447.44,
+            "text": " So this is a kind of a task wherein we convert the text into vectors."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 447.44,
+            "end": 451.12,
+            "text": " Once it is basically converted, we basically store that into the VectorDatabase."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 451.12,
+            "end": 454.48,
+            "text": " Now the question arises, why do we store it, right?"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 454.48,
+            "end": 459.78000000000003,
+            "text": " Because at the end of the day, from any application, if all my data is basically stored in the"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 459.78000000000003,
+            "end": 466.24,
+            "text": " VectorDatabase, we will definitely be able to do different, different kind of search."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 466.24,
+            "end": 469.18,
+            "text": " One search example is nothing but semantic search."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 469.18,
+            "end": 472.52,
+            "text": " It can be GraphDB search, right?"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 472.74,
+            "end": 477.68,
+            "text": " And with the help of this search, we will be able to retrieve the right amount of context"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 477.68,
+            "end": 482.38,
+            "text": " and give it to our LLM to finally generate the output, right?"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 482.38,
+            "end": 484.78,
+            "text": " And that is really important, right?"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 484.78,
+            "end": 489.02,
+            "text": " Unless and until this is not done accurately and we don't get the right kind of context"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 489.02,
+            "end": 494.09999999999997,
+            "text": " out of the VectorDatabase, we will not be able to accurately give the output to the"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 494.09999999999997,
+            "end": 495.96,
+            "text": " user, right?"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 495.96,
+            "end": 502.32,
+            "text": " So in the retrieve component of LangChain, you really need to be good at all the specific"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 503.12,
+            "end": 504.12,
+            "text": " things."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 504.12,
+            "end": 507.64,
+            "text": " When you go tomorrow to any companies, if you're probably generating or developing a"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 507.64,
+            "end": 511.68,
+            "text": " generative AI-powered application, you will be doing all the specific steps."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 511.68,
+            "end": 513.52,
+            "text": " You need to parse the data."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 513.52,
+            "end": 517.28,
+            "text": " You need to probably store the data in the exact right format with respect to the document"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 517.28,
+            "end": 518.28,
+            "text": " data type."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 518.28,
+            "end": 523.16,
+            "text": " You need to make sure that you have to do this kind of chunking strategy so that you"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 523.16,
+            "end": 526.52,
+            "text": " try to solve this context window size with respect to different, different LLMs that"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 526.52,
+            "end": 527.52,
+            "text": " you're using."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 527.52,
+            "end": 531.88,
+            "text": " And finally, you store all this particular data into the VectorDatabase, okay?"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 532.4399999999999,
+            "end": 536.84,
+            "text": " Now coming to the next important step, after we probably complete this retrieve component,"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 536.84,
+            "end": 538.8,
+            "text": " it is nothing but summarize."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 538.8,
+            "end": 543.24,
+            "text": " Now here is where, you know, and when we talk about summarize or when we talk about building"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 543.24,
+            "end": 549.36,
+            "text": " generative AI applications with the help of LangChain, here you specifically follow a"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 549.36,
+            "end": 551.88,
+            "text": " sequential order, okay?"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 551.88,
+            "end": 553.88,
+            "text": " This is really important to understand."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 553.88,
+            "end": 558.28,
+            "text": " And here you will definitely be understanding the differences between LangChain and LangGraph."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 558.28,
+            "end": 563.0799999999999,
+            "text": " When we talk about sequential order, now what does this basically mean?"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 563.0799999999999,
+            "end": 570.3199999999999,
+            "text": " In sequential order, here it basically means that the execution of any task will just happen"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 570.3199999999999,
+            "end": 572.6,
+            "text": " sequentially."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 572.6,
+            "end": 575.1999999999999,
+            "text": " We cannot go back, okay?"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 575.1999999999999,
+            "end": 579.12,
+            "text": " So this entire LangChain, the generative AI application that is developed with the help"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 579.12,
+            "end": 583.8,
+            "text": " of LangChain, follows a DAG graph, right?"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 583.8,
+            "end": 586.56,
+            "text": " Directed acyclic graph, okay?"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 586.56,
+            "end": 590.64,
+            "text": " That basically means if my execution is basically started from this task, it has to probably"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 590.64,
+            "end": 593.4799999999999,
+            "text": " go to this task, it has to go to this particular task."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 593.4799999999999,
+            "end": 594.4799999999999,
+            "text": " Only sequential."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 594.4799999999999,
+            "end": 595.8399999999999,
+            "text": " I cannot come back."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 595.8399999999999,
+            "end": 598.2399999999999,
+            "text": " This option is not there."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 598.2399999999999,
+            "end": 601.4,
+            "text": " This option is not there, right?"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 601.4,
+            "end": 606.3199999999999,
+            "text": " So when we talk about this summarize component, here you will be able to see that we create"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 606.3199999999999,
+            "end": 609.66,
+            "text": " some kind of chaining concept."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 609.66,
+            "end": 615.88,
+            "text": " So in LangChain, whenever generative AI application is basically developed, here we try to implement"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 615.88,
+            "end": 617.68,
+            "text": " this chaining concept."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 617.68,
+            "end": 622.32,
+            "text": " Now in the chaining concept, we first of all go ahead and write our prompt chain."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 622.32,
+            "end": 624.72,
+            "text": " So let's say this is my prompt chain, right?"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 624.72,
+            "end": 626.32,
+            "text": " Sorry, this is my prompt."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 626.32,
+            "end": 628.56,
+            "text": " We basically go ahead and give a prompt."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 628.56,
+            "end": 631.64,
+            "text": " Prompt is just like an instruction to an LLM, right?"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 631.64,
+            "end": 637.6,
+            "text": " Along with this, we try to integrate this prompt with our LLM."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 637.6,
+            "end": 640.44,
+            "text": " So LLM will be my second thing in the chain, right?"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 640.44,
+            "end": 642.6,
+            "text": " Second important component in the chain."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 642.6,
+            "end": 645.4,
+            "text": " And then the third important component can be my context."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 645.92,
+            "end": 647.6,
+            "text": " The context that I'm supplying to the LLM."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 647.6,
+            "end": 651.16,
+            "text": " So this will basically be my prompt."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 651.16,
+            "end": 653.76,
+            "text": " This will be my LLM."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 653.76,
+            "end": 656.12,
+            "text": " And this will basically be my context."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 656.12,
+            "end": 659.12,
+            "text": " And this context will be coming from the specific vector database."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 659.12,
+            "end": 663.52,
+            "text": " So internally you will be able to see that this vector database will be connected to"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 663.52,
+            "end": 668.24,
+            "text": " this particular chain itself, wherein we will be providing the context."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 668.24,
+            "end": 675.1999999999999,
+            "text": " And this execution takes place sequentially, one after the other, right?"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 675.2,
+            "end": 680.5200000000001,
+            "text": " And finally, whatever output you basically get, here we are basically going to use or"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 680.5200000000001,
+            "end": 683.0400000000001,
+            "text": " here we are going to give the answer of the output."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 683.0400000000001,
+            "end": 685.48,
+            "text": " Here again, we can use multiple components."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 685.48,
+            "end": 688.0400000000001,
+            "text": " One component can be my memory, right?"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 688.0400000000001,
+            "end": 691.2,
+            "text": " So here we can use some kind of persistent memory."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 691.2,
+            "end": 697.36,
+            "text": " So if you have been seeing my videos with respect to Lang chain or Lang graph, I've"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 697.36,
+            "end": 700.1600000000001,
+            "text": " covered all the specific things, right?"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 700.1600000000001,
+            "end": 704.76,
+            "text": " And next thing, after this persistent memory, I can also go ahead and probably combine prompt"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 704.76,
+            "end": 709.6,
+            "text": " with a separate LLM over here, prompt with a separate LLM over here so that we will be"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 709.6,
+            "end": 711.72,
+            "text": " able to get the output, right?"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 711.72,
+            "end": 715.16,
+            "text": " And finally, here you can actually see that finally we generate this specific output."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 715.16,
+            "end": 718.3199999999999,
+            "text": " So this can also be created in the form of chain."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 718.3199999999999,
+            "end": 723.34,
+            "text": " But understand one thing, everything is basically getting executed sequentially."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 723.34,
+            "end": 728.8,
+            "text": " This is the most important thing in the entire Lang chain with respect to developing any"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 728.8,
+            "end": 731.96,
+            "text": " generative AI powered applications, okay?"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 731.96,
+            "end": 735.44,
+            "text": " So here is what we basically do with the help of Lang chain, right?"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 735.44,
+            "end": 739.44,
+            "text": " And again, I will again talk about the differences as we go ahead, like what are the main exact"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 739.44,
+            "end": 740.44,
+            "text": " differences and all."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 740.44,
+            "end": 743.34,
+            "text": " Here you saw that it is following a sequential order."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 743.34,
+            "end": 746.48,
+            "text": " It follows a directed acyclic graph, you know."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 746.48,
+            "end": 748.8000000000001,
+            "text": " Here everything is in the form of chaining."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 748.8000000000001,
+            "end": 752.84,
+            "text": " Here we have these three important components, how each and every component is basically"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 752.84,
+            "end": 757.08,
+            "text": " executed and how it proceeds to finally getting an output, right?"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 757.2,
+            "end": 761.36,
+            "text": " Now similarly, if I talk about Lang graph, okay?"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 761.36,
+            "end": 764.0400000000001,
+            "text": " Lang graph."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 764.0400000000001,
+            "end": 776.8000000000001,
+            "text": " Now when I talk about Lang graph, here the main aim is basically to create stateful multi-AI"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 776.8,
+            "end": 788.76,
+            "text": " agents, multi-state, stateful multi-AI agents itself, right?"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 788.76,
+            "end": 793.92,
+            "text": " Now here, the main aim if I just want to probably break this down, here you'll be able to see"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 793.92,
+            "end": 797.3199999999999,
+            "text": " that we create AI agents."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 797.3199999999999,
+            "end": 799.8399999999999,
+            "text": " And it's not like a simple, a single AI agent."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 799.8399999999999,
+            "end": 803.9,
+            "text": " It will be multiple AI agents which will be doing separately different tasks."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 803.9,
+            "end": 808.42,
+            "text": " And the best part about these AI agents is that they can communicate with each other"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 808.42,
+            "end": 814.54,
+            "text": " to solve a complex workflow."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 814.54,
+            "end": 815.54,
+            "text": " Complex workflow."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 815.54,
+            "end": 820.1,
+            "text": " I have already started my entire Lang graph playlist and I think if you're following them,"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 820.1,
+            "end": 824.9,
+            "text": " I've explained this entirely in a much more detailed manner, you know, in the live classes"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 824.9,
+            "end": 828.54,
+            "text": " that I've actually taken in my YouTube channel, right?"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 828.54,
+            "end": 833.86,
+            "text": " Now here, the main thing is that it need not be directed acyclic graph."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 834.82,
+            "end": 835.86,
+            "text": " It need not be sequential."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 835.86,
+            "end": 838.14,
+            "text": " This can follow in a different way."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 838.14,
+            "end": 843.22,
+            "text": " So first of all, we'll talk about what are the important components in Lang graph, okay?"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 843.22,
+            "end": 847.74,
+            "text": " Some of the important components in Lang graph are like tasks."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 847.74,
+            "end": 850.58,
+            "text": " Second important component we basically use as nodes."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 850.58,
+            "end": 853.38,
+            "text": " Third, it will be something called as edges."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 853.38,
+            "end": 855.74,
+            "text": " Fourth is nothing but graph."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 855.74,
+            "end": 862.5,
+            "text": " So that basically means my entire Lang graph, the complex workflows that is defined, it"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 862.5,
+            "end": 865.18,
+            "text": " will be in the form of a graph."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 865.18,
+            "end": 868.5,
+            "text": " And when you see a graph, right, if you probably have some knowledge about graph, let's say"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 868.5,
+            "end": 873.54,
+            "text": " here, I will just go ahead and write this is my task A, okay?"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 873.54,
+            "end": 875.54,
+            "text": " This is my task A, right?"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 875.54,
+            "end": 882.58,
+            "text": " So let's say this is my task A. This can be my task B. This can be my task C. This can"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 882.58,
+            "end": 889.3,
+            "text": " be my task D. And this can be my final task."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 889.3,
+            "end": 890.98,
+            "text": " That is end."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 890.98,
+            "end": 892.74,
+            "text": " Let's say."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 892.74,
+            "end": 895.34,
+            "text": " Now each and every task over here."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 895.34,
+            "end": 902.86,
+            "text": " So let's say if this is my task A, this is my task B, this is my task C, this is my task"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 902.86,
+            "end": 908.9,
+            "text": " D. So when we talk about this kind of task, we basically start from start over here, there"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 908.9,
+            "end": 911.02,
+            "text": " will be a conditional edge."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 911.02,
+            "end": 914.9,
+            "text": " Then we go to task D. Then finally we go to end."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 914.9,
+            "end": 916.94,
+            "text": " Now here also I'm showing sequential only."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 916.94,
+            "end": 922.0200000000001,
+            "text": " But one important thing is that you can go back from task B to task A. You can go back"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 922.0200000000001,
+            "end": 926.82,
+            "text": " to task D to task C. You can re-execute this and you can come."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 926.82,
+            "end": 931.58,
+            "text": " So that is the reason why I'm saying that this two important thing is basically happening."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 931.58,
+            "end": 934.34,
+            "text": " That is communication within this particular task."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 934.34,
+            "end": 938.3800000000001,
+            "text": " And each and every task is executed by a separate AI agent."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 938.3800000000001,
+            "end": 942.6600000000001,
+            "text": " You can basically create a separate AI agent and perform the task similarly."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 942.66,
+            "end": 946.98,
+            "text": " And the output of one task can be passed to the output of the other task."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 946.98,
+            "end": 949.6999999999999,
+            "text": " It can also be vice versa."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 949.6999999999999,
+            "end": 951.26,
+            "text": " Right?"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 951.26,
+            "end": 956.8199999999999,
+            "text": " So here a feedback mechanism can also be generated and even human feedback mechanism can also"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 956.8199999999999,
+            "end": 958.3,
+            "text": " be included."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 958.3,
+            "end": 963.78,
+            "text": " So this way you are able to solve a very complex workflow."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 963.78,
+            "end": 968.66,
+            "text": " In my recent live session I gave a hackathon wherein you have to probably implement the"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 968.66,
+            "end": 975.4599999999999,
+            "text": " entire software development life cycle with the help of human feedback."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 975.4599999999999,
+            "end": 978.3399999999999,
+            "text": " With the help of this entire complex workflow."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 978.3399999999999,
+            "end": 980.9399999999999,
+            "text": " So what is software development life cycle?"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 980.9399999999999,
+            "end": 982.14,
+            "text": " First requirement gathering."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 982.14,
+            "end": 984.02,
+            "text": " Then business understanding."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 984.02,
+            "end": 985.6999999999999,
+            "text": " Then documentation."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 985.6999999999999,
+            "end": 986.6999999999999,
+            "text": " Then code creation."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 986.6999999999999,
+            "end": 988.42,
+            "text": " Then unit testing."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 988.42,
+            "end": 993.38,
+            "text": " Then managers probably reviewing the, sorry, code peers reviewing the code review."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 993.38,
+            "end": 994.9,
+            "text": " Providing the feedback."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 994.9,
+            "end": 995.9,
+            "text": " Quality check."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 995.9,
+            "end": 996.9,
+            "text": " All those kind of check."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 996.9399999999999,
+            "end": 999.54,
+            "text": " So how are we implementing the entire software development life cycle?"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 999.54,
+            "end": 1002.86,
+            "text": " And people implement it in a much more beautiful way."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1002.86,
+            "end": 1007.06,
+            "text": " So here if you probably see we follow an entire graph structure."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1007.06,
+            "end": 1011.18,
+            "text": " And this graph structure need not be a directed or cyclic graph."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1011.18,
+            "end": 1013.4599999999999,
+            "text": " Because here my task can go from up and down."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1013.4599999999999,
+            "end": 1015.4599999999999,
+            "text": " It can go here and there."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1015.4599999999999,
+            "end": 1016.4599999999999,
+            "text": " Right?"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1016.4599999999999,
+            "end": 1021.5799999999999,
+            "text": " So if you see some of the important differences with respect to the component, here we use"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1021.5799999999999,
+            "end": 1025.18,
+            "text": " components like prompt, LLM, context."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1025.18,
+            "end": 1026.5,
+            "text": " We use data ingestion."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1027.1,
+            "end": 1029.1,
+            "text": " We use persistent memory."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1029.1,
+            "end": 1030.1,
+            "text": " Right?"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1030.1,
+            "end": 1032.1,
+            "text": " Here we specifically use nodes, edges."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1032.1,
+            "end": 1034.62,
+            "text": " So these are nothing but these are nodes."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1034.62,
+            "end": 1035.62,
+            "text": " Right?"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1035.62,
+            "end": 1036.62,
+            "text": " These are edges."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1036.62,
+            "end": 1040.94,
+            "text": " Edges is basically used for flow of the information."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1040.94,
+            "end": 1048.14,
+            "text": " And when I say stateful, here the persistent memory is quite more efficient."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1048.14,
+            "end": 1052.42,
+            "text": " And the best part about this is that the memory is basically shared between each and every"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1052.42,
+            "end": 1053.42,
+            "text": " task."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1053.42,
+            "end": 1059.26,
+            "text": " So if I am doing in one variable, this all nodes will be able to access those variables."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1059.26,
+            "end": 1062.6200000000001,
+            "text": " And the persistent memory is quite efficient in Lang Graph."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1062.6200000000001,
+            "end": 1063.6200000000001,
+            "text": " Right?"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1063.6200000000001,
+            "end": 1066.9,
+            "text": " So if I talk about agentic AI application, you may use some of the components that are"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1066.9,
+            "end": 1068.5,
+            "text": " available in the Lang chain."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1068.5,
+            "end": 1072.94,
+            "text": " But at the end of the day, you are building an amazing agentic AI application with the"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1072.94,
+            "end": 1074.9,
+            "text": " help of Lang Graph."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1074.9,
+            "end": 1075.9,
+            "text": " Right?"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1075.9,
+            "end": 1080.74,
+            "text": " Other than that, there are some more differences which you can probably find out over here."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1080.74,
+            "end": 1082.94,
+            "text": " So these are some of the important components."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1083.46,
+            "end": 1087.54,
+            "text": " As I said, with respect to persistent memory, this is much more efficient."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1087.54,
+            "end": 1089.54,
+            "text": " Here we just use a sequential order."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1089.54,
+            "end": 1093.3400000000001,
+            "text": " Here it need not be a sequential order to solve any kind of use cases."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1093.3400000000001,
+            "end": 1094.54,
+            "text": " Right?"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1094.54,
+            "end": 1098.5,
+            "text": " And here we also understood what are the important components and here what are the important"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1098.5,
+            "end": 1099.5,
+            "text": " components."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1099.5,
+            "end": 1100.5,
+            "text": " Right?"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1100.5,
+            "end": 1105.9,
+            "text": " Now, the reason of making this specific video is to make your understanding very, very strong."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1105.9,
+            "end": 1112.1000000000001,
+            "text": " If I ask you a question, hey, when should we probably go ahead and use fine tuning?"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1112.1,
+            "end": 1114.02,
+            "text": " When should we use RAG?"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1114.02,
+            "end": 1117.9399999999998,
+            "text": " Or when should we probably go ahead and use, let's say, prompt engineering?"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1117.9399999999998,
+            "end": 1120.62,
+            "text": " Many people are not able to clearly see the differences."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1120.62,
+            "end": 1121.62,
+            "text": " Right?"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1121.62,
+            "end": 1124.62,
+            "text": " If this is the kind of question, I have already made this kind of videos."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1124.62,
+            "end": 1129.4199999999998,
+            "text": " This video is like, see, in the companies now, many people, more than 80 to 90% of the"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1129.4199999999998,
+            "end": 1133.9399999999998,
+            "text": " people in the companies are implementing efficient RAG systems."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1133.9399999999998,
+            "end": 1138.1399999999999,
+            "text": " So here also you'll be able to see that when we create, these are like traditional RAGs."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1138.1399999999999,
+            "end": 1139.1399999999999,
+            "text": " Okay?"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1139.1399999999999,
+            "end": 1141.3999999999999,
+            "text": " I'll also talk about traditional RAG and agentic RAG."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1141.7,
+            "end": 1145.0,
+            "text": " So in the traditional RAG, you basically create an LLM."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1145.0,
+            "end": 1146.0,
+            "text": " Right?"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1146.0,
+            "end": 1149.88,
+            "text": " This, let's say this is my LLM powered AI application."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1149.88,
+            "end": 1153.52,
+            "text": " This will be interacting with my RAG database."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1153.52,
+            "end": 1154.52,
+            "text": " Right?"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1154.52,
+            "end": 1156.92,
+            "text": " So this will basically be my RAG database."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1156.92,
+            "end": 1161.44,
+            "text": " And this RAG database will provide the context to the LLM to finally provide the output."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1161.44,
+            "end": 1162.44,
+            "text": " Right?"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1162.44,
+            "end": 1165.64,
+            "text": " Here, if my input is basically going on."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1165.64,
+            "end": 1169.2800000000002,
+            "text": " So this is what is basically happening in a traditional RAG."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1169.28,
+            "end": 1173.48,
+            "text": " In the case of agentic RAG, we create agents."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1173.48,
+            "end": 1175.6399999999999,
+            "text": " We create AI agents."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1175.6399999999999,
+            "end": 1179.84,
+            "text": " And this agent is responsible whether I have to make a call to my database, whether I have"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1179.84,
+            "end": 1184.84,
+            "text": " to make the call to my tools, or whether I have to take any kind of other action."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1184.84,
+            "end": 1189.94,
+            "text": " Automatically, this AI agents will be able to take that particular decision and provide"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1189.94,
+            "end": 1191.24,
+            "text": " me the response."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1191.24,
+            "end": 1194.92,
+            "text": " And then probably, let's say that after getting this information, I need to go ahead and hit"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1194.92,
+            "end": 1197.28,
+            "text": " the tool and provide the get the response."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1197.28,
+            "end": 1202.04,
+            "text": " This entire thing is basically implemented in the form of a workflow."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1202.04,
+            "end": 1203.52,
+            "text": " Right?"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1203.52,
+            "end": 1205.36,
+            "text": " So this is how things basically happen."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1205.36,
+            "end": 1209.36,
+            "text": " I'm soon going to make a detailed video on different types of RAG, which is one of the"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1209.36,
+            "end": 1212.56,
+            "text": " most important component that is currently required right now."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1212.56,
+            "end": 1213.56,
+            "text": " Right?"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1213.56,
+            "end": 1215.84,
+            "text": " So I hope you like this particular video."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1215.84,
+            "end": 1219.32,
+            "text": " And this was the basic differences between Langstone and Langrath."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1219.32,
+            "end": 1222.6,
+            "text": " In the upcoming videos, I'm also going to discuss about other frameworks, let's say"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1222.6,
+            "end": 1225.6399999999999,
+            "text": " CREWAI, Agno."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1225.6399999999999,
+            "end": 1228.76,
+            "text": " And I'm going to probably go ahead and explain you all the specific things."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1228.76,
+            "end": 1233.0,
+            "text": " And these are all things we detailly explain in our live batches."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1233.0,
+            "end": 1236.08,
+            "text": " All the information will be given in the description of this particular video, you can go ahead"
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1236.08,
+            "end": 1237.08,
+            "text": " and check it out."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1237.08,
+            "end": 1239.24,
+            "text": " So yes, this was it for my side."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1239.24,
+            "end": 1240.3999999999999,
+            "text": " I will see you in the next video."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1240.3999999999999,
+            "end": 1241.3999999999999,
+            "text": " Have a great day."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1241.3999999999999,
+            "end": 1242.3999999999999,
+            "text": " Thank you and all."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1242.3999999999999,
+            "end": 1243.3999999999999,
+            "text": " Take care."
+        },
+        {
+            "number": "8",
+            "title": "Most Popular",
+            "start": 1243.3999999999999,
+            "end": 1243.4199999999998,
+            "text": " Bye bye."
+        }
+    ],
+    "text": " Hello all my name is Krishnayak and welcome to my youtube channel. So guys today in this particular video I am going to discuss about this amazing topic to make you understand the differences between Langchin vs Langraph. Now I have been making similar kind of videos from past couple of weeks or from past month and here our main aim is to make our fundamentals quite stronger. Let's say that if I ask you a question in an interview when should we probably go ahead and use Langraph or what is the differences between Langchin and Langraph what would you probably try to explain. Just write down in the comment section before seeing this specific video and then after you write down the comment right just go through this entire video and then try to see that how many things that I have actually told does it matches with all the information that you have right. So please make sure to do that but in this video we are going to have a detailed discussion between Langchin vs Langraph. Trust me just watch till the end you will definitely learn a lot many things. Now if I talk about Langchin you know and I hope it is one of the most popular framework which is basically used to create generative AI application. First of all we will just go ahead and talk about Langchin. So let's go ahead and write it down over here like Langchin. Now if I talk about Langchin in Langchin obviously this is this Langchin is basically used to create if I probably say it is used to create LLM powered application. LLM powered chatbot assistant it can be an application or generative AI application. Now when I say LLM powered that basically means anything that you create whether you create a chatbot whether you create a simple app or whether you create any kind of application right at the end of the day you are specifically using LLMs right. On top of this LLMs there are multiple things that can be used. Here you can use prompts along with the LLMs you can use tools you can use different kind of integrations and many more things. So overall if I probably talk about Langchin any application that is basically developed in Langchin a generative AI application or LLM powered application or AI chatbot assistant there are three main important steps that happens in Langchin. This is my one step. This is my another step and this is my third step. So these are the three main components. Now what are these specific components. When I say steps I am basically talking about components. The first component is nothing but it is basically called as retrieve. So here we are basically going to write it as retrieve or retriever. Then the second important component is nothing but summarize and the third important component is nothing but your final answer or output. Now when we talk about this components. So here I will just go ahead and write output. When we talk about the specific components in Langchin whether you generate any kind of generative AI applications or LLM powered application or AI assistant these three components will be definitely there. Now the question rises Krish what does exactly happen in the retrieve. In retrieve there are three main important things that we basically do. One is data ingestion. Another question rises what is data ingestion. Data ingestion is very simple. We ingest a data. We probably load a data from a specific source. Now the main thing is that here the source can be different. It can be a PDF file. It can be an external database. It can be an Excel file. It can be a website. You need to probably web scrap the data. There may be various different ways in data ingestion. So when we talk about data ingestion this is also called as we basically use something called as document loader over here. So we use nothing but document loader. So in Langchin you have a specific class where you have lot of packages and integrations specifically with respect to document loader. Here the main aim is that you try to load documents from different sources. It can be any source. It can be a PDF file. It can be an Excel file. It can be a CSV file. It can even be some third party APIs like Wikipedia. It can be RSIV. It can be anything as such. So there are multiple sources and Langchin has a huge amount of different, different kind of integrations already provided in terms of document loader. And what I feel is that whenever you try to develop any of this kind of application this is the most important step because here the parsing of the data will happen. The parsing of the data will happen. When you do the parsing, if you do this much more accurately then you will definitely be able to generate or create a generative AI application with much more accuracy. So now they are dedicated companies who specifically do this particular task, who create this kind of packages with respect to document loader. I need to probably, I create a document loader to let's say web scrap the data from the internet which will be a very important use case for most of the use cases that we specifically implement in the industry. So in document loader this basically happens, right? And that is a part of data ingestion. Now coming to the second most important component. The second most important component is nothing but it is called as TextSplitter. Now TextSplitter is also a separate class that is available in Lanchain or a separate package wherein there are multiple ways of splitting the text. Once you read the data from all these kind of sources, right, I cannot just directly provide the entire data to my LLM model as a context, right? So what I have to do, why I cannot provide? Because there is a very important component which is called as context window. Every LLM has a limitation with respect to the context window. So in order to overcome this, what we do is that once we read the data from this data source, we try to divide this data into smaller chunks, into smaller chunks, smaller chunks, smaller chunks. Once we divide this data into smaller chunk, then the next step, because after we divide this, we need to store it somewhere, right? And that is where your third important component comes, is nothing but VectorDatabases. Now inside this VectorDatabases, when we are specifically using VectorDatabases, here we also use something called as VectorEmbeddings. Now for VectorEmbeddings, it is nothing but we are converting the text into vectors. That is the main aim with respect to VectorEmbeddings, right? So this is a kind of a task wherein we convert the text into vectors. Once it is basically converted, we basically store that into the VectorDatabase. Now the question arises, why do we store it, right? Because at the end of the day, from any application, if all my data is basically stored in the VectorDatabase, we will definitely be able to do different, different kind of search. One search example is nothing but semantic search. It can be GraphDB search, right? And with the help of this search, we will be able to retrieve the right amount of context and give it to our LLM to finally generate the output, right? And that is really important, right? Unless and until this is not done accurately and we don't get the right kind of context out of the VectorDatabase, we will not be able to accurately give the output to the user, right? So in the retrieve component of LangChain, you really need to be good at all the specific things. When you go tomorrow to any companies, if you're probably generating or developing a generative AI-powered application, you will be doing all the specific steps. You need to parse the data. You need to probably store the data in the exact right format with respect to the document data type. You need to make sure that you have to do this kind of chunking strategy so that you try to solve this context window size with respect to different, different LLMs that you're using. And finally, you store all this particular data into the VectorDatabase, okay? Now coming to the next important step, after we probably complete this retrieve component, it is nothing but summarize. Now here is where, you know, and when we talk about summarize or when we talk about building generative AI applications with the help of LangChain, here you specifically follow a sequential order, okay? This is really important to understand. And here you will definitely be understanding the differences between LangChain and LangGraph. When we talk about sequential order, now what does this basically mean? In sequential order, here it basically means that the execution of any task will just happen sequentially. We cannot go back, okay? So this entire LangChain, the generative AI application that is developed with the help of LangChain, follows a DAG graph, right? Directed acyclic graph, okay? That basically means if my execution is basically started from this task, it has to probably go to this task, it has to go to this particular task. Only sequential. I cannot come back. This option is not there. This option is not there, right? So when we talk about this summarize component, here you will be able to see that we create some kind of chaining concept. So in LangChain, whenever generative AI application is basically developed, here we try to implement this chaining concept. Now in the chaining concept, we first of all go ahead and write our prompt chain. So let's say this is my prompt chain, right? Sorry, this is my prompt. We basically go ahead and give a prompt. Prompt is just like an instruction to an LLM, right? Along with this, we try to integrate this prompt with our LLM. So LLM will be my second thing in the chain, right? Second important component in the chain. And then the third important component can be my context. The context that I'm supplying to the LLM. So this will basically be my prompt. This will be my LLM. And this will basically be my context. And this context will be coming from the specific vector database. So internally you will be able to see that this vector database will be connected to this particular chain itself, wherein we will be providing the context. And this execution takes place sequentially, one after the other, right? And finally, whatever output you basically get, here we are basically going to use or here we are going to give the answer of the output. Here again, we can use multiple components. One component can be my memory, right? So here we can use some kind of persistent memory. So if you have been seeing my videos with respect to Lang chain or Lang graph, I've covered all the specific things, right? And next thing, after this persistent memory, I can also go ahead and probably combine prompt with a separate LLM over here, prompt with a separate LLM over here so that we will be able to get the output, right? And finally, here you can actually see that finally we generate this specific output. So this can also be created in the form of chain. But understand one thing, everything is basically getting executed sequentially. This is the most important thing in the entire Lang chain with respect to developing any generative AI powered applications, okay? So here is what we basically do with the help of Lang chain, right? And again, I will again talk about the differences as we go ahead, like what are the main exact differences and all. Here you saw that it is following a sequential order. It follows a directed acyclic graph, you know. Here everything is in the form of chaining. Here we have these three important components, how each and every component is basically executed and how it proceeds to finally getting an output, right? Now similarly, if I talk about Lang graph, okay? Lang graph. Now when I talk about Lang graph, here the main aim is basically to create stateful multi-AI agents, multi-state, stateful multi-AI agents itself, right? Now here, the main aim if I just want to probably break this down, here you'll be able to see that we create AI agents. And it's not like a simple, a single AI agent. It will be multiple AI agents which will be doing separately different tasks. And the best part about these AI agents is that they can communicate with each other to solve a complex workflow. Complex workflow. I have already started my entire Lang graph playlist and I think if you're following them, I've explained this entirely in a much more detailed manner, you know, in the live classes that I've actually taken in my YouTube channel, right? Now here, the main thing is that it need not be directed acyclic graph. It need not be sequential. This can follow in a different way. So first of all, we'll talk about what are the important components in Lang graph, okay? Some of the important components in Lang graph are like tasks. Second important component we basically use as nodes. Third, it will be something called as edges. Fourth is nothing but graph. So that basically means my entire Lang graph, the complex workflows that is defined, it will be in the form of a graph. And when you see a graph, right, if you probably have some knowledge about graph, let's say here, I will just go ahead and write this is my task A, okay? This is my task A, right? So let's say this is my task A. This can be my task B. This can be my task C. This can be my task D. And this can be my final task. That is end. Let's say. Now each and every task over here. So let's say if this is my task A, this is my task B, this is my task C, this is my task D. So when we talk about this kind of task, we basically start from start over here, there will be a conditional edge. Then we go to task D. Then finally we go to end. Now here also I'm showing sequential only. But one important thing is that you can go back from task B to task A. You can go back to task D to task C. You can re-execute this and you can come. So that is the reason why I'm saying that this two important thing is basically happening. That is communication within this particular task. And each and every task is executed by a separate AI agent. You can basically create a separate AI agent and perform the task similarly. And the output of one task can be passed to the output of the other task. It can also be vice versa. Right? So here a feedback mechanism can also be generated and even human feedback mechanism can also be included. So this way you are able to solve a very complex workflow. In my recent live session I gave a hackathon wherein you have to probably implement the entire software development life cycle with the help of human feedback. With the help of this entire complex workflow. So what is software development life cycle? First requirement gathering. Then business understanding. Then documentation. Then code creation. Then unit testing. Then managers probably reviewing the, sorry, code peers reviewing the code review. Providing the feedback. Quality check. All those kind of check. So how are we implementing the entire software development life cycle? And people implement it in a much more beautiful way. So here if you probably see we follow an entire graph structure. And this graph structure need not be a directed or cyclic graph. Because here my task can go from up and down. It can go here and there. Right? So if you see some of the important differences with respect to the component, here we use components like prompt, LLM, context. We use data ingestion. We use persistent memory. Right? Here we specifically use nodes, edges. So these are nothing but these are nodes. Right? These are edges. Edges is basically used for flow of the information. And when I say stateful, here the persistent memory is quite more efficient. And the best part about this is that the memory is basically shared between each and every task. So if I am doing in one variable, this all nodes will be able to access those variables. And the persistent memory is quite efficient in Lang Graph. Right? So if I talk about agentic AI application, you may use some of the components that are available in the Lang chain. But at the end of the day, you are building an amazing agentic AI application with the help of Lang Graph. Right? Other than that, there are some more differences which you can probably find out over here. So these are some of the important components. As I said, with respect to persistent memory, this is much more efficient. Here we just use a sequential order. Here it need not be a sequential order to solve any kind of use cases. Right? And here we also understood what are the important components and here what are the important components. Right? Now, the reason of making this specific video is to make your understanding very, very strong. If I ask you a question, hey, when should we probably go ahead and use fine tuning? When should we use RAG? Or when should we probably go ahead and use, let's say, prompt engineering? Many people are not able to clearly see the differences. Right? If this is the kind of question, I have already made this kind of videos. This video is like, see, in the companies now, many people, more than 80 to 90% of the people in the companies are implementing efficient RAG systems. So here also you'll be able to see that when we create, these are like traditional RAGs. Okay? I'll also talk about traditional RAG and agentic RAG. So in the traditional RAG, you basically create an LLM. Right? This, let's say this is my LLM powered AI application. This will be interacting with my RAG database. Right? So this will basically be my RAG database. And this RAG database will provide the context to the LLM to finally provide the output. Right? Here, if my input is basically going on. So this is what is basically happening in a traditional RAG. In the case of agentic RAG, we create agents. We create AI agents. And this agent is responsible whether I have to make a call to my database, whether I have to make the call to my tools, or whether I have to take any kind of other action. Automatically, this AI agents will be able to take that particular decision and provide me the response. And then probably, let's say that after getting this information, I need to go ahead and hit the tool and provide the get the response. This entire thing is basically implemented in the form of a workflow. Right? So this is how things basically happen. I'm soon going to make a detailed video on different types of RAG, which is one of the most important component that is currently required right now. Right? So I hope you like this particular video. And this was the basic differences between Langstone and Langrath. In the upcoming videos, I'm also going to discuss about other frameworks, let's say CREWAI, Agno. And I'm going to probably go ahead and explain you all the specific things. And these are all things we detailly explain in our live batches. All the information will be given in the description of this particular video, you can go ahead and check it out. So yes, this was it for my side. I will see you in the next video. Have a great day. Thank you and all. Take care. Bye bye."
+}

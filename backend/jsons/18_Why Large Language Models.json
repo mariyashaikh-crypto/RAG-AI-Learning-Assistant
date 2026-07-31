@@ -1,0 +1,1300 @@
+{
+    "chunks": [
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 0.0,
+            "end": 2.16,
+            "text": " I'm gonna state three facts."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 2.16,
+            "end": 4.96,
+            "text": " Your challenge is to tell me how they're related."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 4.96,
+            "end": 6.84,
+            "text": " They're all space and aviation themed,"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 6.84,
+            "end": 8.040000000000001,
+            "text": " but that's not it, so here we go."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 8.040000000000001,
+            "end": 11.36,
+            "text": " Number one, the distance from the Earth to the moon"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 11.36,
+            "end": 13.24,
+            "text": " is 54 million kilometers."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 13.24,
+            "end": 16.36,
+            "text": " Number two, before I worked at IBM,"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 16.36,
+            "end": 18.32,
+            "text": " I worked at a major Australian airline."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 18.32,
+            "end": 20.88,
+            "text": " And number three, the James Webb Telescope"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 20.88,
+            "end": 23.080000000000002,
+            "text": " took the very first pictures of an exoplanet"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 23.080000000000002,
+            "end": 24.52,
+            "text": " outside of our solar system."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 25.400000000000002,
+            "end": 27.84,
+            "text": " What's the common thread?"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 27.84,
+            "end": 32.519999999999996,
+            "text": " Well, the answer is that all three facts"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 32.519999999999996,
+            "end": 36.36,
+            "text": " are an example of an hallucination"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 37.8,
+            "end": 41.32,
+            "text": " of a large language model,"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 41.32,
+            "end": 43.6,
+            "text": " otherwise known as an LLM."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 45.519999999999996,
+            "end": 49.04,
+            "text": " Things like chat, GPT, and Bing chat."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 49.04,
+            "end": 53.08,
+            "text": " 54 million K, that's the distance to Mars, not the moon."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 53.08,
+            "end": 55.36,
+            "text": " It's my brother that worked at the airline, not me."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 55.36,
+            "end": 60.28,
+            "text": " And infamously, at the announcement of Google's LLM, BARD,"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 60.28,
+            "end": 62.519999999999996,
+            "text": " it hallucinated about the Webb Telescope."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 62.519999999999996,
+            "end": 66.2,
+            "text": " The first picture of an exoplanet was actually taken in 2004."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 66.2,
+            "end": 69.36,
+            "text": " Now, while large language models can generate"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 69.36,
+            "end": 73.52,
+            "text": " fluent and coherent text on various topics and domains,"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 73.52,
+            "end": 77.92,
+            "text": " they are also prone to just make stuff up."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 77.92,
+            "end": 81.2,
+            "text": " Plausible sounding nonsense."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 81.2,
+            "end": 86.2,
+            "text": " So let's discuss, first of all, what a hallucination is."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 89.96000000000001,
+            "end": 94.08,
+            "text": " We'll discuss why they happen,"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 94.08,
+            "end": 96.72,
+            "text": " and we'll take some steps to describe"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 96.72,
+            "end": 101.72,
+            "text": " how you can minimize hallucinations with LLMs."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 103.88,
+            "end": 106.88,
+            "text": " Now, hallucinations are outputs of LLMs"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 106.88,
+            "end": 109.72,
+            "text": " that deviate from facts or contextual logic."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 109.72,
+            "end": 111.96,
+            "text": " And they can range from minor inconsistencies"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 111.96,
+            "end": 115.96,
+            "text": " to completely fabricated or contradictory statements."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 115.96,
+            "end": 117.84,
+            "text": " And we can categorize hallucinations"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 117.84,
+            "end": 121.0,
+            "text": " across different levels of granularity."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 121.0,
+            "end": 124.68,
+            "text": " Now, at the lowest level of granularity,"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 124.68,
+            "end": 129.56,
+            "text": " we could consider sentence contradiction."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 131.16,
+            "end": 133.24,
+            "text": " This is really the simplest type,"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 133.24,
+            "end": 135.76,
+            "text": " and this is where an LLM generates a sentence"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 135.76,
+            "end": 138.6,
+            "text": " that contradicts one of the previous sentences."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 138.6,
+            "end": 141.96,
+            "text": " So, the sky is blue today."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 141.96,
+            "end": 144.07999999999998,
+            "text": " The sky is green today."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 145.32,
+            "end": 149.84,
+            "text": " Another example would be prompt contradiction."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 151.32,
+            "end": 155.04,
+            "text": " And this is where the generated sentence"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 155.04,
+            "end": 158.04,
+            "text": " contradicts with the prompt that was used to generate it."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 158.04,
+            "end": 161.56,
+            "text": " So if I ask an LLM to write a positive review"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 161.56,
+            "end": 164.04,
+            "text": " of a restaurant, and it returns,"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 164.04,
+            "end": 167.16,
+            "text": " the food was terrible and the service was rude,"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 167.16,
+            "end": 171.12,
+            "text": " that would be in direct contradiction to what I asked."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 171.12,
+            "end": 174.8,
+            "text": " Now, we already gave some examples of another type here,"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 174.8,
+            "end": 178.44,
+            "text": " which is factual contradictions."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 178.44,
+            "end": 180.24,
+            "text": " And these factual contradictions"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 180.24,
+            "end": 184.0,
+            "text": " or factual error hallucinations are really just that,"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 184.0,
+            "end": 186.68,
+            "text": " absolutely nailed on facts that it got wrong."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 186.68,
+            "end": 189.44,
+            "text": " Barack Obama was the first president of the United States,"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 189.44,
+            "end": 190.44,
+            "text": " something like that."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 191.4,
+            "end": 194.72,
+            "text": " And then there are also nonsensical"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 197.16,
+            "end": 199.79999999999998,
+            "text": " or otherwise known as sort of irrelevant"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 199.79999999999998,
+            "end": 201.79999999999998,
+            "text": " kind of information-based hallucinations,"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 201.79999999999998,
+            "end": 202.88,
+            "text": " where it just puts in something"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 202.88,
+            "end": 204.48,
+            "text": " that really has no place being there."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 204.48,
+            "end": 207.2,
+            "text": " Like, the capital of France is Paris."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 207.2,
+            "end": 210.28,
+            "text": " Paris is also the name of a famous singer."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 210.28,
+            "end": 213.35999999999999,
+            "text": " Okay, thanks."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 213.35999999999999,
+            "end": 218.12,
+            "text": " Now, with the question of what LLM hallucinations"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 218.12,
+            "end": 221.76,
+            "text": " are answered, we really need to answer the question of why."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 221.76,
+            "end": 223.92,
+            "text": " And it's not an easy one to answer"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 223.95999999999998,
+            "end": 227.2,
+            "text": " because the way that they derive their output"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 227.2,
+            "end": 228.76,
+            "text": " is something of a black box,"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 228.76,
+            "end": 231.56,
+            "text": " even to the engineers of the LLM itself."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 231.56,
+            "end": 234.32,
+            "text": " But there are a number of common causes."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 234.32,
+            "end": 236.44,
+            "text": " So let's take a look at a few of those."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 237.44,
+            "end": 241.27999999999997,
+            "text": " One of those is data quality."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 242.51999999999998,
+            "end": 246.48,
+            "text": " Now, LLMs are trained on a large corpora of text"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 246.48,
+            "end": 249.92,
+            "text": " that may contain noise, errors, biases, or inconsistencies."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 249.92,
+            "end": 252.48,
+            "text": " For example, some LLMs were trained"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 252.51999999999998,
+            "end": 256.12,
+            "text": " by scraping all of Wikipedia and all of Reddit."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 256.12,
+            "end": 259.36,
+            "text": " Is everything on Reddit 100% accurate?"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 259.36,
+            "end": 260.8,
+            "text": " Well, look, even if it was,"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 260.8,
+            "end": 264.2,
+            "text": " even if the training data was entirely reliable,"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 264.2,
+            "end": 267.03999999999996,
+            "text": " that data may not cover all of the possible topics"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 267.03999999999996,
+            "end": 268.84,
+            "text": " or domains that LLMs are expected"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 268.84,
+            "end": 270.36,
+            "text": " to generate content about."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 270.36,
+            "end": 274.64,
+            "text": " So LLMs may generalize from data"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 274.64,
+            "end": 277.28,
+            "text": " without being able to verify its accuracy or relevance."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 277.28,
+            "end": 280.24,
+            "text": " And sometimes it just gets it wrong."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 280.24,
+            "end": 284.0,
+            "text": " As LLM reasoning capabilities improve,"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 284.0,
+            "end": 286.24,
+            "text": " hallucinations tend to decline."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 287.08,
+            "end": 291.36,
+            "text": " Now, another reason why hallucinations can happen"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 291.36,
+            "end": 295.72,
+            "text": " is based upon the generation method."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 296.92,
+            "end": 299.48,
+            "text": " Now, LLMs use various methods and objectives"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 299.48,
+            "end": 302.72,
+            "text": " to generate text, such as beam search, sampling,"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 302.72,
+            "end": 306.56,
+            "text": " maximum likelihood estimation, or reinforcement learning."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 306.56,
+            "end": 309.2,
+            "text": " And these methods and these objectives"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 309.2,
+            "end": 311.68,
+            "text": " may introduce biases and trade-offs"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 311.68,
+            "end": 314.36,
+            "text": " between things like fluency and diversity,"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 314.36,
+            "end": 316.84,
+            "text": " between coherence and creativity,"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 316.84,
+            "end": 318.71999999999997,
+            "text": " or between accuracy and novelty."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 318.71999999999997,
+            "end": 323.64,
+            "text": " So for example, beam search may favor high probability"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 323.64,
+            "end": 328.24,
+            "text": " but generic words over low probability but specific words."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 329.4,
+            "end": 332.03999999999996,
+            "text": " And another common cause for hallucinations"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 332.03999999999996,
+            "end": 333.88,
+            "text": " is input context."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 333.88,
+            "end": 338.88,
+            "text": " And this is one we can do something directly about as users."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 339.44,
+            "end": 341.59999999999997,
+            "text": " Now, here context refers to the information"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 341.59999999999997,
+            "end": 344.88,
+            "text": " that is given to the model as an input prompt."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 344.88,
+            "end": 346.71999999999997,
+            "text": " Context can help guide the model"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 346.71999999999997,
+            "end": 349.24,
+            "text": " to produce the relevant and accurate outputs,"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 349.24,
+            "end": 351.8,
+            "text": " but it can also confuse or mislead the model"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 351.8,
+            "end": 354.15999999999997,
+            "text": " if it's unclear or if it's inconsistent"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 354.15999999999997,
+            "end": 355.28,
+            "text": " or if it's contradictory."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 355.28,
+            "end": 359.88,
+            "text": " So for example, if I ask an LLM chatbot,"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 359.88,
+            "end": 362.68,
+            "text": " can cats speak English?"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 362.68,
+            "end": 365.36,
+            "text": " I would expect the answer, no."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 365.36,
+            "end": 367.96,
+            "text": " And do you need to sit down for a moment?"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 367.96,
+            "end": 370.44,
+            "text": " But perhaps I'd just forgotten to include"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 370.44,
+            "end": 374.35999999999996,
+            "text": " a crucial little bit of information, a bit of context,"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 374.35999999999996,
+            "end": 375.68,
+            "text": " that this conversation thread"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 375.68,
+            "end": 378.79999999999995,
+            "text": " is talking about the Garfield cartoon strip,"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 378.79999999999995,
+            "end": 381.84,
+            "text": " in which case the LLM should have answered,"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 381.84,
+            "end": 383.64,
+            "text": " yes, cats can speak English,"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 383.64,
+            "end": 386.24,
+            "text": " and that cat is probably going to ask"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 386.24,
+            "end": 388.52,
+            "text": " for second helpings of lasagna."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 388.52,
+            "end": 391.32,
+            "text": " Context is important, and if we don't tell it"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 391.32,
+            "end": 393.47999999999996,
+            "text": " we're looking for generated text suitable"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 393.48,
+            "end": 398.04,
+            "text": " for an academic essay or a creative writing exercise,"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 398.04,
+            "end": 401.8,
+            "text": " we can't expect it to respond within that context."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 401.8,
+            "end": 404.76,
+            "text": " Which brings us nicely to the third and final part,"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 404.76,
+            "end": 407.56,
+            "text": " what can we do to reduce hallucinations"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 407.56,
+            "end": 410.76,
+            "text": " in our own conversations with LLMs?"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 410.76,
+            "end": 413.6,
+            "text": " So yeah, one thing we can certainly do"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 413.6,
+            "end": 418.6,
+            "text": " is provide clear and specific prompts to the system."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 419.04,
+            "end": 422.92,
+            "text": " Now, the more precise and the more detailed the input prompt,"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 422.92,
+            "end": 425.8,
+            "text": " the more likely the LLM will generate relevant"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 425.8,
+            "end": 429.40000000000003,
+            "text": " and, most importantly here, accurate outputs."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 429.40000000000003,
+            "end": 431.20000000000005,
+            "text": " So for example, instead of asking"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 431.20000000000005,
+            "end": 433.28000000000003,
+            "text": " what happened in World War II,"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 433.28000000000003,
+            "end": 436.20000000000005,
+            "text": " that's not very clear, it's not very specific,"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 436.20000000000005,
+            "end": 439.04,
+            "text": " we could say, can you summarize the major events"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 439.04,
+            "end": 441.48,
+            "text": " of World War II, including the key countries involved"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 441.48,
+            "end": 443.24,
+            "text": " and the primary causes of the conflict?"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 443.24,
+            "end": 444.84000000000003,
+            "text": " Something like that that really gets at"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 444.84000000000003,
+            "end": 447.0,
+            "text": " what we are trying to pull from this."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 447.0,
+            "end": 449.24,
+            "text": " And that gives the model a better understanding"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 449.24,
+            "end": 451.76,
+            "text": " of what information is expected in the response."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 453.04,
+            "end": 455.64,
+            "text": " We can employ something called"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 456.72,
+            "end": 460.2,
+            "text": " Active Mitigation Strategies,"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 461.08,
+            "end": 464.04,
+            "text": " and what these are, are using some of the settings"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 464.04,
+            "end": 467.16,
+            "text": " of the LLMs, such as settings that control the parameters"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 467.16,
+            "end": 470.32,
+            "text": " of how the LLM works during generation."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 470.32,
+            "end": 472.76,
+            "text": " A good example of that is the temperature parameter,"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 472.76,
+            "end": 476.16,
+            "text": " which can control the randomness of the LLM."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 476.16,
+            "end": 478.52000000000004,
+            "text": " It can control the randomness of the output."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 478.52000000000004,
+            "end": 481.8,
+            "text": " So a lower temperature will produce more conservative"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 481.8,
+            "end": 484.64000000000004,
+            "text": " and focused responses, while a higher temperature"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 484.64000000000004,
+            "end": 487.04,
+            "text": " will generate more diverse and creative ones."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 487.04,
+            "end": 489.44000000000005,
+            "text": " But the higher the temperature,"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 489.44000000000005,
+            "end": 492.48,
+            "text": " the more opportunity for hallucination."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 493.76000000000005,
+            "end": 498.76000000000005,
+            "text": " And then one more is Multi-Shot Prompting."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 501.44000000000005,
+            "end": 504.56,
+            "text": " And in contrast to Single-Shot Prompting,"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 504.56,
+            "end": 506.08,
+            "text": " which can only give one prompt,"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 506.08,
+            "end": 508.36,
+            "text": " Multi-Shot Prompting provides the LLM"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 508.36,
+            "end": 511.04,
+            "text": " with multiple examples of the desired output format"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 511.04,
+            "end": 514.52,
+            "text": " or context, and that essentially primes the model,"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 514.52,
+            "end": 518.24,
+            "text": " giving a clearer understanding of the user's expectations."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 518.24,
+            "end": 521.32,
+            "text": " By presenting the LLM with several examples,"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 521.32,
+            "end": 523.52,
+            "text": " we help it recognize the pattern"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 523.52,
+            "end": 526.04,
+            "text": " or the context more effectively,"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 526.04,
+            "end": 528.12,
+            "text": " and this can be particularly useful in tasks"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 528.12,
+            "end": 530.24,
+            "text": " that require a specific output format."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 530.24,
+            "end": 533.68,
+            "text": " So generating code, writing poetry,"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 533.8399999999999,
+            "end": 536.8,
+            "text": " or answering questions in a specific style."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 536.8,
+            "end": 541.5999999999999,
+            "text": " So while large language models may sometimes hallucinate"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 541.5999999999999,
+            "end": 544.0,
+            "text": " and take us on an unexpected journey,"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 544.0,
+            "end": 546.92,
+            "text": " 54 million kilometers off target,"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 546.92,
+            "end": 551.1999999999999,
+            "text": " understanding the causes and employing the strategies"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 551.1999999999999,
+            "end": 554.28,
+            "text": " to minimize those causes really allows us"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 554.28,
+            "end": 557.52,
+            "text": " to harness the true potential of these models"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 557.52,
+            "end": 560.16,
+            "text": " and reduce hallucinations."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 560.16,
+            "end": 563.28,
+            "text": " Although I did kind of enjoy reading"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 563.28,
+            "end": 565.6,
+            "text": " about my fictional career down under."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 566.48,
+            "end": 569.12,
+            "text": " If you have any questions, please drop us a line below,"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 569.12,
+            "end": 572.04,
+            "text": " and if you want to see more videos like this in the future,"
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 572.04,
+            "end": 574.28,
+            "text": " please like and subscribe."
+        },
+        {
+            "number": "18",
+            "title": "Why Large Language Models",
+            "start": 574.28,
+            "end": 575.28,
+            "text": " Thanks for watching."
+        }
+    ],
+    "text": " I'm gonna state three facts. Your challenge is to tell me how they're related. They're all space and aviation themed, but that's not it, so here we go. Number one, the distance from the Earth to the moon is 54 million kilometers. Number two, before I worked at IBM, I worked at a major Australian airline. And number three, the James Webb Telescope took the very first pictures of an exoplanet outside of our solar system. What's the common thread? Well, the answer is that all three facts are an example of an hallucination of a large language model, otherwise known as an LLM. Things like chat, GPT, and Bing chat. 54 million K, that's the distance to Mars, not the moon. It's my brother that worked at the airline, not me. And infamously, at the announcement of Google's LLM, BARD, it hallucinated about the Webb Telescope. The first picture of an exoplanet was actually taken in 2004. Now, while large language models can generate fluent and coherent text on various topics and domains, they are also prone to just make stuff up. Plausible sounding nonsense. So let's discuss, first of all, what a hallucination is. We'll discuss why they happen, and we'll take some steps to describe how you can minimize hallucinations with LLMs. Now, hallucinations are outputs of LLMs that deviate from facts or contextual logic. And they can range from minor inconsistencies to completely fabricated or contradictory statements. And we can categorize hallucinations across different levels of granularity. Now, at the lowest level of granularity, we could consider sentence contradiction. This is really the simplest type, and this is where an LLM generates a sentence that contradicts one of the previous sentences. So, the sky is blue today. The sky is green today. Another example would be prompt contradiction. And this is where the generated sentence contradicts with the prompt that was used to generate it. So if I ask an LLM to write a positive review of a restaurant, and it returns, the food was terrible and the service was rude, that would be in direct contradiction to what I asked. Now, we already gave some examples of another type here, which is factual contradictions. And these factual contradictions or factual error hallucinations are really just that, absolutely nailed on facts that it got wrong. Barack Obama was the first president of the United States, something like that. And then there are also nonsensical or otherwise known as sort of irrelevant kind of information-based hallucinations, where it just puts in something that really has no place being there. Like, the capital of France is Paris. Paris is also the name of a famous singer. Okay, thanks. Now, with the question of what LLM hallucinations are answered, we really need to answer the question of why. And it's not an easy one to answer because the way that they derive their output is something of a black box, even to the engineers of the LLM itself. But there are a number of common causes. So let's take a look at a few of those. One of those is data quality. Now, LLMs are trained on a large corpora of text that may contain noise, errors, biases, or inconsistencies. For example, some LLMs were trained by scraping all of Wikipedia and all of Reddit. Is everything on Reddit 100% accurate? Well, look, even if it was, even if the training data was entirely reliable, that data may not cover all of the possible topics or domains that LLMs are expected to generate content about. So LLMs may generalize from data without being able to verify its accuracy or relevance. And sometimes it just gets it wrong. As LLM reasoning capabilities improve, hallucinations tend to decline. Now, another reason why hallucinations can happen is based upon the generation method. Now, LLMs use various methods and objectives to generate text, such as beam search, sampling, maximum likelihood estimation, or reinforcement learning. And these methods and these objectives may introduce biases and trade-offs between things like fluency and diversity, between coherence and creativity, or between accuracy and novelty. So for example, beam search may favor high probability but generic words over low probability but specific words. And another common cause for hallucinations is input context. And this is one we can do something directly about as users. Now, here context refers to the information that is given to the model as an input prompt. Context can help guide the model to produce the relevant and accurate outputs, but it can also confuse or mislead the model if it's unclear or if it's inconsistent or if it's contradictory. So for example, if I ask an LLM chatbot, can cats speak English? I would expect the answer, no. And do you need to sit down for a moment? But perhaps I'd just forgotten to include a crucial little bit of information, a bit of context, that this conversation thread is talking about the Garfield cartoon strip, in which case the LLM should have answered, yes, cats can speak English, and that cat is probably going to ask for second helpings of lasagna. Context is important, and if we don't tell it we're looking for generated text suitable for an academic essay or a creative writing exercise, we can't expect it to respond within that context. Which brings us nicely to the third and final part, what can we do to reduce hallucinations in our own conversations with LLMs? So yeah, one thing we can certainly do is provide clear and specific prompts to the system. Now, the more precise and the more detailed the input prompt, the more likely the LLM will generate relevant and, most importantly here, accurate outputs. So for example, instead of asking what happened in World War II, that's not very clear, it's not very specific, we could say, can you summarize the major events of World War II, including the key countries involved and the primary causes of the conflict? Something like that that really gets at what we are trying to pull from this. And that gives the model a better understanding of what information is expected in the response. We can employ something called Active Mitigation Strategies, and what these are, are using some of the settings of the LLMs, such as settings that control the parameters of how the LLM works during generation. A good example of that is the temperature parameter, which can control the randomness of the LLM. It can control the randomness of the output. So a lower temperature will produce more conservative and focused responses, while a higher temperature will generate more diverse and creative ones. But the higher the temperature, the more opportunity for hallucination. And then one more is Multi-Shot Prompting. And in contrast to Single-Shot Prompting, which can only give one prompt, Multi-Shot Prompting provides the LLM with multiple examples of the desired output format or context, and that essentially primes the model, giving a clearer understanding of the user's expectations. By presenting the LLM with several examples, we help it recognize the pattern or the context more effectively, and this can be particularly useful in tasks that require a specific output format. So generating code, writing poetry, or answering questions in a specific style. So while large language models may sometimes hallucinate and take us on an unexpected journey, 54 million kilometers off target, understanding the causes and employing the strategies to minimize those causes really allows us to harness the true potential of these models and reduce hallucinations. Although I did kind of enjoy reading about my fictional career down under. If you have any questions, please drop us a line below, and if you want to see more videos like this in the future, please like and subscribe. Thanks for watching."
+}
