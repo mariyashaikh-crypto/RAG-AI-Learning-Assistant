@@ -313,7 +313,7 @@ This project is licensed under the MIT License.
 
 # 👨‍💻 Author
 
-**Rayan Shaikh**
+**Mariya Shaikh**
 
 Computer Technology Diploma Student
 
