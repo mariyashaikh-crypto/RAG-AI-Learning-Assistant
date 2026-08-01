@@ -15,7 +15,7 @@
 ---
 
 🎥 **Demo Video:** 
-https://youtu.be/g2ffKP6WjNY?si=yPBgBm6_4yLJxptL
+
 
 </div>
 
@@ -217,7 +217,7 @@ AI-Learning-Assistant/
 
 📺 **Watch the complete project demonstration on YouTube**
 
-👉 *(https://youtu.be/g2ffKP6WjNY?si=yPBgBm6_4yLJxptL)*
+👉 **
 
 ---
 
