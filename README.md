@@ -325,6 +325,5 @@ Information Technology Student
 
 ### ⭐ If you found this project useful, don't forget to Star the repository!
 
-Made with ❤️ using Python, Flask, React and RAG
 
 </div>
