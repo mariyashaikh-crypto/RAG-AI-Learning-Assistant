@@ -217,7 +217,7 @@ AI-Learning-Assistant/
 
 📺 **Watch the complete project demonstration on YouTube**
 
-👉 *[(Paste your YouTube link here after uploading)](https://youtu.be/g2ffKP6WjNY?si=yPBgBm6_4yLJxptL)*
+👉 *(https://youtu.be/g2ffKP6WjNY?si=yPBgBm6_4yLJxptL)*
 
 ---
 
@@ -316,14 +316,8 @@ This project is licensed under the MIT License.
 
 **Mariya Shaikh**
 
-Computer Technology Diploma Student
+Information Technology Student
 
-Passionate about
-
-- Artificial Intelligence
-- Cybersecurity
-- Full Stack Development
-- Open Source
 
 ---
 
