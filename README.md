@@ -14,7 +14,6 @@
 
 ---
 
-🎥 **Demo Video:** 
 
 
 </div>
@@ -212,12 +211,6 @@ AI-Learning-Assistant/
 
 
 ---
-
-# 🎥 Demo
-
-📺 **Watch the complete project demonstration on YouTube**
-
-👉 **
 
 ---
 
